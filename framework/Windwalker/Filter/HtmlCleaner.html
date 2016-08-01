@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Filter\HtmlCleaner | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Filter_HtmlCleaner" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Filter.html">Filter</a></li>
+    
+                <li>HtmlCleaner</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            HtmlCleaner
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>HtmlCleaner</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Html Cleaner object.</p>            <p>Forked from the php input filter library by: Daniel Morris <a href="&#x6d;&#97;&#105;l&#x74;&#x6f;&#58;&#100;&#x61;&#x6e;&#64;&#114;o&#x6f;&#116;&#99;u&#x62;&#x65;&#46;&#99;&#x6f;&#x6d;">&#100;&#x61;&#x6e;&#64;&#114;o&#x6f;&#116;&#99;u&#x62;&#x65;&#46;&#99;&#x6f;&#x6d;</a>
+Original Contributors: Gianpaolo Racca, Ghislain Picard, Marco Wandschneider, Chris Tobin and Andrew Eddie.</p>        </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>USE_WHITE_LIST</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>USE_BLACK_LIST</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ONLY_ESSENTIAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_tagsArray">
+                                                                                array
+                </td>
+                <td>$tagsArray</td>
+                <td class="last">The array of permitted tags (white list).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attrArray">
+                                                                                array
+                </td>
+                <td>$attrArray</td>
+                <td class="last">The array of permitted tag attributes (white list).</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tagsMethod">
+                                                                                integer
+                </td>
+                <td>$tagsMethod</td>
+                <td class="last">The method for sanitising tags: WhiteList method = 0 (default), BlackList method = 1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attrMethod">
+                                                                                integer
+                </td>
+                <td>$attrMethod</td>
+                <td class="last">The method for sanitising attributes: WhiteList method = 0 (default), BlackList method = 1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xssAuto">
+                                                                                integer
+                </td>
+                <td>$xssAuto</td>
+                <td class="last">A flag for XSS checks. Only auto clean essentials = 0, Allow clean blacklisted tags/attr = 1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tagBlacklist">
+                                                                                array
+                </td>
+                <td>$tagBlacklist</td>
+                <td class="last">The list of the default blacklisted tags.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attrBlacklist">
+                                                                                array
+                </td>
+                <td>$attrBlacklist</td>
+                <td class="last">The list of the default blacklisted tag attributes. All event handlers implicit.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $tagsArray = array(), array $attrArray = array(), integer $tagsMethod = self::USE_BLACK_LIST, integer $attrMethod = self::USE_BLACK_LIST, integer $xssAuto = 1)
+        
+                                            <p>Constructor for inputFilter class. Only first parameter is required.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isBadAttribute">isBadAttribute</a>(array $attrSubSet)
+        
+                                            <p>Function to determine if contents of an attribute are safe</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(string $source)
+        
+                                            <p>Internal method to iteratively remove all unwanted tags and attributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_decode">decode</a>(string $source)
+        
+                                            <p>Try to convert to plaintext</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTagsMethod">getTagsMethod</a>()
+        
+                                            <p>getTagsMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTagsMethod">setTagsMethod</a>(int $tagsMethod)
+        
+                                            <p>setTagsMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttrMethod">getAttrMethod</a>()
+        
+                                            <p>getAttrMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttrMethod">setAttrMethod</a>(int $attrMethod)
+        
+                                            <p>setAttrMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getXssMethod">getXssMethod</a>()
+        
+                                            <p>getXssAuto</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setXssMethod">setXssMethod</a>(int $xssAuto)
+        
+                                            <p>setXssAuto</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L123">line 123</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $tagsArray = array(), array $attrArray = array(), integer $tagsMethod = self::USE_BLACK_LIST, integer $attrMethod = self::USE_BLACK_LIST, integer $xssAuto = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor for inputFilter class. Only first parameter is required.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$tagsArray</td>
+                <td>List of user-defined tags</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attrArray</td>
+                <td>List of user-defined attributes</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$tagsMethod</td>
+                <td>WhiteList method = 0, BlackList method = 1</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$attrMethod</td>
+                <td>WhiteList method = 0, BlackList method = 1</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$xssAuto</td>
+                <td>Only auto clean essentials = 0, Allow clean blacklisted tags/attr = 1</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBadAttribute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L146">line 146</a></div>
+        <code>        static            boolean
+    <strong>isBadAttribute</strong>(array $attrSubSet)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Function to determine if contents of an attribute are safe</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attrSubSet</td>
+                <td>A 2 element array for attribute's name, value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if bad code is detected</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L170">line 170</a></div>
+        <code>                    string
+    <strong>remove</strong>(string $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Internal method to iteratively remove all unwanted tags and attributes</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td>Input string to be 'cleaned'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>'Cleaned' version of input parameter</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decode">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L529">line 529</a></div>
+        <code>                    string
+    <strong>decode</strong>(string $source)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Try to convert to plaintext</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td>The source string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Plaintext string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTagsMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L629">line 629</a></div>
+        <code>                    int
+    <strong>getTagsMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getTagsMethod</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTagsMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L641">line 641</a></div>
+        <code>                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+    <strong>setTagsMethod</strong>(int $tagsMethod)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setTagsMethod</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$tagsMethod</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttrMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L653">line 653</a></div>
+        <code>                    int
+    <strong>getAttrMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getAttrMethod</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttrMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L665">line 665</a></div>
+        <code>                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+    <strong>setAttrMethod</strong>(int $attrMethod)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setAttrMethod</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$attrMethod</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getXssMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L677">line 677</a></div>
+        <code>                    int
+    <strong>getXssMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getXssAuto</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setXssMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/HtmlCleaner.php#L689">line 689</a></div>
+        <code>                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+    <strong>setXssMethod</strong>(int $xssAuto)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setXssAuto</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$xssAuto</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

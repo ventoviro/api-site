@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Event\Dispatcher | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Event_Dispatcher" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Event.html">Event</a></li>
+    
+                <li>Dispatcher</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Dispatcher
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Dispatcher</strong>        implements
+        <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Dispatcher class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEvent">setEvent</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a> $event)
+        
+                                            <p>Set an event to the dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addEvent">addEvent</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a> $event)
+        
+                                            <p>Add an event to this dispatcher, only if it is not existing.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasEvent">hasEvent</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        
+                                            <p>Tell if the given event has been added to this dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEvent">getEvent</a>(string $name, mixed $default = null)
+        
+                                            <p>Get the event object identified by the given name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeEvent">removeEvent</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        
+                                            <p>Remove an event from this dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEvents">getEvents</a>()
+        
+                                            <p>Get the registered events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearEvents">clearEvents</a>()
+        
+                                            <p>Clear all events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_countEvents">countEvents</a>()
+        
+                                            <p>Count the number of registered event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addListener">addListener</a>(object|<a target="_blank" href="http://php.net/Closure">Closure</a> $listener, array|integer $priorities = array())
+        
+                                            <p>Add a listener to this dispatcher, only if not already registered to these events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listen">listen</a>(string $event, callable $callable, int $priority = ListenerPriority::NORMAL)
+        
+                                            <p>on</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getListenerPriority">getListenerPriority</a>(object|callable $listener, <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        
+                                            <p>Get the priority of the given listener for the given event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getListeners">getListeners</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        
+                                            <p>Get the listeners registered to the given event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasListener">hasListener</a>(object|callable $listener, <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        
+                                            <p>Tell if the given listener has been added.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeListener">removeListener</a>(object|<a target="_blank" href="http://php.net/Closure">Closure</a> $listener, <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        
+                                            <p>Remove the given listener from this dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearListeners">clearListeners</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        
+                                            <p>Clear the listeners in this dispatcher.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_countListeners">countListeners</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        
+                                            <p>Count the number of registered listeners for the given event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_triggerEvent">triggerEvent</a>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event, array $args = array())
+        
+                                            <p>Trigger an event.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L48">line 48</a></div>
+        <code>                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+    <strong>setEvent</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set an event to the dispatcher.</p>                    <p>It will replace any event with the same name.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a></td>
+                <td>$event</td>
+                <td>The event.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L64">line 64</a></div>
+        <code>                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+    <strong>addEvent</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a> $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add an event to this dispatcher, only if it is not existing.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a></td>
+                <td>$event</td>
+                <td>The event.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L83">line 83</a></div>
+        <code>                    boolean
+    <strong>hasEvent</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tell if the given event has been added to this dispatcher.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the listener has the given event, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L103">line 103</a></div>
+        <code>                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|mixed
+    <strong>getEvent</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the event object identified by the given name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The event name.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value if the event was not registered.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|mixed</td>
+            <td>The event of the default value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L123">line 123</a></div>
+        <code>                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+    <strong>removeEvent</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove an event from this dispatcher.</p>                    <p>The registered listeners will remain.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEvents">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L145">line 145</a></div>
+        <code>                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>[]
+    <strong>getEvents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the registered events.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>[]</td>
+            <td>The registered event.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearEvents">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L157">line 157</a></div>
+        <code>                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>[]
+    <strong>clearEvents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear all events.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>[]</td>
+            <td>The old events.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_countEvents">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L172">line 172</a></div>
+        <code>                    integer
+    <strong>countEvents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count the number of registered event.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The number of registered events.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addListener">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L192">line 192</a></div>
+        <code>                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+    <strong>addListener</strong>(object|<a target="_blank" href="http://php.net/Closure">Closure</a> $listener, array|integer $priorities = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a listener to this dispatcher, only if not already registered to these events.</p>                    <p>If no events are specified, it will be registered to all events matching it's methods name.
+In the case of a closure, you must specify at least one event name.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|<a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$listener</td>
+                <td>The listener</td>
+            </tr>
+                    <tr>
+                <td>array|integer</td>
+                <td>$priorities</td>
+                <td>An associative array of event names as keys
+                                       and the corresponding listener priority as values.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listen">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L262">line 262</a></div>
+        <code>                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+    <strong>listen</strong>(string $event, callable $callable, int $priority = ListenerPriority::NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>on</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getListenerPriority">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L277">line 277</a></div>
+        <code>                    mixed
+    <strong>getListenerPriority</strong>(object|callable $listener, <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the priority of the given listener for the given event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|callable</td>
+                <td>$listener</td>
+                <td>The listener.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The listener priority or null if the listener doesn't exist.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getListeners">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L301">line 301</a></div>
+        <code>                    object[]
+    <strong>getListeners</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the listeners registered to the given event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td>An array of registered listeners sorted according to their priorities.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasListener">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L332">line 332</a></div>
+        <code>                    boolean
+    <strong>hasListener</strong>(object|callable $listener, <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Tell if the given listener has been added.</p>                    <p>If an event is specified, it will tell if the listener is registered for that event.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|callable</td>
+                <td>$listener</td>
+                <td>The listener.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the listener is registered, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeListener">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L371">line 371</a></div>
+        <code>                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+    <strong>removeListener</strong>(object|<a target="_blank" href="http://php.net/Closure">Closure</a> $listener, <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove the given listener from this dispatcher.</p>                    <p>If no event is specified, it will be removed from all events it is listening to.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|<a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$listener</td>
+                <td>The listener to remove.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearListeners">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L407">line 407</a></div>
+        <code>                    <a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a>
+    <strong>clearListeners</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear the listeners in this dispatcher.</p>                    <p>If an event is specified, the listeners will be cleared only for that event.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Dispatcher.html"><abbr title="Windwalker\Event\Dispatcher">Dispatcher</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_countListeners">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L439">line 439</a></div>
+        <code>                    integer
+    <strong>countListeners</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count the number of registered listeners for the given event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The number of registered listeners for the given event.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_triggerEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Event/Dispatcher.php#L459">line 459</a></div>
+        <code>                    <a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>
+    <strong>triggerEvent</strong>(<a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string $event, array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Trigger an event.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a>|string</td>
+                <td>$event</td>
+                <td>The event object or name.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>The arguments to set in event.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/EventInterface.html"><abbr title="Windwalker\Event\EventInterface">EventInterface</abbr></a></td>
+            <td>The event after being passed through all listeners.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

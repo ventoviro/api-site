@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Profiler\Profiler | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Profiler_Profiler" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Profiler.html">Profiler</a></li>
+    
+                <li>Profiler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Profiler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Profiler</strong>        implements
+        <a href="../../Windwalker/Profiler/ProfilerInterface.html"><abbr title="Windwalker\Profiler\ProfilerInterface">ProfilerInterface</abbr></a>, <a target="_blank" href="http://php.net/Countable">Countable</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class Profiler</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, <a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a> $renderer = null, array $points = array(), boolean $memoryRealUsage = null)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPoint">setPoint</a>(<a href="../../Windwalker/Profiler/Point/PointInterface.html"><abbr title="Windwalker\Profiler\Point\PointInterface">PointInterface</abbr></a> $point)
+        
+                                            <p>set Point</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get the name of this profiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/ProfilerInterface.html"><abbr title="Windwalker\Profiler\ProfilerInterface">ProfilerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mark">mark</a>(string $name, array|<a href="../../Windwalker/Profiler/Point/CollectorInterface.html"><abbr title="Windwalker\Profiler\Point\CollectorInterface">CollectorInterface</abbr></a> $data = array())
+        
+                                            <p>Mark a profile point.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPoint">hasPoint</a>(string $name)
+        
+                                            <p>Check if the profiler has marked the given point.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Profiler\Point\ProfilerPointInterface">ProfilerPointInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPoint">getPoint</a>(string $name)
+        
+                                            <p>Get the point identified by the given name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimeBetween">getTimeBetween</a>(string $first, string $second)
+        
+                                            <p>Get the elapsed time in seconds between the two points.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMemoryBetween">getMemoryBetween</a>(string $first, string $second)
+        
+                                            <p>Get the amount of allocated memory in bytes between the two points.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMemoryPeakBytes">getMemoryPeakBytes</a>()
+        
+                                            <p>Get the memory peak in bytes during the profiler run.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMemoryRealUsage">getMemoryRealUsage</a>()
+        
+                                            <p>Method to get property MemoryRealUsage</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Profiler\Point\ProfilerPointInterface">ProfilerPointInterface</abbr>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPoints">getPoints</a>()
+        
+                                            <p>Get the points in this profiler (from the first to the last).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRenderer">setRenderer</a>(<a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a> $renderer)
+        
+                                            <p>Set the renderer to render this profiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRenderer">getRenderer</a>()
+        
+                                            <p>Get the currently used renderer in this profiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>()
+        
+                                            <p>Render the profiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Cast the profiler to a string using the renderer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Get an iterator on the profiler points.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Count the number of points in this profiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_useMemoryRealUsage">useMemoryRealUsage</a>(boolean $memoryRealUsage)
+        
+                                            <p>Method to set property memoryRealUsage</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L91">line 91</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $name, <a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a> $renderer = null, array $points = array(), boolean $memoryRealUsage = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The profiler name.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a></td>
+                <td>$renderer</td>
+                <td>The renderer.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$points</td>
+                <td>An array of profile points.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$memoryRealUsage</td>
+                <td>True to get the real memory usage.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPoint">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L119">line 119</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a>
+    <strong>setPoint</strong>(<a href="../../Windwalker/Profiler/Point/PointInterface.html"><abbr title="Windwalker\Profiler\Point\PointInterface">PointInterface</abbr></a> $point)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set Point</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Profiler/Point/PointInterface.html"><abbr title="Windwalker\Profiler\Point\PointInterface">PointInterface</abbr></a></td>
+                <td>$point</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L162">line 162</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the name of this profiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The name of this profiler.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mark">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L177">line 177</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/ProfilerInterface.html"><abbr title="Windwalker\Profiler\ProfilerInterface">ProfilerInterface</abbr></a>
+    <strong>mark</strong>(string $name, array|<a href="../../Windwalker/Profiler/Point/CollectorInterface.html"><abbr title="Windwalker\Profiler\Point\CollectorInterface">CollectorInterface</abbr></a> $data = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mark a profile point.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The profile point name.</td>
+            </tr>
+                    <tr>
+                <td>array|<a href="../../Windwalker/Profiler/Point/CollectorInterface.html"><abbr title="Windwalker\Profiler\Point\CollectorInterface">CollectorInterface</abbr></a></td>
+                <td>$data</td>
+                <td>The data collection of this point.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/ProfilerInterface.html"><abbr title="Windwalker\Profiler\ProfilerInterface">ProfilerInterface</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>If the point already exists.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPoint">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L226">line 226</a></div>
+        <code>                    boolean
+    <strong>hasPoint</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if the profiler has marked the given point.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the point.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the profiler has marked the point, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPoint">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L238">line 238</a></div>
+        <code>                    <abbr title="Windwalker\Profiler\Point\ProfilerPointInterface">ProfilerPointInterface</abbr>
+    <strong>getPoint</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the point identified by the given name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the point.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Profiler\Point\ProfilerPointInterface">ProfilerPointInterface</abbr></td>
+            <td>The profile point or the default value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimeBetween">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L258">line 258</a></div>
+        <code>                    float
+    <strong>getTimeBetween</strong>(string $first, string $second)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the elapsed time in seconds between the two points.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$first</td>
+                <td>The name of the first point.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$second</td>
+                <td>The name of the second point.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float</td>
+            <td>The elapsed time between these points in seconds.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td>If the points were not marked.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMemoryBetween">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L286">line 286</a></div>
+        <code>                    integer
+    <strong>getMemoryBetween</strong>(string $first, string $second)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the amount of allocated memory in bytes between the two points.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$first</td>
+                <td>The name of the first point.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$second</td>
+                <td>The name of the second point.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The amount of allocated memory between these points in bytes.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td>If the points were not marked.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMemoryPeakBytes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L309">line 309</a></div>
+        <code>                    integer
+    <strong>getMemoryPeakBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the memory peak in bytes during the profiler run.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The memory peak in bytes.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMemoryRealUsage">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L319">line 319</a></div>
+        <code>                    boolean
+    <strong>getMemoryRealUsage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property MemoryRealUsage</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPoints">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L329">line 329</a></div>
+        <code>                    <abbr title="Windwalker\Profiler\Point\ProfilerPointInterface">ProfilerPointInterface</abbr>[]
+    <strong>getPoints</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the points in this profiler (from the first to the last).</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Profiler\Point\ProfilerPointInterface">ProfilerPointInterface</abbr>[]</td>
+            <td>An array of points in this profiler.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRenderer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L341">line 341</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a>
+    <strong>setRenderer</strong>(<a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a> $renderer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the renderer to render this profiler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a></td>
+                <td>$renderer</td>
+                <td>The renderer.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a></td>
+            <td>This method is chainable.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRenderer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L353">line 353</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a>
+    <strong>getRenderer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently used renderer in this profiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Renderer/ProfilerRendererInterface.html"><abbr title="Windwalker\Profiler\Renderer\ProfilerRendererInterface">ProfilerRendererInterface</abbr></a></td>
+            <td>The renderer.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L363">line 363</a></div>
+        <code>                    string
+    <strong>render</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render the profiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The rendered profiler.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L373">line 373</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Cast the profiler to a string using the renderer.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The rendered profiler.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L383">line 383</a></div>
+        <code>                    <a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get an iterator on the profiler points.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/ArrayIterator">ArrayIterator</a></td>
+            <td>An iterator on the profiler points.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L393">line 393</a></div>
+        <code>                    integer
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count the number of points in this profiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The number of points.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useMemoryRealUsage">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Profiler.php#L405">line 405</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a>
+    <strong>useMemoryRealUsage</strong>(boolean $memoryRealUsage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property memoryRealUsage</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$memoryRealUsage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

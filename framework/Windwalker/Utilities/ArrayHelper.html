@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Utilities\ArrayHelper | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Utilities_ArrayHelper" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Utilities.html">Utilities</a></li>
+    
+                <li>ArrayHelper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ArrayHelper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ArrayHelper</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The ArrayHelper class</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toObject">toObject</a>(array $array, string $class = &#039;stdClass&#039;)
+        
+                                            <p>Utility function to map an array to a stdClass object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>(mixed $data, bool $recursive = false)
+        
+                                            <p>Utility function to convert all types to an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumn">getColumn</a>(array $array, string $index)
+        
+                                            <p>Extracts a column from an array of arrays or objects</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValue">getValue</a>(array $source, string $name, mixed $default = null, string $type = &#039;&#039;)
+        
+                                            <p>Utility function to return a value from a named array or a specified default</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setValue">setValue</a>(mixed $array, string $key, mixed $value)
+        
+                                            <p>Set a value into array or object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_invert">invert</a>(array $array)
+        
+                                            <p>Takes an associative array of arrays and inverts the array keys to values using the array values as keys.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAssociative">isAssociative</a>(array $array)
+        
+                                            <p>Method to determine if an array is an associative array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_group">group</a>(array $source, string $key = null)
+        
+                                            <p>Re-group an array to create a reverse lookup of an array of scalars, arrays or objects.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pivot">pivot</a>(array $array)
+        
+                                            <p>Pivot Array, separate by key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortObjects">sortObjects</a>(array $a, mixed $k, mixed $direction = 1, mixed $caseSensitive = true, mixed $locale = false)
+        
+                                            <p>Utility function to sort an array of objects on a given field</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayUnique">arrayUnique</a>(array $array)
+        
+                                            <p>Multidimensional array safe unique test</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arraySearch">arraySearch</a>(string $needle, array $haystack, boolean $caseSensitive = true)
+        
+                                            <p>An improved array_search that allows for partial matching
+of strings values in associative arrays.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>(array $array1, array $array2, boolean $recursive = true)
+        
+                                            <p>array<em>merge</em>recursive does indeed merge arrays, but it converts values with duplicate
+keys to arrays rather than overwriting the value in the first array with the duplicate
+value in the second array, as array<em>merge does. I.e., with array</em>merge_recursive,
+this happens (documented behavior):</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getByPath">getByPath</a>(mixed $data, mixed $path, string $separator = &#039;.&#039;)
+        
+                                            <p>Get data from array or object by path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setByPath">setByPath</a>(mixed $data, string $path, mixed $value, string $separator = &#039;.&#039;, string $storeType = &#039;array&#039;)
+        
+                                            <p>setByPath</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dump">dump</a>(mixed $data, int $level = 5)
+        
+                                            <p>Recursive dump variables and limit by level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flatten">flatten</a>(array|object $array, string $separator = &#039;.&#039;, string $prefix = &#039;&#039;)
+        
+                                            <p>Method to recursively convert data to one dimension array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>(array $array, array|callable $queries = array(), boolean $strict = false, boolean $keepKey = false)
+        
+                                            <p>Query a two-dimensional array values to get second level array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_match">match</a>(array $array, array $queries, boolean $strict = false)
+        
+                                            <p>Check an array match our query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mapKey">mapKey</a>(mixed $origin, mixed $map = array())
+        
+                                            <p>Convert an Array or Object keys to new name by an array index.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_toObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L30">line 30</a></div>
+        <code>        static            object
+    <strong>toObject</strong>(array $array, string $class = &#039;stdClass&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to map an array to a stdClass object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>The array to map.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Name of the class to create</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The object mapped from the given array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L57">line 57</a></div>
+        <code>        static            array
+    <strong>toArray</strong>(mixed $data, bool $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to convert all types to an array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data to convert.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td>Recursive if data is nested.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The converted array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L97">line 97</a></div>
+        <code>        static            array
+    <strong>getColumn</strong>(array $array, string $index)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Extracts a column from an array of arrays or objects</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>The source array</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td>The index of the column or name of object property</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Column of values from the source array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValue">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L128">line 128</a></div>
+        <code>        static            mixed
+    <strong>getValue</strong>(array $source, string $name, mixed $default = null, string $type = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to return a value from a named array or a specified default</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$source</td>
+                <td>A named array or object.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The key to search for</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value to give if no key found</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>Return type for the variable (INT, FLOAT, STRING, WORD, BOOLEAN, ARRAY)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value from the source array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setValue">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L207">line 207</a></div>
+        <code>        static            mixed
+    <strong>setValue</strong>(mixed $array, string $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a value into array or object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$array</td>
+                <td>&amp;$array An array to set value.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Array key to store this value.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value which to set into array or object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Result array or object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_invert">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L248">line 248</a></div>
+        <code>        static            array
+    <strong>invert</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Takes an associative array of arrays and inverts the array keys to values using the array values as keys.</p>                    <p>Example:
+$input = array(
+    'New' => array('1000', '1500', '1750'),
+    'Used' => array('3000', '4000', '5000', '6000')
+);
+$output = ArrayHelper::invert($input);</p>
+
+<p>Output would be equal to:
+$output = array(
+    '1000' => 'New',
+    '1500' => 'New',
+    '1750' => 'New',
+    '3000' => 'Used',
+    '4000' => 'Used',
+    '5000' => 'Used',
+    '6000' => 'Used'
+);</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>The source array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The inverted array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAssociative">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L281">line 281</a></div>
+        <code>        static            boolean
+    <strong>isAssociative</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to determine if an array is an associative array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>An array to test.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the array is an associative array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_group">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L307">line 307</a></div>
+        <code>        static            array
+    <strong>group</strong>(array $source, string $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Re-group an array to create a reverse lookup of an array of scalars, arrays or objects.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$source</td>
+                <td>The source array.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Where the elements of the source array are objects or arrays, the key to pivot on.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An array of arrays grouped either on the value of the keys, or an individual key of an object or array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pivot">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L401">line 401</a></div>
+        <code>        static            array
+    <strong>pivot</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pivot Array, separate by key.</p>                    <p>From:
+        [value] => Array
+            (
+                [0] => aaa
+                [1] => bbb
+            )
+        [text] => Array
+            (
+                [0] => aaa
+                [1] => bbb
+            )
+ To:
+        [0] => Array
+            (
+                [value] => aaa
+                [text] => aaa
+            )
+        [1] => Array
+            (
+                [value] => bbb
+                [text] => bbb
+            )</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>An array with two level.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An pivoted array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortObjects">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L431">line 431</a></div>
+        <code>        static            array
+    <strong>sortObjects</strong>(array $a, mixed $k, mixed $direction = 1, mixed $caseSensitive = true, mixed $locale = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to sort an array of objects on a given field</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$a</td>
+                <td>An array of objects</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$k</td>
+                <td>The key (string) or a array of key to sort on</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$direction</td>
+                <td>Direction (integer) or an array of direction to sort in [1 = Ascending] [-1 = Descending]</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$caseSensitive</td>
+                <td>Boolean or array of booleans to let sort occur case sensitive or insensitive</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$locale</td>
+                <td>Boolean or array of booleans to let sort occur using the locale language or not</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The sorted array of objects</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayUnique">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L505">line 505</a></div>
+        <code>        static            array
+    <strong>arrayUnique</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Multidimensional array safe unique test</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>The array to make unique.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://php.net/manual/en/function.array-unique.php</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arraySearch">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L526">line 526</a></div>
+        <code>        static            mixed
+    <strong>arraySearch</strong>(string $needle, array $haystack, boolean $caseSensitive = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>An improved array_search that allows for partial matching
+of strings values in associative arrays.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$needle</td>
+                <td>The text to search for within the array.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$haystack</td>
+                <td>Associative array to search in to find $needle.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$caseSensitive</td>
+                <td>True to search case sensitive, false otherwise.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Returns the matching array $key if found, otherwise false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L571">line 571</a></div>
+        <code>        static            array
+    <strong>merge</strong>(array $array1, array $array2, boolean $recursive = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>array<em>merge</em>recursive does indeed merge arrays, but it converts values with duplicate
+keys to arrays rather than overwriting the value in the first array with the duplicate
+value in the second array, as array<em>merge does. I.e., with array</em>merge_recursive,
+this happens (documented behavior):</p>                    <p>array<em>merge</em>recursive(array('key' => 'org value'), array('key' => 'new value'));
+    => array('key' => array('org value', 'new value'));</p>
+
+<p>array<em>merge</em>recursive<em>distinct does not change the datatypes of the values in the arrays.
+Matching keys' values in the second array overwrite those in the first array, as is the
+case with array</em>merge, i.e.:</p>
+
+<p>array<em>merge</em>recursive_distinct(array('key' => 'org value'), array('key' => 'new value'));
+    => array('key' => array('new value'));</p>
+
+<p>Parameters are passed by reference, though only for performance reasons. They're not
+altered by this function.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array1</td>
+                <td>&amp;$array1   Array to be merge.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$array2</td>
+                <td>&amp;$array2   Array to be merge.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>Recursive merge, default is true.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Merged array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getByPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L603">line 603</a></div>
+        <code>        static            mixed
+    <strong>getByPath</strong>(mixed $data, mixed $path, string $separator = &#039;.&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get data from array or object by path.</p>                    <p>Example: <code>ArrayHelper::getByPath($array, 'foo.bar.yoo')</code> equals to $array['foo']['bar']['yoo'].</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>An array or object to get value.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$path</td>
+                <td>The key path.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>Separator of paths.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Found value, null if not exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setByPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L650">line 650</a></div>
+        <code>        static            boolean
+    <strong>setByPath</strong>(mixed $data, string $path, mixed $value, string $separator = &#039;.&#039;, string $storeType = &#039;array&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setByPath</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>&amp;$data</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$storeType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L729">line 729</a></div>
+        <code>        static            string
+    <strong>dump</strong>(mixed $data, int $level = 5)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Recursive dump variables and limit by level.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The variable you want to dump.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td>The level number to limit recursive loop.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Dumped data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flatten">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L830">line 830</a></div>
+        <code>        static            array
+    <strong>flatten</strong>(array|object $array, string $separator = &#039;.&#039;, string $prefix = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to recursively convert data to one dimension array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|object</td>
+                <td>$array</td>
+                <td>The array or object to convert.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The key separator.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td>Last level key prefix.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L877">line 877</a></div>
+        <code>        static            array
+    <strong>query</strong>(array $array, array|callable $queries = array(), boolean $strict = false, boolean $keepKey = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Query a two-dimensional array values to get second level array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>An array to query.</td>
+            </tr>
+                    <tr>
+                <td>array|callable</td>
+                <td>$queries</td>
+                <td>Query strings or callback, may contain Comparison Operators: '>', '>=', '&lt;', '&lt;='.
+                                   Example:
+                                   array(
+                                       'id'          => 6,   // Get all elements where id=6
+                                       'published >' => 0    // Get all elements where published>0
+                                   );</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$strict</td>
+                <td>Use strict to compare equals.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$keepKey</td>
+                <td>Keep origin array keys.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An new two-dimensional array queried.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_match">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L923">line 923</a></div>
+        <code>        static            bool
+    <strong>match</strong>(array $array, array $queries, boolean $strict = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check an array match our query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>An array to query.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queries</td>
+                <td>Query strings or callback, may contain Comparison Operators: '>', '>=', '&lt;', '&lt;='.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$strict</td>
+                <td>Use strict to compare equals.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mapKey">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/ArrayHelper.php#L979">line 979</a></div>
+        <code>        static            mixed
+    <strong>mapKey</strong>(mixed $origin, mixed $map = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert an Array or Object keys to new name by an array index.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$origin</td>
+                <td>Array or Object to convert.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$map</td>
+                <td>Array or Object index for convert.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Mapped array or object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

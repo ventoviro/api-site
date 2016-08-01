@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Html\Grid\Grid | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Html_Grid_Grid" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Html.html">Html</a></li>
+                                        <li><a href="../../../Windwalker/Html/Grid.html">Grid</a></li>
+    
+                <li>Grid</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Grid
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Grid</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Grid class to dynamically generate HTML tables.</p>            <p>This is currently a Joomla JGrid fork.</p>        </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ROW_HEAD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ROW_FOOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ROW_NORMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $attribs = array())
+        
+                                            <p>Constructor for a Grid object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(array $attribs = array())
+        
+                                            <p>create</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Magic function to render this object as a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTableAttributes">setTableAttributes</a>(array $attribs = array(), bool $replace = false)
+        
+                                            <p>Method to set the attributes for a table-tag</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTableAttributes">getTableAttributes</a>()
+        
+                                            <p>Get the Attributes of the current table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumn">addColumn</a>(string $name)
+        
+                                            <p>Add new column name to process</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumns">getColumns</a>()
+        
+                                            <p>Returns the list of internal columns</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteColumn">deleteColumn</a>(string $name)
+        
+                                            <p>Delete column by name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setColumns">setColumns</a>(array $columns)
+        
+                                            <p>Method to set a whole range of columns at once
+This can be used to re-order the columns, too</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRow">addRow</a>(array $attribs = array(), int|bool $special = self::ROW_NORMAL)
+        
+                                            <p>Adds a row to the table and sets the currently
+active row to the new row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRowAttributes">getRowAttributes</a>()
+        
+                                            <p>Method to get the attributes of the currently active row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRowAttributes">setRowAttributes</a>(array $attribs)
+        
+                                            <p>Method to set the attributes of the currently active row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getActiveRow">getActiveRow</a>()
+        
+                                            <p>Get the currently active row ID</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setActiveRow">setActiveRow</a>(int $id)
+        
+                                            <p>Set the currently active row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRowCell">setRowCell</a>(string $name, string $content, array $attribs = array(), bool $replace = true)
+        
+                                            <p>Set cell content for a specific column for the
+currently active row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRow">getRow</a>(int|bool $id = false)
+        
+                                            <p>Get all data for a row</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRows">getRows</a>(int|bool $special = false)
+        
+                                            <p>Get the IDs of all rows in the table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteRow">deleteRow</a>(int $id)
+        
+                                            <p>Delete a row from the object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toString">toString</a>()
+        
+                                            <p>Render the HTML table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L63">line 63</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $attribs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor for a Grid object</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td>Associative array of attributes for the table-tag</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L75">line 75</a></div>
+        <code>        static            <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>create</strong>(array $attribs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>create</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L87">line 87</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic function to render this object as a table.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTableAttributes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L109">line 109</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>setTableAttributes</strong>(array $attribs = array(), bool $replace = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set the attributes for a table-tag</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td>Associative array of attributes for the table-tag</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td>Replace possibly existing attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableAttributes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L130">line 130</a></div>
+        <code>                    array
+    <strong>getTableAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the Attributes of the current table</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Associative array of attributes</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L144">line 144</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>addColumn</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add new column name to process</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Internal column name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumns">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L158">line 158</a></div>
+        <code>                    array
+    <strong>getColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the list of internal columns</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>List of internal columns</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L172">line 172</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>deleteColumn</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete column by name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of the column to be deleted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setColumns">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L195">line 195</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>setColumns</strong>(array $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set a whole range of columns at once
+This can be used to re-order the columns, too</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>List of internal column names</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRow">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L213">line 213</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>addRow</strong>(array $attribs = array(), int|bool $special = self::ROW_NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a row to the table and sets the currently
+active row to the new row</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td>Associative array of attributes for the row</td>
+            </tr>
+                    <tr>
+                <td>int|bool</td>
+                <td>$special</td>
+                <td>1 for a new row in the header, 2 for a new row in the footer</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRowAttributes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L240">line 240</a></div>
+        <code>                    array
+    <strong>getRowAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the attributes of the currently active row</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Associative array of attributes</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRowAttributes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L254">line 254</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>setRowAttributes</strong>(array $attribs)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set the attributes of the currently active row</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td>Associative array of attributes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveRow">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L268">line 268</a></div>
+        <code>                    int
+    <strong>getActiveRow</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the currently active row ID</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>ID of the currently active row</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setActiveRow">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L282">line 282</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>setActiveRow</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the currently active row</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>ID of the row to be set to current</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRowCell">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L302">line 302</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>setRowCell</strong>(string $name, string $content, array $attribs = array(), bool $replace = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set cell content for a specific column for the
+currently active row</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of the column</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>Content for the cell</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td>Associative array of attributes for the td-element</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td>If false, the content is appended to the current content of the cell</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRow">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L329">line 329</a></div>
+        <code>                    array
+    <strong>getRow</strong>(int|bool $id = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all data for a row</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|bool</td>
+                <td>$id</td>
+                <td>ID of the row to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array of columns of a table row</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRows">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L355">line 355</a></div>
+        <code>                    array
+    <strong>getRows</strong>(int|bool $special = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the IDs of all rows in the table</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|bool</td>
+                <td>$special</td>
+                <td>false for the standard rows, 1 for the header rows, 2 for the footer rows</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Array of IDs</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteRow">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L381">line 381</a></div>
+        <code>                    <a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a>
+    <strong>deleteRow</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a row from the object</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>ID of the row to be deleted</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Html/Grid/Grid.html"><abbr title="Windwalker\Html\Grid\Grid">Grid</abbr></a></td>
+            <td>This object for chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Html/Grid/Grid.php#L411">line 411</a></div>
+        <code>                    string
+    <strong>toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render the HTML table</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The rendered HTML table</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

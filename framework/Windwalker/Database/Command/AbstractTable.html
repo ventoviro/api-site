@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Database\Command\AbstractTable | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Database_Command_AbstractTable" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Database.html">Database</a></li>
+                                        <li><a href="../../../Windwalker/Database/Command.html">Command</a></li>
+    
+                <li>AbstractTable</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractTable
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractTable</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class DatabaseTable</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $table, <a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a> $callback, bool $ifNotExists = true, array $options = array())
+        
+                                            <p>create</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a> $schema)
+        
+                                            <p>update</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a> $schema, bool $ifNotExists = true, array $options = array())
+        
+                                            <p>save</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_drop">drop</a>(bool $ifExists = true, string $option = &#039;&#039;)
+        
+                                            <p>drop</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>()
+        
+                                            <p>exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rename">rename</a>(string $newName, boolean $returnNew = true)
+        
+                                            <p>rename</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lock">lock</a>()
+        
+                                            <p>Locks a table in the database.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unlock">unlock</a>()
+        
+                                            <p>unlock</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_truncate">truncate</a>()
+        
+                                            <p>Method to truncate a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDetail">getDetail</a>()
+        
+                                            <p>getDetail</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumns">getColumns</a>(bool $refresh = false)
+        
+                                            <p>Get table columns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumnDetails">getColumnDetails</a>(bool $refresh = false)
+        
+                                            <p>getColumnDetails</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumnDetail">getColumnDetail</a>(string $column)
+        
+                                            <p>getColumnDetail</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasColumn">hasColumn</a>(string $column)
+        
+                                            <p>hasColumn</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumn">addColumn</a>(string $name, string $type = &#039;text&#039;, bool $signed = true, bool $allowNull = true, string $default = &#039;&#039;, string $comment = &#039;&#039;, array $options = array())
+        
+                                            <p>addColumn</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropColumn">dropColumn</a>(string $name)
+        
+                                            <p>dropColumn</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyColumn">modifyColumn</a>(string|<a href="../../../Windwalker/Database/Schema/Column.html"><abbr title="Windwalker\Database\Schema\Column">Column</abbr></a> $name, string $type = &#039;text&#039;, bool $signed = true, bool $allowNull = true, string $default = &#039;&#039;, string $comment = &#039;&#039;, array $options = array())
+        
+                                            <p>modifyColumn</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_changeColumn">changeColumn</a>(string $oldName, string|<a href="../../../Windwalker/Database/Schema/Column.html"><abbr title="Windwalker\Database\Schema\Column">Column</abbr></a> $newName, string $type = &#039;text&#039;, bool $signed = true, bool $allowNull = true, string $default = &#039;&#039;, string $comment = &#039;&#039;, array $options = array())
+        
+                                            <p>changeColumn</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addIndex">addIndex</a>(string $type, array $columns = array(), string $name = null, string $comment = null, array $options = array())
+        
+                                            <p>addIndex</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dropIndex">dropIndex</a>(string $name)
+        
+                                            <p>dropIndex</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIndexes">getIndexes</a>()
+        
+                                            <p>getIndexes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasIndex">hasIndex</a>(string $name)
+        
+                                            <p>hasIndex</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Method to get property Table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Method to set property table</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDriver">getDriver</a>()
+        
+                                            <p>Method to get property Db</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDriver">setDriver</a>(<a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        
+                                            <p>Method to set property db</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSchema">getSchema</a>()
+        
+                                            <p>getSchema</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractDatabase.html"><abbr title="Windwalker\Database\Command\AbstractDatabase">AbstractDatabase</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatabase">getDatabase</a>()
+        
+                                            <p>Method to get property Database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDatabase">setDatabase</a>(<a href="../../../Windwalker/Database/Command/AbstractDatabase.html"><abbr title="Windwalker\Database\Command\AbstractDatabase">AbstractDatabase</abbr></a> $database)
+        
+                                            <p>Method to set property database</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataType">getDataType</a>()
+        
+                                            <p>getTypeMapper</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>reset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L64">line 64</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $table, <a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L80">line 80</a></div>
+        <code>    abstract                <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>create</strong>(callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a> $callback, bool $ifNotExists = true, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>create</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifNotExists</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L89">line 89</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>update</strong>(callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a> $schema)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>update</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a></td>
+                <td>$schema</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L115">line 115</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+    <strong>save</strong>(callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a> $schema, bool $ifNotExists = true, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>save</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable|<a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a></td>
+                <td>$schema</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifNotExists</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_drop">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L142">line 142</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>drop</strong>(bool $ifExists = true, string $option = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>drop</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$ifExists</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L158">line 158</a></div>
+        <code>                    boolean
+    <strong>exists</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>exists</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rename">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L173">line 173</a></div>
+        <code>    abstract                <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+    <strong>rename</strong>(string $newName, boolean $returnNew = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>rename</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$newName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$returnNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lock">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L183">line 183</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>lock</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Locks a table in the database.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td>Returns this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unlock">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L197">line 197</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>unlock</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>unlock</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td>Returns this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_truncate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L212">line 212</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>truncate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to truncate a table.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDetail">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L224">line 224</a></div>
+        <code>                    array|boolean
+    <strong>getDetail</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDetail</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumns">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L236">line 236</a></div>
+        <code>                    array
+    <strong>getColumns</strong>(bool $refresh = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get table columns.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$refresh</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Table columns with type.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnDetails">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L248">line 248</a></div>
+        <code>    abstract                mixed
+    <strong>getColumnDetails</strong>(bool $refresh = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getColumnDetails</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$refresh</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnDetail">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L257">line 257</a></div>
+        <code>                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+    <strong>getColumnDetail</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getColumnDetail</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L271">line 271</a></div>
+        <code>                    boolean
+    <strong>hasColumn</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>hasColumn</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L289">line 289</a></div>
+        <code>    abstract                <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>addColumn</strong>(string $name, string $type = &#039;text&#039;, bool $signed = true, bool $allowNull = true, string $default = &#039;&#039;, string $comment = &#039;&#039;, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addColumn</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$signed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$allowNull</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$comment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L298">line 298</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>dropColumn</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>dropColumn</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L327">line 327</a></div>
+        <code>    abstract                <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>modifyColumn</strong>(string|<a href="../../../Windwalker/Database/Schema/Column.html"><abbr title="Windwalker\Database\Schema\Column">Column</abbr></a> $name, string $type = &#039;text&#039;, bool $signed = true, bool $allowNull = true, string $default = &#039;&#039;, string $comment = &#039;&#039;, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>modifyColumn</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Database/Schema/Column.html"><abbr title="Windwalker\Database\Schema\Column">Column</abbr></a></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$signed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$allowNull</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$comment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_changeColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L343">line 343</a></div>
+        <code>    abstract                <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>changeColumn</strong>(string $oldName, string|<a href="../../../Windwalker/Database/Schema/Column.html"><abbr title="Windwalker\Database\Schema\Column">Column</abbr></a> $newName, string $type = &#039;text&#039;, bool $signed = true, bool $allowNull = true, string $default = &#039;&#039;, string $comment = &#039;&#039;, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>changeColumn</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$oldName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Database/Schema/Column.html"><abbr title="Windwalker\Database\Schema\Column">Column</abbr></a></td>
+                <td>$newName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$signed</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$allowNull</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$comment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIndex">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L356">line 356</a></div>
+        <code>    abstract                <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>addIndex</strong>(string $type, array $columns = array(), string $name = null, string $comment = null, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addIndex</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$comment</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dropIndex">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L365">line 365</a></div>
+        <code>    abstract                <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>dropIndex</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>dropIndex</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L372">line 372</a></div>
+        <code>    abstract                array
+    <strong>getIndexes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getIndexes</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasIndex">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L381">line 381</a></div>
+        <code>                    boolean
+    <strong>hasIndex</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>hasIndex</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L401">line 401</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Table</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L418">line 418</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property table</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDriver">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L430">line 430</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a>
+    <strong>getDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Db</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDriver">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L442">line 442</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>setDriver</strong>(<a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property db</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSchema">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L454">line 454</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a>
+    <strong>getSchema</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getSchema</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Schema/Schema.html"><abbr title="Windwalker\Database\Schema\Schema">Schema</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatabase">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L490">line 490</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractDatabase.html"><abbr title="Windwalker\Database\Command\AbstractDatabase">AbstractDatabase</abbr></a>
+    <strong>getDatabase</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Database</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractDatabase.html"><abbr title="Windwalker\Database\Command\AbstractDatabase">AbstractDatabase</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDatabase">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L502">line 502</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>setDatabase</strong>(<a href="../../../Windwalker/Database/Command/AbstractDatabase.html"><abbr title="Windwalker\Database\Command\AbstractDatabase">AbstractDatabase</abbr></a> $database)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property database</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Database/Command/AbstractDatabase.html"><abbr title="Windwalker\Database\Command\AbstractDatabase">AbstractDatabase</abbr></a></td>
+                <td>$database</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataType">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L519">line 519</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a>
+    <strong>getDataType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getTypeMapper</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractTable.php#L579">line 579</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a>
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>reset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractTable.html"><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

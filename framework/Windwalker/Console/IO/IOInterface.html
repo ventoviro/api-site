@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Console\IO\IOInterface | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Console_IO_IOInterface" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Console.html">Console</a></li>
+                                        <li><a href="../../../Windwalker/Console/IO.html">IO</a></li>
+    
+                <li>IOInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            IOInterface
+                
+        </h1>
+    </div>
+
+    <p>    interface
+    <strong>IOInterface</strong>        implements
+        <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The IOInterface class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_out">out</a>(string $text = &#039;&#039;)
+        
+                                            <p>Write a string to standard output</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_out"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_in">in</a>()
+        
+                                            <p>Get a value from standard input.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_in"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_err">err</a>(string $text = &#039;&#039;)
+        
+                                            <p>Write a string to standard error output.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_err"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $default = null)
+        
+                                            <p>Gets a value from the input data.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getOption"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
+        
+                                            <p>Sets a value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_setOption"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>getOptions</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getOptions"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArgument">getArgument</a>(integer $offset, mixed $default = null)
+        
+                                            <p>getArgument</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getArgument"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArgument">setArgument</a>(integer $offset, mixed $value)
+        
+                                            <p>setArgument</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_setArgument"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArguments">getArguments</a>()
+        
+                                            <p>getArguments</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getArguments"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCalledScript">getCalledScript</a>()
+        
+                                            <p>getExecuted</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getCalledScript"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shiftArgument">shiftArgument</a>()
+        
+                                            <p>shiftArgument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unshiftArgument">unshiftArgument</a>(string $arg)
+        
+                                            <p>unshiftArgument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_popArgument">popArgument</a>()
+        
+                                            <p>popArgument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pushArgument">pushArgument</a>(string $arg)
+        
+                                            <p>pushArgument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArguments">setArguments</a>(array $args)
+        
+                                            <p>set Arguments</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColor">addColor</a>(string $name, string $fg, string $bg, array $options = array())
+        
+                                            <p>addColor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_useColor">useColor</a>(boolean $bool = true)
+        
+                                            <p>useColor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>__clone</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutputStream">setOutputStream</a>(resource $outStream)
+        
+                                            <p>setOutStream</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setErrorStream">setErrorStream</a>(resource $errorStream)
+        
+                                            <p>Method to set property errorStream</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInputStream">setInputStream</a>(resource $inputStream)
+        
+                                            <p>setInputStream</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_out">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_out"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L25">line 25</a></div>
+        <code>                    <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+    <strong>out</strong>(string $text = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write a string to standard output</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The text to display.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></td>
+            <td>Instance of $this to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_in">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_in"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L32">line 32</a></div>
+        <code>                    string
+    <strong>in</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a value from standard input.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The input string from standard input.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_err">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_err"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L41">line 41</a></div>
+        <code>                    <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+    <strong>err</strong>(string $text = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write a string to standard error output.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The text to display.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getOption"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L53">line 53</a></div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a value from the input data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of the value to get.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>Default value to return if variable does not exist.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The filtered input value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_setOption"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L65">line 65</a></div>
+        <code>                    void
+    <strong>setOption</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of the value to set.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value to assign to the input.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getOptions"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L72">line 72</a></div>
+        <code>                    string[]
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getOptions</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArgument">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getArgument"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L82">line 82</a></div>
+        <code>                    mixed
+    <strong>getArgument</strong>(integer $offset, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getArgument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArgument">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_setArgument"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L92">line 92</a></div>
+        <code>                    <a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+    <strong>setArgument</strong>(integer $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setArgument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArguments">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getArguments"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L99">line 99</a></div>
+        <code>                    string[]
+    <strong>getArguments</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getArguments</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCalledScript">
+        <div class="location">in <a href="../../../Windwalker/IO/Cli/IOInterface.html#method_getCalledScript"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/IO/Cli/IOInterface.php#L106">line 106</a></div>
+        <code>                    mixed
+    <strong>getCalledScript</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getExecuted</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shiftArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L25">line 25</a></div>
+        <code>                    string
+    <strong>shiftArgument</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>shiftArgument</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unshiftArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L34">line 34</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>unshiftArgument</strong>(string $arg)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>unshiftArgument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arg</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_popArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L41">line 41</a></div>
+        <code>                    string
+    <strong>popArgument</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>popArgument</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L50">line 50</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>pushArgument</strong>(string $arg)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>pushArgument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$arg</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArguments">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L59">line 59</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>setArguments</strong>(array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set Arguments</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColor">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L71">line 71</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>addColor</strong>(string $name, string $fg, string $bg, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addColor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The color name.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fg</td>
+                <td>Foreground color.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$bg</td>
+                <td>Background color.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Style options.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useColor">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L80">line 80</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>useColor</strong>(boolean $bool = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>useColor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$bool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L87">line 87</a></div>
+        <code>                    void
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__clone</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutputStream">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L96">line 96</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>setOutputStream</strong>(resource $outStream)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setOutStream</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$outStream</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setErrorStream">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L105">line 105</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>setErrorStream</strong>(resource $errorStream)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property errorStream</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$errorStream</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInputStream">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/IO/IOInterface.php#L114">line 114</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>setInputStream</strong>(resource $inputStream)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setInputStream</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$inputStream</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

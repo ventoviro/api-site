@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\DI\ClassMeta | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_DI_ClassMeta" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/DI.html">DI</a></li>
+    
+                <li>ClassMeta</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ClassMeta
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ClassMeta</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The ClassMeta class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $class, <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $container)
+        
+                                            <p>ClassMeta constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArgument">getArgument</a>(string $name, mixed $default = null)
+        
+                                            <p>Method to get property Argument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArgument">setArgument</a>(string $name, mixed $value)
+        
+                                            <p>Method to set property argument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeArgument">removeArgument</a>(string $name)
+        
+                                            <p>removeArgument</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArguments">getArguments</a>()
+        
+                                            <p>Method to get property Arguments</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArguments">setArguments</a>(array $arguments)
+        
+                                            <p>Method to set property arguments</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>reset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $name, array $args)
+        
+                                            <p>__call</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newInstance">newInstance</a>($args = array())
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createObject">createObject</a>($args = array())
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createSharedObject">createSharedObject</a>($args = array())
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Container
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>($value, $shared = false, $protected = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Container
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindShared">bindShared</a>($protected = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L58">line 58</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $class, <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ClassMeta constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L72">line 72</a></div>
+        <code>                    array
+    <strong>getArgument</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Argument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L95">line 95</a></div>
+        <code>                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+    <strong>setArgument</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property argument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L118">line 118</a></div>
+        <code>                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+    <strong>removeArgument</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeArgument</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArguments">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L131">line 131</a></div>
+        <code>                    array
+    <strong>getArguments</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Arguments</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArguments">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L150">line 150</a></div>
+        <code>                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+    <strong>setArguments</strong>(array $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property arguments</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L165">line 165</a></div>
+        <code>                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>reset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L180">line 180</a></div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__call</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newInstance">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L22">line 22</a></div>
+        <code>                    object
+    <strong>newInstance</strong>($args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L22">line 22</a></div>
+        <code>                    object
+    <strong>createObject</strong>($args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSharedObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L22">line 22</a></div>
+        <code>                    object
+    <strong>createSharedObject</strong>($args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L22">line 22</a></div>
+        <code>                    Container
+    <strong>bind</strong>($value, $shared = false, $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$shared</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Container</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindShared">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/ClassMeta.php#L22">line 22</a></div>
+        <code>                    Container
+    <strong>bindShared</strong>($protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Container</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

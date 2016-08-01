@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\SystemPackage\SystemPackage | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_SystemPackage_SystemPackage" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/SystemPackage.html">SystemPackage</a></li>
+    
+                <li>SystemPackage</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SystemPackage
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SystemPackage</strong>        extends <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/SystemPackage/SystemPackage.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class SystemPackage</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Windwalker\DI\ContainerAwareTrait">ContainerAwareTrait</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_boot">boot</a>()
+        
+                                            <p>initialise</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_boot"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getController">getController</a>(string $task, array|<abbr title="Windwalker\IO\Input">Input</abbr> $input = null, bool $forceNew = false)
+        
+                                            <p>getController</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getController"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(string|<a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a> $controller, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, bool $hmvc = false)
+        
+                                            <p>execute</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_execute"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dispatch">dispatch</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $next = null)
+        
+                                            <p>dispatch</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_dispatch"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeTask">executeTask</a>(string|<a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a> $task, array|<abbr title="Windwalker\IO\Input">Input</abbr> $input = null)
+        
+                                            <p>run</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_executeTask"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerProviders">registerProviders</a>(<abbr title="Windwalker\DI\Container">Container</abbr> $container)
+        
+                                            <p>Register providers.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_registerProviders"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerListeners">registerListeners</a>(<abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        
+                                            <p>registerListeners</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_registerListeners"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerCommands">registerCommands</a>(<abbr title="Windwalker\Console\Console">Console</abbr> $console)
+        
+                                            <p>Register commands to console.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_registerCommands"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMiddleware">addMiddleware</a>(callable $middleware, int $priority = PriorityQueue::NORMAL)
+        
+                                            <p>addMiddleware</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_addMiddleware"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Middleware\Chain\Psr7ChainBuilder">Psr7ChainBuilder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMiddlewareChain">getMiddlewareChain</a>()
+        
+                                            <p>getMiddlewareChain</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getMiddlewareChain"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMiddlewares">getMiddlewares</a>()
+        
+                                            <p>Method to get property Middlewares</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getMiddlewares"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMiddlewares">setMiddlewares</a>(<abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr> $middlewares)
+        
+                                            <p>Method to set property middlewares</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setMiddlewares"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadConfig">loadConfig</a>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $config)
+        
+                                            <p>loadConfiguration</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_loadConfig"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadRouting">loadRouting</a>(<a href="../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a> $router, string $group = null)
+        
+                                            <p>loadRouting</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_loadRouting"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Mvc/MvcResolver.html"><abbr title="Windwalker\Core\Mvc\MvcResolver">MvcResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMvcResolver">getMvcResolver</a>()
+        
+                                            <p>getMvcResolver</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getMvcResolver"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get bundle name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getName"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Method to set property name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setName"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $name, mixed $default = null)
+        
+                                            <p>get</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_get"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $name, mixed $value)
+        
+                                            <p>set</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_set"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFile">getFile</a>()
+        
+                                            <p>getFile</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getFile"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDir">getDir</a>()
+        
+                                            <p>getDir</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getDir"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enable">enable</a>()
+        
+                                            <p>enable</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_enable"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disable">disable</a>()
+        
+                                            <p>disable</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_disable"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isEnabled">isEnabled</a>()
+        
+                                            <p>isEnabled</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_isEnabled"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTask">getTask</a>()
+        
+                                            <p>Method to get property Task</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getTask"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTask">setTask</a>(string $task)
+        
+                                            <p>Method to set property task</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setTask"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDispatcher">getDispatcher</a>()
+        
+                                            <p>getDispatcher</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getDispatcher"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDispatcher">setDispatcher</a>(<abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        
+                                            <p>setDispatcher</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setDispatcher"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfig">getConfig</a>()
+        
+                                            <p>Method to get property Config</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getConfig"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConfig">setConfig</a>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $config)
+        
+                                            <p>Method to set property config</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setConfig"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentController">getCurrentController</a>()
+        
+                                            <p>Method to get property CurrentController</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getCurrentController"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $name)
+        
+                                            <p>__get</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Core/Package/AbstractPackage.html#method___get"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_boot">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_boot"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L116">line 116</a></div>
+        <code>                    void
+    <strong>boot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>initialise</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getController">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getController"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L148">line 148</a></div>
+        <code>                    <a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a>
+    <strong>getController</strong>(string $task, array|<abbr title="Windwalker\IO\Input">Input</abbr> $input = null, bool $forceNew = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getController</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$task</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|<abbr title="Windwalker\IO\Input">Input</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$forceNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_execute"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L183">line 183</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>execute</strong>(string|<a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a> $controller, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, bool $hmvc = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>execute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a></td>
+                <td>$controller</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$hmvc</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatch">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_dispatch"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L211">line 211</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>dispatch</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $next = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>dispatch</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$next</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeTask">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_executeTask"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L263">line 263</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>executeTask</strong>(string|<a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a> $task, array|<abbr title="Windwalker\IO\Input">Input</abbr> $input = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>run</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a></td>
+                <td>$task</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|<abbr title="Windwalker\IO\Input">Input</abbr></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerProviders">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_registerProviders"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L296">line 296</a></div>
+        <code>                    void
+    <strong>registerProviders</strong>(<abbr title="Windwalker\DI\Container">Container</abbr> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register providers.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\DI\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerListeners">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_registerListeners"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L341">line 341</a></div>
+        <code>                    void
+    <strong>registerListeners</strong>(<abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>registerListeners</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerCommands">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_registerCommands"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L383">line 383</a></div>
+        <code>                    void
+    <strong>registerCommands</strong>(<abbr title="Windwalker\Console\Console">Console</abbr> $console)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register commands to console.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Console\Console">Console</abbr></td>
+                <td>$console</td>
+                <td>Windwalker console object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMiddleware">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_addMiddleware"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L420">line 420</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>addMiddleware</strong>(callable $middleware, int $priority = PriorityQueue::NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addMiddleware</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$middleware</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMiddlewareChain">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getMiddlewareChain"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L432">line 432</a></div>
+        <code>                    <abbr title="Windwalker\Middleware\Chain\Psr7ChainBuilder">Psr7ChainBuilder</abbr>
+    <strong>getMiddlewareChain</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getMiddlewareChain</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Middleware\Chain\Psr7ChainBuilder">Psr7ChainBuilder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMiddlewares">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getMiddlewares"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L460">line 460</a></div>
+        <code>                    <abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr>
+    <strong>getMiddlewares</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Middlewares</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMiddlewares">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setMiddlewares"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L477">line 477</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>setMiddlewares</strong>(<abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr> $middlewares)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property middlewares</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></td>
+                <td>$middlewares</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadConfig">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_loadConfig"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L491">line 491</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>loadConfig</strong>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadConfiguration</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadRouting">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_loadRouting"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L532">line 532</a></div>
+        <code>                    <a href="../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>loadRouting</strong>(<a href="../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a> $router, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadRouting</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+                <td>$router</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMvcResolver">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getMvcResolver"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L554">line 554</a></div>
+        <code>                    <a href="../../Windwalker/Core/Mvc/MvcResolver.html"><abbr title="Windwalker\Core\Mvc\MvcResolver">MvcResolver</abbr></a>
+    <strong>getMvcResolver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getMvcResolver</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Mvc/MvcResolver.html"><abbr title="Windwalker\Core\Mvc\MvcResolver">MvcResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getName"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L564">line 564</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get bundle name.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Bundle ame.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setName"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L576">line 576</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_get"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L591">line 591</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_set"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L604">line 604</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>set</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFile">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getFile"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L616">line 616</a></div>
+        <code>                    string
+    <strong>getFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getFile</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDir">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getDir"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L628">line 628</a></div>
+        <code>                    string
+    <strong>getDir</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDir</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enable">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_enable"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L638">line 638</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>enable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>enable</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disable">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_disable"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L650">line 650</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>disable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>disable</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEnabled">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_isEnabled"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L662">line 662</a></div>
+        <code>                    bool
+    <strong>isEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>isEnabled</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTask">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getTask"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L674">line 674</a></div>
+        <code>                    string
+    <strong>getTask</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Task</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTask">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setTask"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L688">line 688</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>setTask</strong>(string $task)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property task</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$task</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDispatcher">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getDispatcher"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L700">line 700</a></div>
+        <code>                    <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr>
+    <strong>getDispatcher</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDispatcher</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDispatcher">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setDispatcher"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L712">line 712</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>setDispatcher</strong>(<abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setDispatcher</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getConfig"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L726">line 726</a></div>
+        <code>                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+    <strong>getConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Config</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfig">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_setConfig"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L747">line 747</a></div>
+        <code>                    <a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>setConfig</strong>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property config</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentController">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method_getCurrentController"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L759">line 759</a></div>
+        <code>                    <a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a>
+    <strong>getCurrentController</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property CurrentController</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Core/Controller/AbstractController.html"><abbr title="Windwalker\Core\Controller\AbstractController">AbstractController</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../Windwalker/Core/Package/AbstractPackage.html#method___get"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/AbstractPackage.php#L770">line 770</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__get</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

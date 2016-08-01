@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Migration\Model\BackupModel | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Migration_Model_BackupModel" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../../Windwalker/Core/Migration.html">Migration</a></li>
+                                        <li><a href="../../../../Windwalker/Core/Migration/Model.html">Model</a></li>
+    
+                <li>BackupModel</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            BackupModel
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>BackupModel</strong>        extends <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/Model/BackupModel.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The BackupModel class.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    The DatabaseModelTrait class.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Windwalker/Core/Utilities/Classes/BootableTrait.html"><abbr title="Windwalker\Core\Utilities\Classes\BootableTrait">BootableTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    The BootableTrait class.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    The MultiSingletonTrait class.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_lastBackup">
+                                                                                string
+                </td>
+                <td>$lastBackup</td>
+                <td class="last">Property lastBackup.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>(array $args)
+        
+                                            <p>getInstance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html#method_getInstance"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInstance">setInstance</a>(object $instance)
+        
+                                            <p>setInstance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html#method_setInstance"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Windwalker\Structure\Structure">Structure</abbr>|array $config = null, <abbr title="Windwalker\Structure\Structure">Structure</abbr> $state = null, mixed $source = null)
+        
+                                            <p>Instantiate the model.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method___construct"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $name, array $args = array())
+        
+                                            <p>__call</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method___call"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfig">getConfig</a>()
+        
+                                            <p>Method to get property Config</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getConfig"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConfig">setConfig</a>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $config)
+        
+                                            <p>Method to set property config</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_setConfig"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Method to get property Name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getName"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Method to set property name</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_setName"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheId">getCacheId</a>(string $id = null)
+        
+                                            <p>getStoredId</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getCacheId"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetCache">resetCache</a>()
+        
+                                            <p>resetCache</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_resetCache"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getState">getState</a>()
+        
+                                            <p>Get the model state.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getState"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setState">setState</a>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $state)
+        
+                                            <p>Set the model state.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_setState"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $key, mixed $default = null)
+        
+                                            <p>get</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_get"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Core\Model\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $key, mixed $value)
+        
+                                            <p>set</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_set"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>reset</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_reset"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p>Is a property exists or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetExists"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p>Get a property.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetGet"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p>Set a value to property.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetSet"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Unset a property.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetUnset"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $name)
+        
+                                            <p>__get</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/ModelRepository.html#method___get"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootDatabaseModelTrait">bootDatabaseModelTrait</a>(<a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> $model)
+        
+                                            <p>bootDatabaseModelTrait</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_bootDatabaseModelTrait"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDb">getDb</a>()
+        
+                                            <p>getDb</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_getDb"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDb">setDb</a>(<abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr> $db)
+        
+                                            <p>setDb</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_setDb"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transactionStart">transactionStart</a>(boolean $nested = true)
+        
+                                            <p>transactionStart</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_transactionStart"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transactionCommit">transactionCommit</a>(boolean $nested = true)
+        
+                                            <p>transactionCommit</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_transactionCommit"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transactionRollback">transactionRollback</a>(boolean $nested = true)
+        
+                                            <p>transactionRollback</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_transactionRollback"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_backup">backup</a>()
+        
+                                            <p>backup</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSQLExport">getSQLExport</a>()
+        
+                                            <p>getSQLExport</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommand">getCommand</a>()
+        
+                                            <p>Method to get property Command</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Core/Migration/Model/BackupModel.html"><abbr title="Windwalker\Core\Migration\Model\BackupModel">BackupModel</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCommand">setCommand</a>(<abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr> $command)
+        
+                                            <p>Method to set property command</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restoreLatest">restoreLatest</a>()
+        
+                                            <p>restoreLatest</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">in <a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html#method_getInstance"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Utilities/Classes/SingletonTrait.php#L32">line 32</a></div>
+        <code>        static            <a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a>
+    <strong>getInstance</strong>(array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getInstance</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInstance">
+        <div class="location">in <a href="../../../../Windwalker/Core/Utilities/Classes/SingletonTrait.html#method_setInstance"><abbr title="Windwalker\Core\Utilities\Classes\SingletonTrait">SingletonTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Utilities/Classes/SingletonTrait.php#L51">line 51</a></div>
+        <code>        static            mixed
+    <strong>setInstance</strong>(object $instance)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setInstance</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$instance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method___construct"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L84">line 84</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Windwalker\Structure\Structure">Structure</abbr>|array $config = null, <abbr title="Windwalker\Structure\Structure">Structure</abbr> $state = null, mixed $source = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Instantiate the model.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Structure\Structure">Structure</abbr>|array</td>
+                <td>$config</td>
+                <td>The model config.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+                <td>$state</td>
+                <td>The model state.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$source</td>
+                <td>The data source.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method___call"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L118">line 118</a></div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__call</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getConfig"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L145">line 145</a></div>
+        <code>                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+    <strong>getConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Config</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfig">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_setConfig"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L157">line 157</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+    <strong>setConfig</strong>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property config</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getName"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L169">line 169</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_setName"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L195">line 195</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheId">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getCacheId"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L209">line 209</a></div>
+        <code>                    string
+    <strong>getCacheId</strong>(string $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getStoredId</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetCache">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_resetCache"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L260">line 260</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+    <strong>resetCache</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>resetCache</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getState">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_getState"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L285">line 285</a></div>
+        <code>                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+    <strong>getState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the model state.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+            <td>The state object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setState">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_setState"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L297">line 297</a></div>
+        <code>                    void
+    <strong>setState</strong>(<abbr title="Windwalker\Structure\Structure">Structure</abbr> $state)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the model state.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+                <td>$state</td>
+                <td>The state object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_get"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L310">line 310</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>get</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_set"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L323">line 323</a></div>
+        <code>                    <abbr title="Windwalker\Core\Model\$this">$this</abbr>
+    <strong>set</strong>(string $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Core\Model\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_reset"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L335">line 335</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a>
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>reset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetExists"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L349">line 349</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a property exists or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetGet"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L362">line 362</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value to return.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetSet"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L376">line 376</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a value to property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method_offsetUnset"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L389">line 389</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/ModelRepository.html#method___get"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/ModelRepository.php#L401">line 401</a></div>
+        <code>                    <abbr title="Windwalker\Structure\Structure">Structure</abbr>
+    <strong>__get</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__get</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Structure\Structure">Structure</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootDatabaseModelTrait">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_bootDatabaseModelTrait"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/Traits/DatabaseModelTrait.php#L36">line 36</a></div>
+        <code>                    void
+    <strong>bootDatabaseModelTrait</strong>(<a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a> $model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>bootDatabaseModelTrait</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Windwalker/Core/Model/ModelRepository.html"><abbr title="Windwalker\Core\Model\ModelRepository">ModelRepository</abbr></a></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDb">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_getDb"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/Traits/DatabaseModelTrait.php#L47">line 47</a></div>
+        <code>                    <abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr>
+    <strong>getDb</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDb</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDb">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_setDb"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/Traits/DatabaseModelTrait.php#L69">line 69</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+    <strong>setDb</strong>(<abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setDb</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transactionStart">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_transactionStart"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/Traits/DatabaseModelTrait.php#L88">line 88</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+    <strong>transactionStart</strong>(boolean $nested = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>transactionStart</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$nested</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transactionCommit">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_transactionCommit"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/Traits/DatabaseModelTrait.php#L102">line 102</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+    <strong>transactionCommit</strong>(boolean $nested = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>transactionCommit</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$nested</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transactionRollback">
+        <div class="location">in <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html#method_transactionRollback"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Model/Traits/DatabaseModelTrait.php#L116">line 116</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a>
+    <strong>transactionRollback</strong>(boolean $nested = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>transactionRollback</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$nested</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Model/Traits/DatabaseModelTrait.html"><abbr title="Windwalker\Core\Model\Traits\DatabaseModelTrait">DatabaseModelTrait</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_backup">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/Model/BackupModel.php#L46">line 46</a></div>
+        <code>                    boolean
+    <strong>backup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>backup</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSQLExport">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/Model/BackupModel.php#L70">line 70</a></div>
+        <code>                    string
+    <strong>getSQLExport</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getSQLExport</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommand">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/Model/BackupModel.php#L82">line 82</a></div>
+        <code>                    mixed
+    <strong>getCommand</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Command</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCommand">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/Model/BackupModel.php#L94">line 94</a></div>
+        <code>                    <a href="../../../../Windwalker/Core/Migration/Model/BackupModel.html"><abbr title="Windwalker\Core\Migration\Model\BackupModel">BackupModel</abbr></a>
+    <strong>setCommand</strong>(<abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr> $command)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property command</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Core/Migration/Model/BackupModel.html"><abbr title="Windwalker\Core\Migration\Model\BackupModel">BackupModel</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restoreLatest">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/Model/BackupModel.php#L106">line 106</a></div>
+        <code>                    void
+    <strong>restoreLatest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>restoreLatest</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

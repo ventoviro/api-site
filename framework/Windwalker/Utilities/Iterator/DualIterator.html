@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Utilities\Iterator\DualIterator | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Utilities_Iterator_DualIterator" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Utilities.html">Utilities</a></li>
+                                        <li><a href="../../../Windwalker/Utilities/Iterator.html">Iterator</a></li>
+    
+                <li>DualIterator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DualIterator
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DualIterator</strong>        implements
+        <a target="_blank" href="http://php.net/Iterator">Iterator</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The DualIterator class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CURRENT_LHS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CURRENT_RHS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CURRENT_ARRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CURRENT_0</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KEY_LHS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KEY_RHS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KEY_ARRAY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>KEY_0</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEFAULT_FLAGS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a target="_blank" href="http://php.net/Iterator">Iterator</a> $lhs, <a target="_blank" href="http://php.net/Iterator">Iterator</a> $rhs, int $flags = 51)
+        
+                                            <p>construct iterator from two iterators</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLHS">getLHS</a>()
+        
+                                            <p>Get lhs.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRHS">getRHS</a>()
+        
+                                            <p>Get rhs.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFlags">setFlags</a>(int $flags)
+        
+                                            <p>Set flags.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFlags">getFlags</a>()
+        
+                                            <p>Get flag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rewind">rewind</a>()
+        
+                                            <p>Rewind both inner iterators</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_valid">valid</a>()
+        
+                                            <p>Is valid.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_current">current</a>()
+        
+                                            <p>Get current item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_key">key</a>()
+        
+                                            <p>Get current key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_next">next</a>()
+        
+                                            <p>Move both inner iterators forward</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_areIdentical">areIdentical</a>()
+        
+                                            <p>Are Identical.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_areEqual">areEqual</a>()
+        
+                                            <p>Are equal.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compareIterators">compareIterators</a>(<a target="_blank" href="http://php.net/Iterator">Iterator</a> $lhs, <a target="_blank" href="http://php.net/Iterator">Iterator</a> $rhs, boolean $identical = false)
+        
+                                            <p>Compare two iterators.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L60">line 60</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a target="_blank" href="http://php.net/Iterator">Iterator</a> $lhs, <a target="_blank" href="http://php.net/Iterator">Iterator</a> $rhs, int $flags = 51)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>construct iterator from two iterators</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$lhs</td>
+                <td>Left  Hand Side Iterator</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$rhs</td>
+                <td>Right Hand Side Iterator</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$flags</td>
+                <td>Iteration flags</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLHS">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L72">line 72</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>
+    <strong>getLHS</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get lhs.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+            <td>Left Hand Side Iterator</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRHS">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L82">line 82</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>
+    <strong>getRHS</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get rhs.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+            <td>Right Hand Side Iterator</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFlags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L94">line 94</a></div>
+        <code>                    void
+    <strong>setFlags</strong>(int $flags)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set flags.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$flags</td>
+                <td>new flags</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFlags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L104">line 104</a></div>
+        <code>                    int
+    <strong>getFlags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get flag.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>Current flags</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L114">line 114</a></div>
+        <code>                    void
+    <strong>rewind</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Rewind both inner iterators</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_valid">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L125">line 125</a></div>
+        <code>                    boolean
+    <strong>valid</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is valid.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>whether both inner iterators are valid</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_current">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L135">line 135</a></div>
+        <code>                    mixed
+    <strong>current</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current item.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>current value depending on CURRENT_* flags</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_key">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L156">line 156</a></div>
+        <code>                    mixed
+    <strong>key</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get current key.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>current value depending on KEY_* flags</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_next">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L177">line 177</a></div>
+        <code>                    void
+    <strong>next</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Move both inner iterators forward</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_areIdentical">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L189">line 189</a></div>
+        <code>                    boolean
+    <strong>areIdentical</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Are Identical.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Whether both inner iterators are valid and have identical
+                current and key values or both are non valid.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_areEqual">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L203">line 203</a></div>
+        <code>                    boolean
+    <strong>areEqual</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Are equal.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>whether both inner iterators are valid and have equal current
+and key values or both are non valid.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compareIterators">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Iterator/DualIterator.php#L223">line 223</a></div>
+        <code>        static            boolean
+    <strong>compareIterators</strong>(<a target="_blank" href="http://php.net/Iterator">Iterator</a> $lhs, <a target="_blank" href="http://php.net/Iterator">Iterator</a> $rhs, boolean $identical = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compare two iterators.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$lhs</td>
+                <td>Left  Hand Side Iterator</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+                <td>$rhs</td>
+                <td>Right Hand Side Iterator</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$identical</td>
+                <td>Whether to use areEqual() or areIdentical()</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>whether both iterators are equal/identical</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

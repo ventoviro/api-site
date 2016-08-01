@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Http\Helper\HeaderHelper | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Http_Helper_HeaderHelper" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Http.html">Http</a></li>
+                                        <li><a href="../../../Windwalker/Http/Helper.html">Helper</a></li>
+    
+                <li>HeaderHelper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            HeaderHelper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>HeaderHelper</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The HeaderHelper class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValue">getValue</a>(array $headers, string $name, mixed $default = null)
+        
+                                            <p>Get header value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidName">isValidName</a>(mixed $name)
+        
+                                            <p>Check whether or not a header name is valid.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>(string $value)
+        
+                                            <p>Method to remove invalid CRLF injection from header value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidValue">isValidValue</a>($value)
+        
+                                            <p>Method to validate a header value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidProtocolVersion">isValidProtocolVersion</a>(string $version)
+        
+                                            <p>Method to validate protocol version format.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allToArray">allToArray</a>(mixed $value)
+        
+                                            <p>Convert values to array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayOnlyContainsString">arrayOnlyContainsString</a>(array $array)
+        
+                                            <p>Validate is an array only contains string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toHeaderLine">toHeaderLine</a>(array $headers, bool $toString = false)
+        
+                                            <p>Convert every header values to one line and merge multiple values with comma.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeHeaderName">normalizeHeaderName</a>(string $header)
+        
+                                            <p>Filter a header name to lowercase.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareAttachmentHeaders">prepareAttachmentHeaders</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, string $filename = null)
+        
+                                            <p>Prepare attachment headers to response object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getValue">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L33">line 33</a></div>
+        <code>        static            string
+    <strong>getValue</strong>(array $headers, string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get header value.</p>                    <p>The key will be lower case to search header value and implode array to string by comma.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>The headers wqe want to search.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name to search.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value if not found.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Found header value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L59">line 59</a></div>
+        <code>        static            boolean
+    <strong>isValidName</strong>(mixed $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check whether or not a header name is valid.</p>                    <p>This method based on phly/http</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$name</td>
+                <td>The header to validate.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Valid or not.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://tools.ietf.org/html/rfc7230#section-3.2</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L78">line 78</a></div>
+        <code>        static            string
+    <strong>filter</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to remove invalid CRLF injection from header value.</p>                    <p>Follows RFC-7230, only allows visible ASCII characters, spaces
+and tabs in header value. every new line must only contains
+a single CRLF and a space or tab after it.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>The value to filter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Filtered value.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://en.wikipedia.org/wiki/HTTP_response_splitting</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>https://tools.ietf.org/html/rfc7230</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidValue">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L131">line 131</a></div>
+        <code>        static            boolean
+    <strong>isValidValue</strong>($value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to validate a header value.</p>                    <p>Follows RFC-7230, only allows visible ASCII characters, spaces
+and tabs in header value. every new line must only contains
+a single CRLF and a space or tab after it.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Valid or not.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://en.wikipedia.org/wiki/HTTP_response_splitting</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>https://tools.ietf.org/html/rfc7230</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidProtocolVersion">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L175">line 175</a></div>
+        <code>        static            boolean
+    <strong>isValidProtocolVersion</strong>(string $version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to validate protocol version format.</p>                    <p>Only allow 1.0, 1.1 and 2.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td>Version string to validate.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Valid or not.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allToArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L192">line 192</a></div>
+        <code>        static            array
+    <strong>allToArray</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert values to array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value to convert to array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Converted array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayOnlyContainsString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L224">line 224</a></div>
+        <code>        static            boolean
+    <strong>arrayOnlyContainsString</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validate is an array only contains string.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>An array to validate.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>valid or not.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toHeaderLine">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L252">line 252</a></div>
+        <code>        static            array|string
+    <strong>toHeaderLine</strong>(array $headers, bool $toString = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert every header values to one line and merge multiple values with comma.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>Headers to convert,</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$toString</td>
+                <td>If true, will implode all header lines with line break.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td>Converted headers.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeHeaderName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L280">line 280</a></div>
+        <code>        static            string
+    <strong>normalizeHeaderName</strong>(string $header)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filter a header name to lowercase.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$header</td>
+                <td>Header name to normalize.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Normalized name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareAttachmentHeaders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Helper/HeaderHelper.php#L296">line 296</a></div>
+        <code>        static            <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>prepareAttachmentHeaders</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, string $filename = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepare attachment headers to response object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>The response object.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$filename</td>
+                <td>Download file name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

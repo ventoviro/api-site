@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Middleware\Chain\Psr7ChainBuilder | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Middleware_Chain_Psr7ChainBuilder" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Middleware.html">Middleware</a></li>
+                                        <li><a href="../../../Windwalker/Middleware/Chain.html">Chain</a></li>
+    
+                <li>Psr7ChainBuilder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Psr7ChainBuilder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Psr7ChainBuilder</strong>        extends <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>        implements
+        <a href="../../../Windwalker/Middleware/Psr7InvokableInterface.html"><abbr title="Windwalker\Middleware\Psr7InvokableInterface">Psr7InvokableInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/Psr7ChainBuilder.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Psr7ChainBuilder class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SORT_ASC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SORT_DESC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $middlewares = array(), string $sort = self::SORT_DESC)
+        
+                                            <p>ChainBuilder constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method___construct"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(mixed $middleware)
+        
+                                            <p>Add a middleware into chain.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request = null, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response = null)
+        
+                                            <p>Call chaining.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/SplStack">SplStack</a>|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStack">getStack</a>()
+        
+                                            <p>Method to get property Stack</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_getStack"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStack">setStack</a>(<a target="_blank" href="http://php.net/SplStack">SplStack</a> $stack)
+        
+                                            <p>Method to set property stack</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_setStack"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addMiddlewares">addMiddlewares</a>(array $middlewares, string $sort = self::SORT_DESC)
+        
+                                            <p>addMiddlewares</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_addMiddlewares"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEndMiddleware">setEndMiddleware</a>(<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>|callable $middleware)
+        
+                                            <p>Method to set property endMiddleware</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_setEndMiddleware"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dumpStack">dumpStack</a>()
+        
+                                            <p>dumpStack</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_dumpStack"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___invoke">__invoke</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a> $next = null)
+        
+                                            <p>Middleware logic to be invoked.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method___construct"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/ChainBuilder.php#L45">line 45</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $middlewares = array(), string $sort = self::SORT_DESC)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ChainBuilder constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$middlewares</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/Psr7ChainBuilder.php#L35">line 35</a></div>
+        <code>                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+    <strong>add</strong>(mixed $middleware)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a middleware into chain.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$middleware</td>
+                <td>The middleware, can be a object, class name, callback, or middleware object.
+                      These type will all convert to middleware object and store in chain.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/Psr7ChainBuilder.php#L105">line 105</a></div>
+        <code>                    mixed
+    <strong>execute</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request = null, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Call chaining.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStack">
+        <div class="location">in <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_getStack"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/ChainBuilder.php#L173">line 173</a></div>
+        <code>                    <a target="_blank" href="http://php.net/SplStack">SplStack</a>|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>[]
+    <strong>getStack</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Stack</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/SplStack">SplStack</a>|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStack">
+        <div class="location">in <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_setStack"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/ChainBuilder.php#L185">line 185</a></div>
+        <code>                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+    <strong>setStack</strong>(<a target="_blank" href="http://php.net/SplStack">SplStack</a> $stack)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property stack</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/SplStack">SplStack</a></td>
+                <td>$stack</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addMiddlewares">
+        <div class="location">in <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_addMiddlewares"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/ChainBuilder.php#L210">line 210</a></div>
+        <code>                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+    <strong>addMiddlewares</strong>(array $middlewares, string $sort = self::SORT_DESC)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addMiddlewares</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$middlewares</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEndMiddleware">
+        <div class="location">in <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_setEndMiddleware"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/ChainBuilder.php#L247">line 247</a></div>
+        <code>                    <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a>
+    <strong>setEndMiddleware</strong>(<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>|callable $middleware)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property endMiddleware</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>|callable</td>
+                <td>$middleware</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dumpStack">
+        <div class="location">in <a href="../../../Windwalker/Middleware/Chain/ChainBuilder.html#method_dumpStack"><abbr title="Windwalker\Middleware\Chain\ChainBuilder">ChainBuilder</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/ChainBuilder.php#L261">line 261</a></div>
+        <code>                    array
+    <strong>dumpStack</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>dumpStack</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___invoke">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/Chain/Psr7ChainBuilder.php#L66">line 66</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>__invoke</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a> $next = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Middleware logic to be invoked.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td>The request.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>The response.</td>
+            </tr>
+                    <tr>
+                <td>callable|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a></td>
+                <td>$next</td>
+                <td>The next middleware.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

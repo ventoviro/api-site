@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Database\Middleware\DbLoggingMiddleware | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Database_Middleware_DbLoggingMiddleware" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Database.html">Database</a></li>
+                                        <li><a href="../../../Windwalker/Database/Middleware.html">Middleware</a></li>
+    
+                <li>DbLoggingMiddleware</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DbLoggingMiddleware
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DbLoggingMiddleware</strong>        extends <a href="../../../Windwalker/Middleware/AbstractMiddleware.html"><abbr title="Windwalker\Middleware\AbstractMiddleware">AbstractMiddleware</abbr></a>        implements
+        <abbr title="Psr\Log\LoggerAwareInterface">LoggerAwareInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Middleware/DbLoggingMiddleware.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The DbLoggingMiddleware class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNext">getNext</a>()
+        
+                                            <p>Get next middleware.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/AbstractMiddleware.html#method_getNext"><abbr title="Windwalker\Middleware\AbstractMiddleware">AbstractMiddleware</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNext">setNext</a>(object|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a> $callable)
+        
+                                            <p>Set next middleware.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Middleware/AbstractMiddleware.html#method_setNext"><abbr title="Windwalker\Middleware\AbstractMiddleware">AbstractMiddleware</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Log\LoggerAwareInterface">LoggerAwareInterface</abbr> $logger = null)
+        
+                                            <p>DbLoggingMiddleware constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(mixed $data = null)
+        
+                                            <p>Call next middleware.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Middleware/DbLoggingMiddleware.html"><abbr title="Windwalker\Database\Middleware\DbLoggingMiddleware">DbLoggingMiddleware</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogger">setLogger</a>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        
+                                            <p>Sets a logger instance on the object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getNext">
+        <div class="location">in <a href="../../../Windwalker/Middleware/AbstractMiddleware.html#method_getNext"><abbr title="Windwalker\Middleware\AbstractMiddleware">AbstractMiddleware</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/AbstractMiddleware.php#L30">line 30</a></div>
+        <code>                    mixed|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>
+    <strong>getNext</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get next middleware.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNext">
+        <div class="location">in <a href="../../../Windwalker/Middleware/AbstractMiddleware.html#method_setNext"><abbr title="Windwalker\Middleware\AbstractMiddleware">AbstractMiddleware</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Middleware/AbstractMiddleware.php#L42">line 42</a></div>
+        <code>                    <a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a>
+    <strong>setNext</strong>(object|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a> $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set next middleware.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|<a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a></td>
+                <td>$callable</td>
+                <td>The middleware object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Middleware/MiddlewareInterface.html"><abbr title="Windwalker\Middleware\MiddlewareInterface">MiddlewareInterface</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Middleware/DbLoggingMiddleware.php#L37">line 37</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Psr\Log\LoggerAwareInterface">LoggerAwareInterface</abbr> $logger = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>DbLoggingMiddleware constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Log\LoggerAwareInterface">LoggerAwareInterface</abbr></td>
+                <td>$logger</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Middleware/DbLoggingMiddleware.php#L49">line 49</a></div>
+        <code>                    mixed
+    <strong>execute</strong>(mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Call next middleware.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogger">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Middleware/DbLoggingMiddleware.php#L83">line 83</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Middleware/DbLoggingMiddleware.html"><abbr title="Windwalker\Database\Middleware\DbLoggingMiddleware">DbLoggingMiddleware</abbr></a>
+    <strong>setLogger</strong>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a logger instance on the object</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+                <td>$logger</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Middleware/DbLoggingMiddleware.html"><abbr title="Windwalker\Database\Middleware\DbLoggingMiddleware">DbLoggingMiddleware</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Router\MainRouter | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Router_MainRouter" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Router.html">Router</a></li>
+    
+                <li>MainRouter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            MainRouter
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>MainRouter</strong>        extends <abbr title="Windwalker\Router\Router">Router</abbr>        implements
+        <a href="../../../Windwalker/Core/Router/RouteBuilderInterface.html"><abbr title="Windwalker\Core\Router\RouteBuilderInterface">RouteBuilderInterface</abbr></a>, <abbr title="Windwalker\Event\DispatcherAwareInterface">DispatcherAwareInterface</abbr>, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Router class.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Windwalker\Event\DispatcherAwareTrait">DispatcherAwareTrait</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    The RouteBuilderTrait class.
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_route">route</a>(string $route, array $queries = array(), string $type = MainRouter::TYPE_PATH)
+        
+                                            <p>build</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fullRoute">fullRoute</a>(string $route, array $queries = array())
+        
+                                            <p>fullRoute</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html#method_fullRoute"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rawRoute">rawRoute</a>(string $route, array $queries = array())
+        
+                                            <p>rawRoute</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html#method_rawRoute"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escape">escape</a>(string $text)
+        
+                                            <p>escape</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html#method_escape"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Windwalker\Router\Matcher\MatcherInterface">MatcherInterface</abbr> $matcher, <abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_build">build</a>(string $route, array $queries = array(), string $type = MainRouter::TYPE_RAW)
+        
+                                            <p>build</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Router\Route">Route</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_match">match</a>(string $rawRoute, string $method = &#039;GET&#039;, array $options = array())
+        
+                                            <p>match</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addBase">addBase</a>(string $uri, string $path = &#039;path&#039;)
+        
+                                            <p>addBase</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchControllerSuffix">fetchControllerSuffix</a>(string $method = &#039;GET&#039;, array $customSuffix = array())
+        
+                                            <p>Get the controller class suffix string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Router\Route">Route</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRouteByConfig">addRouteByConfig</a>(string $name, array $route, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null, string $prefix = &#039;/&#039;)
+        
+                                            <p>addRouteByConfig</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadRoutingFiles">loadRoutingFiles</a>(array $files)
+        
+                                            <p>loadRoutingFromFiles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadRoutingFile">loadRoutingFile</a>(array $file)
+        
+                                            <p>loadRoutingFromFile</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerRawRouting">registerRawRouting</a>(array $routes, <a href="../../../Windwalker/Core/Package/PackageResolver.html"><abbr title="Windwalker\Core\Package\PackageResolver">PackageResolver</abbr></a> $resolver)
+        
+                                            <p>loadRawRouting</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRouteByConfigs">addRouteByConfigs</a>(array $routes, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null)
+        
+                                            <p>addRouteByConfigs</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRouteFromFile">addRouteFromFile</a>(string $file, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null)
+        
+                                            <p>addRouteByFile</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRouteFromFiles">addRouteFromFiles</a>(array $files, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null)
+        
+                                            <p>addRouteByFile</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHttpMethodSuffix">setHttpMethodSuffix</a>(string $method, string $suffix)
+        
+                                            <p>Set a controller class suffix for a given HTTP method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSuffixMap">getSuffixMap</a>()
+        
+                                            <p>Method to get property SuffixMap</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSuffixMap">setSuffixMap</a>(array $suffixMap)
+        
+                                            <p>Method to set property suffixMap</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getController">getController</a>()
+        
+                                            <p>Method to get property Controller</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Uri\UriData">UriData</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUri">getUri</a>()
+        
+                                            <p>Method to get property Uri</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUri">setUri</a>(<abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri)
+        
+                                            <p>Method to set property uri</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Router\Route">Route</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMatched">getMatched</a>()
+        
+                                            <p>Method to get property Matched</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMatched">setMatched</a>(<abbr title="Windwalker\Router\Route">Route</abbr> $matched)
+        
+                                            <p>Method to set property matched</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addListener">addListener</a>(object|<a target="_blank" href="http://php.net/Closure">Closure</a> $listener, array|integer $priorities = array())
+        
+                                            <p>Add a listener to this dispatcher, only if not already registered to these events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listen">listen</a>(string $event, callable $callable, int $priority = ListenerPriority::NORMAL)
+        
+                                            <p>on</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_route">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L186">line 186</a></div>
+        <code>                    string
+    <strong>route</strong>(string $route, array $queries = array(), string $type = MainRouter::TYPE_PATH)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>build</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queries</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/OutOfRangeException">OutOfRangeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fullRoute">
+        <div class="location">in <a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html#method_fullRoute"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/RouteBuilderTrait.php#L41">line 41</a></div>
+        <code>                    string
+    <strong>fullRoute</strong>(string $route, array $queries = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>fullRoute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queries</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rawRoute">
+        <div class="location">in <a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html#method_rawRoute"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/RouteBuilderTrait.php#L54">line 54</a></div>
+        <code>                    string
+    <strong>rawRoute</strong>(string $route, array $queries = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>rawRoute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queries</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escape">
+        <div class="location">in <a href="../../../Windwalker/Core/Router/RouteBuilderTrait.html#method_escape"><abbr title="Windwalker\Core\Router\RouteBuilderTrait">RouteBuilderTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/RouteBuilderTrait.php#L66">line 66</a></div>
+        <code>                    string
+    <strong>escape</strong>(string $text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>escape</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L90">line 90</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Windwalker\Router\Matcher\MatcherInterface">MatcherInterface</abbr> $matcher, <abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Router\Matcher\MatcherInterface">MatcherInterface</abbr></td>
+                <td>$matcher</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Uri\UriData">UriData</abbr></td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_build">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L110">line 110</a></div>
+        <code>                    string
+    <strong>build</strong>(string $route, array $queries = array(), string $type = MainRouter::TYPE_RAW)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>build</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$route</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queries</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_match">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L221">line 221</a></div>
+        <code>                    <abbr title="Windwalker\Router\Route">Route</abbr>
+    <strong>match</strong>(string $rawRoute, string $method = &#039;GET&#039;, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>match</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$rawRoute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Router\Route">Route</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Router\Exception\RouteNotFoundException">RouteNotFoundException</abbr></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addBase">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L284">line 284</a></div>
+        <code>                    string
+    <strong>addBase</strong>(string $uri, string $path = &#039;path&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addBase</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchControllerSuffix">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L305">line 305</a></div>
+        <code>                    string
+    <strong>fetchControllerSuffix</strong>(string $method = &#039;GET&#039;, array $customSuffix = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the controller class suffix string.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$customSuffix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Router\Exception\RouteNotFoundException">RouteNotFoundException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRouteByConfig">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L360">line 360</a></div>
+        <code>                    <abbr title="Windwalker\Router\Route">Route</abbr>
+    <strong>addRouteByConfig</strong>(string $name, array $route, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null, string $prefix = &#039;/&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addRouteByConfig</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$route</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Router\Route">Route</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadRoutingFiles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L413">line 413</a></div>
+        <code>        static            array
+    <strong>loadRoutingFiles</strong>(array $files)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadRoutingFromFiles</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadRoutingFile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L437">line 437</a></div>
+        <code>        static            array
+    <strong>loadRoutingFile</strong>(array $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadRoutingFromFile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerRawRouting">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L450">line 450</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>registerRawRouting</strong>(array $routes, <a href="../../../Windwalker/Core/Package/PackageResolver.html"><abbr title="Windwalker\Core\Package\PackageResolver">PackageResolver</abbr></a> $resolver)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadRawRouting</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$routes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Package/PackageResolver.html"><abbr title="Windwalker\Core\Package\PackageResolver">PackageResolver</abbr></a></td>
+                <td>$resolver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRouteByConfigs">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L489">line 489</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>addRouteByConfigs</strong>(array $routes, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addRouteByConfigs</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$routes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRouteFromFile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L507">line 507</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>addRouteFromFile</strong>(string $file, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addRouteByFile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRouteFromFiles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L522">line 522</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>addRouteFromFiles</strong>(array $files, string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addRouteByFile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHttpMethodSuffix">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L540">line 540</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>setHttpMethodSuffix</strong>(string $method, string $suffix)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a controller class suffix for a given HTTP method.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>The HTTP method for which to set the class suffix.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suffix</td>
+                <td>The class suffix to use when fetching the controller name for a given request.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td>Returns itself to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSuffixMap">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L552">line 552</a></div>
+        <code>                    array
+    <strong>getSuffixMap</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property SuffixMap</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSuffixMap">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L564">line 564</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>setSuffixMap</strong>(array $suffixMap)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property suffixMap</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$suffixMap</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getController">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L576">line 576</a></div>
+        <code>                    string
+    <strong>getController</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Controller</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L586">line 586</a></div>
+        <code>                    <abbr title="Windwalker\Uri\UriData">UriData</abbr>
+    <strong>getUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Uri</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Uri\UriData">UriData</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L603">line 603</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>setUri</strong>(<abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property uri</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Uri\UriData">UriData</abbr></td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMatched">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L629">line 629</a></div>
+        <code>                    <abbr title="Windwalker\Router\Route">Route</abbr>
+    <strong>getMatched</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Matched</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Router\Route">Route</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMatched">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L641">line 641</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>setMatched</strong>(<abbr title="Windwalker\Router\Route">Route</abbr> $matched)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property matched</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Router\Route">Route</abbr></td>
+                <td>$matched</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addListener">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L663">line 663</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>addListener</strong>(object|<a target="_blank" href="http://php.net/Closure">Closure</a> $listener, array|integer $priorities = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a listener to this dispatcher, only if not already registered to these events.</p>                    <p>If no events are specified, it will be registered to all events matching it's methods name.
+In the case of a closure, you must specify at least one event name.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object|<a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$listener</td>
+                <td>The listener</td>
+            </tr>
+                    <tr>
+                <td>array|integer</td>
+                <td>$priorities</td>
+                <td>An associative array of event names as keys
+                                       and the corresponding listener priority as values.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listen">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Router/MainRouter.php#L679">line 679</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a>
+    <strong>listen</strong>(string $event, callable $callable, int $priority = ListenerPriority::NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>on</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Router/MainRouter.html"><abbr title="Windwalker\Core\Router\MainRouter">MainRouter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

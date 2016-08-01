@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Http\Request\ServerRequestFactory | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Http_Request_ServerRequestFactory" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Http.html">Http</a></li>
+                                        <li><a href="../../../Windwalker/Http/Request.html">Request</a></li>
+    
+                <li>ServerRequestFactory</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ServerRequestFactory
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ServerRequestFactory</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The ServerRequestFactory class.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_apacheRequestHeaders">
+                    static                                                            callable
+                </td>
+                <td>$apacheRequestHeaders</td>
+                <td class="last">Function name to get apache request headers. This property is for test use.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createFromGlobals">createFromGlobals</a>(array $server = array(), array $query = array(), array $parsedBody = null, array $cookies = array(), array $files = array())
+        
+                                            <p>Create a request from the supplied superglobal values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createFromUri">createFromUri</a>(string $uri, string $script = null, array $server = array(), array $query = array(), array $parsedBody = null, array $cookies = array(), array $files = array())
+        
+                                            <p>createFromUri</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareServers">prepareServers</a>(array $server)
+        
+                                            <p>Prepare the $_SERVER variables.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Psr\Http\Message\UploadedFileInterface">UploadedFileInterface</abbr>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareFiles">prepareFiles</a>(array $files)
+        
+                                            <p>Normalize uploaded files</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareHeaders">prepareHeaders</a>(array $server)
+        
+                                            <p>Get headers from $_SERVER.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareUri">prepareUri</a>(array $server, array $headers)
+        
+                                            <p>Marshal the URI from the $_SERVER array and headers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHostAndPortFromHeaders">getHostAndPortFromHeaders</a>(string $host, string $port, array $server, array $headers)
+        
+                                            <p>Marshal the host and port from HTTP headers and/or the PHP environment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestUri">getRequestUri</a>(array $server)
+        
+                                            <p>Get the base URI for the $_SERVER superglobal.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stripQueryString">stripQueryString</a>(string $path)
+        
+                                            <p>Strip the query string from a path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_createFromGlobals">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L54">line 54</a></div>
+        <code>        static            <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+    <strong>createFromGlobals</strong>(array $server = array(), array $query = array(), array $parsedBody = null, array $cookies = array(), array $files = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a request from the supplied superglobal values.</p>                    <p>If any argument is not supplied, the corresponding superglobal value will
+be used.</p>
+
+<p>The ServerRequest created is then passed to the fromServer() method in
+order to marshal the request URI and headers.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>The $_SERVER superglobal variable.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td>The $_GET superglobal variable.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parsedBody</td>
+                <td>The $_POST superglobal variable.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td>The $_COOKIE superglobal variable.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>The $_FILES superglobal variable.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid file values</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>fromServer()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createFromUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L110">line 110</a></div>
+        <code>        static            <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+    <strong>createFromUri</strong>(string $uri, string $script = null, array $server = array(), array $query = array(), array $parsedBody = null, array $cookies = array(), array $files = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>createFromUri</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$script</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$parsedBody</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareServers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L134">line 134</a></div>
+        <code>        static            array
+    <strong>prepareServers</strong>(array $server)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepare the $_SERVER variables.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>The $_SERVER superglobal variable.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareFiles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L168">line 168</a></div>
+        <code>        static            <abbr title="Psr\Http\Message\UploadedFileInterface">UploadedFileInterface</abbr>[]
+    <strong>prepareFiles</strong>(array $files)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normalize uploaded files</p>                    <p>Transforms each value into an UploadedFileInterface instance, and ensures
+that nested arrays are normalized.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>THe $_FILES superglobal variable.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\UploadedFileInterface">UploadedFileInterface</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for unrecognized values</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareHeaders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L210">line 210</a></div>
+        <code>        static            array
+    <strong>prepareHeaders</strong>(array $server)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get headers from $_SERVER.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>The $_SERVER superglobal variable.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L249">line 249</a></div>
+        <code>        static            <a href="../../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>prepareUri</strong>(array $server, array $headers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marshal the URI from the $_SERVER array and headers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>The $_SERVER superglobal.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>The headers variable from server.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>Prepared Uri object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHostAndPortFromHeaders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L305">line 305</a></div>
+        <code>        static            
+    <strong>getHostAndPortFromHeaders</strong>(string $host, string $port, array $server, array $headers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Marshal the host and port from HTTP headers and/or the PHP environment</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>The uri host.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$port</td>
+                <td>The request port.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>The $_SERVER superglobal.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>The headers variable from server.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L359">line 359</a></div>
+        <code>        static            string
+    <strong>getRequestUri</strong>(array $server)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the base URI for the $_SERVER superglobal.</p>                    <p>Try to auto detect the base URI from different server system including IIS and Apache.</p>
+
+<p>This method based on ZF2's Zend\Http\PhpEnvironment\Request class</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://github.com/zendframework/zend-http/blob/master/src/PhpEnvironment/Request.php</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stripQueryString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Request/ServerRequestFactory.php#L411">line 411</a></div>
+        <code>        static            string
+    <strong>stripQueryString</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Strip the query string from a path</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The uri path.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The path striped.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

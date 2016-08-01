@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Filter\InputFilter | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Filter_InputFilter" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Filter.html">Filter</a></li>
+    
+                <li>InputFilter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            InputFilter
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>InputFilter</strong>        implements
+        <a target="_blank" href="http://php.net/Serializable">Serializable</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class Filter</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>INTEGER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UINT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FLOAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BOOLEAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>WORD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ALNUM</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CMD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BASE64</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STRING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTML</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARRAY_TYPE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PATH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>USERNAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EMAIL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>URL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>RAW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a> $htmlCleaner = null)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clean">clean</a>(string $source, string|callable|object $filter = &#039;string&#039;)
+        
+                                            <p>clean</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandler">getHandler</a>(string $name)
+        
+                                            <p>getHandlers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHandler">setHandler</a>(string $name, <a href="../../Windwalker/Filter/Cleaner/CleanerInterface.html"><abbr title="Windwalker\Filter\Cleaner\CleanerInterface">CleanerInterface</abbr></a>[]|callable[] $handler)
+        
+                                            <p>setHandlers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHtmlCleaner">getHtmlCleaner</a>()
+        
+                                            <p>gethtmlCleaner</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHtmlCleaner">setHtmlCleaner</a>(<a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a> $htmlCleaner)
+        
+                                            <p>sethtmlCleaner</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultHandler">getDefaultHandler</a>()
+        
+                                            <p>getDefaultHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultHandler">setDefaultHandler</a>(callable $defaultHandler)
+        
+                                            <p>setDefaultHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serialize">serialize</a>()
+        
+                                            <p>Method to serialize the Filter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unserialize">unserialize</a>(string $input)
+        
+                                            <p>Method to unserialize the Filter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L63">line 63</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a> $htmlCleaner = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a></td>
+                <td>$htmlCleaner</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clean">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L78">line 78</a></div>
+        <code>                    mixed
+    <strong>clean</strong>(string $source, string|callable|object $filter = &#039;string&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>clean</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|callable|object</td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L116">line 116</a></div>
+        <code>                    callable
+    <strong>getHandler</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getHandlers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L130">line 130</a></div>
+        <code>                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+    <strong>setHandler</strong>(string $name, <a href="../../Windwalker/Filter/Cleaner/CleanerInterface.html"><abbr title="Windwalker\Filter\Cleaner\CleanerInterface">CleanerInterface</abbr></a>[]|callable[] $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setHandlers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Filter/Cleaner/CleanerInterface.html"><abbr title="Windwalker\Filter\Cleaner\CleanerInterface">CleanerInterface</abbr></a>[]|callable[]</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHtmlCleaner">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L147">line 147</a></div>
+        <code>                    <a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a>
+    <strong>getHtmlCleaner</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>gethtmlCleaner</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHtmlCleaner">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L159">line 159</a></div>
+        <code>                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+    <strong>setHtmlCleaner</strong>(<a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a> $htmlCleaner)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>sethtmlCleaner</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Filter/HtmlCleaner.html"><abbr title="Windwalker\Filter\HtmlCleaner">HtmlCleaner</abbr></a></td>
+                <td>$htmlCleaner</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L171">line 171</a></div>
+        <code>                    callable
+    <strong>getDefaultHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDefaultHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L183">line 183</a></div>
+        <code>                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+    <strong>setDefaultHandler</strong>(callable $defaultHandler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setDefaultHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$defaultHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L350">line 350</a></div>
+        <code>                    string
+    <strong>serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to serialize the Filter.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The serialized Filter.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unserialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filter/InputFilter.php#L368">line 368</a></div>
+        <code>                    <a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a>
+    <strong>unserialize</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to unserialize the Filter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The serialized Filter.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Filter/InputFilter.html"><abbr title="Windwalker\Filter\InputFilter">InputFilter</abbr></a></td>
+            <td>The Filter object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

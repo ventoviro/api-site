@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Filesystem\Path\PathLocator | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Filesystem_Path_PathLocator" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Filesystem.html">Filesystem</a></li>
+                                        <li><a href="../../../Windwalker/Filesystem/Path.html">Path</a></li>
+    
+                <li>PathLocator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PathLocator
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PathLocator</strong>        implements
+        <a href="../../../Windwalker/Filesystem/Path/PathLocatorInterface.html"><abbr title="Windwalker\Filesystem\Path\PathLocatorInterface">PathLocatorInterface</abbr></a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>A Path locator class</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $path)
+        
+                                            <p>Constructor to handle path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(string $path)
+        
+                                            <p>Replace with a new path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/FilesystemIterator">FilesystemIterator</a>|<a target="_blank" href="http://php.net/RecursiveIteratorIterator">RecursiveIteratorIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>(boolean $recursive = false)
+        
+                                            <p>Get file iterator of current dir.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFolders">getFolders</a>(boolean $recursive = false)
+        
+                                            <p>Get folder iterator of current dir.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiles">getFiles</a>(boolean $recursive = false)
+        
+                                            <p>Get file iterator of current dir</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOne">findOne</a>(mixed $condition, boolean $recursive = false)
+        
+                                            <p>Find one file and return.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(mixed $condition, boolean $recursive = false)
+        
+                                            <p>Find all files which matches condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findByCallback">findByCallback</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback, boolean $recursive = false)
+        
+                                            <p>Using a closure function to filter file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDir">isDir</a>()
+        
+                                            <p>Detect is current path a dir?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isFile">isFile</a>()
+        
+                                            <p>Detect is current path a file?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>()
+        
+                                            <p>Detect is current path exists?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrefix">setPrefix</a>(string $prefix = &#039;&#039;)
+        
+                                            <p>Set a prefix, when this object convert to string,
+prefix will auto add to the front of path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_child">child</a>(string $name)
+        
+                                            <p>Get a child path of given name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parent">parent</a>(boolean $condition = null)
+        
+                                            <p>Get a parent path of given condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(string $path)
+        
+                                            <p>Append a new path before current path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepend">prepend</a>(string $path)
+        
+                                            <p>Append a new path before current path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSubdirOf">isSubdirOf</a>(string $parent)
+        
+                                            <p>Is this path subdir of given path?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Convert this object to string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L51">line 51</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor to handle path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>Path to parse.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L65">line 65</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>redirect</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replace with a new path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>Path to parse.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L79">line 79</a></div>
+        <code>                    <a target="_blank" href="http://php.net/FilesystemIterator">FilesystemIterator</a>|<a target="_blank" href="http://php.net/RecursiveIteratorIterator">RecursiveIteratorIterator</a>
+    <strong>getIterator</strong>(boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get file iterator of current dir.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/FilesystemIterator">FilesystemIterator</a>|<a target="_blank" href="http://php.net/RecursiveIteratorIterator">RecursiveIteratorIterator</a></td>
+            <td>File &amp; dir iterator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFolders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L92">line 92</a></div>
+        <code>                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>getFolders</strong>(boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get folder iterator of current dir.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td>Iterator only include dirs.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L104">line 104</a></div>
+        <code>                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>getFiles</strong>(boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get file iterator of current dir</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td>Iterator only include files.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L126">line 126</a></div>
+        <code>                    <a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>
+    <strong>findOne</strong>(mixed $condition, boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find one file and return.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$condition</td>
+                <td>Finding condition, that can be a string, a regex or a callback function.
+                                 Callback example:
+                                 <code>
+                                 function($current, $key, $iterator)
+                                 {
+                                 return @preg_match('^Foo', $current->getFilename())  &amp;&amp; ! $iterator->isDot();
+                                 }
+                                 </code></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a></td>
+            <td>Finded file info object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L148">line 148</a></div>
+        <code>                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>find</strong>(mixed $condition, boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find all files which matches condition.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$condition</td>
+                <td>Finding condition, that can be a string, a regex or a callback function.
+                                 Callback example:
+                                 <code>
+                                 function($current, $key, $iterator)
+                                 {
+                                 return @preg_match('^Foo', $current->getFilename())  &amp;&amp; ! $iterator->isDot();
+                                 }
+                                 </code></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td>Finded files or paths iterator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findByCallback">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L164">line 164</a></div>
+        <code>                    <a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>findByCallback</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $callback, boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Using a closure function to filter file.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td>A callback function to filter file.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to recursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td>Filtered file or path iteator.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://www.php.net/manual/en/class.callbackfilteriterator.php</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDir">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L271">line 271</a></div>
+        <code>                    boolean
+    <strong>isDir</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Detect is current path a dir?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if is a dir.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L283">line 283</a></div>
+        <code>                    boolean
+    <strong>isFile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Detect is current path a file?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if is a file.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L295">line 295</a></div>
+        <code>                    boolean
+    <strong>exists</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Detect is current path exists?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrefix">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L310">line 310</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>setPrefix</strong>(string $prefix = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a prefix, when this object convert to string,
+prefix will auto add to the front of path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td>Prefix string to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_child">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L326">line 326</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>child</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a child path of given name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Child name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L344">line 344</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>parent</strong>(boolean $condition = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a parent path of given condition.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$condition</td>
+                <td>Parent condition.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L397">line 397</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>append</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Append a new path before current path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>Path to append.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepend">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L420">line 420</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>prepend</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Append a new path before current path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>Path to append.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSubdirOf">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L443">line 443</a></div>
+        <code>                    boolean
+    <strong>isSubdirOf</strong>(string $parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this path subdir of given path?</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$parent</td>
+                <td>Given path to detect.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Is subdir or not.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathLocator.php#L471">line 471</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert this object to string.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Path name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

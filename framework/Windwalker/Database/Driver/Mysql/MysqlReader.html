@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Database\Driver\Mysql\MysqlReader | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Database_Driver_Mysql_MysqlReader" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../../Windwalker/Database.html">Database</a></li>
+                                        <li><a href="../../../../Windwalker/Database/Driver.html">Driver</a></li>
+                                        <li><a href="../../../../Windwalker/Database/Driver/Mysql.html">Mysql</a></li>
+    
+                <li>MysqlReader</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            MysqlReader
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>MysqlReader</strong>        extends <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Mysql/MysqlReader.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class MysqlReader</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method___construct"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setQuery">setQuery</a>(<a href="../../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a> $query)
+        
+                                            <p>setQuery</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_setQuery"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>()
+        
+                                            <p>execute</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_execute"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Database/Iterator/DataIterator.html"><abbr title="Windwalker\Database\Iterator\DataIterator">DataIterator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>getIterator</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_getIterator"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadResult">loadResult</a>()
+        
+                                            <p>Method to get the first field of the first row of the result set from the database query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadResult"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadColumn">loadColumn</a>(integer $offset)
+        
+                                            <p>Method to get an array of values from the <var>$offset</var> field in each row of the result set from
+the database query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadColumn"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadArray">loadArray</a>()
+        
+                                            <p>Method to get the first row of the result set from the database query as an array.  Columns are indexed
+numerically so the first column in the result set would be accessible via <var>$row[0]</var>, etc.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadArray"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadArrayList">loadArrayList</a>(string $key = null)
+        
+                                            <p>Method to get an array of the result set rows from the database query where each row is an array.  The array
+of objects can optionally be keyed by a field offset, but defaults to a sequential numeric array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadArrayList"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadAssoc">loadAssoc</a>()
+        
+                                            <p>Method to get the first row of the result set from the database query as an associative array
+of ['field' => 'value'].</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadAssoc"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadAssocList">loadAssocList</a>(string $key = null)
+        
+                                            <p>Method to get an array of the result set rows from the database query where each row is an associative array
+of ['field<em>name' => 'row</em>value'].  The array of rows can optionally be keyed by a field name, but defaults to
+a sequential numeric array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadAssocList"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadObject">loadObject</a>(string $class = &#039;stdClass&#039;)
+        
+                                            <p>Method to get the first row of the result set from the database query as an object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadObject"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadObjectList">loadObjectList</a>(string $key = null, string $class = &#039;stdClass&#039;)
+        
+                                            <p>Method to get an array of the result set rows from the database query where each row is an object.  The array
+of objects can optionally be keyed by a field name, but defaults to a sequential numeric array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadObjectList"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(resource $cursor = null)
+        
+                                            <p>count</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_count"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchArray">fetchArray</a>()
+        
+                                            <p>Method to fetch a row from the result set cursor as an array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchArray"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchAssoc">fetchAssoc</a>()
+        
+                                            <p>Method to fetch a row from the result set cursor as an associative array.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchAssoc"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchObject">fetchObject</a>(string $class = &#039;stdClass&#039;)
+        
+                                            <p>Method to fetch a row from the result set cursor as an object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchObject"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_countAffected">countAffected</a>(resource $cursor = null)
+        
+                                            <p>Get the number of affected rows for the previous executed SQL statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_countAffected"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertId">insertId</a>()
+        
+                                            <p>Method to get the auto-incremented value from the last INSERT statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_insertId"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_freeResult">freeResult</a>()
+        
+                                            <p>freeResult</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_freeResult"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDriver">getDriver</a>()
+        
+                                            <p>Method to get property Db</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_getDriver"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDriver">setDriver</a>(<a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        
+                                            <p>Method to set property db</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_setDriver"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    resource
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCursor">getCursor</a>()
+        
+                                            <p>Method to get property Cursor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_getCursor"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCursor">setCursor</a>(resource $cursor)
+        
+                                            <p>Method to set property cursor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_setCursor"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(int $type = \PDO::FETCH_ASSOC, int $ori = null, int $offset)
+        
+                                            <p>fetch</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetch"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchAll">fetchAll</a>(int $type = \PDO::FETCH_ASSOC, array $args = null, array $ctorArgs = null)
+        
+                                            <p>fetchAll</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchAll"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method___construct"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L41">line 41</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setQuery">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_setQuery"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L53">line 53</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+    <strong>setQuery</strong>(<a href="../../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setQuery</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_execute"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L65">line 65</a></div>
+        <code>                    <a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a>
+    <strong>execute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>execute</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_getIterator"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L84">line 84</a></div>
+        <code>                    <a href="../../../../Windwalker/Database/Iterator/DataIterator.html"><abbr title="Windwalker\Database\Iterator\DataIterator">DataIterator</abbr></a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getIterator</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Database/Iterator/DataIterator.html"><abbr title="Windwalker\Database\Iterator\DataIterator">DataIterator</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadResult">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadResult"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L99">line 99</a></div>
+        <code>                    mixed
+    <strong>loadResult</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the first field of the first row of the result set from the database query.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadColumn">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadColumn"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L126">line 126</a></div>
+        <code>                    mixed
+    <strong>loadColumn</strong>(integer $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get an array of values from the <var>$offset</var> field in each row of the result set from
+the database query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td>The row offset to use to build the result array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadArray">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadArray"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L151">line 151</a></div>
+        <code>                    mixed
+    <strong>loadArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the first row of the result set from the database query as an array.  Columns are indexed
+numerically so the first column in the result set would be accessible via <var>$row[0]</var>, etc.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadArrayList">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadArrayList"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L176">line 176</a></div>
+        <code>                    mixed
+    <strong>loadArrayList</strong>(string $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get an array of the result set rows from the database query where each row is an array.  The array
+of objects can optionally be keyed by a field offset, but defaults to a sequential numeric array.</p>                    <p>NOTE: Choosing to key the result array by a non-unique field can result in unwanted
+behavior and should be avoided.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of a field on which to key the result array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadAssoc">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadAssoc"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L208">line 208</a></div>
+        <code>                    mixed
+    <strong>loadAssoc</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the first row of the result set from the database query as an associative array
+of ['field' => 'value'].</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadAssocList">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadAssocList"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L231">line 231</a></div>
+        <code>                    mixed
+    <strong>loadAssocList</strong>(string $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get an array of the result set rows from the database query where each row is an associative array
+of ['field<em>name' => 'row</em>value'].  The array of rows can optionally be keyed by a field name, but defaults to
+a sequential numeric array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of a field on which to key the result array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadObject">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadObject"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L264">line 264</a></div>
+        <code>                    mixed
+    <strong>loadObject</strong>(string $class = &#039;stdClass&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the first row of the result set from the database query as an object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>The class name to use for the returned row object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadObjectList">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_loadObjectList"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L292">line 292</a></div>
+        <code>                    mixed
+    <strong>loadObjectList</strong>(string $key = null, string $class = &#039;stdClass&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get an array of the result set rows from the database query where each row is an object.  The array
+of objects can optionally be keyed by a field name, but defaults to a sequential numeric array.</p>                    <p>NOTE: Choosing to key the result array by a non-unique field name can result in unwanted
+behavior and should be avoided.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of a field on which to key the result array.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>The class name to use for the returned row objects.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The return value or null if the query failed.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_count"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L126">line 126</a></div>
+        <code>                    mixed
+    <strong>count</strong>(resource $cursor = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>count</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$cursor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchArray">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchArray"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L35">line 35</a></div>
+        <code>                    mixed
+    <strong>fetchArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to fetch a row from the result set cursor as an array.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Either the next row from the result set or false if there are no more rows.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchAssoc">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchAssoc"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L47">line 47</a></div>
+        <code>                    mixed
+    <strong>fetchAssoc</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to fetch a row from the result set cursor as an associative array.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Either the next row from the result set or false if there are no more rows.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchObject">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchObject"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L61">line 61</a></div>
+        <code>                    mixed
+    <strong>fetchObject</strong>(string $class = &#039;stdClass&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to fetch a row from the result set cursor as an object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Unused, only necessary so method signature will be the same as parent.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Either the next row from the result set or false if there are no more rows.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_countAffected">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_countAffected"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L141">line 141</a></div>
+        <code>                    int
+    <strong>countAffected</strong>(resource $cursor = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the number of affected rows for the previous executed SQL statement.</p>                    <p>Only applicable for DELETE, INSERT, or UPDATE statements.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$cursor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>The number of affected rows.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertId">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_insertId"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L163">line 163</a></div>
+        <code>                    string
+    <strong>insertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the auto-incremented value from the last INSERT statement.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The value of the auto-increment field from the last inserted row.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_freeResult">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_freeResult"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L381">line 381</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\$this">$this</abbr>
+    <strong>freeResult</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>freeResult</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDriver">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_getDriver"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L393">line 393</a></div>
+        <code>                    <a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a>
+    <strong>getDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Db</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDriver">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_setDriver"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L405">line 405</a></div>
+        <code>                    <a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a>
+    <strong>setDriver</strong>(<a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property db</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCursor">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_getCursor"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L174">line 174</a></div>
+        <code>                    resource
+    <strong>getCursor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Cursor</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>resource</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCursor">
+        <div class="location">in <a href="../../../../Windwalker/Database/Command/AbstractReader.html#method_setCursor"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractReader.php#L429">line 429</a></div>
+        <code>                    <a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a>
+    <strong>setCursor</strong>(resource $cursor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property cursor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$cursor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Database/Command/AbstractReader.html"><abbr title="Windwalker\Database\Command\AbstractReader">AbstractReader</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetch"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L84">line 84</a></div>
+        <code>                    bool|mixed
+    <strong>fetch</strong>(int $type = \PDO::FETCH_ASSOC, int $ori = null, int $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>fetch</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$ori</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://php.net/manual/en/pdostatement.fetch.php</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchAll">
+        <div class="location">in <a href="../../../../Windwalker/Database/Driver/Pdo/PdoReader.html#method_fetchAll"><abbr title="Windwalker\Database\Driver\Pdo\PdoReader">PdoReader</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Pdo/PdoReader.php#L107">line 107</a></div>
+        <code>                    array|bool
+    <strong>fetchAll</strong>(int $type = \PDO::FETCH_ASSOC, array $args = null, array $ctorArgs = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>fetchAll</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$ctorArgs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>http://php.net/manual/en/pdostatement.fetchall.php</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

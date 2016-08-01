@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Migration\AbstractMigration | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Migration_AbstractMigration" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Migration.html">Migration</a></li>
+    
+                <li>AbstractMigration</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractMigration
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractMigration</strong>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The AbstractMigration class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>UP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DOWN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr> $command, <abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr> $db)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_up">up</a>()
+        
+                                            <p>up</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_down">down</a>()
+        
+                                            <p>down</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTable">getTable</a>(string $name)
+        
+                                            <p>Get DB table object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createTable">createTable</a>(string $name, callable $callback, bool $ifNotExists = true, array $options = array())
+        
+                                            <p>createTable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateTable">updateTable</a>(string $name, callable $callback)
+        
+                                            <p>updateTable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveTable">saveTable</a>(string $name, callable $callback, bool $ifNotExists = true, array $options = array())
+        
+                                            <p>saveTable</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_drop">drop</a>(string $name)
+        
+                                            <p>Drop a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDb">getDb</a>()
+        
+                                            <p>Method to get property Db</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDb">setDb</a>(<abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr> $db)
+        
+                                            <p>Method to set property db</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommand">getCommand</a>()
+        
+                                            <p>Method to get property Command</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCommand">setCommand</a>(<abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr> $command)
+        
+                                            <p>Method to set property command</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVersion">getVersion</a>()
+        
+                                            <p>Method to get property Version</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVersion">setVersion</a>(string $version)
+        
+                                            <p>Method to set property version</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L52">line 52</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr> $command, <abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_up">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L64">line 64</a></div>
+        <code>    abstract                void
+    <strong>up</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>up</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_down">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L71">line 71</a></div>
+        <code>    abstract                void
+    <strong>down</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>down</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L80">line 80</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+    <strong>getTable</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get DB table object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L95">line 95</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+    <strong>createTable</strong>(string $name, callable $callback, bool $ifNotExists = true, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>createTable</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifNotExists</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateTable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L108">line 108</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+    <strong>updateTable</strong>(string $name, callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>updateTable</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveTable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L123">line 123</a></div>
+        <code>                    <abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr>
+    <strong>saveTable</strong>(string $name, callable $callback, bool $ifNotExists = true, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>saveTable</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$ifNotExists</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Command\AbstractTable">AbstractTable</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_drop">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L135">line 135</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+    <strong>drop</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drop a table.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDb">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L147">line 147</a></div>
+        <code>                    <abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr>
+    <strong>getDb</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Db</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDb">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L159">line 159</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+    <strong>setDb</strong>(<abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property db</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommand">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L171">line 171</a></div>
+        <code>                    <abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr>
+    <strong>getCommand</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Command</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCommand">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L183">line 183</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+    <strong>setCommand</strong>(<abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr> $command)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property command</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersion">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L195">line 195</a></div>
+        <code>                    string
+    <strong>getVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Version</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVersion">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Migration/AbstractMigration.php#L207">line 207</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a>
+    <strong>setVersion</strong>(string $version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property version</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Migration/AbstractMigration.html"><abbr title="Windwalker\Core\Migration\AbstractMigration">AbstractMigration</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

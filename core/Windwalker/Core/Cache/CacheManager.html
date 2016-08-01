@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Cache\CacheManager | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Cache_CacheManager" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Cache.html">Cache</a></li>
+    
+                <li>CacheManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CacheManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CacheManager</strong>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The CacheManager class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Windwalker/Core/Config/Config.html"><abbr title="Windwalker\Core\Config\Config">Config</abbr></a> $config)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCache">getCache</a>(string $name = &#039;windwalker&#039;, string $storage = &#039;array&#039;, string $serializer = &#039;php&#039;, array $options = array())
+        
+                                            <p>Create cache object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $name = &#039;windwalker&#039;, string $storage = &#039;array&#039;, string $serializer = &#039;php&#039;, array $options = array())
+        
+                                            <p>getCache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlobal">getGlobal</a>(bool $forceNew = false)
+        
+                                            <p>getGlobal</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Cache\CacheItemPoolInterface">CacheItemPoolInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStorage">getStorage</a>(string $storage, array $options = array(), string $name = &#039;windwalker&#039;)
+        
+                                            <p>getStorage</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Cache\Serializer\SerializerInterface">SerializerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSerializer">getSerializer</a>($serializer)
+        
+                                            <p>getDataHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ignoreGlobal">ignoreGlobal</a>(boolean $bool = null)
+        
+                                            <p>Method to get property IgnoreGlobal</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheClass">getCacheClass</a>()
+        
+                                            <p>Method to get property CacheClass</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Cache/CacheManager.html"><abbr title="Windwalker\Core\Cache\CacheManager">CacheManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCacheClass">setCacheClass</a>(string $cacheClass)
+        
+                                            <p>Method to set property cacheClass</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L61">line 61</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Windwalker/Core/Config/Config.html"><abbr title="Windwalker\Core\Config\Config">Config</abbr></a> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Config/Config.html"><abbr title="Windwalker\Core\Config\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td>@since  3.0</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCache">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L77">line 77</a></div>
+        <code>                    <abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr>
+    <strong>getCache</strong>(string $name = &#039;windwalker&#039;, string $storage = &#039;array&#039;, string $serializer = &#039;php&#039;, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create cache object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$serializer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L103">line 103</a></div>
+        <code>                    <abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr>
+    <strong>create</strong>(string $name = &#039;windwalker&#039;, string $storage = &#039;array&#039;, string $serializer = &#039;php&#039;, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getCache</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$serializer</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlobal">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L133">line 133</a></div>
+        <code>                    <abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr>
+    <strong>getGlobal</strong>(bool $forceNew = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getGlobal</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$forceNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Cache\CacheInterface">CacheInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStorage">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L150">line 150</a></div>
+        <code>                    <abbr title="Psr\Cache\CacheItemPoolInterface">CacheItemPoolInterface</abbr>
+    <strong>getStorage</strong>(string $storage, array $options = array(), string $name = &#039;windwalker&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getStorage</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Cache\CacheItemPoolInterface">CacheItemPoolInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomainException">DomainException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSerializer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L206">line 206</a></div>
+        <code>                    <abbr title="Windwalker\Cache\Serializer\SerializerInterface">SerializerInterface</abbr>
+    <strong>getSerializer</strong>($serializer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDataHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$serializer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Cache\Serializer\SerializerInterface">SerializerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoreGlobal">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L225">line 225</a></div>
+        <code>                    boolean
+    <strong>ignoreGlobal</strong>(boolean $bool = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property IgnoreGlobal</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$bool</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L242">line 242</a></div>
+        <code>                    string
+    <strong>getCacheClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property CacheClass</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Cache/CacheManager.php#L254">line 254</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Cache/CacheManager.html"><abbr title="Windwalker\Core\Cache\CacheManager">CacheManager</abbr></a>
+    <strong>setCacheClass</strong>(string $cacheClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property cacheClass</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cacheClass</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Cache/CacheManager.html"><abbr title="Windwalker\Core\Cache\CacheManager">CacheManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

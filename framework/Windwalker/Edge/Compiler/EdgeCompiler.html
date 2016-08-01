@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Edge\Compiler\EdgeCompiler | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Edge_Compiler_EdgeCompiler" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Edge.html">Edge</a></li>
+                                        <li><a href="../../../Windwalker/Edge/Compiler.html">Compiler</a></li>
+    
+                <li>EdgeCompiler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            EdgeCompiler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>EdgeCompiler</strong>        implements
+        <a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The EdgeCompiler class.</p>            <p>This is a modified version of Laravel Blade engine.</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compile">compile</a>(string $value)
+        
+                                            <p>compile</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compileEchoDefaults">compileEchoDefaults</a>(string $value)
+        
+                                            <p>Compile the default values for the echo statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_directive">directive</a>(string $name, callable $handler)
+        
+                                            <p>Register a handler for custom directives.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDirectives">getDirectives</a>()
+        
+                                            <p>Get the list of custom directives.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompiler.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompiler">EdgeCompiler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDirectives">setDirectives</a>(array $directives)
+        
+                                            <p>Method to set property directives</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parser">parser</a>(callable $handler)
+        
+                                            <p>parser</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompiler.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompiler">EdgeCompiler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParsers">setParsers</a>(callable[] $parsers)
+        
+                                            <p>Method to set property parsers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParsers">getParsers</a>()
+        
+                                            <p>getParsers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRawTags">getRawTags</a>()
+        
+                                            <p>Gets the raw tags used by the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRawTags">setRawTags</a>(string $openTag, string $closeTag)
+        
+                                            <p>Sets the raw tags used for the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContentTags">setContentTags</a>(string $openTag, string $closeTag, bool $escaped = false)
+        
+                                            <p>Sets the content tags used for the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEscapedContentTags">setEscapedContentTags</a>(string $openTag, string $closeTag)
+        
+                                            <p>Sets the escaped content tags used for the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContentTags">getContentTags</a>()
+        
+                                            <p>Gets the content tags used for the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEscapedContentTags">getEscapedContentTags</a>()
+        
+                                            <p>Gets the escaped content tags used for the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEchoFormat">setEchoFormat</a>(string $format)
+        
+                                            <p>Set the echo format to be used by the compiler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_compile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L118">line 118</a></div>
+        <code>                    string
+    <strong>compile</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>compile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileEchoDefaults">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L422">line 422</a></div>
+        <code>                    string
+    <strong>compileEchoDefaults</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compile the default values for the echo statement.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_directive">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L886">line 886</a></div>
+        <code>                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+    <strong>directive</strong>(string $name, callable $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register a handler for custom directives.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDirectives">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L898">line 898</a></div>
+        <code>                    array
+    <strong>getDirectives</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the list of custom directives.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDirectives">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L910">line 910</a></div>
+        <code>                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompiler.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompiler">EdgeCompiler</abbr></a>
+    <strong>setDirectives</strong>(array $directives)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property directives</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$directives</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Edge/Compiler/EdgeCompiler.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompiler">EdgeCompiler</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parser">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L924">line 924</a></div>
+        <code>                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+    <strong>parser</strong>(callable $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>parser</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParsers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L938">line 938</a></div>
+        <code>                    <a href="../../../Windwalker/Edge/Compiler/EdgeCompiler.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompiler">EdgeCompiler</abbr></a>
+    <strong>setParsers</strong>(callable[] $parsers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property parsers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable[]</td>
+                <td>$parsers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Edge/Compiler/EdgeCompiler.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompiler">EdgeCompiler</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParsers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L950">line 950</a></div>
+        <code>                    callable[]
+    <strong>getParsers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getParsers</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRawTags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L960">line 960</a></div>
+        <code>                    array
+    <strong>getRawTags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the raw tags used by the compiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRawTags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L973">line 973</a></div>
+        <code>                    void
+    <strong>setRawTags</strong>(string $openTag, string $closeTag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the raw tags used for the compiler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$openTag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$closeTag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContentTags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L987">line 987</a></div>
+        <code>                    void
+    <strong>setContentTags</strong>(string $openTag, string $closeTag, bool $escaped = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the content tags used for the compiler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$openTag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$closeTag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$escaped</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEscapedContentTags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L1002">line 1002</a></div>
+        <code>                    void
+    <strong>setEscapedContentTags</strong>(string $openTag, string $closeTag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the escaped content tags used for the compiler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$openTag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$closeTag</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContentTags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L1012">line 1012</a></div>
+        <code>                    string
+    <strong>getContentTags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the content tags used for the compiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEscapedContentTags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L1022">line 1022</a></div>
+        <code>                    string
+    <strong>getEscapedContentTags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the escaped content tags used for the compiler.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEchoFormat">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Compiler/EdgeCompiler.php#L1048">line 1048</a></div>
+        <code>                    void
+    <strong>setEchoFormat</strong>(string $format)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the echo format to be used by the compiler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

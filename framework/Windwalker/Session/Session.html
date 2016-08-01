@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Session\Session | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Session_Session" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Session.html">Session</a></li>
+    
+                <li>Session</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Session
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Session</strong>        implements
+        <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class for managing HTTP sessions</p>            <p>Provides access to session-state values as well as session-level
+settings and lifetime management methods.
+Based on the standard PHP session handling mechanism it provides
+more advanced features such as expire timeouts.</p>        </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>STATE_ACTIVE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_INACTIVE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_EXPIRED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_DESTROYED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATE_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a> $handler = null, <a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a> $bag = null, <a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a> $flashBag = null, <a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a> $bridge = null, array $options = array())
+        
+                                            <p>Session constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_start">start</a>()
+        
+                                            <p>Start a session.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>()
+        
+                                            <p>Frees all session variables and destroys all data registered to a session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restart">restart</a>()
+        
+                                            <p>Restart an expired or locked session.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fork">fork</a>()
+        
+                                            <p>Create a new session and copy variables from the old one</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Writes session data and ends session</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_regenerate">regenerate</a>(bool $destroy = false)
+        
+                                            <p>Re generate the session id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $name, mixed $default = null, string $namespace = &#039;default&#039;)
+        
+                                            <p>Get data from the session store</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAll">getAll</a>(string $namespace = &#039;default&#039;)
+        
+                                            <p>Get all session data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_takeAll">takeAll</a>(string $namespace = &#039;default&#039;)
+        
+                                            <p>Get all session data and clean them.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clean">clean</a>(string $namespace = &#039;default&#039;)
+        
+                                            <p>Clean all data from a bag (namespace).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $name, mixed $value = null, string $namespace = &#039;default&#039;)
+        
+                                            <p>Set data into the session store.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $name, string $namespace = &#039;default&#039;)
+        
+                                            <p>Check whether data exists in the session store</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(string $name, string $namespace = &#039;default&#039;)
+        
+                                            <p>Unset data from the session store</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFlash">addFlash</a>(array|string $msg, string $type = &#039;info&#039;)
+        
+                                            <p>Add a flash message.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFlashes">getFlashes</a>()
+        
+                                            <p>Take all flashes and clean them from bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>(string $namespace = &#039;default&#039;)
+        
+                                            <p>Retrieve an external iterator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBridge">getBridge</a>()
+        
+                                            <p>Method to get property Bridge</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBridge">setBridge</a>(<a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a> $bridge)
+        
+                                            <p>Method to set property bridge</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandler">getHandler</a>()
+        
+                                            <p>Method to get property Handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHandler">setHandler</a>(<a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a> $handler)
+        
+                                            <p>Method to set property handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get session name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>()
+        
+                                            <p>Get session id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isActive">isActive</a>()
+        
+                                            <p>Shorthand to check if the session is active</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNew">isNew</a>()
+        
+                                            <p>Check whether this session is currently created</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getState">getState</a>()
+        
+                                            <p>Method to get property State</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setState">setState</a>(string $state)
+        
+                                            <p>Method to set property state</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCookie">getCookie</a>()
+        
+                                            <p>Get cookie source, default is $_COOKIE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCookie">setCookie</a>(array $cookie)
+        
+                                            <p>Set cookie source. default will be $_COOKIE.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $default = null)
+        
+                                            <p>Method to get property Options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
+        
+                                            <p>Method to set property options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Method to get property Options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+        
+                                            <p>Method to set property options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBags">getBags</a>()
+        
+                                            <p>Get all Session bags.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBags">setBags</a>(array $bags)
+        
+                                            <p>Set Session bags.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBag">getBag</a>(string $name)
+        
+                                            <p>Get session bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBag">setBag</a>(string $name, <a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a> $bag)
+        
+                                            <p>Set session bag by name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFlashBag">getFlashBag</a>()
+        
+                                            <p>Get Flash bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFlashBag">setFlashBag</a>(<a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a> $bag)
+        
+                                            <p>Set Flash Bag</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDebug">setDebug</a>(boolean $debug)
+        
+                                            <p>Method to set property debug</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p>Is a property exists or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p>Get a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p>Set a value to property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Unset a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L114">line 114</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a> $handler = null, <a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a> $bag = null, <a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a> $flashBag = null, <a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a> $bridge = null, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Session constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a></td>
+                <td>$handler</td>
+                <td>The type of storage for the session.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a></td>
+                <td>$bag</td>
+                <td>The session data bags.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a></td>
+                <td>$flashBag</td>
+                <td>The session flash bags.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a></td>
+                <td>$bridge</td>
+                <td>The session bridge, default is PHP NativeBridge.
+                                           Set this to your own bridge to help test.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Optional parameters.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_start">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L207">line 207</a></div>
+        <code>                    boolean
+    <strong>start</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Start a session.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L262">line 262</a></div>
+        <code>                    boolean
+    <strong>destroy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Frees all session variables and destroys all data registered to a session</p>                    <p>This method resets the $_SESSION variable and destroys all of the data associated
+with the current session in its storage (file or DB). It forces new session to be
+started after this method is called. It does not unset the session cookie.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>session_destroy()</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>session_unset()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restart">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L296">line 296</a></div>
+        <code>                    boolean
+    <strong>restart</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Restart an expired or locked session.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>destroy</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fork">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L323">line 323</a></div>
+        <code>                    boolean
+    <strong>fork</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new session and copy variables from the old one</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>$result true on success</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L364">line 364</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes session data and ends session</p>                    <p>Session data is usually stored after your script terminated without the need
+to call close(), but as session data is locked to prevent concurrent
+writes only one script may operate on a session at any time. When using
+framesets together with sessions you will experience the frames loading one
+by one due to this locking. You can reduce the time needed to load all the
+frames by ending the session as soon as all changes to session variables are
+done.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>session_write_close()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_regenerate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L382">line 382</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>regenerate</strong>(bool $destroy = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Re generate the session id.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$destroy</td>
+                <td>Destroy session or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L513">line 513</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $name, mixed $default = null, string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get data from the session store</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of a variable</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>Default value of a variable if not set</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>Namespace to use, default to 'default'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Value of a variable</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAll">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L538">line 538</a></div>
+        <code>                    array
+    <strong>getAll</strong>(string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all session data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>Session namespace, default is <code>default</code>.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_takeAll">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L563">line 563</a></div>
+        <code>                    array
+    <strong>takeAll</strong>(string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all session data and clean them.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>Session namespace, default is <code>default</code>.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clean">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L592">line 592</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>clean</strong>(string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clean all data from a bag (namespace).</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>$namespace  Session namespace, default is <code>default</code>.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L611">line 611</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>set</strong>(string $name, mixed $value = null, string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set data into the session store.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of a variable.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value of a variable.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>Namespace to use, default to 'default'.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L639">line 639</a></div>
+        <code>                    boolean
+    <strong>exists</strong>(string $name, string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check whether data exists in the session store</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of variable</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>Namespace to use, default to 'default'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the variable exists</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L665">line 665</a></div>
+        <code>                    mixed
+    <strong>remove</strong>(string $name, string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset data from the session store</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of variable</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>Namespace to use, default to 'default'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value from session or NULL if not set</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFlash">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L692">line 692</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>addFlash</strong>(array|string $msg, string $type = &#039;info&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a flash message.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$msg</td>
+                <td>The message you want to set, can be an array to storage multiple messages.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The message type, default is <code>info</code>.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFlashes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L706">line 706</a></div>
+        <code>                    array
+    <strong>getFlashes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Take all flashes and clean them from bag.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>All flashes data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L720">line 720</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getIterator</strong>(string $namespace = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve an external iterator</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td>The namespace to get data.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>An instance of an object implementing Iterator Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBridge">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L734">line 734</a></div>
+        <code>                    <a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a>
+    <strong>getBridge</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Bridge</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBridge">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L748">line 748</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setBridge</strong>(<a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a> $bridge)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property bridge</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Session/Bridge/SessionBridgeInterface.html"><abbr title="Windwalker\Session\Bridge\SessionBridgeInterface">SessionBridgeInterface</abbr></a></td>
+                <td>$bridge</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L762">line 762</a></div>
+        <code>                    <a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a>
+    <strong>getHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Handler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L776">line 776</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setHandler</strong>(<a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property handler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Session/Handler/HandlerInterface.html"><abbr title="Windwalker\Session\Handler\HandlerInterface">HandlerInterface</abbr></a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L790">line 790</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get session name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The session name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L802">line 802</a></div>
+        <code>                    string
+    <strong>getId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get session id</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The session name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isActive">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L814">line 814</a></div>
+        <code>                    boolean
+    <strong>isActive</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Shorthand to check if the session is active</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNew">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L826">line 826</a></div>
+        <code>                    boolean
+    <strong>isNew</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check whether this session is currently created</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getState">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L864">line 864</a></div>
+        <code>                    string
+    <strong>getState</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property State</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setState">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L878">line 878</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setState</strong>(string $state)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property state</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCookie">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L892">line 892</a></div>
+        <code>                    array
+    <strong>getCookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get cookie source, default is $_COOKIE.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Cookie source</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCookie">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L913">line 913</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setCookie</strong>(array $cookie)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set cookie source. default will be $_COOKIE.</p>                    <p>Set this property to your array to help you test.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$cookie</td>
+                <td>Cookie source.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L930">line 930</a></div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L950">line 950</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setOption</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L964">line 964</a></div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Options</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L978">line 978</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1006">line 1006</a></div>
+        <code>                    array
+    <strong>getBags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all Session bags.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBags">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1020">line 1020</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setBags</strong>(array $bags)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Session bags.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$bags</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBag">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1040">line 1040</a></div>
+        <code>                    <a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a>
+    <strong>getBag</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get session bag.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Bag name to get.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBag">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1062">line 1062</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setBag</strong>(string $name, <a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a> $bag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set session bag by name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Session bag name to set.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Session/Bag/SessionBagInterface.html"><abbr title="Windwalker\Session\Bag\SessionBagInterface">SessionBagInterface</abbr></a></td>
+                <td>$bag</td>
+                <td>Session bag object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFlashBag">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1081">line 1081</a></div>
+        <code>                    <a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a>
+    <strong>getFlashBag</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Flash bag.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFlashBag">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1100">line 1100</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setFlashBag</strong>(<a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a> $bag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Flash Bag</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Session/Bag/FlashBagInterface.html"><abbr title="Windwalker\Session\Bag\FlashBagInterface">FlashBagInterface</abbr></a></td>
+                <td>$bag</td>
+                <td>The flash bag object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDebug">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1144">line 1144</a></div>
+        <code>                    <a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a>
+    <strong>setDebug</strong>(boolean $debug)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property debug</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$debug</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Session/Session.html"><abbr title="Windwalker\Session\Session">Session</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1160">line 1160</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a property exists or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1175">line 1175</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value to return.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1191">line 1191</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a value to property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Session/Session.php#L1206">line 1206</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

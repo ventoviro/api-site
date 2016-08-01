@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Http\Output\HttpCompressor | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Http_Output_HttpCompressor" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Http.html">Http</a></li>
+                                        <li><a href="../../../Windwalker/Http/Output.html">Output</a></li>
+    
+                <li>HttpCompressor</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            HttpCompressor
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>HttpCompressor</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The HttpCompressor class to support gzip encoding.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ENCODING_GZIP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ENCODING_XGZIP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ENCODING_DEFLATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $acceptEncoding = null)
+        
+                                            <p>Compressor constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSupported">isSupported</a>()
+        
+                                            <p>Method to check zlib supported.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compress">compress</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        
+                                            <p>Checks the accept encoding of the browser and compresses the data before
+sending it to the client if possible.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_encode">encode</a>(string $data, int $encoding = FORCE_GZIP, int $level = 4)
+        
+                                            <p>Compress raw data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAcceptEncoding">getAcceptEncoding</a>()
+        
+                                            <p>Method to get property AcceptEncoding</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Http/Output/HttpCompressor.html"><abbr title="Windwalker\Http\Output\HttpCompressor">HttpCompressor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAcceptEncoding">setAcceptEncoding</a>(string $acceptEncoding)
+        
+                                            <p>Method to set property acceptEncoding</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkHeadersSent">checkHeadersSent</a>()
+        
+                                            <p>Method to check to see if headers have already been sent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkConnectionAlive">checkConnectionAlive</a>()
+        
+                                            <p>Method to check the current client connection status to ensure that it is alive.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEncodedBy">getEncodedBy</a>()
+        
+                                            <p>Method to get property EncodedBy</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Http/Output/HttpCompressor.html"><abbr title="Windwalker\Http\Output\HttpCompressor">HttpCompressor</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEncodedBy">setEncodedBy</a>(string $encodedBy)
+        
+                                            <p>Method to set property encodedBy</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L53">line 53</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $acceptEncoding = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compressor constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$acceptEncoding</td>
+                <td>The Accept-Encoding value, most is "gzip, deflate".
+                                 Keep null to get it from globals.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSupported">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L63">line 63</a></div>
+        <code>        static            boolean
+    <strong>isSupported</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check zlib supported.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compress">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L90">line 90</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>compress</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks the accept encoding of the browser and compresses the data before
+sending it to the client if possible.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>The Response object contains the data we want to encode.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td>Return Response object.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Http/Output/CompressException.html"><abbr title="Windwalker\Http\Output\CompressException">CompressException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encode">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L152">line 152</a></div>
+        <code>                    string
+    <strong>encode</strong>(string $data, int $encoding = FORCE_GZIP, int $level = 4)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compress raw data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>The data to encode.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$encoding</td>
+                <td>The encoding mode. Can be FORCE<em>GZIP (the default) or FORCE</em>DEFLATE.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td>The level of compression. Can be given as 0 for no compression up to 9
+                          for maximum compression. If not given, the default compression level will
+                          be the default compression level of the zlib library.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Http/Output/CompressException.html"><abbr title="Windwalker\Http\Output\CompressException">CompressException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAcceptEncoding">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L182">line 182</a></div>
+        <code>                    string
+    <strong>getAcceptEncoding</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property AcceptEncoding</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAcceptEncoding">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L199">line 199</a></div>
+        <code>                    <a href="../../../Windwalker/Http/Output/HttpCompressor.html"><abbr title="Windwalker\Http\Output\HttpCompressor">HttpCompressor</abbr></a>
+    <strong>setAcceptEncoding</strong>(string $acceptEncoding)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property acceptEncoding</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$acceptEncoding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Http/Output/HttpCompressor.html"><abbr title="Windwalker\Http\Output\HttpCompressor">HttpCompressor</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkHeadersSent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L215">line 215</a></div>
+        <code>                    boolean
+    <strong>checkHeadersSent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check to see if headers have already been sent.</p>                    <p>We wrap headers_sent() function with this method for testing reason.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the headers have already been sent.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>headers_sent()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkConnectionAlive">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L229">line 229</a></div>
+        <code>                    boolean
+    <strong>checkConnectionAlive</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check the current client connection status to ensure that it is alive.</p>                    <p>We wrap connection_status() function with this method for testing reason.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the connection is valid and normal.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>connection_status()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEncodedBy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L239">line 239</a></div>
+        <code>                    string
+    <strong>getEncodedBy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property EncodedBy</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEncodedBy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/HttpCompressor.php#L251">line 251</a></div>
+        <code>                    <a href="../../../Windwalker/Http/Output/HttpCompressor.html"><abbr title="Windwalker\Http\Output\HttpCompressor">HttpCompressor</abbr></a>
+    <strong>setEncodedBy</strong>(string $encodedBy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property encodedBy</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$encodedBy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Http/Output/HttpCompressor.html"><abbr title="Windwalker\Http\Output\HttpCompressor">HttpCompressor</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,2177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Filesystem\Path\PathCollection | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Filesystem_Path_PathCollection" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Filesystem.html">Filesystem</a></li>
+                                        <li><a href="../../../Windwalker/Filesystem/Path.html">Path</a></li>
+    
+                <li>PathCollection</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PathCollection
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PathCollection</strong>        extends <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>A PathLocator collection class</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>STD_PROP_LIST</td>
+                <td class="last">
+                    <p><em>Properties of the object have their normal functionality
+when accessed as list (var_dump, foreach, etc.).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ARRAY_AS_PROPS</td>
+                <td class="last">
+                    <p><em>Entries can be accessed as properties (read and write).</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $paths = array())
+        
+                                            <p>PathCollection constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(mixed $key)
+        
+                                            <p>Returns whether the requested key exists</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___isset"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(mixed $key, mixed $value)
+        
+                                            <p>Sets the value at the specified key to value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___set"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unset">__unset</a>(mixed $key)
+        
+                                            <p>Unsets the value at the specified key</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___unset"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(mixed $key)
+        
+                                            <p>Returns the value at the specified key by reference</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___get"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_append">append</a>(mixed $value)
+        
+                                            <p>Appends the value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_append"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_asort">asort</a>()
+        
+                                            <p>Sort the entries by value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_asort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Get the number of public properties in the ArrayObject</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_count"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exchangeArray">exchangeArray</a>(array|<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> $data)
+        
+                                            <p>Exchange the array for another one.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_exchangeArray"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArrayCopy">getArrayCopy</a>()
+        
+                                            <p>Creates a copy of the ArrayObject.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getArrayCopy"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFlags">getFlags</a>()
+        
+                                            <p>Gets the behavior flags.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getFlags"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Create a new iterator from an ArrayObject instance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getIterator"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIteratorClass">getIteratorClass</a>()
+        
+                                            <p>Gets the iterator classname for the ArrayObject.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getIteratorClass"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ksort">ksort</a>()
+        
+                                            <p>Sort the entries by key</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_ksort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_natcasesort">natcasesort</a>()
+        
+                                            <p>Sort an array using a case insensitive "natural order" algorithm</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_natcasesort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_natsort">natsort</a>()
+        
+                                            <p>Sort entries using a "natural order" algorithm</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_natsort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $key)
+        
+                                            <p>Returns whether the requested key exists</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetExists"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $key)
+        
+                                            <p>Returns the value at the specified key</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetGet"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $key, mixed $value)
+        
+                                            <p>Sets the value at the specified key to value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetSet"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $key)
+        
+                                            <p>Unsets the value at the specified key</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetUnset"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serialize">serialize</a>()
+        
+                                            <p>Serialize an ArrayObject</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_serialize"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFlags">setFlags</a>(int $flags)
+        
+                                            <p>Sets the behavior flags</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_setFlags"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIteratorClass">setIteratorClass</a>(string $class)
+        
+                                            <p>Sets the iterator classname for the ArrayObject</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_setIteratorClass"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uasort">uasort</a>(callable $function)
+        
+                                            <p>Sort the entries with a user-defined comparison function and maintain key association</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_uasort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uksort">uksort</a>(callable $function)
+        
+                                            <p>Sort the entries by keys using a user-defined comparison function</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_uksort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unserialize">unserialize</a>(string $data)
+        
+                                            <p>Unserialize an ArrayObject</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_unserialize"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPaths">addPaths</a>(mixed $paths)
+        
+                                            <p>Batch add paths to bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPath">addPath</a>(mixed $path, string $key = null)
+        
+                                            <p>Add one path to bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removePath">removePath</a>(string $key)
+        
+                                            <p>Using key to remove a path from bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPaths">getPaths</a>()
+        
+                                            <p>Get all paths with key from bag.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>(string $key, string $default = null)
+        
+                                            <p>Using key to get a path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllChildren">getAllChildren</a>(boolean $recursive = false)
+        
+                                            <p>Get all files and folders as an iterator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOne">findOne</a>(mixed $condition, boolean $recursive = false)
+        
+                                            <p>Find one file from all paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(mixed $condition, boolean $recursive = false)
+        
+                                            <p>Find all files from paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiles">getFiles</a>(boolean $recursive = false)
+        
+                                            <p>Get file iterator of all paths</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFolders">getFolders</a>(boolean $recursive = false)
+        
+                                            <p>Get folder iterator of all paths</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrefix">setPrefix</a>(string $prefix)
+        
+                                            <p>Set prefix to all paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appendAll">appendAll</a>(string $appended)
+        
+                                            <p>Append a new path to all paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prependAll">prependAll</a>(string $prepended)
+        
+                                            <p>Prepend a new path to all paths.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>(bool $reindex = false)
+        
+                                            <p>Convert paths bag to array, and every path to string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSubdir">isSubdir</a>(<a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a> $path)
+        
+                                            <p>Is this path a subdir of another path in bag?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L41">line 41</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $paths = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PathCollection constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$paths</td>
+                <td>The PathLocator array.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___isset"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L72">line 72</a></div>
+        <code>                    boolean
+    <strong>__isset</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether the requested key exists</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___set"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L96">line 96</a></div>
+        <code>                    void|mixed
+    <strong>__set</strong>(mixed $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value at the specified key to value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unset">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___unset"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L119">line 119</a></div>
+        <code>                    void|mixed
+    <strong>__unset</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unsets the value at the specified key</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method___get"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L142">line 142</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value at the specified key by reference</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_append"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L168">line 168</a></div>
+        <code>                    void
+    <strong>append</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Appends the value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_asort">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_asort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L178">line 178</a></div>
+        <code>                    void
+    <strong>asort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort the entries by value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_count"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L188">line 188</a></div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the number of public properties in the ArrayObject</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exchangeArray">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_exchangeArray"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L201">line 201</a></div>
+        <code>                    array
+    <strong>exchangeArray</strong>(array|<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Exchange the array for another one.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArrayCopy">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getArrayCopy"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L230">line 230</a></div>
+        <code>                    array
+    <strong>getArrayCopy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a copy of the ArrayObject.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFlags">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getFlags"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L240">line 240</a></div>
+        <code>                    int
+    <strong>getFlags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the behavior flags.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getIterator"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L250">line 250</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new iterator from an ArrayObject instance</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Iterator">Iterator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIteratorClass">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_getIteratorClass"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L262">line 262</a></div>
+        <code>                    string
+    <strong>getIteratorClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the iterator classname for the ArrayObject.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ksort">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_ksort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L272">line 272</a></div>
+        <code>                    void
+    <strong>ksort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort the entries by key</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_natcasesort">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_natcasesort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L282">line 282</a></div>
+        <code>                    void
+    <strong>natcasesort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort an array using a case insensitive "natural order" algorithm</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_natsort">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_natsort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L292">line 292</a></div>
+        <code>                    void
+    <strong>natsort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort entries using a "natural order" algorithm</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetExists"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L304">line 304</a></div>
+        <code>                    bool
+    <strong>offsetExists</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns whether the requested key exists</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetGet"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L316">line 316</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value at the specified key</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetSet"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L338">line 338</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $key, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the value at the specified key to value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_offsetUnset"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L350">line 350</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unsets the value at the specified key</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serialize">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_serialize"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L363">line 363</a></div>
+        <code>                    string
+    <strong>serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Serialize an ArrayObject</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFlags">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_setFlags"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L375">line 375</a></div>
+        <code>                    void
+    <strong>setFlags</strong>(int $flags)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the behavior flags</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$flags</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIteratorClass">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_setIteratorClass"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L388">line 388</a></div>
+        <code>                    void
+    <strong>setIteratorClass</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the iterator classname for the ArrayObject</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uasort">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_uasort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L419">line 419</a></div>
+        <code>                    void
+    <strong>uasort</strong>(callable $function)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort the entries with a user-defined comparison function and maintain key association</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$function</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uksort">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_uksort"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L434">line 434</a></div>
+        <code>                    void
+    <strong>uksort</strong>(callable $function)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort the entries by keys using a user-defined comparison function</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$function</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unserialize">
+        <div class="location">in <a href="../../../Windwalker/Filesystem/Iterator/ArrayObject.html#method_unserialize"><abbr title="Windwalker\Filesystem\Iterator\ArrayObject">ArrayObject</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Iterator/ArrayObject.php#L449">line 449</a></div>
+        <code>                    void
+    <strong>unserialize</strong>(string $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unserialize an ArrayObject</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPaths">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L55">line 55</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+    <strong>addPaths</strong>(mixed $paths)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Batch add paths to bag.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$paths</td>
+                <td>Paths to add to path bag, string will be converted to PathLocator object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L81">line 81</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+    <strong>addPath</strong>(mixed $path, string $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add one path to bag.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$path</td>
+                <td>The path your want to store in bag,
+                        have to be a string or PathLocator object.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Path key, useful when you want to remove a path.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removePath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L121">line 121</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+    <strong>removePath</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Using key to remove a path from bag.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key of path you want to remove.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPaths">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L135">line 135</a></div>
+        <code>                    array
+    <strong>getPaths</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all paths with key from bag.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An array includes all path objects.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L152">line 152</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a>
+    <strong>getPath</strong>(string $key, string $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Using key to get a path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key of path you want to get.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td>If path not exists, return this default path.
+                          Default value can be PathLocator object string or null.
+                          String will auto wrapped by object, if is null, just return null.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+            <td>The path which you want.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllChildren">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L214">line 214</a></div>
+        <code>                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+    <strong>getAllChildren</strong>(boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all files and folders as an iterator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to support recrusive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a></td>
+            <td>An OutterIterator contains all paths' iterator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L241">line 241</a></div>
+        <code>                    <a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>
+    <strong>findOne</strong>(mixed $condition, boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find one file from all paths.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$condition</td>
+                <td>Finding condition, that can be a string, a regex or a callback function.
+                                Callback example:
+                                <code>
+                                function($current, $key, $iterator)
+                                {
+                                return @preg_match('^Foo', $current->getFilename())  &amp;&amp; ! $iterator->isDot();
+                                }
+                                </code></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a></td>
+            <td>Finded file info object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L272">line 272</a></div>
+        <code>                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+    <strong>find</strong>(mixed $condition, boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find all files from paths.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$condition</td>
+                <td>Finding condition, that can be a string, a regex or a callback function.
+                                Callback example:
+                                <code>
+                                function($current, $key, $iterator)
+                                {
+                                return @preg_match('^Foo', $current->getFilename())  &amp;&amp; ! $iterator->isDot();
+                                }
+                                </code></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a></td>
+            <td>Finded files or paths iterator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L289">line 289</a></div>
+        <code>                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+    <strong>getFiles</strong>(boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get file iterator of all paths</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a></td>
+            <td>Iterator only include files.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFolders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L306">line 306</a></div>
+        <code>                    <a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a>
+    <strong>getFolders</strong>(boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get folder iterator of all paths</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/AppendIterator">AppendIterator</a></td>
+            <td>Iterator only include dirs.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrefix">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L325">line 325</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+    <strong>setPrefix</strong>(string $prefix)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set prefix to all paths.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td>The prefix path you want to prepend when path convert to string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appendAll">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L344">line 344</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+    <strong>appendAll</strong>(string $appended)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Append a new path to all paths.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$appended</td>
+                <td>Path to append.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prependAll">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L363">line 363</a></div>
+        <code>                    <a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a>
+    <strong>prependAll</strong>(string $prepended)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepend a new path to all paths.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$prepended</td>
+                <td>Path to prepend.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Filesystem/Path/PathCollection.html"><abbr title="Windwalker\Filesystem\Path\PathCollection">PathCollection</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L382">line 382</a></div>
+        <code>                    array
+    <strong>toArray</strong>(bool $reindex = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert paths bag to array, and every path to string.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$reindex</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Raw paths.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSubdir">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Path/PathCollection.php#L412">line 412</a></div>
+        <code>                    boolean
+    <strong>isSubdir</strong>(<a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a> $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this path a subdir of another path in bag?</p>                    <p>When running recursive scan dir, we have to avoid to re scan same dir.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Filesystem/Path/PathLocator.html"><abbr title="Windwalker\Filesystem\Path\PathLocator">PathLocator</abbr></a></td>
+                <td>$path</td>
+                <td>The path to detect is subdir or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Is subdir or not.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

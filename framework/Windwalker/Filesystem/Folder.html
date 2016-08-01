@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Filesystem\Folder | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Filesystem_Folder" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Filesystem.html">Filesystem</a></li>
+    
+                <li>Folder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Folder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Folder</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>A Folder handling class</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PATH_ABSOLUTE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PATH_RELATIVE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>PATH_BASENAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copy">copy</a>(string $src, string $dest, boolean $force = false)
+        
+                                            <p>Copy a folder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $path = &#039;&#039;, integer $mode = 493)
+        
+                                            <p>Create a folder -- and all necessary parent folders.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string $path)
+        
+                                            <p>Delete a folder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_move">move</a>(string $src, string $dest, bool $override = false)
+        
+                                            <p>Moves a folder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_files">files</a>(string $path, boolean $recursive = false, integer $pathType = self::PATH_ABSOLUTE)
+        
+                                            <p>files</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_items">items</a>(string $path, boolean $recursive = false, integer $pathType = self::PATH_ABSOLUTE)
+        
+                                            <p>items</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_folders">folders</a>(string $path, boolean $recursive = false, integer $pathType = self::PATH_ABSOLUTE)
+        
+                                            <p>folders</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listFolderTree">listFolderTree</a>(string $path, integer $maxLevel = 3, integer $level, integer $parent)
+        
+                                            <p>Lists folder in format suitable for tree display.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeSafe">makeSafe</a>(string $path)
+        
+                                            <p>Makes path name safe to use.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L38">line 38</a></div>
+        <code>        static            boolean
+    <strong>copy</strong>(string $src, string $dest, boolean $force = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Copy a folder.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td>The path to the source folder.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dest</td>
+                <td>The path to the destination folder.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$force</td>
+                <td>Force copy.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Filesystem/Exception/FilesystemException.html"><abbr title="Windwalker\Filesystem\Exception\FilesystemException">FilesystemException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L94">line 94</a></div>
+        <code>        static            boolean
+    <strong>create</strong>(string $path = &#039;&#039;, integer $mode = 493)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a folder -- and all necessary parent folders.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>A path to create from the base path.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$mode</td>
+                <td>Directory permissions to set for folders created. 0755 by default.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if successful.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Filesystem/Exception/FilesystemException.html"><abbr title="Windwalker\Filesystem\Exception\FilesystemException">FilesystemException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L178">line 178</a></div>
+        <code>        static            boolean
+    <strong>delete</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a folder.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The path to the folder to delete.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Filesystem/Exception/FilesystemException.html"><abbr title="Windwalker\Filesystem\Exception\FilesystemException">FilesystemException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_move">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L246">line 246</a></div>
+        <code>        static            mixed
+    <strong>move</strong>(string $src, string $dest, bool $override = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Moves a folder.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td>The path to the source folder.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dest</td>
+                <td>The path to the destination folder.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$override</td>
+                <td>Override files.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Error message on false or boolean true on success.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Filesystem/Exception/FilesystemException.html"><abbr title="Windwalker\Filesystem\Exception\FilesystemException">FilesystemException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_files">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L294">line 294</a></div>
+        <code>        static            array
+    <strong>files</strong>(string $path, boolean $recursive = false, integer $pathType = self::PATH_ABSOLUTE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>files</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$pathType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_items">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L334">line 334</a></div>
+        <code>        static            array
+    <strong>items</strong>(string $path, boolean $recursive = false, integer $pathType = self::PATH_ABSOLUTE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>items</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$pathType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_folders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L375">line 375</a></div>
+        <code>        static            array
+    <strong>folders</strong>(string $path, boolean $recursive = false, integer $pathType = self::PATH_ABSOLUTE)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>folders</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$pathType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listFolderTree">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L418">line 418</a></div>
+        <code>        static            array
+    <strong>listFolderTree</strong>(string $path, integer $maxLevel = 3, integer $level, integer $parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lists folder in format suitable for tree display.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The path of the folder to read.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$maxLevel</td>
+                <td>The maximum number of levels to recursively read, defaults to three.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$level</td>
+                <td>The current level, optional.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$parent</td>
+                <td>Unique identifier of the parent folder, if any.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Folders in the given folder.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeSafe">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Folder.php#L469">line 469</a></div>
+        <code>        static            string
+    <strong>makeSafe</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Makes path name safe to use.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The full path to sanitise.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The sanitised string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

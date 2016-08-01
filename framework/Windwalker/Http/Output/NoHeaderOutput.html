@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Http\Output\NoHeaderOutput | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Http_Output_NoHeaderOutput" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Http.html">Http</a></li>
+                                        <li><a href="../../../Windwalker/Http/Output.html">Output</a></li>
+    
+                <li>NoHeaderOutput</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            NoHeaderOutput
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>NoHeaderOutput</strong>        extends <a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/NoHeaderOutput.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The NoHeaderOutput class.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_headerSent">
+                                                                                string
+                </td>
+                <td>$headerSent</td>
+                <td class="last">Property headerSent.</td>
+                <td><small>from&nbsp;<a href="../../../Windwalker/Http/Output/Output.html#property_headerSent"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respond">respond</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, boolean $returnBody = false)
+        
+                                            <p>Method to send the application response to the client.  All headers will be sent prior to the main
+application output data.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Http/Output/Output.html#method_respond"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendBody">sendBody</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        
+                                            <p>Method to send the application response to the client.  All headers will be sent prior to the main
+application output data.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Http/Output/Output.html#method_sendBody"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_header">header</a>(string $string, boolean $replace = true, integer $code = null)
+        
+                                            <p>Method to override parent header() and do nothing.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendHeaders">sendHeaders</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        
+                                            <p>Send all response headers.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Http/Output/Output.html#method_sendHeaders"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendStatusLine">sendStatusLine</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        
+                                            <p>Send HTTP status line.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Http/Output/Output.html#method_sendStatusLine"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_headersSent">headersSent</a>()
+        
+                                            <p>checkHeaderSent</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Http/Output/Output.html#method_headersSent"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_respond">
+        <div class="location">in <a href="../../../Windwalker/Http/Output/Output.html#method_respond"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/Output.php#L40">line 40</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>respond</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, boolean $returnBody = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to send the application response to the client.  All headers will be sent prior to the main
+application output data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>Respond body output.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$returnBody</td>
+                <td>Return body as string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendBody">
+        <div class="location">in <a href="../../../Windwalker/Http/Output/Output.html#method_sendBody"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/Output.php#L66">line 66</a></div>
+        <code>                    string
+    <strong>sendBody</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to send the application response to the client.  All headers will be sent prior to the main
+application output data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>Emmit string to respond.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_header">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/NoHeaderOutput.php#L29">line 29</a></div>
+        <code>                    <a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a>
+    <strong>header</strong>(string $string, boolean $replace = true, integer $code = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to override parent header() and do nothing.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The header string.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$replace</td>
+                <td>The optional replace parameter indicates whether the header should
+                            replace a previous similar header, or add a second header of the same type.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$code</td>
+                <td>Forces the HTTP response code to the specified value. Note that
+                            this parameter only has an effect if the string is not empty.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendHeaders">
+        <div class="location">in <a href="../../../Windwalker/Http/Output/Output.html#method_sendHeaders"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/Output.php#L98">line 98</a></div>
+        <code>                    <a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a>
+    <strong>sendHeaders</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send all response headers.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>Response object to contain headers.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></td>
+            <td>Instance of $this to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendStatusLine">
+        <div class="location">in <a href="../../../Windwalker/Http/Output/Output.html#method_sendStatusLine"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/Output.php#L123">line 123</a></div>
+        <code>                    void
+    <strong>sendStatusLine</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send HTTP status line.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>Response object to contain status code and protocol version.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_headersSent">
+        <div class="location">in <a href="../../../Windwalker/Http/Output/Output.html#method_headersSent"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/Output/Output.php#L137">line 137</a></div>
+        <code>                    bool
+    <strong>headersSent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>checkHeaderSent</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

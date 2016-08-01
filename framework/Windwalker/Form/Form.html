@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Form\Form | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Form_Form" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Form.html">Form</a></li>
+    
+                <li>Form</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Form
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Form</strong>        implements
+        <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Form class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $control = &#039;&#039;)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadXml">loadXml</a>(string|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $xml)
+        
+                                            <p>load</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFile">loadFile</a>(string $file)
+        
+                                            <p>loadFile</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFields">addFields</a>(<a target="_blank" href="http://php.net/Traversable">Traversable</a>|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fields, string $fieldset = null, string $group = null)
+        
+                                            <p>addFields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a href="../../Windwalker/Form/Field/ListField.html"><abbr title="Windwalker\Form\Field\ListField">ListField</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(string $name, <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|string $field = null, string $fieldset = null, string $group = null)
+        
+                                            <p>Add a field.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a href="../../Windwalker/Form/Field/ListField.html"><abbr title="Windwalker\Form\Field\ListField">ListField</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addField">addField</a>(string|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $field, string $fieldset = null, string $group = null)
+        
+                                            <p>addField</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_wrap">wrap</a>(string $fieldset, string $group, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        
+                                            <p>wrap</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldset">fieldset</a>(string $fieldset, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        
+                                            <p>fieldset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_group">group</a>(string $group, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        
+                                            <p>group</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFieldNamespace">addFieldNamespace</a>(string $ns, int $priority = 256)
+        
+                                            <p>Method to set property fieldNamespaces</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFilterNamespace">addFilterNamespace</a>(string $ns, int $priority = 256)
+        
+                                            <p>Method to set property fieldNamespaces</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addValidatorNamespace">addValidatorNamespace</a>(string $ns, int $priority = 256)
+        
+                                            <p>Method to set property fieldNamespaces</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Retrieve an external iterator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCallbackIterator">getCallbackIterator</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        
+                                            <p>getCallbackIterator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getField">getField</a>(string $name, string $group = &#039;&#039;)
+        
+                                            <p>getField</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Form\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeField">removeField</a>(string $name, string $group = null)
+        
+                                            <p>removeField</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Form\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeFields">removeFields</a>(string $fieldset = null, string $group = null)
+        
+                                            <p>removeField</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>(string $fieldset = null, string $group = null)
+        
+                                            <p>getFields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFieldsets">getFieldsets</a>()
+        
+                                            <p>Method to get property Fieldsets</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGroups">getGroups</a>()
+        
+                                            <p>Method to get property Groups</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttribute">setAttribute</a>(string $field, string $name, mixed $value, string $group = null)
+        
+                                            <p>setAttribute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttribute">getAttribute</a>(string $field, string $name, mixed $default = null, string $group = null)
+        
+                                            <p>getAttribute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttributes">setAttributes</a>(string $name, mixed $value, string $fieldset = null, string $group = null)
+        
+                                            <p>setAttributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appendAttributes">appendAttributes</a>(string $name, mixed $value, string $fieldset = null, string $group = null)
+        
+                                            <p>appendAttributes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(array $data)
+        
+                                            <p>bind</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearValues">clearValues</a>()
+        
+                                            <p>reset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>reset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>()
+        
+                                            <p>filter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validate">validate</a>()
+        
+                                            <p>validate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getViews">getViews</a>(string $fieldset = null, string $group = null)
+        
+                                            <p>getViews</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareStore">prepareStore</a>(string $fieldset = null, string $group = null)
+        
+                                            <p>prepareStore</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderField">renderField</a>(string $name, string $group = &#039;&#039;)
+        
+                                            <p>renderField</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderFields">renderFields</a>(string $fieldset = null, string $group = null)
+        
+                                            <p>renderFields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getControl">getControl</a>()
+        
+                                            <p>Method to get property Control</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setControl">setControl</a>(string $control)
+        
+                                            <p>Method to set property control</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Form\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defineFormFields">defineFormFields</a>(<a href="../../Windwalker/Form/FieldDefinitionInterface.html"><abbr title="Windwalker\Form\FieldDefinitionInterface">FieldDefinitionInterface</abbr></a> $fields)
+        
+                                            <p>defineFormFields</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Validate/ValidateResult.html"><abbr title="Windwalker\Form\Validate\ValidateResult">ValidateResult</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getErrors">getErrors</a>()
+        
+                                            <p>Method to get property Errors</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setErrors">setErrors</a>(<a href="../../Windwalker/Form/Validate/ValidateResult.html"><abbr title="Windwalker\Form\Validate\ValidateResult">ValidateResult</abbr></a>[] $errors)
+        
+                                            <p>Method to set property errors</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Form\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValues">getValues</a>(string $fieldset = null, string $group = null)
+        
+                                            <p>getValues</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Renderer/FormRendererInterface.html"><abbr title="Windwalker\Form\Renderer\FormRendererInterface">FormRendererInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRenderer">getRenderer</a>()
+        
+                                            <p>Method to get property FieldRenderHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRenderer">setRenderer</a>(<a href="../../Windwalker/Form/Renderer/FormRendererInterface.html"><abbr title="Windwalker\Form\Renderer\FormRendererInterface">FormRendererInterface</abbr></a> $renderer = null)
+        
+                                            <p>Method to set property fieldRenderHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L92">line 92</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $control = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$control</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadXml">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L104">line 104</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>loadXml</strong>(string|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $xml)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>load</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$xml</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L127">line 127</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>loadFile</strong>(string $file)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadFile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFields">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L143">line 143</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>addFields</strong>(<a target="_blank" href="http://php.net/Traversable">Traversable</a>|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $fields, string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addFields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Traversable">Traversable</a>|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L168">line 168</a></div>
+        <code>                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a href="../../Windwalker/Form/Field/ListField.html"><abbr title="Windwalker\Form\Field\ListField">ListField</abbr></a>
+    <strong>add</strong>(string $name, <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|string $field = null, string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a field.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a href="../../Windwalker/Form/Field/ListField.html"><abbr title="Windwalker\Form\Field\ListField">ListField</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addField">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L201">line 201</a></div>
+        <code>                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a href="../../Windwalker/Form/Field/ListField.html"><abbr title="Windwalker\Form\Field\ListField">ListField</abbr></a>
+    <strong>addField</strong>(string|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a> $field, string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addField</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a target="_blank" href="http://php.net/SimpleXMLElement">SimpleXMLElement</a></td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>|<a href="../../Windwalker/Form/Field/ListField.html"><abbr title="Windwalker\Form\Field\ListField">ListField</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wrap">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L248">line 248</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>wrap</strong>(string $fieldset, string $group, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>wrap</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L269">line 269</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>fieldset</strong>(string $fieldset, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>fieldset</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_group">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L282">line 282</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>group</strong>(string $group, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>group</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFieldNamespace">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L295">line 295</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>addFieldNamespace</strong>(string $ns, int $priority = 256)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property fieldNamespaces</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFilterNamespace">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L310">line 310</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>addFilterNamespace</strong>(string $ns, int $priority = 256)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property fieldNamespaces</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addValidatorNamespace">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L325">line 325</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>addValidatorNamespace</strong>(string $ns, int $priority = 256)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property fieldNamespaces</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$ns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L337">line 337</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Iterator">Iterator</a>|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve an external iterator</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Iterator">Iterator</a>|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]</td>
+            <td>An instance of an object implementing Iterator or Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCallbackIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L349">line 349</a></div>
+        <code>                    <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]
+    <strong>getCallbackIterator</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getCallbackIterator</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>|<a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]</td>
+            <td>An instance of an object implementing Iterator or Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getField">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L362">line 362</a></div>
+        <code>                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>
+    <strong>getField</strong>(string $name, string $group = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getField</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeField">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L380">line 380</a></div>
+        <code>                    <abbr title="Windwalker\Form\$this">$this</abbr>
+    <strong>removeField</strong>(string $name, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeField</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Form\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeFields">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L403">line 403</a></div>
+        <code>                    <abbr title="Windwalker\Form\$this">$this</abbr>
+    <strong>removeFields</strong>(string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeField</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Form\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L429">line 429</a></div>
+        <code>                    <a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]
+    <strong>getFields</strong>(string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getFields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Field/AbstractField.html"><abbr title="Windwalker\Form\Field\AbstractField">AbstractField</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFieldsets">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L463">line 463</a></div>
+        <code>                    array
+    <strong>getFieldsets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Fieldsets</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGroups">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L473">line 473</a></div>
+        <code>                    array
+    <strong>getGroups</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Groups</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttribute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L488">line 488</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>setAttribute</strong>(string $field, string $name, mixed $value, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setAttribute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L510">line 510</a></div>
+        <code>                    mixed
+    <strong>getAttribute</strong>(string $field, string $name, mixed $default = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getAttribute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttributes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L532">line 532</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>setAttributes</strong>(string $name, mixed $value, string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setAttributes</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appendAttributes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L552">line 552</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>appendAttributes</strong>(string $name, mixed $value, string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>appendAttributes</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L569">line 569</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>bind</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>bind</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearValues">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L586">line 586</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>clearValues</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>reset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L601">line 601</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>reset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L616">line 616</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>filter</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>filter</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L631">line 631</a></div>
+        <code>                    boolean
+    <strong>validate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>validate</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getViews">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L663">line 663</a></div>
+        <code>                    array
+    <strong>getViews</strong>(string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getViews</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareStore">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L686">line 686</a></div>
+        <code>                    void
+    <strong>prepareStore</strong>(string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>prepareStore</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderField">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L702">line 702</a></div>
+        <code>                    string
+    <strong>renderField</strong>(string $name, string $group = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderField</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderFields">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L717">line 717</a></div>
+        <code>                    string
+    <strong>renderFields</strong>(string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderFields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getControl">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L734">line 734</a></div>
+        <code>                    string
+    <strong>getControl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Control</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setControl">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L746">line 746</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>setControl</strong>(string $control)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property control</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$control</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defineFormFields">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L765">line 765</a></div>
+        <code>                    <abbr title="Windwalker\Form\$this">$this</abbr>
+    <strong>defineFormFields</strong>(<a href="../../Windwalker/Form/FieldDefinitionInterface.html"><abbr title="Windwalker\Form\FieldDefinitionInterface">FieldDefinitionInterface</abbr></a> $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>defineFormFields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Form/FieldDefinitionInterface.html"><abbr title="Windwalker\Form\FieldDefinitionInterface">FieldDefinitionInterface</abbr></a></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Form\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrors">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L777">line 777</a></div>
+        <code>                    <a href="../../Windwalker/Form/Validate/ValidateResult.html"><abbr title="Windwalker\Form\Validate\ValidateResult">ValidateResult</abbr></a>[]
+    <strong>getErrors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Errors</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Validate/ValidateResult.html"><abbr title="Windwalker\Form\Validate\ValidateResult">ValidateResult</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setErrors">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L789">line 789</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>setErrors</strong>(<a href="../../Windwalker/Form/Validate/ValidateResult.html"><abbr title="Windwalker\Form\Validate\ValidateResult">ValidateResult</abbr></a>[] $errors)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property errors</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Form/Validate/ValidateResult.html"><abbr title="Windwalker\Form\Validate\ValidateResult">ValidateResult</abbr></a>[]</td>
+                <td>$errors</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValues">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L804">line 804</a></div>
+        <code>                    <abbr title="Windwalker\Form\$this">$this</abbr>
+    <strong>getValues</strong>(string $fieldset = null, string $group = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getValues</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fieldset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Form\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRenderer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L821">line 821</a></div>
+        <code>                    <a href="../../Windwalker/Form/Renderer/FormRendererInterface.html"><abbr title="Windwalker\Form\Renderer\FormRendererInterface">FormRendererInterface</abbr></a>
+    <strong>getRenderer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property FieldRenderHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Renderer/FormRendererInterface.html"><abbr title="Windwalker\Form\Renderer\FormRendererInterface">FormRendererInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRenderer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Form/Form.php#L833">line 833</a></div>
+        <code>                    <a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a>
+    <strong>setRenderer</strong>(<a href="../../Windwalker/Form/Renderer/FormRendererInterface.html"><abbr title="Windwalker\Form\Renderer\FormRendererInterface">FormRendererInterface</abbr></a> $renderer = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property fieldRenderHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Form/Renderer/FormRendererInterface.html"><abbr title="Windwalker\Form\Renderer\FormRendererInterface">FormRendererInterface</abbr></a></td>
+                <td>$renderer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Form/Form.html"><abbr title="Windwalker\Form\Form">Form</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

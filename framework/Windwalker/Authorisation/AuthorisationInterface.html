@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Authorisation\AuthorisationInterface | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Authorisation_AuthorisationInterface" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Authorisation.html">Authorisation</a></li>
+    
+                <li>AuthorisationInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AuthorisationInterface
+                
+        </h1>
+    </div>
+
+    <p>    interface
+    <strong>AuthorisationInterface</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Authorisation/AuthorisationInterface.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The AuthorisationInterface class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authorise">authorise</a>(string $policy, mixed $user, mixed $data = null)
+        
+                                            <p>authorise</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Authorisation/AuthorisationInterface.html"><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPolicy">addPolicy</a>(string $name, <a href="../../Windwalker/Authorisation/PolicyInterface.html"><abbr title="Windwalker\Authorisation\PolicyInterface">PolicyInterface</abbr></a>|callable $handler)
+        
+                                            <p>addPolicy</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Authorisation/AuthorisationInterface.html"><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerPolicyProvider">registerPolicyProvider</a>(<a href="../../Windwalker/Authorisation/PolicyProviderInterface.html"><abbr title="Windwalker\Authorisation\PolicyProviderInterface">PolicyProviderInterface</abbr></a> $policy)
+        
+                                            <p>registerPolicy</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_authorise">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authorisation/AuthorisationInterface.php#L27">line 27</a></div>
+        <code>                    boolean
+    <strong>authorise</strong>(string $policy, mixed $user, mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>authorise</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$policy</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPolicy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authorisation/AuthorisationInterface.php#L37">line 37</a></div>
+        <code>                    <a href="../../Windwalker/Authorisation/AuthorisationInterface.html"><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></a>
+    <strong>addPolicy</strong>(string $name, <a href="../../Windwalker/Authorisation/PolicyInterface.html"><abbr title="Windwalker\Authorisation\PolicyInterface">PolicyInterface</abbr></a>|callable $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addPolicy</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Authorisation/PolicyInterface.html"><abbr title="Windwalker\Authorisation\PolicyInterface">PolicyInterface</abbr></a>|callable</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Authorisation/AuthorisationInterface.html"><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerPolicyProvider">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authorisation/AuthorisationInterface.php#L46">line 46</a></div>
+        <code>                    <a href="../../Windwalker/Authorisation/AuthorisationInterface.html"><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></a>
+    <strong>registerPolicyProvider</strong>(<a href="../../Windwalker/Authorisation/PolicyProviderInterface.html"><abbr title="Windwalker\Authorisation\PolicyProviderInterface">PolicyProviderInterface</abbr></a> $policy)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>registerPolicy</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Authorisation/PolicyProviderInterface.html"><abbr title="Windwalker\Authorisation\PolicyProviderInterface">PolicyProviderInterface</abbr></a></td>
+                <td>$policy</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Authorisation/AuthorisationInterface.html"><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

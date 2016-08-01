@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Cache\Storage\NullStorage | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Cache_Storage_NullStorage" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Cache.html">Cache</a></li>
+                                        <li><a href="../../../Windwalker/Cache/Storage.html">Storage</a></li>
+    
+                <li>NullStorage</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            NullStorage
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>NullStorage</strong>        extends <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/NullStorage.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class NullStorage</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(int $ttl = null, mixed $options = array())
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method___construct"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getItems">getItems</a>(array $keys = array())
+        
+                                            <p>getItems</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_getItems"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteItems">deleteItems</a>(array $keys)
+        
+                                            <p>Removes multiple items from the pool.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_deleteItems"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasItem">hasItem</a>(string $key)
+        
+                                            <p>Confirms if the cache contains specified cache item.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_hasItem"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $key)
+        
+                                            <p>Method to determine whether a storage entry has been set for a key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Method to get property Options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_getOptions"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+        
+                                            <p>Method to set property options</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_setOptions"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveDeferred">saveDeferred</a>(<abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr> $item)
+        
+                                            <p>Sets a cache item to be persisted later.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_saveDeferred"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commit">commit</a>()
+        
+                                            <p>Persists any deferred cache items.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_commit"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getItem">getItem</a>(string $key)
+        
+                                            <p>Here we pass in a cache key to be fetched from the cache.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(<abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr> $item, int|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|<a target="_blank" href="http://php.net/DateTime">DateTime</a> $ttl = null)
+        
+                                            <p>Persisting our data in the cache, uniquely referenced by a key with an optional expiration TTL time.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteItem">deleteItem</a>(string $key)
+        
+                                            <p>Remove an item from the cache by its unique key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>This will wipe out the entire cache's keys</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method___construct"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L59">line 59</a></div>
+        <code>                    
+    <strong>__construct</strong>(int $ttl = null, mixed $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$ttl</td>
+                <td>The Time To Live (TTL) of an item</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$options</td>
+                <td>An options array, or an object that implements \ArrayAccess</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItems">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_getItems"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L74">line 74</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getItems</strong>(array $keys = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getItems</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>A traversable collection of Cache Items in the same order as the $keys
+                      parameter, keyed by the cache keys of each item. If no items are found
+                      an empty Traversable collection will be returned.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteItems">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_deleteItems"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L93">line 93</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a>
+    <strong>deleteItems</strong>(array $keys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Removes multiple items from the pool.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$keys</td>
+                <td>An array of keys that should be removed from the pool.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></td>
+            <td>Return self to support chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasItem">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_hasItem"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L120">line 120</a></div>
+        <code>                    bool
+    <strong>hasItem</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Confirms if the cache contains specified cache item.</p>                    <p>Note: This method MAY avoid retrieving the cached value for performance reasons.
+This could result in a race condition with CacheItemInterface::get(). To avoid
+such situation use CacheItemInterface::isHit() instead.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key for which to check existence.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if item exists in the cache, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Cache\InvalidArgumentException">InvalidArgumentException</abbr></td>
+                <td>If the $key string is not a legal value a \Psr\Cache\InvalidArgumentException
+  MUST be thrown.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/NullStorage.php#L28">line 28</a></div>
+        <code>                    bool
+    <strong>exists</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to determine whether a storage entry has been set for a key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key for which to check existence.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if item exists in the cache, false otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_getOptions"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L149">line 149</a></div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Options</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_setOptions"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L161">line 161</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a>
+    <strong>setOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveDeferred">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_saveDeferred"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L177">line 177</a></div>
+        <code>                    bool
+    <strong>saveDeferred</strong>(<abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr> $item)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a cache item to be persisted later.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr></td>
+                <td>$item</td>
+                <td>The cache item to save.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>False if the item could not be queued or if a commit was attempted and failed. True otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">in <a href="../../../Windwalker/Cache/Storage/AbstractCacheStorage.html#method_commit"><abbr title="Windwalker\Cache\Storage\AbstractCacheStorage">AbstractCacheStorage</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/AbstractCacheStorage.php#L195">line 195</a></div>
+        <code>                    bool
+    <strong>commit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Persists any deferred cache items.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if all not-yet-saved items were successfully saved or there were none. False otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItem">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/NullStorage.php#L41">line 41</a></div>
+        <code>                    <abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr>
+    <strong>getItem</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Here we pass in a cache key to be fetched from the cache.</p>                    <p>A CacheItem object will be constructed and returned to us</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The unique key of this item in the cache</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr></td>
+            <td>The newly populated CacheItem class representing the stored data in the cache</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/NullStorage.php#L54">line 54</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a>
+    <strong>save</strong>(<abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr> $item, int|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|<a target="_blank" href="http://php.net/DateTime">DateTime</a> $ttl = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Persisting our data in the cache, uniquely referenced by a key with an optional expiration TTL time.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr></td>
+                <td>$item</td>
+                <td>The cache item to store.</td>
+            </tr>
+                    <tr>
+                <td>int|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|<a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+                <td>$ttl</td>
+                <td>The Time To Live of an item.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a></td>
+            <td>Return self to support chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteItem">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/NullStorage.php#L66">line 66</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a>
+    <strong>deleteItem</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove an item from the cache by its unique key</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The unique cache key of the item to remove</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a></td>
+            <td>Return self to support chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Storage/NullStorage.php#L76">line 76</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a>
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This will wipe out the entire cache's keys</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Storage/NullStorage.html"><abbr title="Windwalker\Cache\Storage\NullStorage">NullStorage</abbr></a></td>
+            <td>Return self to support chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

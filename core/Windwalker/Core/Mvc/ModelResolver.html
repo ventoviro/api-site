@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Mvc\ModelResolver | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Mvc_ModelResolver" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Mvc.html">Mvc</a></li>
+    
+                <li>ModelResolver</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ModelResolver
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ModelResolver</strong>        extends <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/ModelResolver.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The ModelResolver class.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Windwalker\DI\ContainerAwareTrait">ContainerAwareTrait</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Windwalker/Core/Package/PackageAwareTrait.html"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    PackageAeareTrait
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPackage">getPackage</a>()
+        
+                                            <p>Method to get property Package</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Package/PackageAwareTrait.html#method_getPackage"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Package/PackageAwareTrait.html"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPackage">setPackage</a>(<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package)
+        
+                                            <p>Method to set property package</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Package/PackageAwareTrait.html#method_setPackage"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package, <abbr title="Windwalker\DI\Container">Container</abbr> $container = null, array $namespaces = array())
+        
+                                            <p>ControllerResolver constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method___construct"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Core\Mvc\false">false</abbr>|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolve">resolve</a>(string $name)
+        
+                                            <p>Resolve class path.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_resolve"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $name, array $args)
+        
+                                            <p>create</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_create"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDIKey">getDIKey</a>(string $name)
+        
+                                            <p>getDIKey</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_getDIKey"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addNamespace">addNamespace</a>(string $namespace, int $priority = PriorityQueue::NORMAL)
+        
+                                            <p>addNamespace</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_addNamespace"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNamespaces">getNamespaces</a>()
+        
+                                            <p>Method to get property Namespaces</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_getNamespaces"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNamespaces">setNamespaces</a>(array|<abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr> $namespaces)
+        
+                                            <p>Method to set property namespaces</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_setNamespaces"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dumpNamespaces">dumpNamespaces</a>()
+        
+                                            <p>dumpNamespaces</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_dumpNamespaces"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>reset</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_reset"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalise">normalise</a>(string $name)
+        
+                                            <p>normalise</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_normalise"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveClassAlias">resolveClassAlias</a>(string $alias)
+        
+                                            <p>resolveClassAlias</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_resolveClassAlias"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addClassAlias">addClassAlias</a>(string $alias, string $class)
+        
+                                            <p>addClassAlias</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_addClassAlias"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClassAliases">getClassAliases</a>()
+        
+                                            <p>Method to get property Aliases</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_getClassAliases"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClassAliases">setClassAliases</a>(array $classAliases)
+        
+                                            <p>Method to set property aliases</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_setClassAliases"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrefix">getPrefix</a>()
+        
+                                            <p>Get container key prefix.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getPackage">
+        <div class="location">in <a href="../../../Windwalker/Core/Package/PackageAwareTrait.html#method_getPackage"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/PackageAwareTrait.php#L30">line 30</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a>
+    <strong>getPackage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Package</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPackage">
+        <div class="location">in <a href="../../../Windwalker/Core/Package/PackageAwareTrait.html#method_setPackage"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Package/PackageAwareTrait.php#L42">line 42</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Package/PackageAwareTrait.html"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a>
+    <strong>setPackage</strong>(<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property package</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Package/PackageAwareTrait.html"><abbr title="Windwalker\Core\Package\PackageAwareTrait">PackageAwareTrait</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method___construct"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L57">line 57</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a> $package, <abbr title="Windwalker\DI\Container">Container</abbr> $container = null, array $namespaces = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ControllerResolver constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Package/AbstractPackage.html"><abbr title="Windwalker\Core\Package\AbstractPackage">AbstractPackage</abbr></a></td>
+                <td>$package</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\DI\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$namespaces</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolve">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_resolve"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L73">line 73</a></div>
+        <code>                    <abbr title="Windwalker\Core\Mvc\false">false</abbr>|string
+    <strong>resolve</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve class path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Core\Mvc\false">false</abbr>|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomainException">DomainException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_create"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L122">line 122</a></div>
+        <code>                    object
+    <strong>create</strong>(string $name, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>create</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomainException">DomainException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDIKey">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_getDIKey"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L158">line 158</a></div>
+        <code>        static            string
+    <strong>getDIKey</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDIKey</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNamespace">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_addNamespace"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L175">line 175</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+    <strong>addNamespace</strong>(string $namespace, int $priority = PriorityQueue::NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addNamespace</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNamespaces">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_getNamespaces"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L189">line 189</a></div>
+        <code>                    <abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr>
+    <strong>getNamespaces</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Namespaces</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNamespaces">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_setNamespaces"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L201">line 201</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+    <strong>setNamespaces</strong>(array|<abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr> $namespaces)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property namespaces</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></td>
+                <td>$namespaces</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dumpNamespaces">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_dumpNamespaces"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L218">line 218</a></div>
+        <code>                    array
+    <strong>dumpNamespaces</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>dumpNamespaces</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_reset"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L228">line 228</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>reset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalise">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_normalise"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L243">line 243</a></div>
+        <code>        static            string
+    <strong>normalise</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>normalise</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveClassAlias">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_resolveClassAlias"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L257">line 257</a></div>
+        <code>                    string
+    <strong>resolveClassAlias</strong>(string $alias)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>resolveClassAlias</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addClassAlias">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_addClassAlias"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L277">line 277</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+    <strong>addClassAlias</strong>(string $alias, string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addClassAlias</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClassAliases">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_getClassAliases"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L292">line 292</a></div>
+        <code>                    array
+    <strong>getClassAliases</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Aliases</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClassAliases">
+        <div class="location">in <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html#method_setClassAliases"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/AbstractClassResolver.php#L304">line 304</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a>
+    <strong>setClassAliases</strong>(array $classAliases)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property aliases</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$classAliases</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Mvc/AbstractClassResolver.html"><abbr title="Windwalker\Core\Mvc\AbstractClassResolver">AbstractClassResolver</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrefix">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Mvc/ModelResolver.php#L33">line 33</a></div>
+        <code>        static            string
+    <strong>getPrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get container key prefix.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

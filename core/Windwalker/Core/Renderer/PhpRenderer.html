@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Renderer\PhpRenderer | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Renderer_PhpRenderer" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Renderer.html">Renderer</a></li>
+    
+                <li>PhpRenderer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PhpRenderer
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PhpRenderer</strong>        extends <abbr title="Windwalker\Renderer\PhpRenderer">PhpRenderer</abbr>        implements
+        <a href="../../../Windwalker/Core/Renderer/CoreRendererInterface.html"><abbr title="Windwalker\Core\Renderer\CoreRendererInterface">CoreRendererInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/PhpRenderer.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The PhpRenderer class.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Windwalker/Core/Renderer/Traits/PackageFinderTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\PackageFinderTrait">PackageFinderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    The PackageFinderTrait class.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    The GlobalVarsTrait class.
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Renderer/Traits/PackageFinderTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\PackageFinderTrait">PackageFinderTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPackageFinder">setPackageFinder</a>(<a href="../../../Windwalker/Core/Renderer/Finder/PackageFinderInterface.html"><abbr title="Windwalker\Core\Renderer\Finder\PackageFinderInterface">PackageFinderInterface</abbr></a> $finder)
+        
+                                            <p>setRendererFinder</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Renderer/Traits/PackageFinderTrait.html#method_setPackageFinder"><abbr title="Windwalker\Core\Renderer\Traits\PackageFinderTrait">PackageFinderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGlobal">addGlobal</a>(string $name, mixed $value)
+        
+                                            <p>addGlobal</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_addGlobal"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeGlobal">removeGlobal</a>(string $name)
+        
+                                            <p>removeGlobal</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_removeGlobal"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlobals">getGlobals</a>()
+        
+                                            <p>Method to get property Globals</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_getGlobals"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGlobals">setGlobals</a>(array $globals)
+        
+                                            <p>Method to set property globals</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_setGlobals"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findFile">findFile</a>(string $file, string $ext = &#039;php&#039;)
+        
+                                            <p>finFile</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setPackageFinder">
+        <div class="location">in <a href="../../../Windwalker/Core/Renderer/Traits/PackageFinderTrait.html#method_setPackageFinder"><abbr title="Windwalker\Core\Renderer\Traits\PackageFinderTrait">PackageFinderTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/Traits/PackageFinderTrait.php#L34">line 34</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Renderer/Traits/PackageFinderTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\PackageFinderTrait">PackageFinderTrait</abbr></a>
+    <strong>setPackageFinder</strong>(<a href="../../../Windwalker/Core/Renderer/Finder/PackageFinderInterface.html"><abbr title="Windwalker\Core\Renderer\Finder\PackageFinderInterface">PackageFinderInterface</abbr></a> $finder)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setRendererFinder</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Renderer/Finder/PackageFinderInterface.html"><abbr title="Windwalker\Core\Renderer\Finder\PackageFinderInterface">PackageFinderInterface</abbr></a></td>
+                <td>$finder</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Renderer/Traits/PackageFinderTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\PackageFinderTrait">PackageFinderTrait</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGlobal">
+        <div class="location">in <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_addGlobal"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/Traits/GlobalVarsTrait.php#L33">line 33</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+    <strong>addGlobal</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addGlobal</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeGlobal">
+        <div class="location">in <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_removeGlobal"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/Traits/GlobalVarsTrait.php#L47">line 47</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+    <strong>removeGlobal</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeGlobal</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlobals">
+        <div class="location">in <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_getGlobals"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/Traits/GlobalVarsTrait.php#L59">line 59</a></div>
+        <code>                    array
+    <strong>getGlobals</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Globals</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGlobals">
+        <div class="location">in <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html#method_setGlobals"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/Traits/GlobalVarsTrait.php#L71">line 71</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a>
+    <strong>setGlobals</strong>(array $globals)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property globals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$globals</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Renderer/Traits/GlobalVarsTrait.html"><abbr title="Windwalker\Core\Renderer\Traits\GlobalVarsTrait">GlobalVarsTrait</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findFile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Renderer/PhpRenderer.php#L47">line 47</a></div>
+        <code>                    string
+    <strong>findFile</strong>(string $file, string $ext = &#039;php&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>finFile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ext</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

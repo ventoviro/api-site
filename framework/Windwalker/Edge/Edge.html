@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Edge\Edge | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Edge_Edge" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Edge.html">Edge</a></li>
+    
+                <li>Edge</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Edge
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Edge</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Edge template engine.</p>            <p>This is a modified version of Laravel Blade engine.</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a> $loader = null, <a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a> $compiler = null, <a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a> $cache = null)
+        
+                                            <p>EdgeEnvironment constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(string $__layout, array $__data = array())
+        
+                                            <p>render</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escape">escape</a>(string $string)
+        
+                                            <p>escape</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startSection">startSection</a>(string $section, string $content = &#039;&#039;)
+        
+                                            <p>Start injecting content into a section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inject">inject</a>(string $section, string $content)
+        
+                                            <p>Inject inline content into a section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_yieldSection">yieldSection</a>()
+        
+                                            <p>Stop injecting content into a section and return its contents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stopSection">stopSection</a>(bool $overwrite = false)
+        
+                                            <p>Stop injecting content into a section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_appendSection">appendSection</a>()
+        
+                                            <p>Stop injecting content into a section and append it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_yieldContent">yieldContent</a>(string $section, string $default = &#039;&#039;)
+        
+                                            <p>Get the string contents of a section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startPush">startPush</a>(string $section, string $content = &#039;&#039;)
+        
+                                            <p>Start injecting content into a push section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stopPush">stopPush</a>()
+        
+                                            <p>Stop injecting content into a push section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_yieldPushContent">yieldPushContent</a>(string $section, string $default = &#039;&#039;)
+        
+                                            <p>Get the string contents of a push section.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderEach">renderEach</a>(string $view, array $data, string $iterator, string $empty = &#039;raw|&#039;)
+        
+                                            <p>Get the rendered contents of a partial from a loop.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flushSections">flushSections</a>()
+        
+                                            <p>Flush all of the section contents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flushSectionsIfDoneRendering">flushSectionsIfDoneRendering</a>()
+        
+                                            <p>Flush all of the section contents if done rendering.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_incrementRender">incrementRender</a>()
+        
+                                            <p>Increment the rendering counter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_decrementRender">decrementRender</a>()
+        
+                                            <p>Decrement the rendering counter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_doneRendering">doneRendering</a>()
+        
+                                            <p>Check if there are no active render operations.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareExtensions">prepareExtensions</a>(<a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a> $compiler)
+        
+                                            <p>prepareDirectives</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayExcept">arrayExcept</a>(array $array, array $fields)
+        
+                                            <p>arrayExcept</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlobals">getGlobals</a>(bool $withExtensions = false)
+        
+                                            <p>Method to get property Globals</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGlobal">addGlobal</a>(string $name, string $value)
+        
+                                            <p>addGlobal</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeGlobal">removeGlobal</a>($name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlobal">getGlobal</a>($name, $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGlobals">setGlobals</a>(array $globals)
+        
+                                            <p>Method to set property globals</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCompiler">getCompiler</a>()
+        
+                                            <p>Method to get property Compiler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCompiler">setCompiler</a>(<a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a> $compiler)
+        
+                                            <p>Method to set property compiler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoader">getLoader</a>()
+        
+                                            <p>Method to get property Loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLoader">setLoader</a>(<a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a> $loader)
+        
+                                            <p>Method to set property loader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addExtension">addExtension</a>(<a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a> $extension, string $name = null)
+        
+                                            <p>addExtension</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeExtension">removeExtension</a>(string $name)
+        
+                                            <p>removeExtension</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasExtension">hasExtension</a>(string $name)
+        
+                                            <p>hasExtension</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtension">getExtension</a>(string $name)
+        
+                                            <p>getExtension</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtensions">getExtensions</a>()
+        
+                                            <p>Method to get property Extensions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExtensions">setExtensions</a>(<a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>[] $extensions)
+        
+                                            <p>Method to set property extensions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCache">getCache</a>()
+        
+                                            <p>Method to get property Cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCache">setCache</a>(<a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a> $cache)
+        
+                                            <p>Method to set property cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L112">line 112</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a> $loader = null, <a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a> $compiler = null, <a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a> $cache = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>EdgeEnvironment constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a></td>
+                <td>$loader</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+                <td>$compiler</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a></td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L127">line 127</a></div>
+        <code>                    string
+    <strong>render</strong>(string $__layout, array $__data = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>render</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$__layout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$__data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escape">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L229">line 229</a></div>
+        <code>                    string
+    <strong>escape</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>escape</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startSection">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L242">line 242</a></div>
+        <code>                    void
+    <strong>startSection</strong>(string $section, string $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Start injecting content into a section.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L265">line 265</a></div>
+        <code>                    void
+    <strong>inject</strong>(string $section, string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inject inline content into a section.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yieldSection">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L275">line 275</a></div>
+        <code>                    string
+    <strong>yieldSection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop injecting content into a section and return its contents.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopSection">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L293">line 293</a></div>
+        <code>                    string
+    <strong>stopSection</strong>(bool $overwrite = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop injecting content into a section.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$overwrite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_appendSection">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L320">line 320</a></div>
+        <code>                    string
+    <strong>appendSection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop injecting content into a section and append it.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yieldContent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L367">line 367</a></div>
+        <code>                    string
+    <strong>yieldContent</strong>(string $section, string $default = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the string contents of a section.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startPush">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L391">line 391</a></div>
+        <code>                    void
+    <strong>startPush</strong>(string $section, string $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Start injecting content into a push section.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopPush">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L412">line 412</a></div>
+        <code>                    string
+    <strong>stopPush</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop injecting content into a push section.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_yieldPushContent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L459">line 459</a></div>
+        <code>                    string
+    <strong>yieldPushContent</strong>(string $section, string $default = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the string contents of a push section.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$section</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderEach">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L479">line 479</a></div>
+        <code>                    string
+    <strong>renderEach</strong>(string $view, array $data, string $iterator, string $empty = &#039;raw|&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the rendered contents of a partial from a loop.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$iterator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$empty</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushSections">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L519">line 519</a></div>
+        <code>                    void
+    <strong>flushSections</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush all of the section contents.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flushSectionsIfDoneRendering">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L535">line 535</a></div>
+        <code>                    void
+    <strong>flushSectionsIfDoneRendering</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush all of the section contents if done rendering.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_incrementRender">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L548">line 548</a></div>
+        <code>                    void
+    <strong>incrementRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Increment the rendering counter.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decrementRender">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L558">line 558</a></div>
+        <code>                    void
+    <strong>decrementRender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Decrement the rendering counter.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doneRendering">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L568">line 568</a></div>
+        <code>                    bool
+    <strong>doneRendering</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if there are no active render operations.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareExtensions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L580">line 580</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+    <strong>prepareExtensions</strong>(<a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a> $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>prepareDirectives</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+                <td>$compiler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayExcept">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L606">line 606</a></div>
+        <code>                    array
+    <strong>arrayExcept</strong>(array $array, array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>arrayExcept</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlobals">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L626">line 626</a></div>
+        <code>                    array
+    <strong>getGlobals</strong>(bool $withExtensions = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Globals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$withExtensions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGlobal">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L653">line 653</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>addGlobal</strong>(string $name, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addGlobal</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeGlobal">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L660">line 660</a></div>
+        <code>                    
+    <strong>removeGlobal</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlobal">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L667">line 667</a></div>
+        <code>                    
+    <strong>getGlobal</strong>($name, $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGlobals">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L684">line 684</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>setGlobals</strong>(array $globals)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property globals</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$globals</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCompiler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L696">line 696</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a>
+    <strong>getCompiler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Compiler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCompiler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L708">line 708</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>setCompiler</strong>(<a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a> $compiler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property compiler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Compiler/EdgeCompilerInterface.html"><abbr title="Windwalker\Edge\Compiler\EdgeCompilerInterface">EdgeCompilerInterface</abbr></a></td>
+                <td>$compiler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoader">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L720">line 720</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a>
+    <strong>getLoader</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Loader</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLoader">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L732">line 732</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>setLoader</strong>(<a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a> $loader)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property loader</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Loader/EdgeLoaderInterface.html"><abbr title="Windwalker\Edge\Loader\EdgeLoaderInterface">EdgeLoaderInterface</abbr></a></td>
+                <td>$loader</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addExtension">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L747">line 747</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>addExtension</strong>(<a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a> $extension, string $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addExtension</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a></td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeExtension">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L766">line 766</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>removeExtension</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeExtension</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasExtension">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L783">line 783</a></div>
+        <code>                    boolean
+    <strong>hasExtension</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>hasExtension</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtension">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L795">line 795</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>
+    <strong>getExtension</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getExtension</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtensions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L810">line 810</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>[]
+    <strong>getExtensions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Extensions</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExtensions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L822">line 822</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>setExtensions</strong>(<a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>[] $extensions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property extensions</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Extension/EdgeExtensionInterface.html"><abbr title="Windwalker\Edge\Extension\EdgeExtensionInterface">EdgeExtensionInterface</abbr></a>[]</td>
+                <td>$extensions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCache">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L834">line 834</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a>
+    <strong>getCache</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Cache</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCache">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Edge/Edge.php#L846">line 846</a></div>
+        <code>                    <a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a>
+    <strong>setCache</strong>(<a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a> $cache)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property cache</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Edge/Cache/EdgeCacheInterface.html"><abbr title="Windwalker\Edge\Cache\EdgeCacheInterface">EdgeCacheInterface</abbr></a></td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Edge/Edge.html"><abbr title="Windwalker\Edge\Edge">Edge</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

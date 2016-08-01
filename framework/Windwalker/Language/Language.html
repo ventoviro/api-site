@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Language\Language | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Language_Language" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Language.html">Language</a></li>
+    
+                <li>Language</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Language
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Language</strong>        implements
+        <a href="../../Windwalker/Language/LanguageInterface.html"><abbr title="Windwalker\Language\LanguageInterface">LanguageInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class Language</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $locale = &#039;en-GB&#039;, string $defaultLocale = &#039;en-GB&#039;, <a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>|<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>[] $loaders = null, <a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>|<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>[] $formats = null)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Language\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>(string $file, string $format = &#039;ini&#039;, string $loader = &#039;file&#039;)
+        
+                                            <p>load</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_translate">translate</a>(string $key)
+        
+                                            <p>translate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_plural">plural</a>(string $string, int $count = 1)
+        
+                                            <p>plural</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sprintf">sprintf</a>(string $key)
+        
+                                            <p>sprintf</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $key, bool $normalize = true)
+        
+                                            <p>exists</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Language\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addString">addString</a>(string $key, string $string)
+        
+                                            <p>addString</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Language\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addStrings">addStrings</a>(string[] $strings)
+        
+                                            <p>addStrings</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDebug">setDebug</a>(boolean $debug)
+        
+                                            <p>setDebug</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoader">getLoader</a>(string $name)
+        
+                                            <p>getLoader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLoader">setLoader</a>(string $name, <a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a> $loader)
+        
+                                            <p>setLoader</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLoaders">setLoaders</a>(<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>|<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>[] $loaders)
+        
+                                            <p>setLoaders</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFormat">getFormat</a>(string $name)
+        
+                                            <p>getFormat</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFormat">setFormat</a>(string $name, <a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a> $format)
+        
+                                            <p>setFormat</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFormats">setFormats</a>(<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>|<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>[] $formats)
+        
+                                            <p>setFormats</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOrphans">getOrphans</a>()
+        
+                                            <p>getOrphans</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUsed">getUsed</a>()
+        
+                                            <p>getUsed</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocale">getLocale</a>()
+        
+                                            <p>getLocale</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLocale">setLocale</a>(string $locale)
+        
+                                            <p>setLocale</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultLocale">getDefaultLocale</a>()
+        
+                                            <p>Method to get property DefaultLocale</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultLocale">setDefaultLocale</a>(string $defaultLocale)
+        
+                                            <p>Method to set property defaultLocale</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLocalise">setLocalise</a>(string $locale = &#039;en-GB&#039;, <a href="../../Windwalker/Language/Localise/LocaliseInterface.html"><abbr title="Windwalker\Language\Localise\LocaliseInterface">LocaliseInterface</abbr></a> $localise)
+        
+                                            <p>setLocalise</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalize">normalize</a>(string $string)
+        
+                                            <p>normalize</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNormalizeHandler">getNormalizeHandler</a>()
+        
+                                            <p>getNormalizeHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNormalizeHandler">setNormalizeHandler</a>(callable $normalizeHandler)
+        
+                                            <p>setNormalizeHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTrace">getTrace</a>()
+        
+                                            <p>Method to get property Trace</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTraceLevelOffset">getTraceLevelOffset</a>()
+        
+                                            <p>Method to get property TraceLevelOffset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTraceLevelOffset">setTraceLevelOffset</a>(int $traceLevelOffset)
+        
+                                            <p>Method to set property traceLevelOffset</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L116">line 116</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $locale = &#039;en-GB&#039;, string $defaultLocale = &#039;en-GB&#039;, <a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>|<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>[] $loaders = null, <a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>|<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>[] $formats = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$defaultLocale</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>|<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>[]</td>
+                <td>$loaders</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>|<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>[]</td>
+                <td>$formats</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L136">line 136</a></div>
+        <code>                    <abbr title="Windwalker\Language\$this">$this</abbr>
+    <strong>load</strong>(string $file, string $format = &#039;ini&#039;, string $loader = &#039;file&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>load</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$loader</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Language\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_translate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L159">line 159</a></div>
+        <code>                    string
+    <strong>translate</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>translate</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_plural">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L201">line 201</a></div>
+        <code>                    string
+    <strong>plural</strong>(string $string, int $count = 1)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>plural</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sprintf">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L274">line 274</a></div>
+        <code>                    mixed
+    <strong>sprintf</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>sprintf</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L295">line 295</a></div>
+        <code>                    boolean
+    <strong>exists</strong>(string $key, bool $normalize = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>exists</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$normalize</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L313">line 313</a></div>
+        <code>                    <abbr title="Windwalker\Language\$this">$this</abbr>
+    <strong>addString</strong>(string $key, string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addString</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Language\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addStrings">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L327">line 327</a></div>
+        <code>                    <abbr title="Windwalker\Language\$this">$this</abbr>
+    <strong>addStrings</strong>(string[] $strings)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addStrings</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string[]</td>
+                <td>$strings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Language\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDebug">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L344">line 344</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setDebug</strong>(boolean $debug)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setDebug</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$debug</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoader">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L359">line 359</a></div>
+        <code>                    <a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>
+    <strong>getLoader</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getLoader</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomainException">DomainException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLoader">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L384">line 384</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setLoader</strong>(string $name, <a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a> $loader)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setLoader</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a></td>
+                <td>$loader</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLoaders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L403">line 403</a></div>
+        <code>                    void
+    <strong>setLoaders</strong>(<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>|<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>[] $loaders)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setLoaders</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>|<a href="../../Windwalker/Language/Loader/LoaderInterface.html"><abbr title="Windwalker\Language\Loader\LoaderInterface">LoaderInterface</abbr></a>[]</td>
+                <td>$loaders</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormat">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L424">line 424</a></div>
+        <code>                    <a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>
+    <strong>getFormat</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getFormat</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomainException">DomainException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFormat">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L449">line 449</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setFormat</strong>(string $name, <a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a> $format)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setFormat</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFormats">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L468">line 468</a></div>
+        <code>                    void
+    <strong>setFormats</strong>(<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>|<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>[] $formats)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setFormats</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>|<a href="../../Windwalker/Language/Format/FormatInterface.html"><abbr title="Windwalker\Language\Format\FormatInterface">FormatInterface</abbr></a>[]</td>
+                <td>$formats</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOrphans">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L486">line 486</a></div>
+        <code>                    string[]
+    <strong>getOrphans</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getOrphans</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsed">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L496">line 496</a></div>
+        <code>                    string[]
+    <strong>getUsed</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getUsed</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocale">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L506">line 506</a></div>
+        <code>                    string
+    <strong>getLocale</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getLocale</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLocale">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L518">line 518</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setLocale</strong>(string $locale)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setLocale</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultLocale">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L532">line 532</a></div>
+        <code>                    string
+    <strong>getDefaultLocale</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property DefaultLocale</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultLocale">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L544">line 544</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setDefaultLocale</strong>(string $defaultLocale)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property defaultLocale</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$defaultLocale</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLocalise">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L559">line 559</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setLocalise</strong>(string $locale = &#039;en-GB&#039;, <a href="../../Windwalker/Language/Localise/LocaliseInterface.html"><abbr title="Windwalker\Language\Localise\LocaliseInterface">LocaliseInterface</abbr></a> $localise)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setLocalise</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Language/Localise/LocaliseInterface.html"><abbr title="Windwalker\Language\Localise\LocaliseInterface">LocaliseInterface</abbr></a></td>
+                <td>$localise</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L604">line 604</a></div>
+        <code>                    mixed
+    <strong>normalize</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>normalize</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNormalizeHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L621">line 621</a></div>
+        <code>                    callable
+    <strong>getNormalizeHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getNormalizeHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNormalizeHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L633">line 633</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setNormalizeHandler</strong>(callable $normalizeHandler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setNormalizeHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$normalizeHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTrace">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L723">line 723</a></div>
+        <code>                    array
+    <strong>getTrace</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Trace</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTraceLevelOffset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L733">line 733</a></div>
+        <code>                    int
+    <strong>getTraceLevelOffset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property TraceLevelOffset</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTraceLevelOffset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Language/Language.php#L745">line 745</a></div>
+        <code>                    <a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a>
+    <strong>setTraceLevelOffset</strong>(int $traceLevelOffset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property traceLevelOffset</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$traceLevelOffset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Language/Language.html"><abbr title="Windwalker\Language\Language">Language</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

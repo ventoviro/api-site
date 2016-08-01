@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Filesystem\Filesystem | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Filesystem_Filesystem" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Filesystem.html">Filesystem</a></li>
+    
+                <li>Filesystem</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Filesystem
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Filesystem</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class Filesystem</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copy">copy</a>(string $src, string $dest, bool $force = false)
+        
+                                            <p>copy</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_move">move</a>(string $src, string $dest, bool $force = false)
+        
+                                            <p>move</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string $path)
+        
+                                            <p>delete</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_files">files</a>(string $path, bool $recursive = false, bool $toArray = false)
+        
+                                            <p>files</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_folders">folders</a>(string $path, bool $recursive = false, boolean $toArray = false)
+        
+                                            <p>folders</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_items">items</a>(string $path, bool $recursive = false, boolean $toArray = false)
+        
+                                            <p>items</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOne">findOne</a>(string $path, mixed $condition, boolean $recursive = false)
+        
+                                            <p>Find one file and return.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(string $path, mixed $condition, boolean $recursive = false, boolean $toArray = false)
+        
+                                            <p>Find all files which matches condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findByCallback">findByCallback</a>(string $path, <a target="_blank" href="http://php.net/Closure">Closure</a> $callback, boolean $recursive = false, boolean $toArray = false)
+        
+                                            <p>Using a closure function to filter file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a target="_blank" href="http://php.net/FilesystemIterator">FilesystemIterator</a>|<a target="_blank" href="http://php.net/RecursiveIteratorIterator">RecursiveIteratorIterator</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createIterator">createIterator</a>(string $path, boolean $recursive = false, integer $options = null)
+        
+                                            <p>Create file iterator of current dir.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_iteratorToArray">iteratorToArray</a>(<a target="_blank" href="http://php.net/Traversable">Traversable</a> $iterator)
+        
+                                            <p>iteratorToArray</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L35">line 35</a></div>
+        <code>        static            bool
+    <strong>copy</strong>(string $src, string $dest, bool $force = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>copy</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dest</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_move">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L58">line 58</a></div>
+        <code>        static            bool
+    <strong>move</strong>(string $src, string $dest, bool $force = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>move</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$dest</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$force</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L79">line 79</a></div>
+        <code>        static            bool
+    <strong>delete</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>delete</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_files">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L102">line 102</a></div>
+        <code>        static            <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>files</strong>(string $path, bool $recursive = false, bool $toArray = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>files</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$toArray</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_folders">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L130">line 130</a></div>
+        <code>        static            <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>folders</strong>(string $path, bool $recursive = false, boolean $toArray = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>folders</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$toArray</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_items">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L173">line 173</a></div>
+        <code>        static            <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>items</strong>(string $path, bool $recursive = false, boolean $toArray = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>items</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$toArray</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L225">line 225</a></div>
+        <code>        static            <a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a>
+    <strong>findOne</strong>(string $path, mixed $condition, boolean $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find one file and return.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The directory path.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$condition</td>
+                <td>Finding condition, that can be a string, a regex or a callback function.
+                               Callback example:
+                               <code>
+                               function($current, $key, $iterator)
+                               {
+                               return @preg_match('^Foo', $current->getFilename())  &amp;&amp; ! $iterator->isDot();
+                               }
+                               </code></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/SplFileInfo">SplFileInfo</a></td>
+            <td>Finded file info object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L253">line 253</a></div>
+        <code>        static            <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>find</strong>(string $path, mixed $condition, boolean $recursive = false, boolean $toArray = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find all files which matches condition.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The directory path.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$condition</td>
+                <td>Finding condition, that can be a string, a regex or a callback function.
+                             Callback example:
+                             <code>
+                             function($current, $key, $iterator)
+                             {
+                             return @preg_match('^Foo', $current->getFilename())  &amp;&amp; ! $iterator->isDot();
+                             }
+                             </code></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to resursive.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$toArray</td>
+                <td>True to convert iterator to array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td>Found files or paths iterator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findByCallback">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L316">line 316</a></div>
+        <code>        static            <a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a>
+    <strong>findByCallback</strong>(string $path, <a target="_blank" href="http://php.net/Closure">Closure</a> $callback, boolean $recursive = false, boolean $toArray = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Using a closure function to filter file.</p>                    <p>Reference: http://www.php.net/manual/en/class.callbackfilteriterator.php</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The directory path.</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td>A callback function to filter file.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to recursive.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$toArray</td>
+                <td>True to convert iterator to array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../CallbackFilterIterator.html">CallbackFilterIterator</a></td>
+            <td>Filtered file or path iteator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L338">line 338</a></div>
+        <code>        static            <a target="_blank" href="http://php.net/FilesystemIterator">FilesystemIterator</a>|<a target="_blank" href="http://php.net/RecursiveIteratorIterator">RecursiveIteratorIterator</a>
+    <strong>createIterator</strong>(string $path, boolean $recursive = false, integer $options = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create file iterator of current dir.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The directory path.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$recursive</td>
+                <td>True to recursive.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$options</td>
+                <td>FilesystemIterator Flags provides which will affect the behavior of some methods.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/FilesystemIterator">FilesystemIterator</a>|<a target="_blank" href="http://php.net/RecursiveIteratorIterator">RecursiveIteratorIterator</a></td>
+            <td>File &amp; dir iterator.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_iteratorToArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Filesystem/Filesystem.php#L371">line 371</a></div>
+        <code>        static            array
+    <strong>iteratorToArray</strong>(<a target="_blank" href="http://php.net/Traversable">Traversable</a> $iterator)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>iteratorToArray</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+                <td>$iterator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

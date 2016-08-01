@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Structure\StructureHelper | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Structure_StructureHelper" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Structure.html">Structure</a></li>
+    
+                <li>StructureHelper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            StructureHelper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>StructureHelper</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class StructureHelper</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFile">loadFile</a>(string $file, string $format = Format::JSON, array $options = array())
+        
+                                            <p>Load the contents of a file into the structure</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadString">loadString</a>(string $data, string $format = Format::JSON, array $options = array())
+        
+                                            <p>Load a string into the structure</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toString">toString</a>(array|object $data, string $format = Format::JSON, mixed $options = array())
+        
+                                            <p>Get a namespace in a given string format</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|<a href="../../Windwalker/Structure/Format/FormatInterface.html"><abbr title="Windwalker\Structure\Format\FormatInterface">FormatInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFormatClass">getFormatClass</a>(string $format)
+        
+                                            <p>getFormatClass</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAssociativeArray">isAssociativeArray</a>(array $array)
+        
+                                            <p>Method to determine if an array is an associative array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValue">getValue</a>(array $array, string $name, mixed $default = null)
+        
+                                            <p>getValue</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toObject">toObject</a>(array $array, string $class = &#039;stdClass&#039;)
+        
+                                            <p>Utility function to map an array to a stdClass object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getByPath">getByPath</a>(array $data, mixed $path, string $separator = &#039;.&#039;)
+        
+                                            <p>Get data from array or object by path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setByPath">setByPath</a>(array $data, string $path, mixed $value, string $separator = &#039;.&#039;)
+        
+                                            <p>setByPath</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPathNodes">getPathNodes</a>(string $path, string $separator = &#039;.&#039;)
+        
+                                            <p>Explode the structure path into an array and remove empty
+nodes that occur as a result of a double dot. ex: windwalker.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flatten">flatten</a>(array|object $array, string $separator = &#039;.&#039;, string $prefix = &#039;&#039;)
+        
+                                            <p>Method to recursively convert data to one dimension array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>(mixed $data, bool $recursive = false)
+        
+                                            <p>Utility function to convert all types to an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dumpObjectValues">dumpObjectValues</a>(mixed $object)
+        
+                                            <p>dumpObjectValues</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_loadFile">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L36">line 36</a></div>
+        <code>        static            array
+    <strong>loadFile</strong>(string $file, string $format = Format::JSON, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load the contents of a file into the structure</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td>Path to file to load</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>Format of the file [optional: defaults to JSON]</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options used by the formatter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Return parsed array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L66">line 66</a></div>
+        <code>        static            array
+    <strong>loadString</strong>(string $data, string $format = Format::JSON, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load a string into the structure</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>String to load into the structure</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>Format of the string</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>Options used by the formatter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Return parsed array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L85">line 85</a></div>
+        <code>        static            string
+    <strong>toString</strong>(array|object $data, string $format = Format::JSON, mixed $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a namespace in a given string format</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|object</td>
+                <td>$data</td>
+                <td>The structure data to convert to markup string.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>Format to return the string in</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$options</td>
+                <td>Parameters used by the formatter, see formatters for more info</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Namespace in string format</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormatClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L103">line 103</a></div>
+        <code>        static            string|<a href="../../Windwalker/Structure/Format/FormatInterface.html"><abbr title="Windwalker\Structure\Format\FormatInterface">FormatInterface</abbr></a>
+    <strong>getFormatClass</strong>(string $format)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getFormatClass</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|<a href="../../Windwalker/Structure/Format/FormatInterface.html"><abbr title="Windwalker\Structure\Format\FormatInterface">FormatInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DomainException">DomainException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAssociativeArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L123">line 123</a></div>
+        <code>        static            boolean
+    <strong>isAssociativeArray</strong>(array $array)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to determine if an array is an associative array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>An array to test.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the array is an associative array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValue">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L148">line 148</a></div>
+        <code>        static            mixed
+    <strong>getValue</strong>(array $array, string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getValue</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L163">line 163</a></div>
+        <code>        static            object
+    <strong>toObject</strong>(array $array, string $class = &#039;stdClass&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to map an array to a stdClass object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td>The array to map.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>Name of the class to create</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td>The object mapped from the given array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getByPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L195">line 195</a></div>
+        <code>        static            mixed
+    <strong>getByPath</strong>(array $data, mixed $path, string $separator = &#039;.&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get data from array or object by path.</p>                    <p>Example: <code>StructureHelper::getByPath($array, 'foo.bar.yoo')</code> equals to $array['foo']['bar']['yoo'].</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>An array or object to get value.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$path</td>
+                <td>The key path.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>Separator of paths.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Found value, null if not exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setByPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L241">line 241</a></div>
+        <code>        static            boolean
+    <strong>setByPath</strong>(array $data, string $path, mixed $value, string $separator = &#039;.&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setByPath</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>&amp;$data</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPathNodes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L287">line 287</a></div>
+        <code>        static            array
+    <strong>getPathNodes</strong>(string $path, string $separator = &#039;.&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Explode the structure path into an array and remove empty
+nodes that occur as a result of a double dot. ex: windwalker.</p>                    <p>.test
+Finally, re-key the array so they are sequential.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flatten">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L301">line 301</a></div>
+        <code>        static            array
+    <strong>flatten</strong>(array|object $array, string $separator = &#039;.&#039;, string $prefix = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to recursively convert data to one dimension array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|object</td>
+                <td>$array</td>
+                <td>The array or object to convert.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The key separator.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$prefix</td>
+                <td>Last level key prefix.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L339">line 339</a></div>
+        <code>        static            array
+    <strong>toArray</strong>(mixed $data, bool $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utility function to convert all types to an array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data to convert.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td>Recursive if data is nested.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The converted array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dumpObjectValues">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Structure/StructureHelper.php#L376">line 376</a></div>
+        <code>        static            array
+    <strong>dumpObjectValues</strong>(mixed $object)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>dumpObjectValues</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

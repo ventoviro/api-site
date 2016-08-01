@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Record\NestedRecord | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Record_NestedRecord" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Record.html">Record</a></li>
+    
+                <li>NestedRecord</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            NestedRecord
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>NestedRecord</strong>        extends <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The NestedRecord class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DUMP_ALL_DATA</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UPDATE_NULLS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LOAD_DEFAULT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LOCATION_BEFORE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LOCATION_AFTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LOCATION_FIRST_CHILD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LOCATION_LAST_CHILD</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $table = null, mixed $keys = &#039;id&#039;, <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a> $mapper = null)
+        
+                                            <p>Object constructor to set table and key fields.  In most cases this will
+be overridden by child classes to explicitly set the table and key fields
+for a particular database table.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method___construct"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(mixed $src, boolean $replaceNulls = false)
+        
+                                            <p>Method to bind an associative array or object to the AbstractTable instance.  This
+method only binds properties that are publicly accessible and optionally
+takes an array of properties to ignore when binding.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_bind"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $key, mixed $value = null)
+        
+                                            <p>Magic setter to set a table field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_set"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $key, mixed $default = null)
+        
+                                            <p>Magic getter to get a table field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_get"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $field)
+        
+                                            <p>Method to check a field exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_exists"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $field, mixed $value = null)
+        
+                                            <p>Set value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method___set"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(string $name)
+        
+                                            <p>__isset</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method___isset"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $field)
+        
+                                            <p>Get value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method___get"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unset">__unset</a>(string $name)
+        
+                                            <p>__unset</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method___unset"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>(bool $all = false)
+        
+                                            <p>Get an iterator object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_getIterator"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p>Is a property exists or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetExists"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p>Get a property.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetGet"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p>Set a value to property.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetSet"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Unset a property.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetUnset"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Count this object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_count"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNull">isNull</a>()
+        
+                                            <p>Is this object empty?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_isNull"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notNull">notNull</a>()
+        
+                                            <p>Is this object has properties?</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Data/Data.html#method_notNull"><abbr title="Windwalker\Data\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dump">dump</a>(bool $all = false)
+        
+                                            <p>Dump all data as array</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_dump"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_map">map</a>(callable $callback)
+        
+                                            <p>Mapping all elements.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Data/Data.html#method_map"><abbr title="Windwalker\Data\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_walk">walk</a>(callable $callback, mixed $userdata = null)
+        
+                                            <p>Apply a user supplied function to every member of this object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Data/Data.html#method_walk"><abbr title="Windwalker\Data\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Clone this object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Data/Data.html#method___clone"><abbr title="Windwalker\Data\Data">Data</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>(bool $reset = false)
+        
+                                            <p>loadFields</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_getFields"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addField">addField</a>(string $field, string $default = null)
+        
+                                            <p>addField</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_addField"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addFields">addFields</a>(array $fields)
+        
+                                            <p>Add a field to this entity.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_addFields"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeField">removeField</a>(string $field)
+        
+                                            <p>Remove field from this entity.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_removeField"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasField">hasField</a>(string $name)
+        
+                                            <p>Method to check a field exists or not.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_hasField"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAlias">setAlias</a>(string $name, string $alias)
+        
+                                            <p>Set column alias.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_setAlias"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveAlias">resolveAlias</a>(string $name)
+        
+                                            <p>Resolve alias.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/DataMapper/Entity/Entity.html#method_resolveAlias"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>(bool $loadDefault = true)
+        
+                                            <p>Method to reset class properties to the defaults set in the class
+definition. It will ignore the primary key as well as any private class
+properties (except $_errors).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Record\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(mixed $src, boolean $updateNulls = false)
+        
+                                            <p>Method to provide a shortcut to binding, checking and storing a AbstractTable
+instance to the database table.  The method will check a row in once the
+data has been stored and if an ordering filter is present will attempt to
+reorder the table rows based on the filter.  The ordering filter is an instance
+property name.  The rows that will be reordered are those whose value matches
+the AbstractTable instance for the property specified.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_save"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_load">load</a>(mixed $keys = null, boolean $reset = true)
+        
+                                            <p>Method to load a row from the database by primary key and bind the fields
+to the AbstractTable instance properties.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_load"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(integer $pk = null, boolean $children = true)
+        
+                                            <p>Method to delete a node and, optionally, its child nodes from the table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validate">validate</a>()
+        
+                                            <p>Checks that the object is valid and able to be stored.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>(boolean $updateNulls = false)
+        
+                                            <p>Method to store a node in the database table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>()
+        
+                                            <p>create</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_create"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(bool $updateNulls = false)
+        
+                                            <p>update</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_update"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTableName">getTableName</a>()
+        
+                                            <p>Get the table name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_getTableName"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTableName">setTableName</a>(string $table)
+        
+                                            <p>Method to set property table</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_setTableName"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyName">getKeyName</a>(boolean $multiple = false)
+        
+                                            <p>Method to get the primary key field name for the table.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_getKeyName"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPrimaryKey">hasPrimaryKey</a>()
+        
+                                            <p>Validate that the primary key has been set.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_hasPrimaryKey"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_valueExists">valueExists</a>(string $field, null $value = null)
+        
+                                            <p>Check a field value exists in database or not, to keep a field unique.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_valueExists"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_triggerEvent">triggerEvent</a>(string|<a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a> $event, array $args = array())
+        
+                                            <p>triggerEvent</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_triggerEvent"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDispatcher">getDispatcher</a>()
+        
+                                            <p>Method to get property Dispatcher</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_getDispatcher"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDispatcher">setDispatcher</a>(<a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a> $dispatcher)
+        
+                                            <p>Method to set property dispatcher</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_setDispatcher"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadDefault">loadDefault</a>(bool $replace = false)
+        
+                                            <p>loadDefault</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_loadDefault"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataMapper">getDataMapper</a>()
+        
+                                            <p>Method to get property Mapper</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_getDataMapper"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataMapper">setDataMapper</a>(<a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a> $mapper)
+        
+                                            <p>Method to set property mapper</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Record/Record.html#method_setDataMapper"><abbr title="Windwalker\Record\Record">Record</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>(integer $pk = null, boolean $allFields = false)
+        
+                                            <p>Method to get an array of nodes from a given node to its root.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTree">getTree</a>(integer $pk = null, boolean $allFields = false)
+        
+                                            <p>Method to get a node and all its child nodes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isLeaf">isLeaf</a>(integer $pk = null)
+        
+                                            <p>Method to determine if a node is a leaf node in the tree (has no children).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Record/NestedRecord.html"><abbr title="Windwalker\Record\NestedRecord">NestedRecord</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLocation">setLocation</a>(integer $referenceId, integer $position = self::LOCATION_AFTER)
+        
+                                            <p>Method to set the location of a node in the tree object.  This method does not
+save the new location to the database, but will set it in the object so
+that when the node is stored it will be stored in the new location.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_move">move</a>(integer $delta, string $where = &#039;&#039;)
+        
+                                            <p>Method to move a row in the ordering sequence of a group of rows defined by an SQL WHERE clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveByReference">moveByReference</a>(integer $referenceId, integer $position = self::LOCATION_AFTER, integer $pk = null)
+        
+                                            <p>Method to move a node and its children to a new location in the tree.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRootId">getRootId</a>()
+        
+                                            <p>Gets the ID of the root item in the tree</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rebuild">rebuild</a>(integer $parentId = null, integer $leftId, integer $level, string $path = &#039;&#039;)
+        
+                                            <p>Method to recursively rebuild the whole nested set tree.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rebuildPath">rebuildPath</a>(integer $pk = null)
+        
+                                            <p>Method to rebuild the node's path field from the alias values of the
+nodes from the current node to the root node of the tree.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createRoot">createRoot</a>()
+        
+                                            <p>createRoot</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method___construct"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L118">line 118</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $table = null, mixed $keys = &#039;id&#039;, <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a> $mapper = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Object constructor to set table and key fields.  In most cases this will
+be overridden by child classes to explicitly set the table and key fields
+for a particular database table.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>Name of the table to model.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$keys</td>
+                <td>Name of the primary key field in the table or array of field names that
+                                     compose the primary key.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+                <td>$mapper</td>
+                <td>The DataMapper Adapter to access database.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_bind"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L185">line 185</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>bind</strong>(mixed $src, boolean $replaceNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to bind an associative array or object to the AbstractTable instance.  This
+method only binds properties that are publicly accessible and optionally
+takes an array of properties to ignore when binding.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$src</td>
+                <td>An associative array or object to bind to the AbstractTable instance.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$replaceNulls</td>
+                <td>Replace null or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_set"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L291">line 291</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>set</strong>(string $key, mixed $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic setter to set a table field.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key name.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_get"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L310">line 310</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic getter to get a table field.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key name.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value if not exists.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value we want ot get.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_exists"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L391">line 391</a></div>
+        <code>                    boolean
+    <strong>exists</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check a field exists.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td>The field name to check.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method___set"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L250">line 250</a></div>
+        <code>                    void
+    <strong>__set</strong>(string $field, mixed $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td>The field to set.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method___isset"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L236">line 236</a></div>
+        <code>                    boolean
+    <strong>__isset</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__isset</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method___get"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L262">line 262</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td>The field to get.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unset">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method___unset"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L275">line 275</a></div>
+        <code>                    void
+    <strong>__unset</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__unset</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_getIterator"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L185">line 185</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getIterator</strong>(bool $all = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get an iterator object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$all</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>An instance of an object implementing Iterator or Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetExists"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L329">line 329</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a property exists or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetGet"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L342">line 342</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value to return.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetSet"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L356">line 356</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a value to property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_offsetUnset"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L369">line 369</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_count"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L379">line 379</a></div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count this object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNull">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_isNull"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L401">line 401</a></div>
+        <code>                    boolean
+    <strong>isNull</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this object empty?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notNull">
+        <div class="location">in <a href="../../Windwalker/Data/Data.html#method_notNull"><abbr title="Windwalker\Data\Data">Data</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/Data.php#L281">line 281</a></div>
+        <code>                    boolean
+    <strong>notNull</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this object has properties?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_dump"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L421">line 421</a></div>
+        <code>                    array
+    <strong>dump</strong>(bool $all = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dump all data as array</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$all</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_map">
+        <div class="location">in <a href="../../Windwalker/Data/Data.html#method_map"><abbr title="Windwalker\Data\Data">Data</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/Data.php#L305">line 305</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>map</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mapping all elements.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callback to handle every element.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_walk">
+        <div class="location">in <a href="../../Windwalker/Data/Data.html#method_walk"><abbr title="Windwalker\Data\Data">Data</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/Data.php#L325">line 325</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>walk</strong>(callable $callback, mixed $userdata = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply a user supplied function to every member of this object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callback to handle every element.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$userdata</td>
+                <td>This will be passed as the third parameter to the callback.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../Windwalker/Data/Data.html#method___clone"><abbr title="Windwalker\Data\Data">Data</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/Data.php#L344">line 344</a></div>
+        <code>                    void
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clone this object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_getFields"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L486">line 486</a></div>
+        <code>                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>[]
+    <strong>getFields</strong>(bool $reset = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadFields</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$reset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/stdClass">stdClass</a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addField">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_addField"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L90">line 90</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+    <strong>addField</strong>(string $field, string $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addField</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFields">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_addFields"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L137">line 137</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+    <strong>addFields</strong>(array $fields)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a field to this entity.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td>Fields array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeField">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_removeField"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L154">line 154</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+    <strong>removeField</strong>(string $field)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove field from this entity.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td>Field name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasField">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_hasField"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L170">line 170</a></div>
+        <code>                    boolean
+    <strong>hasField</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check a field exists or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAlias">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_setAlias"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L198">line 198</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+    <strong>setAlias</strong>(string $name, string $alias)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set column alias.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveAlias">
+        <div class="location">in <a href="../../Windwalker/DataMapper/Entity/Entity.html#method_resolveAlias"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/Entity/Entity.php#L219">line 219</a></div>
+        <code>                    string
+    <strong>resolveAlias</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolve alias.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L871">line 871</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a>
+    <strong>reset</strong>(bool $loadDefault = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to reset class properties to the defaults set in the class
+definition. It will ignore the primary key as well as any private class
+properties (except $_errors).</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$loadDefault</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/Entity/Entity.html"><abbr title="Windwalker\DataMapper\Entity\Entity">Entity</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_save"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L162">line 162</a></div>
+        <code>                    <abbr title="Windwalker\Record\$this">$this</abbr>
+    <strong>save</strong>(mixed $src, boolean $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to provide a shortcut to binding, checking and storing a AbstractTable
+instance to the database table.  The method will check a row in once the
+data has been stored and if an ordering filter is present will attempt to
+reorder the table rows based on the filter.  The ordering filter is an instance
+property name.  The rows that will be reordered are those whose value matches
+the AbstractTable instance for the property specified.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$src</td>
+                <td>An associative array or object to bind to the AbstractTable instance.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$updateNulls</td>
+                <td>True to update fields even if they are null.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Record\$this">$this</abbr></td>
+            <td>Method allows chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_load"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L248">line 248</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>load</strong>(mixed $keys = null, boolean $reset = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to load a row from the database by primary key and bind the fields
+to the AbstractTable instance properties.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$keys</td>
+                <td>An optional primary key value to load the row by, or an array of fields to match.  If not
+                          set the instance property value is used.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$reset</td>
+                <td>True to reset the default values before loading the new row.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Method allows chaining</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L554">line 554</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>delete</strong>(integer $pk = null, boolean $children = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to delete a node and, optionally, its child nodes from the table.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$pk</td>
+                <td>The primary key of the node to delete.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$children</td>
+                <td>True to delete child nodes, false to move them up a level.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Method allows chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L175">line 175</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>validate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks that the object is valid and able to be stored.</p>                    <p>This method checks that the parent<em>id is non-zero and exists in the database.
+Note that the root node (parent</em>id = 0) cannot be manipulated with this class.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Method allows chaining</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>on database error.</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L240">line 240</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>store</strong>(boolean $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to store a node in the database table.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$updateNulls</td>
+                <td>True to update fields even if they are null.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Method allows chaining</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_create"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L404">line 404</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>create</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>create</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_update"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L429">line 429</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>update</strong>(bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>update</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableName">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_getTableName"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L460">line 460</a></div>
+        <code>                    string
+    <strong>getTableName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the table name.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTableName">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_setTableName"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L472">line 472</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>setTableName</strong>(string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property table</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyName">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_getKeyName"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L513">line 513</a></div>
+        <code>                    array|mixed
+    <strong>getKeyName</strong>(boolean $multiple = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the primary key field name for the table.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$multiple</td>
+                <td>True to return all primary keys (as an array) or false to return just the first one (as a string).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|mixed</td>
+            <td>Array of primary key field names or string containing the first primary key field.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPrimaryKey">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_hasPrimaryKey"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L532">line 532</a></div>
+        <code>                    boolean
+    <strong>hasPrimaryKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validate that the primary key has been set.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the primary key(s) have been set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_valueExists">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_valueExists"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L565">line 565</a></div>
+        <code>                    bool
+    <strong>valueExists</strong>(string $field, null $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check a field value exists in database or not, to keep a field unique.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$field</td>
+                <td>The field name to check.</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_triggerEvent">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_triggerEvent"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L608">line 608</a></div>
+        <code>                    <a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a>
+    <strong>triggerEvent</strong>(string|<a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a> $event, array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>triggerEvent</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDispatcher">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_getDispatcher"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L638">line 638</a></div>
+        <code>                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+    <strong>getDispatcher</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Dispatcher</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDispatcher">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_setDispatcher"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L662">line 662</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>setDispatcher</strong>(<a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a> $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property dispatcher</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadDefault">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_loadDefault"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L700">line 700</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>loadDefault</strong>(bool $replace = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>loadDefault</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$replace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataMapper">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_getDataMapper"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L718">line 718</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+    <strong>getDataMapper</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Mapper</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataMapper">
+        <div class="location">in <a href="../../Windwalker/Record/Record.html#method_setDataMapper"><abbr title="Windwalker\Record\Record">Record</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/Record.php#L735">line 735</a></div>
+        <code>                    <a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a>
+    <strong>setDataMapper</strong>(<a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a> $mapper)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property mapper</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+                <td>$mapper</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/Record.html"><abbr title="Windwalker\Record\Record">Record</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L83">line 83</a></div>
+        <code>                    mixed
+    <strong>getPath</strong>(integer $pk = null, boolean $allFields = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get an array of nodes from a given node to its root.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$pk</td>
+                <td>Primary key of the node for which to get the path.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$allFields</td>
+                <td>Get all fields.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>An array of node objects including the start node.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTree">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L114">line 114</a></div>
+        <code>                    mixed
+    <strong>getTree</strong>(integer $pk = null, boolean $allFields = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get a node and all its child nodes.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$pk</td>
+                <td>Primary key of the node for which to get the tree.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$allFields</td>
+                <td>Get all fields.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Boolean false on failure or array of node objects on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLeaf">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L145">line 145</a></div>
+        <code>                    boolean
+    <strong>isLeaf</strong>(integer $pk = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to determine if a node is a leaf node in the tree (has no children).</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$pk</td>
+                <td>Primary key of the node to check.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if a leaf node, false if not or null if the node does not exist.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>on database error.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLocation">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L209">line 209</a></div>
+        <code>                    <a href="../../Windwalker/Record/NestedRecord.html"><abbr title="Windwalker\Record\NestedRecord">NestedRecord</abbr></a>
+    <strong>setLocation</strong>(integer $referenceId, integer $position = self::LOCATION_AFTER)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set the location of a node in the tree object.  This method does not
+save the new location to the database, but will set it in the object so
+that when the node is stored it will be stored in the new location.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$referenceId</td>
+                <td>The primary key of the node to reference new location by.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$position</td>
+                <td>Location type string. ['before', 'after', 'first-child', 'last-child']</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Record/NestedRecord.html"><abbr title="Windwalker\Record\NestedRecord">NestedRecord</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_move">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L348">line 348</a></div>
+        <code>                    mixed
+    <strong>move</strong>(integer $delta, string $where = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to move a row in the ordering sequence of a group of rows defined by an SQL WHERE clause.</p>                    <p>Negative numbers move the row up in the sequence and positive numbers move it down.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$delta</td>
+                <td>The direction and magnitude to move the row in the ordering sequence.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$where</td>
+                <td>WHERE clause to use for limiting the selection of rows to compact the
+                          ordering values.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Boolean true on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveByReference">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L401">line 401</a></div>
+        <code>                    boolean
+    <strong>moveByReference</strong>(integer $referenceId, integer $position = self::LOCATION_AFTER, integer $pk = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to move a node and its children to a new location in the tree.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$referenceId</td>
+                <td>The primary key of the node to reference new location by.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$position</td>
+                <td>Location type string. ['before', 'after', 'first-child', 'last-child']</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$pk</td>
+                <td>The primary key of the node to move.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>on database error.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRootId">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L654">line 654</a></div>
+        <code>                    mixed
+    <strong>getRootId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the ID of the root item in the tree</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The primary id of the root row, or false if not found and the internal error is set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rebuild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L706">line 706</a></div>
+        <code>                    integer
+    <strong>rebuild</strong>(integer $parentId = null, integer $leftId, integer $level, string $path = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to recursively rebuild the whole nested set tree.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$parentId</td>
+                <td>The root of the tree to rebuild.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$leftId</td>
+                <td>The left id to start with in building the tree.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$level</td>
+                <td>The level to assign to the current nodes.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The path to the current nodes.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>1 + value of root rgt on success, false on failure</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>on database error.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rebuildPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L785">line 785</a></div>
+        <code>                    boolean
+    <strong>rebuildPath</strong>(integer $pk = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to rebuild the node's path field from the alias values of the
+nodes from the current node to the root node of the tree.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$pk</td>
+                <td>Primary key of the node for which to get the path.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRoot">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Record/NestedRecord.php#L838">line 838</a></div>
+        <code>                    boolean
+    <strong>createRoot</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>createRoot</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

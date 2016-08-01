@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\String\StringNormalise | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_String_StringNormalise" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/String.html">String</a></li>
+    
+                <li>StringNormalise</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            StringNormalise
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>StringNormalise</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Windwalker Framework String Normalise Class</p>            <p>This class is based on Joomla String package</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fromCamelCase">fromCamelCase</a>(string $input, boolean $grouped = false)
+        
+                                            <p>Method to convert a string from camel case.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toCamelCase">toCamelCase</a>(string $input)
+        
+                                            <p>Method to convert a string into camel case.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toDashSeparated">toDashSeparated</a>(string $input)
+        
+                                            <p>Method to convert a string into dash separated form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toSpaceSeparated">toSpaceSeparated</a>(string $input)
+        
+                                            <p>Method to convert a string into space separated form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toDotSeparated">toDotSeparated</a>(string $input)
+        
+                                            <p>Method to convert a string into dot separated form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_separate">separate</a>(string $input, string $separator = &#039;_&#039;)
+        
+                                            <p>Separate a string by custom separator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toUnderscoreSeparated">toUnderscoreSeparated</a>(string $input)
+        
+                                            <p>Method to convert a string into underscore separated form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toVariable">toVariable</a>(string $input)
+        
+                                            <p>Method to convert a string into variable form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toKey">toKey</a>(string $input)
+        
+                                            <p>Method to convert a string into key form.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toClassNamespace">toClassNamespace</a>(string $class)
+        
+                                            <p>Convert to standard PSR-0/PSR-4 class name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_fromCamelCase">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L42">line 42</a></div>
+        <code>        static            string
+    <strong>fromCamelCase</strong>(string $input, boolean $grouped = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string from camel case.</p>                    <p>This method offers two modes. Grouped allows for splitting on groups of uppercase characters as follows:</p>
+
+<p>"FooBarABCDef"            becomes  array("Foo", "Bar", "ABC", "Def")
+"JFooBar"                 becomes  array("J", "Foo", "Bar")
+"J001FooBar002"           becomes  array("J001", "Foo", "Bar002")
+"abcDef"                  becomes  array("abc", "Def")
+"abc<em>defGhi</em>Jkl"          becomes  array("abc<em>def", "Ghi</em>Jkl")
+"ThisIsA<em>NASAAstronaut"   becomes  array("This", "Is", "A</em>NASA", "Astronaut"))
+"JohnFitzgerald<em>Kennedy"  becomes  array("John", "Fitzgerald</em>Kennedy"))</p>
+
+<p>Non-grouped will split strings at each uppercase character.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$grouped</td>
+                <td>Optionally allows splitting on groups of uppercase characters.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The space separated string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toCamelCase">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L58">line 58</a></div>
+        <code>        static            string
+    <strong>toCamelCase</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into camel case.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The camel case string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toDashSeparated">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L77">line 77</a></div>
+        <code>        static            string
+    <strong>toDashSeparated</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into dash separated form.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The dash separated string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toSpaceSeparated">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L92">line 92</a></div>
+        <code>        static            string
+    <strong>toSpaceSeparated</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into space separated form.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The space separated string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toDotSeparated">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L107">line 107</a></div>
+        <code>        static            string
+    <strong>toDotSeparated</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into dot separated form.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The dot separated string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_separate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L123">line 123</a></div>
+        <code>        static            string
+    <strong>separate</strong>(string $input, string $separator = &#039;_&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Separate a string by custom separator.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$separator</td>
+                <td>The separator to want to separate it.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The string be converted.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toUnderscoreSeparated">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L137">line 137</a></div>
+        <code>        static            string
+    <strong>toUnderscoreSeparated</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into underscore separated form.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The underscore separated string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toVariable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L152">line 152</a></div>
+        <code>        static            string
+    <strong>toVariable</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into variable form.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The variable string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toKey">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L180">line 180</a></div>
+        <code>        static            string
+    <strong>toKey</strong>(string $input)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to convert a string into key form.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$input</td>
+                <td>The string input (ASCII only).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The key string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toClassNamespace">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/String/StringNormalise.php#L198">line 198</a></div>
+        <code>        static            string
+    <strong>toClassNamespace</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert to standard PSR-0/PSR-4 class name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>The class name string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Normalised class name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

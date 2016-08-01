@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Logger\LoggerManager | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Logger_LoggerManager" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Logger.html">Logger</a></li>
+    
+                <li>LoggerManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            LoggerManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>LoggerManager</strong>        implements
+        <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>, <a target="_blank" href="http://php.net/Countable">Countable</a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The LoggerFactory class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $logPath)
+        
+                                            <p>LoggerPool constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_emergency">emergency</a>(string $category, string $message, array $context = array())
+        
+                                            <p>System is unusable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alert">alert</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Action must be taken immediately.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_critical">critical</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Critical conditions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Runtime errors that do not require immediate action but should typically
+be logged and monitored.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_warning">warning</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Exceptional occurrences that are not errors.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notice">notice</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Normal but significant events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_info">info</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Interesting events.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_debug">debug</a>(string $category, string $message, array $context = array())
+        
+                                            <p>Detailed debug information.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>(string $category, mixed $level, string $message, array $context = array())
+        
+                                            <p>Logs with an arbitrary level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addLogger">addLogger</a>(string $category, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        
+                                            <p>addLogger</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createCategory">createCategory</a>(string $category, int $level = Logger::DEBUG)
+        
+                                            <p>createCategory</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLogger">getLogger</a>(string $category, int $level = Logger::DEBUG)
+        
+                                            <p>getLogger</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLogger">hasLogger</a>(string $category)
+        
+                                            <p>hasLogger</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeLogger">removeLogger</a>(string $category)
+        
+                                            <p>removeLogger</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoggers">getLoggers</a>()
+        
+                                            <p>Method to get property Loggers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLoggers">setLoggers</a>(array $loggers)
+        
+                                            <p>Method to set property loggers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\NullLogger">NullLogger</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNullLogger">getNullLogger</a>()
+        
+                                            <p>getNullLogger</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Retrieve an external iterator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p>Is a property exists or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p>Get a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p>Set a value to property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Unset a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Count this object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLogPath">getLogPath</a>()
+        
+                                            <p>Method to get property LogPath</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogPath">setLogPath</a>(mixed $logPath)
+        
+                                            <p>Method to set property logPath</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L52">line 52</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $logPath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>LoggerPool constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$logPath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_emergency">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L66">line 66</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>emergency</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>System is unusable.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alert">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L85">line 85</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>alert</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Action must be taken immediately.</p>                    <p>Example: Entire website down, database unavailable, etc. This should
+trigger the SMS alerts and wake you up.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_critical">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L103">line 103</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>critical</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Critical conditions.</p>                    <p>Example: Application component unavailable, unexpected exception.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L120">line 120</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>error</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Runtime errors that do not require immediate action but should typically
+be logged and monitored.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_warning">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L139">line 139</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>warning</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Exceptional occurrences that are not errors.</p>                    <p>Example: Use of deprecated APIs, poor use of an API, undesirable things
+that are not necessarily wrong.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notice">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L155">line 155</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>notice</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Normal but significant events.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_info">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L173">line 173</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>info</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Interesting events.</p>                    <p>Example: User logs in, SQL logs.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_debug">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L189">line 189</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>debug</strong>(string $category, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Detailed debug information.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L206">line 206</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>log</strong>(string $category, mixed $level, string $message, array $context = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Logs with an arbitrary level.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLogger">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L221">line 221</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>addLogger</strong>(string $category, <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addLogger</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+                <td>$logger</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createCategory">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L238">line 238</a></div>
+        <code>                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+    <strong>createCategory</strong>(string $category, int $level = Logger::DEBUG)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>createCategory</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogger">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L251">line 251</a></div>
+        <code>                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+    <strong>getLogger</strong>(string $category, int $level = Logger::DEBUG)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getLogger</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLogger">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L297">line 297</a></div>
+        <code>                    boolean
+    <strong>hasLogger</strong>(string $category)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>hasLogger</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeLogger">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L311">line 311</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>removeLogger</strong>(string $category)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeLogger</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$category</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoggers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L326">line 326</a></div>
+        <code>                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>[]
+    <strong>getLoggers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Loggers</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLoggers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L338">line 338</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>setLoggers</strong>(array $loggers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property loggers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$loggers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNullLogger">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L353">line 353</a></div>
+        <code>                    <abbr title="Psr\Log\NullLogger">NullLogger</abbr>
+    <strong>getNullLogger</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getNullLogger</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\NullLogger">NullLogger</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L368">line 368</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve an external iterator</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>An instance of an object implementing Iterator or Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L380">line 380</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a property exists or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L393">line 393</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value to return.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L407">line 407</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a value to property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L420">line 420</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L430">line 430</a></div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count this object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L440">line 440</a></div>
+        <code>                    mixed
+    <strong>getLogPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property LogPath</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Logger/LoggerManager.php#L452">line 452</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a>
+    <strong>setLogPath</strong>(mixed $logPath)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property logPath</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$logPath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Logger/LoggerManager.html"><abbr title="Windwalker\Core\Logger\LoggerManager">LoggerManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

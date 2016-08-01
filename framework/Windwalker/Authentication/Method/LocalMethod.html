@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Authentication\Method\LocalMethod | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Authentication_Method_LocalMethod" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Authentication.html">Authentication</a></li>
+                                        <li><a href="../../../Windwalker/Authentication/Method.html">Method</a></li>
+    
+                <li>LocalMethod</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            LocalMethod
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>LocalMethod</strong>        extends <a href="../../../Windwalker/Authentication/Method/AbstractMethod.html"><abbr title="Windwalker\Authentication\Method\AbstractMethod">AbstractMethod</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The LocalMethod class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatus">getStatus</a>()
+        
+                                            <p>getStatus</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Authentication/Method/AbstractMethod.html#method_getStatus"><abbr title="Windwalker\Authentication\Method\AbstractMethod">AbstractMethod</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $users = array())
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authenticate">authenticate</a>(<a href="../../../Windwalker/Authentication/Credential.html"><abbr title="Windwalker\Authentication\Credential">Credential</abbr></a> $credential)
+        
+                                            <p>authenticate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVerifyHandler">getVerifyHandler</a>()
+        
+                                            <p>Method to get property VerifyHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Authentication/Method/LocalMethod.html"><abbr title="Windwalker\Authentication\Method\LocalMethod">LocalMethod</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVerifyHandler">setVerifyHandler</a>(callable $verifyHandler)
+        
+                                            <p>Method to set property verifyHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUsers">getUsers</a>()
+        
+                                            <p>Method to get property Users</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Authentication/Method/LocalMethod.html"><abbr title="Windwalker\Authentication\Method\LocalMethod">LocalMethod</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUsers">setUsers</a>(array $users)
+        
+                                            <p>Method to set property users</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getStatus">
+        <div class="location">in <a href="../../../Windwalker/Authentication/Method/AbstractMethod.html#method_getStatus"><abbr title="Windwalker\Authentication\Method\AbstractMethod">AbstractMethod</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/AbstractMethod.php#L30">line 30</a></div>
+        <code>                    integer
+    <strong>getStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getStatus</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php#L40">line 40</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $users = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$users</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authenticate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php#L52">line 52</a></div>
+        <code>                    integer
+    <strong>authenticate</strong>(<a href="../../../Windwalker/Authentication/Credential.html"><abbr title="Windwalker\Authentication\Credential">Credential</abbr></a> $credential)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>authenticate</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Authentication/Credential.html"><abbr title="Windwalker\Authentication\Credential">Credential</abbr></a></td>
+                <td>$credential</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVerifyHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php#L107">line 107</a></div>
+        <code>                    callable
+    <strong>getVerifyHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property VerifyHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVerifyHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php#L132">line 132</a></div>
+        <code>                    <a href="../../../Windwalker/Authentication/Method/LocalMethod.html"><abbr title="Windwalker\Authentication\Method\LocalMethod">LocalMethod</abbr></a>
+    <strong>setVerifyHandler</strong>(callable $verifyHandler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property verifyHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$verifyHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Authentication/Method/LocalMethod.html"><abbr title="Windwalker\Authentication\Method\LocalMethod">LocalMethod</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php#L144">line 144</a></div>
+        <code>                    array
+    <strong>getUsers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Users</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUsers">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Authentication/Method/LocalMethod.php#L156">line 156</a></div>
+        <code>                    <a href="../../../Windwalker/Authentication/Method/LocalMethod.html"><abbr title="Windwalker\Authentication\Method\LocalMethod">LocalMethod</abbr></a>
+    <strong>setUsers</strong>(array $users)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property users</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$users</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Authentication/Method/LocalMethod.html"><abbr title="Windwalker\Authentication\Method\LocalMethod">LocalMethod</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

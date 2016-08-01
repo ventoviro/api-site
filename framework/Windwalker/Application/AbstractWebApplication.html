@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Application\AbstractWebApplication | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Application_AbstractWebApplication" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Application.html">Application</a></li>
+    
+                <li>AbstractWebApplication</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractWebApplication
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractWebApplication</strong>        extends <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Application for Web HTTP foundation.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request = null, <a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config = null, <a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a> $environment = null)
+        
+                                            <p>Class constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>(integer|string $message)
+        
+                                            <p>Method to close the application.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_close"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>()
+        
+                                            <p>Execute the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $key, mixed $default = null)
+        
+                                            <p>Returns a property of the object or the default value if the property is not set.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_get"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLogger">getLogger</a>()
+        
+                                            <p>Get the logger.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_getLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $key, mixed $value = null)
+        
+                                            <p>Modifies a property of the object, creating it if it does not already exist.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_set"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConfiguration">setConfiguration</a>(<a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config)
+        
+                                            <p>Sets the configuration for the application.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_setConfiguration"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogger">setLogger</a>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        
+                                            <p>Set the logger.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_setLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>($name)
+        
+                                            <p>is utilized for reading data from inaccessible members.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dispatch">dispatch</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $next = null)
+        
+                                            <p>Method as the Psr7 WebHttpServer handler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Magic method to render output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(string $url, boolean|int $code = 303)
+        
+                                            <p>Redirect to another URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnvironment">getEnvironment</a>()
+        
+                                            <p>Method to get property Environment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnvironment">setEnvironment</a>(<a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a> $environment)
+        
+                                            <p>Method to set property environment</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFinalHandler">getFinalHandler</a>()
+        
+                                            <p>Method to get property FinalHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFinalHandler">setFinalHandler</a>(callable $finalHandler)
+        
+                                            <p>Method to set property finalHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_checkHeadersSent">checkHeadersSent</a>()
+        
+                                            <p>Method to check to see if headers have already been sent.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Http/WebHttpServer.html"><abbr title="Windwalker\Http\WebHttpServer">WebHttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServer">getServer</a>()
+        
+                                            <p>Method to get property Server</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setServer">setServer</a>(<a href="../../Windwalker/Http/WebHttpServer.html"><abbr title="Windwalker\Http\WebHttpServer">WebHttpServer</abbr></a> $server)
+        
+                                            <p>Method to set property server</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequest">getRequest</a>()
+        
+                                            <p>Method to get property Request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/UriData.html"><abbr title="Windwalker\Uri\UriData">UriData</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUri">getUri</a>()
+        
+                                            <p>Method to get property Uri</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Environment/Browser/Browser.html"><abbr title="Windwalker\Environment\Browser\Browser">Browser</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBrowser">getBrowser</a>()
+        
+                                            <p>Method to get property Browser</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Environment/Platform.html"><abbr title="Windwalker\Environment\Platform">Platform</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlatform">getPlatform</a>()
+        
+                                            <p>Method to get property Platform</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L88">line 88</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request = null, <a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config = null, <a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a> $environment = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td>An optional argument to provide dependency injection for the Http request object.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a></td>
+                <td>$config</td>
+                <td>An optional argument to provide a Structure object to be config.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a></td>
+                <td>$environment</td>
+                <td>An optional argument to provide dependency injection for the application's
+                                       environment object.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_close"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L64">line 64</a></div>
+        <code>                    void
+    <strong>close</strong>(integer|string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to close the application.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer|string</td>
+                <td>$message</td>
+                <td>The exit code (optional; default is 0).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L112">line 112</a></div>
+        <code>                    mixed
+    <strong>execute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute the application.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_get"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L128">line 128</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a property of the object or the default value if the property is not set.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of the property.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value (optional) if none is set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value of the configuration.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogger">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_getLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L140">line 140</a></div>
+        <code>                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+    <strong>getLogger</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the logger.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_set"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L175">line 175</a></div>
+        <code>                    mixed
+    <strong>set</strong>(string $key, mixed $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modifies a property of the object, creating it if it does not already exist.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of the property.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value of the property to set (optional).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Previous value of the property</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfiguration">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_setConfiguration"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L193">line 193</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+    <strong>setConfiguration</strong>(<a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the configuration for the application.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a></td>
+                <td>$config</td>
+                <td>A structure object holding the configuration.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></td>
+            <td>Returns itself to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogger">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_setLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L209">line 209</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+    <strong>setLogger</strong>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the logger.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+                <td>$logger</td>
+                <td>The logger.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></td>
+            <td>Returns itself to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L403">line 403</a></div>
+        <code>                    mixed
+    <strong>__get</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>is utilized for reading data from inaccessible members.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatch">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L156">line 156</a></div>
+        <code>    abstract                <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>dispatch</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response, callable $next = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method as the Psr7 WebHttpServer handler.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td>The Psr7 ServerRequest to get request params.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>The Psr7 Response interface to prepare respond data.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$next</td>
+                <td>The next handler to support middleware pattern.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td>The returned response object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L165">line 165</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic method to render output.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Rendered string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L188">line 188</a></div>
+        <code>                    void
+    <strong>redirect</strong>(string $url, boolean|int $code = 303)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Redirect to another URL.</p>                    <p>If the headers have not been sent the redirect will be accomplished using a "301 Moved Permanently"
+or "303 See Other" code in the header pointing to the new location. If the headers have already been
+sent this will be accomplished using a JavaScript statement.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>The URL to redirect to. Can only be http/https URL</td>
+            </tr>
+                    <tr>
+                <td>boolean|int</td>
+                <td>$code</td>
+                <td>True if the page is 301 Permanently Moved, otherwise 303 See Other is assumed.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnvironment">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L256">line 256</a></div>
+        <code>                    <a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a>
+    <strong>getEnvironment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Environment</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnvironment">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L270">line 270</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a>
+    <strong>setEnvironment</strong>(<a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a> $environment)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property environment</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Environment/WebEnvironment.html"><abbr title="Windwalker\Environment\WebEnvironment">WebEnvironment</abbr></a></td>
+                <td>$environment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFinalHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L284">line 284</a></div>
+        <code>                    callable
+    <strong>getFinalHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property FinalHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFinalHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L298">line 298</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a>
+    <strong>setFinalHandler</strong>(callable $finalHandler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property finalHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$finalHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkHeadersSent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L315">line 315</a></div>
+        <code>                    boolean
+    <strong>checkHeadersSent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check to see if headers have already been sent.</p>                    <p>We wrap headers_sent() function with this method for testing reason.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the headers have already been sent.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>headers_sent()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L327">line 327</a></div>
+        <code>                    <a href="../../Windwalker/Http/WebHttpServer.html"><abbr title="Windwalker\Http\WebHttpServer">WebHttpServer</abbr></a>
+    <strong>getServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Server</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/WebHttpServer.html"><abbr title="Windwalker\Http\WebHttpServer">WebHttpServer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServer">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L341">line 341</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a>
+    <strong>setServer</strong>(<a href="../../Windwalker/Http/WebHttpServer.html"><abbr title="Windwalker\Http\WebHttpServer">WebHttpServer</abbr></a> $server)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property server</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Http/WebHttpServer.html"><abbr title="Windwalker\Http\WebHttpServer">WebHttpServer</abbr></a></td>
+                <td>$server</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractWebApplication.html"><abbr title="Windwalker\Application\AbstractWebApplication">AbstractWebApplication</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequest">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L355">line 355</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+    <strong>getRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Request</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L367">line 367</a></div>
+        <code>                    <a href="../../Windwalker/Uri/UriData.html"><abbr title="Windwalker\Uri\UriData">UriData</abbr></a>
+    <strong>getUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Uri</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/UriData.html"><abbr title="Windwalker\Uri\UriData">UriData</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBrowser">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L379">line 379</a></div>
+        <code>                    <a href="../../Windwalker/Environment/Browser/Browser.html"><abbr title="Windwalker\Environment\Browser\Browser">Browser</abbr></a>
+    <strong>getBrowser</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Browser</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Environment/Browser/Browser.html"><abbr title="Windwalker\Environment\Browser\Browser">Browser</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlatform">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractWebApplication.php#L391">line 391</a></div>
+        <code>                    <a href="../../Windwalker/Environment/Platform.html"><abbr title="Windwalker\Environment\Platform">Platform</abbr></a>
+    <strong>getPlatform</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Platform</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Environment/Platform.html"><abbr title="Windwalker\Environment\Platform">Platform</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\User\UserManager | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_User_UserManager" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/User.html">User</a></li>
+    
+                <li>UserManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            UserManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>UserManager</strong>        implements
+        <abbr title="Windwalker\Event\EventTriggerableInterface">EventTriggerableInterface</abbr>, <abbr title="Windwalker\Event\DispatcherAwareInterface">DispatcherAwareInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The UserManager class.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Windwalker\Event\DispatcherAwareTrait">DispatcherAwareTrait</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a> $handler = null, <abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr> $authentication = null, <abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr> $authorisation = null, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher = null)
+        
+                                            <p>UserManager constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authorise">authorise</a>(string $policy, <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a> $user, mixed $data)
+        
+                                            <p>authorise</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|<abbr title="Windwalker\Authentication\Credential">Credential</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authenticate">authenticate</a>(<abbr title="Windwalker\Authentication\Credential">Credential</abbr> $credential)
+        
+                                            <p>authenticate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthResults">getAuthResults</a>()
+        
+                                            <p>Method to get property Results</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_login">login</a>(array|object $user, bool $remember = false, array $options = array())
+        
+                                            <p>login</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makeUserLoggedIn">makeUserLoggedIn</a>(mixed $user)
+        
+                                            <p>makeUserLogin</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_logout">logout</a>(array|object $conditions = array(), array $options = array())
+        
+                                            <p>logout</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUser">getUser</a>(array $conditions = array())
+        
+                                            <p>getUser</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(array $conditions = array())
+        
+                                            <p>Alias of getUser().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(array $user = array(), array $options = array())
+        
+                                            <p>save</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(array $conditions = null, array $options = array())
+        
+                                            <p>delete</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPolicy">addPolicy</a>(string $name, callable|<abbr title="Windwalker\Authorisation\PolicyInterface">PolicyInterface</abbr> $handler)
+        
+                                            <p>addPolicy</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerPolicyProvider">registerPolicyProvider</a>(<abbr title="Windwalker\Authorisation\PolicyProviderInterface">PolicyProviderInterface</abbr> $provider)
+        
+                                            <p>registerPolicyProvider</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAuthMethod">addAuthMethod</a>(string $name, <abbr title="Windwalker\Authentication\Method\MethodInterface">MethodInterface</abbr> $method)
+        
+                                            <p>addAuthMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandler">getHandler</a>()
+        
+                                            <p>Method to get property Handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHandler">setHandler</a>(<a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a> $handler)
+        
+                                            <p>Method to set property handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasHandler">hasHandler</a>()
+        
+                                            <p>hasHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthorisation">getAuthorisation</a>()
+        
+                                            <p>Method to get property Authorisation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthorisation">setAuthorisation</a>(<abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr> $authorisation)
+        
+                                            <p>Method to set property authorisation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthentication">getAuthentication</a>()
+        
+                                            <p>Method to get property Authentication</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthentication">setAuthentication</a>(<abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr> $authentication)
+        
+                                            <p>Method to set property authentication</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L63">line 63</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a> $handler = null, <abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr> $authentication = null, <abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr> $authorisation = null, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>UserManager constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr></td>
+                <td>$authentication</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></td>
+                <td>$authorisation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authorise">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L81">line 81</a></div>
+        <code>                    bool
+    <strong>authorise</strong>(string $policy, <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a> $user, mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>authorise</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$policy</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authenticate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L93">line 93</a></div>
+        <code>                    bool|<abbr title="Windwalker\Authentication\Credential">Credential</abbr>
+    <strong>authenticate</strong>(<abbr title="Windwalker\Authentication\Credential">Credential</abbr> $credential)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>authenticate</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Authentication\Credential">Credential</abbr></td>
+                <td>$credential</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|<abbr title="Windwalker\Authentication\Credential">Credential</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthResults">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L103">line 103</a></div>
+        <code>                    array
+    <strong>getAuthResults</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Results</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_login">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L119">line 119</a></div>
+        <code>                    boolean
+    <strong>login</strong>(array|object $user, bool $remember = false, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>login</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|object</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$remember</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/User/Exception/AuthenticateFailException.html"><abbr title="Windwalker\Core\User\Exception\AuthenticateFailException">AuthenticateFailException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeUserLoggedIn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L193">line 193</a></div>
+        <code>                    boolean
+    <strong>makeUserLoggedIn</strong>(mixed $user)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>makeUserLogin</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_logout">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L220">line 220</a></div>
+        <code>                    boolean
+    <strong>logout</strong>(array|object $conditions = array(), array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>logout</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|object</td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUser">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L259">line 259</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a>
+    <strong>getUser</strong>(array $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getUser</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L278">line 278</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a>
+    <strong>get</strong>(array $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Alias of getUser().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L292">line 292</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a>
+    <strong>save</strong>(array $user = array(), array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>save</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserDataInterface.html"><abbr title="Windwalker\Core\User\UserDataInterface">UserDataInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L332">line 332</a></div>
+        <code>                    boolean
+    <strong>delete</strong>(array $conditions = null, array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>delete</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPolicy">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L362">line 362</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+    <strong>addPolicy</strong>(string $name, callable|<abbr title="Windwalker\Authorisation\PolicyInterface">PolicyInterface</abbr> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addPolicy</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable|<abbr title="Windwalker\Authorisation\PolicyInterface">PolicyInterface</abbr></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerPolicyProvider">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L376">line 376</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+    <strong>registerPolicyProvider</strong>(<abbr title="Windwalker\Authorisation\PolicyProviderInterface">PolicyProviderInterface</abbr> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>registerPolicyProvider</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Authorisation\PolicyProviderInterface">PolicyProviderInterface</abbr></td>
+                <td>$provider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAuthMethod">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L391">line 391</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+    <strong>addAuthMethod</strong>(string $name, <abbr title="Windwalker\Authentication\Method\MethodInterface">MethodInterface</abbr> $method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addAuthMethod</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Authentication\Method\MethodInterface">MethodInterface</abbr></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L403">line 403</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a>
+    <strong>getHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Handler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L420">line 420</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+    <strong>setHandler</strong>(<a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property handler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/User/UserHandlerInterface.html"><abbr title="Windwalker\Core\User\UserHandlerInterface">UserHandlerInterface</abbr></a></td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L432">line 432</a></div>
+        <code>                    boolean
+    <strong>hasHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>hasHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthorisation">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L442">line 442</a></div>
+        <code>                    <abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr>
+    <strong>getAuthorisation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Authorisation</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthorisation">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L454">line 454</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+    <strong>setAuthorisation</strong>(<abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr> $authorisation)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property authorisation</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Authorisation\AuthorisationInterface">AuthorisationInterface</abbr></td>
+                <td>$authorisation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthentication">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L466">line 466</a></div>
+        <code>                    <abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr>
+    <strong>getAuthentication</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Authentication</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthentication">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/User/UserManager.php#L478">line 478</a></div>
+        <code>                    <a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a>
+    <strong>setAuthentication</strong>(<abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr> $authentication)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property authentication</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Authentication\AuthenticationInterface">AuthenticationInterface</abbr></td>
+                <td>$authentication</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/User/UserManager.html"><abbr title="Windwalker\Core\User\UserManager">UserManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

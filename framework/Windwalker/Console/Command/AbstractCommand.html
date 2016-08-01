@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Console\Command\AbstractCommand | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Console_Command_AbstractCommand" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Console.html">Console</a></li>
+                                        <li><a href="../../../Windwalker/Console/Command.html">Command</a></li>
+    
+                <li>AbstractCommand</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractCommand
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractCommand</strong>        implements
+        <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Abstract Console class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name = null, <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a> $io = null, <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $parent = null)
+        
+                                            <p>Console constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>()
+        
+                                            <p>Execute this command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIO">getIO</a>()
+        
+                                            <p>Method to get property Io</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIO">setIO</a>(<a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a> $io)
+        
+                                            <p>Method to set property io</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParent">setParent</a>(<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $parent = null)
+        
+                                            <p>Parent command setter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p>Get Parent Command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCommand">addCommand</a>(string|<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $command, string $description = null, <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[] $options = array(), <a target="_blank" href="http://php.net/Closure">Closure</a> $handler = null)
+        
+                                            <p>Add an argument(sub command) setting.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArgument">getArgument</a>(int $offset, callable|mixed $default = null)
+        
+                                            <p>Get argument by offset or return default.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addChild">addChild</a>(string|<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $argument, string $description = null, <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[] $options = array(), <a target="_blank" href="http://php.net/Closure">Closure</a> $handler = null)
+        
+                                            <p>Alias of addCommand if someone think child is more semantic.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChild">getChild</a>(string $path)
+        
+                                            <p>Get a argument(command) by name path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChildren">getChildren</a>()
+        
+                                            <p>Get children array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setChildren">setChildren</a>(array $children)
+        
+                                            <p>Batch set children (sub commands).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addOption">addOption</a>(mixed $option, mixed $default = null, string $description = null)
+        
+                                            <p>Add a option object to this command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addGlobalOption">addGlobalOption</a>(mixed $option, mixed $default = null, string $description = null)
+        
+                                            <p>Add a option object to this command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, string $default = null)
+        
+                                            <p>Get value from an option.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>(boolean $global = false)
+        
+                                            <p>Get options as array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Option/OptionSet.html"><abbr title="Windwalker\Console\Option\OptionSet">OptionSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptionSet">getOptionSet</a>(boolean $global = false)
+        
+                                            <p>Get option set object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllOptions">getAllOptions</a>()
+        
+                                            <p>Get all options include global.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(mixed $options)
+        
+                                            <p>Batch add options to command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptionAliases">setOptionAliases</a>(mixed $aliases, string $name, bool $global = false)
+        
+                                            <p>set the option alias.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDescription">getDescription</a>()
+        
+                                            <p>The command description getter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_description">description</a>(string $description)
+        
+                                            <p>The command description setter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Console name getter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Console name setter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandler">getHandler</a>()
+        
+                                            <p>Console execute code getter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handler">handler</a>(callable $handler = null)
+        
+                                            <p>Console execute code setter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Console.html"><abbr title="Windwalker\Console\Console">Console</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getApplication">getApplication</a>()
+        
+                                            <p>Get the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setApplication">setApplication</a>(<a href="../../../Windwalker/Console/Console.html"><abbr title="Windwalker\Console\Console">Console</abbr></a> $application)
+        
+                                            <p>Set the application.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHelp">getHelp</a>()
+        
+                                            <p>Get the help manual.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_help">help</a>(string $help)
+        
+                                            <p>Sets the help manual</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUsage">getUsage</a>()
+        
+                                            <p>Get the usage.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_usage">usage</a>(string $usage)
+        
+                                            <p>Sets the usage to tell user how to use this command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderAlternatives">renderAlternatives</a>(string $wrongName, <a href="../../../Windwalker/Console/Exception/CommandNotFoundException.html"><abbr title="Windwalker\Console\Exception\CommandNotFoundException">CommandNotFoundException</abbr></a> $exception)
+        
+                                            <p>Render auto complete alternatives.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderException">renderException</a>(<a target="_blank" href="http://php.net/Exception">Exception</a> $exception)
+        
+                                            <p>Render exception for debugging.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error">error</a>(<a target="_blank" href="http://php.net/Exception">Exception</a>|string $exception)
+        
+                                            <p>Raise error message.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_out">out</a>(string $text = &#039;&#039;, boolean $nl = true)
+        
+                                            <p>Write a string to standard output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_err">err</a>(string $text = &#039;&#039;, boolean $nl = true)
+        
+                                            <p>Write a string to standard error output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_in">in</a>(string $question = &#039;&#039;)
+        
+                                            <p>Get a value from standard input.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $value)
+        
+                                            <p>Set child command, note the key is no use, we use command name as key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(string $offset)
+        
+                                            <p>Is a child exists?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(string $offset)
+        
+                                            <p>Unset a child command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(string $offset)
+        
+                                            <p>Get a command by name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L137">line 137</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $name = null, <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a> $io = null, <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $parent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Console constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Console name.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td>Cli input object.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+                <td>$parent</td>
+                <td>Parent Console.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException">LogicException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L162">line 162</a></div>
+        <code>                    mixed
+    <strong>execute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute this command.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Executed result or exit code.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIO">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L313">line 313</a></div>
+        <code>                    <a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a>
+    <strong>getIO</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Io</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIO">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L325">line 325</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setIO</strong>(<a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a> $io)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property io</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Console/IO/IOInterface.html"><abbr title="Windwalker\Console\IO\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L341">line 341</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setParent</strong>(<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $parent = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parent command setter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+                <td>$parent</td>
+                <td>The parent comment.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L355">line 355</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Parent Command.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCommand">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L373">line 373</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>addCommand</strong>(string|<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $command, string $description = null, <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[] $options = array(), <a target="_blank" href="http://php.net/Closure">Closure</a> $handler = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add an argument(sub command) setting.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+                <td>$command</td>
+                <td>The argument name or Console object.
+                                               If we just send a string, the object will auto create.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>Console description.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[]</td>
+                <td>$options</td>
+                <td>Console options.</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td>The closure to execute.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArgument">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L429">line 429</a></div>
+        <code>                    null|string
+    <strong>getArgument</strong>(int $offset, callable|mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get argument by offset or return default.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>Argument offset.</td>
+            </tr>
+                    <tr>
+                <td>callable|mixed</td>
+                <td>$default</td>
+                <td>Default value, if is a callable, will execute it.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td>Values from argument or user input.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L459">line 459</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>addChild</strong>(string|<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $argument, string $description = null, <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[] $options = array(), <a target="_blank" href="http://php.net/Closure">Closure</a> $handler = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Alias of addCommand if someone think child is more semantic.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+                <td>$argument</td>
+                <td>The argument name or Console object.
+                                               If we just send a string, the object will auto create.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>Console description.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[]</td>
+                <td>$options</td>
+                <td>Console options.</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td>The closure to execute.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L473">line 473</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>|null
+    <strong>getChild</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a argument(command) by name path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>Command name path.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>|null</td>
+            <td>Return command or null.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChildren">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L501">line 501</a></div>
+        <code>                    array
+    <strong>getChildren</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get children array.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>children.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setChildren">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L515">line 515</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setChildren</strong>(array $children)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Batch set children (sub commands).</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$children</td>
+                <td>An array include argument objects.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L539">line 539</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>
+    <strong>addOption</strong>(mixed $option, mixed $default = null, string $description = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a option object to this command.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$option</td>
+                <td>The option name. Can be a string, an array or an object.
+                                If we use array, the first element will be option name, others will be alias.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value when we get a non-exists option.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>The option description.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a></td>
+            <td>Return Option object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addGlobalOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L572">line 572</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>
+    <strong>addGlobalOption</strong>(mixed $option, mixed $default = null, string $description = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a option object to this command.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$option</td>
+                <td>The option name. Can be a string, an array or an object.
+                                If we use array, the first element will be option name, others will be alias.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value when we get a non-exists option.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>The option description.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a></td>
+            <td>Return Option object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L611">line 611</a></div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, string $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get value from an option.</p>                    <p>If the name not found, we use alias to find options.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The option name.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td>The default value when option not set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The option value we want to get or default value if option not exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L649">line 649</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[]
+    <strong>getOptions</strong>(boolean $global = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get options as array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$global</td>
+                <td>is Global options.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Option/Option.html"><abbr title="Windwalker\Console\Option\Option">Option</abbr></a>[]</td>
+            <td>The options array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptionSet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L663">line 663</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Option/OptionSet.html"><abbr title="Windwalker\Console\Option\OptionSet">OptionSet</abbr></a>
+    <strong>getOptionSet</strong>(boolean $global = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get option set object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$global</td>
+                <td>is Global options.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Option/OptionSet.html"><abbr title="Windwalker\Console\Option\OptionSet">OptionSet</abbr></a></td>
+            <td>The options array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L675">line 675</a></div>
+        <code>                    array
+    <strong>getAllOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all options include global.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The options array.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L689">line 689</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setOptions</strong>(mixed $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Batch add options to command.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$options</td>
+                <td>An options array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptionAliases">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L712">line 712</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setOptionAliases</strong>(mixed $aliases, string $name, bool $global = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>set the option alias.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$aliases</td>
+                <td>The alias to map this option.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The option name.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$global</td>
+                <td>Is global option?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDescription">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L733">line 733</a></div>
+        <code>                    string
+    <strong>getDescription</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The command description getter.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Console description.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_description">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L747">line 747</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>description</strong>(string $description)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The command description setter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>Console description.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L761">line 761</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Console name getter.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Console name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L775">line 775</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Console name setter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Console name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L789">line 789</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
+    <strong>getHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Console execute code getter.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+            <td>Console execute code.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L803">line 803</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>handler</strong>(callable $handler = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Console execute code setter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td>Console execute handler.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApplication">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L817">line 817</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Console.html"><abbr title="Windwalker\Console\Console">Console</abbr></a>
+    <strong>getApplication</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the application.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Console.html"><abbr title="Windwalker\Console\Console">Console</abbr></a></td>
+            <td>Console application.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setApplication">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L831">line 831</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>setApplication</strong>(<a href="../../../Windwalker/Console/Console.html"><abbr title="Windwalker\Console\Console">Console</abbr></a> $application)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the application.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Console.html"><abbr title="Windwalker\Console\Console">Console</abbr></a></td>
+                <td>$application</td>
+                <td>Application object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHelp">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L845">line 845</a></div>
+        <code>                    string
+    <strong>getHelp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the help manual.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Help of this Command.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_help">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L859">line 859</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>help</strong>(string $help)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the help manual</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$help</td>
+                <td>The help manual.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUsage">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L873">line 873</a></div>
+        <code>                    string
+    <strong>getUsage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the usage.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Usage of this command.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_usage">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L887">line 887</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>usage</strong>(string $usage)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the usage to tell user how to use this command.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$usage</td>
+                <td>Usage of this command.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Return this object to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderAlternatives">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L904">line 904</a></div>
+        <code>                    void
+    <strong>renderAlternatives</strong>(string $wrongName, <a href="../../../Windwalker/Console/Exception/CommandNotFoundException.html"><abbr title="Windwalker\Console\Exception\CommandNotFoundException">CommandNotFoundException</abbr></a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render auto complete alternatives.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$wrongName</td>
+                <td>The wrong command name to auto completed.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Exception/CommandNotFoundException.html"><abbr title="Windwalker\Console\Exception\CommandNotFoundException">CommandNotFoundException</abbr></a></td>
+                <td>$exception</td>
+                <td>The exception of wrong argument.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderException">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L953">line 953</a></div>
+        <code>                    void
+    <strong>renderException</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render exception for debugging.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>$exception</td>
+                <td>The exception we want to render.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L988">line 988</a></div>
+        <code>                    void
+    <strong>error</strong>(<a target="_blank" href="http://php.net/Exception">Exception</a>|string $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Raise error message.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a>|string</td>
+                <td>$exception</td>
+                <td>Exception object or message string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_out">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1008">line 1008</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>out</strong>(string $text = &#039;&#039;, boolean $nl = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write a string to standard output.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The text to display.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$nl</td>
+                <td>True (default) to append a new line at the end of the output string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Instance of $this to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_err">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1030">line 1030</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>
+    <strong>err</strong>(string $text = &#039;&#039;, boolean $nl = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write a string to standard error output.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The text to display.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$nl</td>
+                <td>True (default) to append a new line at the end of the output string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+            <td>Instance of $this to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_in">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1046">line 1046</a></div>
+        <code>                    string
+    <strong>in</strong>(string $question = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a value from standard input.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$question</td>
+                <td>The question you want to ask user.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The input string from standard input.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1066">line 1066</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set child command, note the key is no use, we use command name as key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>No use here.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a></td>
+                <td>$value</td>
+                <td>Command object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1080">line 1080</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(string $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a child exists?</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td>The command name to get command.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if command exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1094">line 1094</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(string $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a child command.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td>The command name to remove.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Console/Command/AbstractCommand.php#L1108">line 1108</a></div>
+        <code>                    <a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>|null
+    <strong>offsetGet</strong>(string $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a command by name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$offset</td>
+                <td>The command name to get command.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Console/Command/AbstractCommand.html"><abbr title="Windwalker\Console\Command\AbstractCommand">AbstractCommand</abbr></a>|null</td>
+            <td>Return command object if found.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Utilities\Queue\PriorityQueue | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Utilities_Queue_PriorityQueue" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Utilities.html">Utilities</a></li>
+                                        <li><a href="../../../Windwalker/Utilities/Queue.html">Queue</a></li>
+    
+                <li>PriorityQueue</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PriorityQueue
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PriorityQueue</strong>        extends <a target="_blank" href="http://php.net/SplPriorityQueue">SplPriorityQueue</a>        implements
+        <a target="_blank" href="http://php.net/Serializable">Serializable</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The PriorityQueue class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>MIN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LOW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BELOW_NORMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NORMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ABOVE_NORMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HIGH</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MAX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array|<a target="_blank" href="http://php.net/SplPriorityQueue">SplPriorityQueue</a> $array = array(), int $priority = self::NORMAL)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(array $array = array(), int $priority = self::NORMAL)
+        
+                                            <p>bind</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertArray">insertArray</a>(array $items)
+        
+                                            <p>register</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(mixed $datum, mixed $priority)
+        
+                                            <p>Insert a value with a given priority</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p>Serialize to an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serialize">serialize</a>()
+        
+                                            <p>Serialize</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unserialize">unserialize</a>(string $data)
+        
+                                            <p>Deserialize</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Utilities\Queue\static;">static;</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>()
+        
+                                            <p>merge</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compare">compare</a>(mixed $priority1, mixed $priority2)
+        
+                                            <p>compare</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSerial">getSerial</a>()
+        
+                                            <p>Method to get property Serial</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSerial">setSerial</a>(int $serial)
+        
+                                            <p>Method to set property serial</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L37">line 37</a></div>
+        <code>                    
+    <strong>__construct</strong>(array|<a target="_blank" href="http://php.net/SplPriorityQueue">SplPriorityQueue</a> $array = array(), int $priority = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|<a target="_blank" href="http://php.net/SplPriorityQueue">SplPriorityQueue</a></td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L57">line 57</a></div>
+        <code>                    <a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a>
+    <strong>bind</strong>(array $array = array(), int $priority = self::NORMAL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>bind</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L74">line 74</a></div>
+        <code>                    <a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a>
+    <strong>insertArray</strong>(array $items)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>register</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L95">line 95</a></div>
+        <code>                    void
+    <strong>insert</strong>(mixed $datum, mixed $priority)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Insert a value with a given priority</p>                    <p>Utilizes {@var $serial} to ensure that values of equal priority are
+emitted in the same order in which they are inserted.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$datum</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L116">line 116</a></div>
+        <code>                    array
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Serialize to an array</p>                    <p>Array will be priority => data pairs</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L133">line 133</a></div>
+        <code>                    string
+    <strong>serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Serialize</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unserialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L156">line 156</a></div>
+        <code>                    void
+    <strong>unserialize</strong>(string $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deserialize</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L169">line 169</a></div>
+        <code>                    <abbr title="Windwalker\Utilities\Queue\static;">static;</abbr>
+    <strong>merge</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>merge</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Utilities\Queue\static;">static;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compare">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L201">line 201</a></div>
+        <code>                    int
+    <strong>compare</strong>(mixed $priority1, mixed $priority2)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>compare</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$priority1</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$priority2</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSerial">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L234">line 234</a></div>
+        <code>                    int
+    <strong>getSerial</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Serial</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSerial">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Utilities/Queue/PriorityQueue.php#L246">line 246</a></div>
+        <code>                    <a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a>
+    <strong>setSerial</strong>(int $serial)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property serial</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$serial</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Utilities/Queue/PriorityQueue.html"><abbr title="Windwalker\Utilities\Queue\PriorityQueue">PriorityQueue</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Database\NullDataMapper | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Database_NullDataMapper" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Database.html">Database</a></li>
+    
+                <li>NullDataMapper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            NullDataMapper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>NullDataMapper</strong>        extends <abbr title="Windwalker\DataMapper\DataMapper">DataMapper</abbr>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The NullDataMapper class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>NullDataMapper constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        
+                                            <p>Find records and return data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAll">findAll</a>(mixed $order = null, integer $start = null, integer $limit = null)
+        
+                                            <p>Find records without where conditions and return data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOne">findOne</a>(mixed $conditions = array(), mixed $order = null)
+        
+                                            <p>Find one record and return a data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findColumn">findColumn</a>(string $column, mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        
+                                            <p>Find column as an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(mixed $dataset)
+        
+                                            <p>Create records by data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createOne">createOne</a>(mixed $data)
+        
+                                            <p>Create one record by data object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Update records by data set. Every data depend on this table's primary key to update itself.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateOne">updateOne</a>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Same as update(), just update one row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateBatch">updateBatch</a>(mixed $data, mixed $conditions = array())
+        
+                                            <p>Using one data to update multiple rows, filter by where conditions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flush">flush</a>(mixed $dataset, mixed $conditions = array())
+        
+                                            <p>Flush records, will delete all by conditions then recreate new.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Save will auto detect is conditions matched in data or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveOne">saveOne</a>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Save only one row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(mixed $conditions)
+        
+                                            <p>Delete records by where conditions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L25">line 25</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>NullDataMapper constructor.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L51">line 51</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+    <strong>find</strong>(mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find records and return data set.</p>                    <p>Example:
+- <code>$mapper-&gt;find(array('id' =&gt; 5), 'date', 20, 10);</code>
+- <code>$mapper-&gt;find(null, 'id', 0, 1);</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                              Example:
+                              - <code>array('id' =&gt; 5)</code> => id = 5
+                              - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                              - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                              Example:
+                              - <code>id ASC</code> => ORDER BY id ASC
+                              - <code>array('catid DESC', 'id')</code> => ORDER BY catid DESC, id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$start</td>
+                <td>Limit start number.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>Limit rows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr></td>
+            <td>Found rows data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAll">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L72">line 72</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+    <strong>findAll</strong>(mixed $order = null, integer $start = null, integer $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find records without where conditions and return data set.</p>                    <p>Same as <code>$mapper-&gt;find(null, 'id', $start, $limit);</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                      Example:
+                      - 'id ASC' => ORDER BY id ASC
+                      - array('catid DESC', 'id') => ORDER BY catid DESC, id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$start</td>
+                <td>Limit start number.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>Limit rows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr></td>
+            <td>Found rows data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L96">line 96</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+    <strong>findOne</strong>(mixed $conditions = array(), mixed $order = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find one record and return a data.</p>                    <p>Same as <code>$mapper-&gt;find($conditions, 'id', 0, 1);</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                         Example:
+                         - <code>array('id' =&gt; 5)</code> => id = 5
+                         - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                         - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                         Example:
+                         - <code>id ASC</code> => ORDER BY id ASC
+                         - <code>array('catid DESC', 'id')</code> => ORDER BY catid DESC, id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\Data">Data</abbr></td>
+            <td>Found row data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L123">line 123</a></div>
+        <code>                    mixed
+    <strong>findColumn</strong>(string $column, mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find column as an array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The column we want to select.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                           Example:
+                           - <code>array('id' =&gt; 5)</code> => id = 5
+                           - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                           - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                           Example:
+                           - <code>id ASC</code> => ORDER BY id ASC
+                           - <code>array('catid DESC', 'id')</code> => ORDER BY catid DESC, id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$start</td>
+                <td>Limit start number.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>Limit rows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L137">line 137</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+    <strong>create</strong>(mixed $dataset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create records by data set.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>The data set contains data we want to store.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr></td>
+            <td>Data set data with inserted id.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L152">line 152</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+    <strong>createOne</strong>(mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create one record by data object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Send a data in and store.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\Data">Data</abbr></td>
+            <td>Data with inserted id.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L169">line 169</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+    <strong>update</strong>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update records by data set. Every data depend on this table's primary key to update itself.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>Data set contain data we want to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                           will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L186">line 186</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+    <strong>updateOne</strong>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Same as update(), just update one row.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data we want to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                           will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\Data">Data</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBatch">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L209">line 209</a></div>
+        <code>                    boolean
+    <strong>updateBatch</strong>(mixed $data, mixed $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Using one data to update multiple rows, filter by where conditions.</p>                    <p>Example:
+<code>$mapper-&gt;updateAll(new Data(array('published' =&gt; 0)), array('date' =&gt; '2014-03-02'))</code>
+Means we make every records which date is 2014-03-02 unpublished.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data we want to update to every rows.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                         Example:
+                         - <code>array('id' =&gt; 5)</code> => id = 5
+                         - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                         - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L226">line 226</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+    <strong>flush</strong>(mixed $dataset, mixed $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush records, will delete all by conditions then recreate new.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>Data set contain data we want to update.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                         Example:
+                         - <code>array('id' =&gt; 5)</code> => id = 5
+                         - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                         - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr></td>
+            <td>Updated data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L244">line 244</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr>
+    <strong>save</strong>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save will auto detect is conditions matched in data or not.</p>                    <p>If matched, using update, otherwise we will create it as new record.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>The data set contains data we want to save.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                           will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\DataSet">DataSet</abbr></td>
+            <td>Saved data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L261">line 261</a></div>
+        <code>                    mixed|<abbr title="Windwalker\Data\Data">Data</abbr>
+    <strong>saveOne</strong>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save only one row.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data we want to save.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                           will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed|<abbr title="Windwalker\Data\Data">Data</abbr></td>
+            <td>Saved data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Database/NullDataMapper.php#L293">line 293</a></div>
+        <code>                    boolean
+    <strong>delete</strong>(mixed $conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete records by where conditions.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                           Example:
+                           - <code>array('id' =&gt; 5)</code> => id = 5
+                           - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                           - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Will be always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

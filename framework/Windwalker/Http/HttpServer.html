@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Http\HttpServer | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Http_HttpServer" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Http.html">Http</a></li>
+    
+                <li>HttpServer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            HttpServer
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>HttpServer</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Server class.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createFromGlobals">createFromGlobals</a>(callable $handler = null, array $server = array(), array $query = array(), array $body = array(), array $cookies = array(), array $files = array())
+        
+                                            <p>Create a Server instance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(callable $handler = null, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response = null, <a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a> $output = null)
+        
+                                            <p>Create a Server instance from an existing request object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(callable $handler = null, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response = null, <a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a> $output = null)
+        
+                                            <p>Create a Server instance from an existing request object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listen">listen</a>(callable $errorHandler = null)
+        
+                                            <p>Execute the server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHandler">getHandler</a>()
+        
+                                            <p>Method to get property Handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHandler">setHandler</a>(callable $handler)
+        
+                                            <p>Method to set property handler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequest">getRequest</a>()
+        
+                                            <p>Method to get property Request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequest">setRequest</a>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        
+                                            <p>Method to set property request</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOutput">getOutput</a>()
+        
+                                            <p>Method to get property Output</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOutput">setOutput</a>(<a href="../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> $output)
+        
+                                            <p>Method to set property output</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponse">getResponse</a>()
+        
+                                            <p>Method to get property Response</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponse">setResponse</a>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        
+                                            <p>Method to set property response</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_createFromGlobals">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L68">line 68</a></div>
+        <code>        static            <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+    <strong>createFromGlobals</strong>(callable $handler = null, array $server = array(), array $query = array(), array $body = array(), array $cookies = array(), array $files = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a Server instance</p>                    <p>Creates a server instance from the callback and the following
+PHP environmental values:</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td>The server handler.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$server</td>
+                <td>The server variable. Typically this will be the $_SERVER superglobal.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td>The GET uri query. Typically this will be the $_GET superglobal.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$body</td>
+                <td>The POST body. Typically this will be the $_POST superglobal.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$cookies</td>
+                <td>The cookies. Typically this will be the $_COOKIE superglobal</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$files</td>
+                <td>The uploaded file data. Typically this will be the $_FILES superglobal.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a></td>
+            <td>The Server instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L90">line 90</a></div>
+        <code>        static            <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+    <strong>create</strong>(callable $handler = null, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response = null, <a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a> $output = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a Server instance from an existing request object</p>                    <p>Provided a callback, an existing request object, and optionally an
+existing response object, create and return the Server instance.</p>
+
+<p>If no Response object is provided, one will be created.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td>The server handler.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td>The Request object.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>The Response object.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td>The Output emitter object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a></td>
+            <td>The Server instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L108">line 108</a></div>
+        <code>                    
+    <strong>__construct</strong>(callable $handler = null, <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request, <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response = null, <a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a> $output = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a Server instance from an existing request object</p>                    <p>Provided a callback, an existing request object, and optionally an
+existing response object, create and return the Server instance.</p>
+
+<p>If no Response object is provided, one will be created.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td>The server handler.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td>The Request object.</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td>The Response object.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a></td>
+                <td>$output</td>
+                <td>The Output emitter object.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listen">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L121">line 121</a></div>
+        <code>                    
+    <strong>listen</strong>(callable $errorHandler = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute the server.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$errorHandler</td>
+                <td>The error handler callback.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L143">line 143</a></div>
+        <code>                    callable
+    <strong>getHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Handler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L155">line 155</a></div>
+        <code>                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+    <strong>setHandler</strong>(callable $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property handler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$handler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequest">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L167">line 167</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>
+    <strong>getRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Request</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequest">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L179">line 179</a></div>
+        <code>                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+    <strong>setRequest</strong>(<abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property request</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOutput">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L191">line 191</a></div>
+        <code>                    <a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a>
+    <strong>getOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Output</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/Output/OutputInterface.html"><abbr title="Windwalker\Http\Output\OutputInterface">OutputInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOutput">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L208">line 208</a></div>
+        <code>                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+    <strong>setOutput</strong>(<a href="../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a> $output)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property output</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Http/Output/Output.html"><abbr title="Windwalker\Http\Output\Output">Output</abbr></a></td>
+                <td>$output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponse">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L220">line 220</a></div>
+        <code>                    <abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>
+    <strong>getResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Response</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponse">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Http/HttpServer.php#L232">line 232</a></div>
+        <code>                    <a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a>
+    <strong>setResponse</strong>(<abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr> $response)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property response</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Http/HttpServer.html"><abbr title="Windwalker\Http\HttpServer">HttpServer</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

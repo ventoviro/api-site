@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Uri\PsrUri | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Uri_PsrUri" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Uri.html">Uri</a></li>
+    
+                <li>PsrUri</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PsrUri
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PsrUri</strong>        extends <a href="../../Windwalker/Uri/AbstractUri.html"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a>        implements
+        <abbr title="Psr\Http\Message\UriInterface">UriInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The PsrUri class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SCHEME_HTTP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SCHEME_HTTPS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHAR_SUB_DELIMS</td>
+                <td class="last">
+                    <p><em>Sub-delimiters used in query strings and fragments.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHAR_UNRESERVED</td>
+                <td class="last">
+                    <p><em>Unreserved characters used in paths, query strings, and fragments.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $uri = &#039;&#039;)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Magic method to get the string representation of the URI object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method___toString"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toString">toString</a>(array $parts = array(&#039;scheme&#039;, &#039;user&#039;, &#039;pass&#039;, &#039;host&#039;, &#039;port&#039;, &#039;path&#039;, &#039;query&#039;, &#039;fragment&#039;))
+        
+                                            <p>Returns full uri string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_toString"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasVar">hasVar</a>(string $name)
+        
+                                            <p>Checks if variable exists.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_hasVar"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVar">getVar</a>(string $name, string $default = null)
+        
+                                            <p>Returns a query variable by name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getVar"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getQuery">getQuery</a>(boolean $toArray = false)
+        
+                                            <p>Returns flat query string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getQuery"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScheme">getScheme</a>()
+        
+                                            <p>Get URI scheme (protocol)
+ie. http, https, ftp, etc.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getScheme"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUser">getUser</a>()
+        
+                                            <p>Get URI username
+Returns the username, or null if no username was specified.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getUser"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPass">getPass</a>()
+        
+                                            <p>Get URI password
+Returns the password, or null if no password was specified.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getPass"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserInfo">getUserInfo</a>()
+        
+                                            <p>Retrieve the user information component of the URI.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getUserInfo"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHost">getHost</a>()
+        
+                                            <p>Get URI host
+Returns the hostname/ip or null if no hostname/ip was specified.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getHost"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPort">getPort</a>()
+        
+                                            <p>Get URI port
+Returns the port number, or null if no port was specified.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getPort"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>()
+        
+                                            <p>Gets the URI path string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getPath"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFragment">getFragment</a>()
+        
+                                            <p>Get the URI archor string
+Everything after the "#".</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getFragment"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSSL">isSSL</a>()
+        
+                                            <p>Checks whether the current URI is using HTTPS.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_isSSL"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOriginal">getOriginal</a>()
+        
+                                            <p>getUri</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Uri/AbstractUri.html#method_getOriginal"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthority">getAuthority</a>()
+        
+                                            <p>Retrieve the authority component of the URI.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withScheme">withScheme</a>(string $scheme)
+        
+                                            <p>Return an instance with the specified scheme.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withUserInfo">withUserInfo</a>(string $user, string $password = null)
+        
+                                            <p>Return an instance with the specified user information.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withHost">withHost</a>(string $host)
+        
+                                            <p>Return an instance with the specified host.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withPort">withPort</a>(int $port)
+        
+                                            <p>Return an instance with the specified port.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withPath">withPath</a>(string $path)
+        
+                                            <p>Return an instance with the specified path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withQuery">withQuery</a>(string|array $query)
+        
+                                            <p>Return an instance with the specified query string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_withFragment">withFragment</a>(string $fragment)
+        
+                                            <p>Return an instance with the specified URI fragment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L52">line 52</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $uri = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                    <p>You can pass a URI string to the constructor to initialise a specific URI.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td>The optional URI string</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method___toString"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L108">line 108</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic method to get the string representation of the URI object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_toString"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L122">line 122</a></div>
+        <code>                    string
+    <strong>toString</strong>(array $parts = array(&#039;scheme&#039;, &#039;user&#039;, &#039;pass&#039;, &#039;host&#039;, &#039;port&#039;, &#039;path&#039;, &#039;query&#039;, &#039;fragment&#039;))
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns full uri string.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parts</td>
+                <td>An array specifying the parts to render.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The rendered URI string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasVar">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_hasVar"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L149">line 149</a></div>
+        <code>                    boolean
+    <strong>hasVar</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if variable exists.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of the query variable to check.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the variable exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVar">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getVar"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L164">line 164</a></div>
+        <code>                    array
+    <strong>getVar</strong>(string $name, string $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a query variable by name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of the query variable to get.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$default</td>
+                <td>Default value to return if the variable is not set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>Query variables.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQuery">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getQuery"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L183">line 183</a></div>
+        <code>                    string
+    <strong>getQuery</strong>(boolean $toArray = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns flat query string.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$toArray</td>
+                <td>True to return the query as a key => value pair array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Query string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScheme">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getScheme"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L207">line 207</a></div>
+        <code>                    string
+    <strong>getScheme</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get URI scheme (protocol)
+ie. http, https, ftp, etc.</p>                    <p>..</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI scheme.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUser">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getUser"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L220">line 220</a></div>
+        <code>                    string
+    <strong>getUser</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get URI username
+Returns the username, or null if no username was specified.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI username.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPass">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getPass"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L233">line 233</a></div>
+        <code>                    string
+    <strong>getPass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get URI password
+Returns the password, or null if no password was specified.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI password.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserInfo">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getUserInfo"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L255">line 255</a></div>
+        <code>                    string
+    <strong>getUserInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the user information component of the URI.</p>                    <p>If no user information is present, this method MUST return an empty
+string.</p>
+
+<p>If a user is present in the URI, this will return that value;
+additionally, if the password is also present, it will be appended to the
+user value, with a colon (":") separating the values.</p>
+
+<p>The trailing "@" character is not part of the user information and MUST
+NOT be added.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI user information, in "username[:password]" format.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHost">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getHost"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L275">line 275</a></div>
+        <code>                    string
+    <strong>getHost</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get URI host
+Returns the hostname/ip or null if no hostname/ip was specified.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI host.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPort">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getPort"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L288">line 288</a></div>
+        <code>                    integer
+    <strong>getPort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get URI port
+Returns the port number, or null if no port was specified.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The URI port number.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getPath"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L300">line 300</a></div>
+        <code>                    string
+    <strong>getPath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the URI path string.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI path string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFragment">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getFragment"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L313">line 313</a></div>
+        <code>                    string
+    <strong>getFragment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the URI archor string
+Everything after the "#".</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI anchor string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSSL">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_isSSL"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L325">line 325</a></div>
+        <code>                    boolean
+    <strong>isSSL</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks whether the current URI is using HTTPS.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if using SSL via HTTPS.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOriginal">
+        <div class="location">in <a href="../../Windwalker/Uri/AbstractUri.html#method_getOriginal"><abbr title="Windwalker\Uri\AbstractUri">AbstractUri</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/AbstractUri.php#L384">line 384</a></div>
+        <code>                    string
+    <strong>getOriginal</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getUri</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthority">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L81">line 81</a></div>
+        <code>                    string
+    <strong>getAuthority</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve the authority component of the URI.</p>                    <p>If no authority information is present, this method MUST return an empty
+string.</p>
+
+<p>The authority syntax of the URI is:</p>
+
+<pre>
+[user-info@]host[:port]
+</pre>
+
+<p>If the port component is not set or is the standard port for the current
+scheme, it SHOULD NOT be included.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The URI authority, in "[user-info@]host[:port]" format.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>https://tools.ietf.org/html/rfc3986#section-3.2</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withScheme">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L122">line 122</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withScheme</strong>(string $scheme)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified scheme.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified scheme.</p>
+
+<p>Implementations MUST support the schemes "http" and "https" case
+insensitively, and MAY accommodate other schemes if required.</p>
+
+<p>An empty scheme is equivalent to removing the scheme.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$scheme</td>
+                <td>The scheme to use with the new instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified scheme.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid or unsupported schemes.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withUserInfo">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L152">line 152</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withUserInfo</strong>(string $user, string $password = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified user information.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified user information.</p>
+
+<p>Password is optional, but the user information MUST include the
+user; an empty string for the user is equivalent to removing user
+information.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$user</td>
+                <td>The user name to use for authority.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>The password associated with $user.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified user information.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHost">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L185">line 185</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withHost</strong>(string $host)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified host.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified host.</p>
+
+<p>An empty host value is equivalent to removing the host.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>The hostname to use with the new instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified host.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid hostnames.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withPort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L216">line 216</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withPort</strong>(int $port)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified port.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified port.</p>
+
+<p>Implementations MUST raise an exception for ports outside the
+established TCP and UDP port ranges.</p>
+
+<p>A null value provided for the port is equivalent to removing the port
+information.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$port</td>
+                <td>The port to use with the new instance; a null value
+                     removes the port information.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified port.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid ports.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withPath">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L262">line 262</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withPath</strong>(string $path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified path.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified path.</p>
+
+<p>The path can either be empty or absolute (starting with a slash) or
+rootless (not starting with a slash). Implementations MUST support all
+three syntaxes.</p>
+
+<p>If the path is intended to be domain-relative rather than path relative then
+it must begin with a slash ("/"). Paths not starting with a slash ("/")
+are assumed to be relative to some base path known to the application or
+consumer.</p>
+
+<p>Users can provide both encoded and decoded path characters.
+Implementations ensure the correct encoding as outlined in getPath().</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The path to use with the new instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified path.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid paths.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withQuery">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L301">line 301</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withQuery</strong>(string|array $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified query string.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified query string.</p>
+
+<p>Users can provide both encoded and decoded query characters.
+Implementations ensure the correct encoding as outlined in getQuery().</p>
+
+<p>An empty query string value is equivalent to removing the query string.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$query</td>
+                <td>The query string to use with the new instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified query string.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>for invalid query strings.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withFragment">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Uri/PsrUri.php#L332">line 332</a></div>
+        <code>                    <a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a>
+    <strong>withFragment</strong>(string $fragment)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an instance with the specified URI fragment.</p>                    <p>This method MUST retain the state of the current instance, and return
+an instance that contains the specified URI fragment.</p>
+
+<p>Users can provide both encoded and decoded fragment characters.
+Implementations ensure the correct encoding as outlined in getFragment().</p>
+
+<p>An empty fragment value is equivalent to removing the fragment.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fragment</td>
+                <td>The fragment to use with the new instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Uri/PsrUri.html"><abbr title="Windwalker\Uri\PsrUri">PsrUri</abbr></a></td>
+            <td>A new instance with the specified fragment.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

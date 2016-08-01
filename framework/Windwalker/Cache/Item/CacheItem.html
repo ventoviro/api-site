@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Cache\Item\CacheItem | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Cache_Item_CacheItem" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Cache.html">Cache</a></li>
+                                        <li><a href="../../../Windwalker/Cache/Item.html">Item</a></li>
+    
+                <li>CacheItem</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            CacheItem
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>CacheItem</strong>        implements
+        <abbr title="Psr\Cache\CacheItemInterface">CacheItemInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class CacheItem</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $key, mixed $value = null, <a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|int $ttl = null)
+        
+                                            <p>Class constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKey">getKey</a>()
+        
+                                            <p>Get the key associated with this CacheItem.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>()
+        
+                                            <p>Obtain the value of this cache item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(mixed $value)
+        
+                                            <p>Set the value of the item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isHit">isHit</a>()
+        
+                                            <p>This boolean value tells us if our cache item is currently in the cache or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_expiresAt">expiresAt</a>(<a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a> $expiration)
+        
+                                            <p>Sets the expiration time for this cache item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_expiresAfter">expiresAfter</a>(int|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a> $time)
+        
+                                            <p>Sets the expiration time for this cache item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExpiration">getExpiration</a>()
+        
+                                            <p>Method to get property Expiration</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L67">line 67</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $key, mixed $value = null, <a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|int $ttl = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key for the cache item.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value for the cache item.</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateInterval">DateInterval</a>|int</td>
+                <td>$ttl</td>
+                <td>The expire time.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKey">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L91">line 91</a></div>
+        <code>                    string
+    <strong>getKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the key associated with this CacheItem.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L103">line 103</a></div>
+        <code>                    mixed
+    <strong>get</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Obtain the value of this cache item.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L122">line 122</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a>
+    <strong>set</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the value of the item.</p>                    <p>If the value is set, we are assuming that there was a valid hit on the cache for the given key.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value for the cache item.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isHit">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L137">line 137</a></div>
+        <code>                    boolean
+    <strong>isHit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>This boolean value tells us if our cache item is currently in the cache or not.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expiresAt">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L159">line 159</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a>
+    <strong>expiresAt</strong>(<a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a> $expiration)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the expiration time for this cache item.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a></td>
+                <td>$expiration</td>
+                <td>The point in time after which the item MUST be considered expired.
+  If null is passed explicitly, a default value MAY be used. If none is set,
+  the value should be stored permanently or for as long as the
+  implementation allows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a></td>
+            <td>The called object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expiresAfter">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L196">line 196</a></div>
+        <code>                    <a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a>
+    <strong>expiresAfter</strong>(int|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a> $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the expiration time for this cache item.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|<a target="_blank" href="http://php.net/DateInterval">DateInterval</a></td>
+                <td>$time</td>
+                <td>The period of time from the present after which the item MUST be considered
+  expired. An integer parameter is understood to be the time in seconds until
+  expiration. If null is passed explicitly, a default value MAY be used.
+  If none is set, the value should be stored permanently or for as long as the
+  implementation allows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Cache/Item/CacheItem.html"><abbr title="Windwalker\Cache\Item\CacheItem">CacheItem</abbr></a></td>
+            <td>The called object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExpiration">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Cache/Item/CacheItem.php#L230">line 230</a></div>
+        <code>                    <a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a>
+    <strong>getExpiration</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Expiration</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTimeInterface">DateTimeInterface</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

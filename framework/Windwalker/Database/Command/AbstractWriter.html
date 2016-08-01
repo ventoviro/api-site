@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Database\Command\AbstractWriter | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Database_Command_AbstractWriter" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Database.html">Database</a></li>
+                                        <li><a href="../../../Windwalker/Database/Command.html">Command</a></li>
+    
+                <li>AbstractWriter</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractWriter
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractWriter</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class DatabaseWriter</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertOne">insertOne</a>(string $table, array|object $data, string $key = null)
+        
+                                            <p>Inserts a row into a table based on an object's properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateOne">updateOne</a>(string $table, array|object $data, array $key, boolean $updateNulls = false)
+        
+                                            <p>Updates a row in a table based on an object's properties.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|<a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveOne">saveOne</a>(string $table, array $data, string $key, boolean $updateNulls = false)
+        
+                                            <p>save</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertMultiple">insertMultiple</a>(string $table, array $dataSet, array $key = null)
+        
+                                            <p>insertMultiple</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateMultiple">updateMultiple</a>(string $table, array $dataSet, array $key, boolean $updateNulls = false)
+        
+                                            <p>updateMultiple</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveMultiple">saveMultiple</a>(string $table, array $dataSet, array $key, boolean $updateNulls = false)
+        
+                                            <p>saveMultiple</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateBatch">updateBatch</a>(string $table, array $data, mixed $conditions = array())
+        
+                                            <p>Batch update some data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string $table, array $conditions = array())
+        
+                                            <p>delete</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_countAffected">countAffected</a>()
+        
+                                            <p>Get the number of affected rows for the previous executed SQL statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertId">insertId</a>()
+        
+                                            <p>Method to get the auto-incremented value from the last INSERT statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(string|<a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a> $query)
+        
+                                            <p>execute</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDriver">getDriver</a>()
+        
+                                            <p>Method to get property Db</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDriver">setDriver</a>(<a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        
+                                            <p>Method to set property db</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    resource
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCursor">getCursor</a>()
+        
+                                            <p>Method to get property Cursor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCursor">setCursor</a>(resource $cursor)
+        
+                                            <p>Method to set property cursor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L41">line 41</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L58">line 58</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+    <strong>insertOne</strong>(string $table, array|object $data, string $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Inserts a row into a table based on an object's properties.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the database table to insert into.</td>
+            </tr>
+                    <tr>
+                <td>array|object</td>
+                <td>$data</td>
+                <td>&amp;$data  A reference to an object whose public properties match the table fields.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of the primary key. If provided the object property is updated.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L150">line 150</a></div>
+        <code>                    boolean
+    <strong>updateOne</strong>(string $table, array|object $data, array $key, boolean $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Updates a row in a table based on an object's properties.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the database table to update.</td>
+            </tr>
+                    <tr>
+                <td>array|object</td>
+                <td>$data</td>
+                <td>A reference to an object whose public properties match the table fields.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$key</td>
+                <td>The name of the primary key.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$updateNulls</td>
+                <td>True to update null fields or false to ignore them.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True on success.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L242">line 242</a></div>
+        <code>                    bool|<a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+    <strong>saveOne</strong>(string $table, array $data, string $key, boolean $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>save</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the database table to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>&amp;$data        A reference to an object whose public properties match the table fields.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of the primary key.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$updateNulls</td>
+                <td>True to update null fields or false to ignore them.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|<a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertMultiple">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L276">line 276</a></div>
+        <code>                    mixed
+    <strong>insertMultiple</strong>(string $table, array $dataSet, array $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>insertMultiple</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the database table to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$dataSet</td>
+                <td>&amp;$dataSet A reference to an object whose public properties match the table fields.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$key</td>
+                <td>The name of the primary key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateMultiple">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L302">line 302</a></div>
+        <code>                    mixed
+    <strong>updateMultiple</strong>(string $table, array $dataSet, array $key, boolean $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>updateMultiple</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the database table to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$dataSet</td>
+                <td>A reference to an object whose public properties match the table fields.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$key</td>
+                <td>The name of the primary key.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$updateNulls</td>
+                <td>True to update null fields or false to ignore them.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveMultiple">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L328">line 328</a></div>
+        <code>                    mixed
+    <strong>saveMultiple</strong>(string $table, array $dataSet, array $key, boolean $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>saveMultiple</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the database table to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$dataSet</td>
+                <td>A reference to an object whose public properties match the table fields.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$key</td>
+                <td>The name of the primary key.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$updateNulls</td>
+                <td>True to update null fields or false to ignore them.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBatch">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L356">line 356</a></div>
+        <code>                    boolean
+    <strong>updateBatch</strong>(string $table, array $data, mixed $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Batch update some data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>Table name.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>Data you want to update.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                          Example:
+                          - <code>array('id' =&gt; 5)</code> => id = 5
+                          - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                          - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if update success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L400">line 400</a></div>
+        <code>                    boolean
+    <strong>delete</strong>(string $table, array $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>delete</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_countAffected">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L422">line 422</a></div>
+        <code>                    integer
+    <strong>countAffected</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the number of affected rows for the previous executed SQL statement.</p>                    <p>Only applicable for DELETE, INSERT, or UPDATE statements.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>The number of affected rows.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertId">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L435">line 435</a></div>
+        <code>                    string
+    <strong>insertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the auto-incremented value from the last INSERT statement.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The value of the auto-increment field from the last inserted row.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L447">line 447</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+    <strong>execute</strong>(string|<a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>execute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDriver">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L461">line 461</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a>
+    <strong>getDriver</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Db</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDriver">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L473">line 473</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+    <strong>setDriver</strong>(<a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a> $db)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property db</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Database/Driver/AbstractDatabaseDriver.html"><abbr title="Windwalker\Database\Driver\AbstractDatabaseDriver">AbstractDatabaseDriver</abbr></a></td>
+                <td>$db</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCursor">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L485">line 485</a></div>
+        <code>                    resource
+    <strong>getCursor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Cursor</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>resource</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCursor">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Command/AbstractWriter.php#L497">line 497</a></div>
+        <code>                    <a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a>
+    <strong>setCursor</strong>(resource $cursor)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property cursor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>resource</td>
+                <td>$cursor</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Database/Command/AbstractWriter.html"><abbr title="Windwalker\Database\Command\AbstractWriter">AbstractWriter</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

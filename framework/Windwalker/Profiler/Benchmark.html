@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Profiler\Benchmark | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Profiler_Benchmark" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Profiler.html">Profiler</a></li>
+    
+                <li>Benchmark</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Benchmark
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Benchmark</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Benchmark class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SECOND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MILLI_SECOND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MICRO_SECOND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SORT_ASC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SORT_DESC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name = null, <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a> $profiler = null, int $times = 100)
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Profiler\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimeFormat">setTimeFormat</a>(int $format = self::SECOND)
+        
+                                            <p>setTimeFormat</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTask">addTask</a>(string $name, callable $callback)
+        
+                                            <p>addTask</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Windwalker\Profiler\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(integer $times = null)
+        
+                                            <p>run</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResults">getResults</a>(string $sort = null)
+        
+                                            <p>Method to get property Results</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResult">getResult</a>(string $name)
+        
+                                            <p>Method to get property Results</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderOne">renderOne</a>(string $name, bool $round = false)
+        
+                                            <p>renderResult</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>(bool $round = false, string $sort = null, bool $html = false)
+        
+                                            <p>renderResult</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimes">getTimes</a>()
+        
+                                            <p>Method to get property Times</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimes">setTimes</a>(int $times)
+        
+                                            <p>Method to set property times</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure">Closure</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRenderOneHandler">getRenderOneHandler</a>()
+        
+                                            <p>Method to get property RenderHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRenderOneHandler">setRenderOneHandler</a>(<a target="_blank" href="http://php.net/Closure">Closure</a> $renderOneHandler)
+        
+                                            <p>Method to set property renderHandler</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L81">line 81</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $name = null, <a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a> $profiler = null, int $times = 100)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Profiler/Profiler.html"><abbr title="Windwalker\Profiler\Profiler">Profiler</abbr></a></td>
+                <td>$profiler</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$times</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimeFormat">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L97">line 97</a></div>
+        <code>                    <abbr title="Windwalker\Profiler\$this">$this</abbr>
+    <strong>setTimeFormat</strong>(int $format = self::SECOND)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setTimeFormat</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Profiler\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTask">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L113">line 113</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a>
+    <strong>addTask</strong>(string $name, callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addTask</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L132">line 132</a></div>
+        <code>                    <abbr title="Windwalker\Profiler\$this">$this</abbr>
+    <strong>execute</strong>(integer $times = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>run</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$times</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\Profiler\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResults">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L180">line 180</a></div>
+        <code>                    array
+    <strong>getResults</strong>(string $sort = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Results</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td>Null, desc or asc.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResult">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L199">line 199</a></div>
+        <code>                    integer
+    <strong>getResult</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Results</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L217">line 217</a></div>
+        <code>                    string
+    <strong>renderOne</strong>(string $name, bool $round = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderResult</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$round</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L261">line 261</a></div>
+        <code>                    string
+    <strong>render</strong>(bool $round = false, string $sort = null, bool $html = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderResult</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$round</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$html</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L280">line 280</a></div>
+        <code>                    int
+    <strong>getTimes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Times</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimes">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L292">line 292</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a>
+    <strong>setTimes</strong>(int $times)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property times</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$times</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRenderOneHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L304">line 304</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Closure">Closure</a>
+    <strong>getRenderOneHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property RenderHandler</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRenderOneHandler">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Profiler/Benchmark.php#L316">line 316</a></div>
+        <code>                    <a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a>
+    <strong>setRenderOneHandler</strong>(<a target="_blank" href="http://php.net/Closure">Closure</a> $renderOneHandler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property renderHandler</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$renderOneHandler</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Profiler/Benchmark.html"><abbr title="Windwalker\Profiler\Benchmark">Benchmark</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

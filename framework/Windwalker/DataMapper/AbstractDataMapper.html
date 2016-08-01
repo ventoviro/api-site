@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\DataMapper\AbstractDataMapper | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_DataMapper_AbstractDataMapper" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/DataMapper.html">DataMapper</a></li>
+    
+                <li>AbstractDataMapper</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractDataMapper
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractDataMapper</strong>        implements
+        <a href="../../Windwalker/DataMapper/DataMapperInterface.html"><abbr title="Windwalker\DataMapper\DataMapperInterface">DataMapperInterface</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Abstract DataMapper.</p>            <p>The class can implement by any database system.</p>        </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>UPDATE_NULLS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $table = null, string $keys = null)
+        
+                                            <p>Init this class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        
+                                            <p>Find records and return data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findAll">findAll</a>(mixed $order = null, integer $start = null, integer $limit = null)
+        
+                                            <p>Find records without where conditions and return data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOne">findOne</a>(mixed $conditions = array(), mixed $order = null)
+        
+                                            <p>Find one record and return a data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findColumn">findColumn</a>(string $column, mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        
+                                            <p>Find column as an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(mixed $dataset)
+        
+                                            <p>Create records by data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createOne">createOne</a>(mixed $data)
+        
+                                            <p>Create one record by data object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Update records by data set. Every data depend on this table's primary key to update itself.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateOne">updateOne</a>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Same as update(), just update one row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateBatch">updateBatch</a>(mixed $data, mixed $conditions = array())
+        
+                                            <p>Using one data to update multiple rows, filter by where conditions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flush">flush</a>(mixed $dataset, mixed $conditions = array())
+        
+                                            <p>Flush records, will delete all by conditions then recreate new.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Save will auto detect is conditions matched in data or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveOne">saveOne</a>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        
+                                            <p>Save only one row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(mixed $conditions)
+        
+                                            <p>Delete records by where conditions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFields">getFields</a>(string $table = null)
+        
+                                            <p>Get table fields.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTable">getTable</a>()
+        
+                                            <p>Get table name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTable">setTable</a>(string $table)
+        
+                                            <p>Set table name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataClass">getDataClass</a>()
+        
+                                            <p>Get data class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDataClass">setDataClass</a>(string $dataClass)
+        
+                                            <p>Set data class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDatasetClass">getDatasetClass</a>()
+        
+                                            <p>Get data set class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDatasetClass">setDatasetClass</a>(string $datasetClass)
+        
+                                            <p>Set Data set class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_useTransaction">useTransaction</a>(boolean $yn = null)
+        
+                                            <p>To use transaction or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_triggerEvent">triggerEvent</a>(string|<a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a> $event, array $args = array())
+        
+                                            <p>triggerEvent</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDispatcher">getDispatcher</a>()
+        
+                                            <p>Method to get property Dispatcher</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDispatcher">setDispatcher</a>(<a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a> $dispatcher)
+        
+                                            <p>Method to set property dispatcher</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyName">getKeyName</a>(boolean $multiple = false)
+        
+                                            <p>Method to get the primary key field name for the table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPrimaryKey">hasPrimaryKey</a>()
+        
+                                            <p>Validate that the primary key has been set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L105">line 105</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $table = null, string $keys = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Init this class.</p>                    <p>We don't dependency on database in abstract class, that means you can use other data provider.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>Table name.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$keys</td>
+                <td>The primary key, default will be <code>id</code>.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L150">line 150</a></div>
+        <code>                    mixed
+    <strong>find</strong>(mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find records and return data set.</p>                    <p>Example:
+- <code>$mapper-&gt;find(array('id' =&gt; 5), 'date', 20, 10);</code>
+- <code>$mapper-&gt;find(null, 'id', 0, 1);</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                           Example:
+                           - <code>array('id' =&gt; 5)</code> => id = 5
+                           - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                           - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                           Example:
+                           - <code>id ASC</code> => ORDER BY id ASC
+                           - <code>array('catid DESC', 'id')</code> => ORDER BY catid DESC, id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$start</td>
+                <td>Limit start number.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>Limit rows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Found rows data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findAll">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L226">line 226</a></div>
+        <code>                    mixed
+    <strong>findAll</strong>(mixed $order = null, integer $start = null, integer $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find records without where conditions and return data set.</p>                    <p>Same as <code>$mapper-&gt;find(null, 'id', $start, $limit);</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                      Example:
+                      - 'id ASC' => ORDER BY id ASC
+                      - array('catid DESC', 'id') => ORDER BY catid DESC, id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$start</td>
+                <td>Limit start number.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>Limit rows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Found rows data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L262">line 262</a></div>
+        <code>                    mixed
+    <strong>findOne</strong>(mixed $conditions = array(), mixed $order = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find one record and return a data.</p>                    <p>Same as <code>$mapper-&gt;find($conditions, 'id', 0, 1);</code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                         Example:
+                         - <code>array('id' =&gt; 5)</code> => id = 5
+                         - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                         - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                         Example:
+                         - <code>id ASC</code> => ORDER BY id ASC
+                         - <code>array('catid DESC', 'id')</code> => ORDER BY catid DESC, id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Found row data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findColumn">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L307">line 307</a></div>
+        <code>                    mixed
+    <strong>findColumn</strong>(string $column, mixed $conditions = array(), mixed $order = null, integer $start = null, integer $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find column as an array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>The column we want to select.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                           Example:
+                           - <code>array('id' =&gt; 5)</code> => id = 5
+                           - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                           - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$order</td>
+                <td>Order sort, can ba string, array or object.
+                           Example:
+                           - <code>id ASC</code> => ORDER BY id ASC
+                           - <code>array('catid DESC', 'id')</code> => ORDER BY catid DESC, id</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$start</td>
+                <td>Limit start number.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>Limit rows.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L349">line 349</a></div>
+        <code>                    mixed
+    <strong>create</strong>(mixed $dataset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create records by data set.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>The data set contains data we want to store.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Data set data with inserted id.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L379">line 379</a></div>
+        <code>                    mixed
+    <strong>createOne</strong>(mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create one record by data object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Send a data in and store.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Data with inserted id.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L408">line 408</a></div>
+        <code>                    mixed
+    <strong>update</strong>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Update records by data set. Every data depend on this table's primary key to update itself.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>Data set contain data we want to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                         will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Updated data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L445">line 445</a></div>
+        <code>                    mixed
+    <strong>updateOne</strong>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Same as update(), just update one row.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data we want to update.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                         will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Updated data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBatch">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L482">line 482</a></div>
+        <code>                    mixed
+    <strong>updateBatch</strong>(mixed $data, mixed $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Using one data to update multiple rows, filter by where conditions.</p>                    <p>Example:
+<code>$mapper-&gt;updateAll(new Data(array('published' =&gt; 0)), array('date' =&gt; '2014-03-02'))</code>
+Means we make every records which date is 2014-03-02 unpublished.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data we want to update to every rows.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                         Example:
+                         - <code>array('id' =&gt; 5)</code> => id = 5
+                         - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                         - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Updated data set.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L512">line 512</a></div>
+        <code>                    mixed
+    <strong>flush</strong>(mixed $dataset, mixed $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Flush records, will delete all by conditions then recreate new.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>Data set contain data we want to update.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                         Example:
+                         - <code>array('id' =&gt; 5)</code> => id = 5
+                         - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                         - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Updated data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L554">line 554</a></div>
+        <code>                    mixed
+    <strong>save</strong>(mixed $dataset, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save will auto detect is conditions matched in data or not.</p>                    <p>If matched, using update, otherwise we will create it as new record.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$dataset</td>
+                <td>The data set contains data we want to save.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                         will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Saved data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveOne">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L626">line 626</a></div>
+        <code>                    mixed
+    <strong>saveOne</strong>(mixed $data, array $condFields = null, bool $updateNulls = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save only one row.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data we want to save.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$condFields</td>
+                <td>The where condition tell us record exists or not, if not set,
+                         will use primary key instead.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$updateNulls</td>
+                <td>Update empty fields or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Saved data.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L658">line 658</a></div>
+        <code>                    boolean
+    <strong>delete</strong>(mixed $conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete records by where conditions.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>Where conditions, you can use array or Compare object.
+                           Example:
+                           - <code>array('id' =&gt; 5)</code> => id = 5
+                           - <code>new GteCompare('id', 20)</code> => 'id >= 20'
+                           - <code>new Compare('id', '%Flower%', 'LIKE')</code> => 'id LIKE "%Flower%"'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>Will be always true.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFields">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L773">line 773</a></div>
+        <code>    abstract                array
+    <strong>getFields</strong>(string $table = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get table fields.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>Table name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L780">line 780</a></div>
+        <code>                    string
+    <strong>getTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get table name.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Table name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTable">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L792">line 792</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+    <strong>setTable</strong>(string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set table name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>Table name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L870">line 870</a></div>
+        <code>                    string
+    <strong>getDataClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get data class.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Dat class.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDataClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L882">line 882</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+    <strong>setDataClass</strong>(string $dataClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set data class.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dataClass</td>
+                <td>Data class.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDatasetClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L894">line 894</a></div>
+        <code>                    string
+    <strong>getDatasetClass</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get data set class.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Data set class.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDatasetClass">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L906">line 906</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+    <strong>setDatasetClass</strong>(string $datasetClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set Data set class.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$datasetClass</td>
+                <td>Dat set class.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useTransaction">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L920">line 920</a></div>
+        <code>                    boolean
+    <strong>useTransaction</strong>(boolean $yn = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>To use transaction or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$yn</td>
+                <td>Yes or no, keep default that we get this value.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_triggerEvent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L938">line 938</a></div>
+        <code>                    <a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a>
+    <strong>triggerEvent</strong>(string|<a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a> $event, array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>triggerEvent</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|<a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/Event.html"><abbr title="Windwalker\Event\Event">Event</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDispatcher">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L966">line 966</a></div>
+        <code>                    <a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a>
+    <strong>getDispatcher</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Dispatcher</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDispatcher">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L988">line 988</a></div>
+        <code>                    <a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a>
+    <strong>setDispatcher</strong>(<a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a> $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property dispatcher</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Event/DispatcherInterface.html"><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></a></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DataMapper/AbstractDataMapper.html"><abbr title="Windwalker\DataMapper\AbstractDataMapper">AbstractDataMapper</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L1004">line 1004</a></div>
+        <code>                    array|mixed
+    <strong>getKeyName</strong>(boolean $multiple = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get the primary key field name for the table.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$multiple</td>
+                <td>True to return all primary keys (as an array) or false to return just the first one (as a string).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|mixed</td>
+            <td>Array of primary key field names or string containing the first primary key field.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPrimaryKey">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DataMapper/AbstractDataMapper.php#L1031">line 1031</a></div>
+        <code>                    boolean
+    <strong>hasPrimaryKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validate that the primary key has been set.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the primary key(s) have been set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

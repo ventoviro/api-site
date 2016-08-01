@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Error\ErrorHandler | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Error_ErrorHandler" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Error.html">Error</a></li>
+    
+                <li>ErrorHandler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ErrorHandler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ErrorHandler</strong>        extends <a href="../../../Windwalker/Core/Facade/AbstractProxyFacade.html"><abbr title="Windwalker\Core\Facade\AbstractProxyFacade">AbstractProxyFacade</abbr></a>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Error/ErrorHandler.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class ErrorHandler</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>(bool $forceNew = false)
+        
+                                            <p>getInstance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getInstance"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="Windwalker\DI\Container">Container</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContainer">getContainer</a>(string $child = null, string $profile = null)
+        
+                                            <p>Method to get property Container</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getContainer"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContainerName">getContainerName</a>()
+        
+                                            <p>Method to get property Child</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getContainerName"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setContainerName">setContainerName</a>(string $name)
+        
+                                            <p>setContainerName</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_setContainerName"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIocProfile">getIocProfile</a>()
+        
+                                            <p>Get Ioc profile.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getIocProfile"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIocProfile">setIocProfile</a>(string $profile)
+        
+                                            <p>setIocProfile</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_setIocProfile"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDIKey">getDIKey</a>()
+        
+                                            <p>getDIKey</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getDIKey"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDIKey">setDIKey</a>(string $key)
+        
+                                            <p>setDIKey</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_setDIKey"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $args)
+        
+                                            <p>Handle dynamic, static calls to the object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Core/Facade/AbstractProxyFacade.html#method___callStatic"><abbr title="Windwalker\Core\Facade\AbstractProxyFacade">AbstractProxyFacade</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getInstance"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L50">line 50</a></div>
+        <code>        static            mixed
+    <strong>getInstance</strong>(bool $forceNew = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getInstance</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$forceNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainer">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getContainer"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L64">line 64</a></div>
+        <code>        static            <abbr title="Windwalker\DI\Container">Container</abbr>
+    <strong>getContainer</strong>(string $child = null, string $profile = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Container</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$child</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$profile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Windwalker\DI\Container">Container</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContainerName">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getContainerName"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L74">line 74</a></div>
+        <code>        static            string
+    <strong>getContainerName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Child</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setContainerName">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_setContainerName"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L86">line 86</a></div>
+        <code>        static            void
+    <strong>setContainerName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setContainerName</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIocProfile">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getIocProfile"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L96">line 96</a></div>
+        <code>        static            string
+    <strong>getIocProfile</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get Ioc profile.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIocProfile">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_setIocProfile"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L108">line 108</a></div>
+        <code>        static            void
+    <strong>setIocProfile</strong>(string $profile)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setIocProfile</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$profile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDIKey">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_getDIKey"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L118">line 118</a></div>
+        <code>        static            string
+    <strong>getDIKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDIKey</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDIKey">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractFacade.html#method_setDIKey"><abbr title="Windwalker\Core\Facade\AbstractFacade">AbstractFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractFacade.php#L130">line 130</a></div>
+        <code>        static            void
+    <strong>setDIKey</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setDIKey</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="../../../Windwalker/Core/Facade/AbstractProxyFacade.html#method___callStatic"><abbr title="Windwalker\Core\Facade\AbstractProxyFacade">AbstractProxyFacade</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Facade/AbstractProxyFacade.php#L26">line 26</a></div>
+        <code>        static            mixed
+    <strong>__callStatic</strong>(string $method, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handle dynamic, static calls to the object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>The method name.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>The arguments of method call.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Application\AbstractDaemonApplication | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Application_AbstractDaemonApplication" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Application.html">Application</a></li>
+    
+                <li>AbstractDaemonApplication</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AbstractDaemonApplication
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AbstractDaemonApplication</strong>        extends <a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a>        implements
+        <abbr title="Psr\Log\LoggerAwareInterface">LoggerAwareInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class to turn Cli applications into daemons.  It requires CLI and PCNTL support built into PHP.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> $io = null, <a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config = null)
+        
+                                            <p>Class constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>(integer|string $message)
+        
+                                            <p>Method to close the application.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_close"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>()
+        
+                                            <p>Execute the daemon.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $key, mixed $default = null)
+        
+                                            <p>Returns a property of the object or the default value if the property is not set.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_get"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLogger">getLogger</a>()
+        
+                                            <p>Get the logger.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_getLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $key, mixed $value = null)
+        
+                                            <p>Modifies a property of the object, creating it if it does not already exist.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_set"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConfiguration">setConfiguration</a>(<a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config)
+        
+                                            <p>Sets the configuration for the application.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_setConfiguration"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogger">setLogger</a>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        
+                                            <p>Set the logger.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractApplication.html#method_setLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>($name)
+        
+                                            <p>is utilized for reading data from inaccessible members.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractCliApplication.html#method___get"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_out">out</a>(string $text = &#039;&#039;, boolean $nl = true)
+        
+                                            <p>Write a string to standard output.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractCliApplication.html#method_out"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_in">in</a>()
+        
+                                            <p>Get a value from standard input.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractCliApplication.html#method_in"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIO">getIO</a>()
+        
+                                            <p>Get the IO object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractCliApplication.html#method_getIO"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIO">setIO</a>(<a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> $io)
+        
+                                            <p>Set the IO object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Windwalker/Application/AbstractCliApplication.html#method_setIO"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_signal">signal</a>(integer $signal)
+        
+                                            <p>Method to handle POSIX signals.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isActive">isActive</a>()
+        
+                                            <p>Check to see if the daemon is active.  This does not assume that $this daemon is active, but
+only if an instance of the application is active as a daemon.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractDaemonApplication.html"><abbr title="Windwalker\Application\AbstractDaemonApplication">AbstractDaemonApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadConfiguration">loadConfiguration</a>(mixed $data)
+        
+                                            <p>Load an object or array into the application configuration object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restart">restart</a>()
+        
+                                            <p>Restart daemon process.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stop">stop</a>()
+        
+                                            <p>Stop daemon process.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>Get application name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Application/AbstractDaemonApplication.html"><abbr title="Windwalker\Application\AbstractDaemonApplication">AbstractDaemonApplication</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>Set application name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L114">line 114</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> $io = null, <a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td>An optional argument to provide dependency injection for the application's
+                               IO object.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a></td>
+                <td>$config</td>
+                <td>An optional argument to provide a Structure object to be config.</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_close"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L64">line 64</a></div>
+        <code>                    void
+    <strong>close</strong>(integer|string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to close the application.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer|string</td>
+                <td>$message</td>
+                <td>The exit code (optional; default is 0).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L376">line 376</a></div>
+        <code>                    mixed
+    <strong>execute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute the daemon.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_get"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L128">line 128</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $key, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a property of the object or the default value if the property is not set.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of the property.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value (optional) if none is set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value of the configuration.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogger">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_getLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L140">line 140</a></div>
+        <code>                    <abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+    <strong>getLogger</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the logger.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_set"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L175">line 175</a></div>
+        <code>                    mixed
+    <strong>set</strong>(string $key, mixed $value = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modifies a property of the object, creating it if it does not already exist.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The name of the property.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value of the property to set (optional).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Previous value of the property</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfiguration">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_setConfiguration"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L193">line 193</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+    <strong>setConfiguration</strong>(<a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a> $config)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the configuration for the application.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Structure/Structure.html"><abbr title="Windwalker\Structure\Structure">Structure</abbr></a></td>
+                <td>$config</td>
+                <td>A structure object holding the configuration.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></td>
+            <td>Returns itself to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogger">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractApplication.html#method_setLogger"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractApplication.php#L209">line 209</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a>
+    <strong>setLogger</strong>(<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr> $logger)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the logger.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr></td>
+                <td>$logger</td>
+                <td>The logger.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractApplication.html"><abbr title="Windwalker\Application\AbstractApplication">AbstractApplication</abbr></a></td>
+            <td>Returns itself to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractCliApplication.html#method___get"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractCliApplication.php#L124">line 124</a></div>
+        <code>                    mixed
+    <strong>__get</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>is utilized for reading data from inaccessible members.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_out">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractCliApplication.html#method_out"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractCliApplication.php#L74">line 74</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a>
+    <strong>out</strong>(string $text = &#039;&#039;, boolean $nl = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Write a string to standard output.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The text to display.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$nl</td>
+                <td>True (default) to append a new line at the end of the output string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></td>
+            <td>Instance of $this to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_in">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractCliApplication.html#method_in"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractCliApplication.php#L88">line 88</a></div>
+        <code>                    string
+    <strong>in</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a value from standard input.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The input string from standard input.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIO">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractCliApplication.html#method_getIO"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractCliApplication.php#L98">line 98</a></div>
+        <code>                    <a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a>
+    <strong>getIO</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the IO object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIO">
+        <div class="location">in <a href="../../Windwalker/Application/AbstractCliApplication.html#method_setIO"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractCliApplication.php#L110">line 110</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a>
+    <strong>setIO</strong>(<a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a> $io)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the IO object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/IO/Cli/IOInterface.html"><abbr title="Windwalker\IO\Cli\IOInterface">IOInterface</abbr></a></td>
+                <td>$io</td>
+                <td>The IO object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractCliApplication.html"><abbr title="Windwalker\Application\AbstractCliApplication">AbstractCliApplication</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_signal">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L161">line 161</a></div>
+        <code>                    void
+    <strong>signal</strong>(integer $signal)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to handle POSIX signals.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$signal</td>
+                <td>The received POSIX signal.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>pcntl_signal()</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isActive">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L235">line 235</a></div>
+        <code>                    boolean
+    <strong>isActive</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check to see if the daemon is active.  This does not assume that $this daemon is active, but
+only if an instance of the application is active as a daemon.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if daemon is active.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadConfiguration">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L281">line 281</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractDaemonApplication.html"><abbr title="Windwalker\Application\AbstractDaemonApplication">AbstractDaemonApplication</abbr></a>
+    <strong>loadConfiguration</strong>(mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load an object or array into the application configuration object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>Either an array or object to be loaded into the configuration object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractDaemonApplication.html"><abbr title="Windwalker\Application\AbstractDaemonApplication">AbstractDaemonApplication</abbr></a></td>
+            <td>Instance of $this to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restart">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L426">line 426</a></div>
+        <code>                    void
+    <strong>restart</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Restart daemon process.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stop">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L441">line 441</a></div>
+        <code>                    void
+    <strong>stop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Stop daemon process.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L941">line 941</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get application name.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Application name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Application/AbstractDaemonApplication.php#L955">line 955</a></div>
+        <code>                    <a href="../../Windwalker/Application/AbstractDaemonApplication.html"><abbr title="Windwalker\Application\AbstractDaemonApplication">AbstractDaemonApplication</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set application name.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of this application.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Application/AbstractDaemonApplication.html"><abbr title="Windwalker\Application\AbstractDaemonApplication">AbstractDaemonApplication</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

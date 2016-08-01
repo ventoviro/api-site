@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Data\DataSet | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Data_DataSet" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Data.html">Data</a></li>
+    
+                <li>DataSet</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            DataSet
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>DataSet</strong>        implements
+        <a href="../../Windwalker/Data/DataSetInterface.html"><abbr title="Windwalker\Data\DataSetInterface">DataSetInterface</abbr></a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>, <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>, <a target="_blank" href="http://php.net/Serializable">Serializable</a>, <a target="_blank" href="http://php.net/Countable">Countable</a>, <a href="../../JsonSerializable.html">JsonSerializable</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The Data set to store multiple data.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(mixed $data = null)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(array $dataset)
+        
+                                            <p>Bind data array into self.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $property)
+        
+                                            <p>The magic get method is used to get a list of properties from the objects in the data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(string $property)
+        
+                                            <p>The magic isset method is used to check the state of an object property using the iterator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(string $property, mixed $value)
+        
+                                            <p>The magic set method is used to set an object property using the iterator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unset">__unset</a>(string $property)
+        
+                                            <p>The magic unset method is used to unset an object property using the iterator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p>Property is exist or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p>Get a value of property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>()
+        
+                                            <p>Clears the objects in the data set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p>Set value to property</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Unset a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Get the data store for iterate.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serialize">serialize</a>()
+        
+                                            <p>Serialize data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unserialize">unserialize</a>(string $serialized)
+        
+                                            <p>Unserialize the data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Count data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+        
+                                            <p>Serialize to json format.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNull">isNull</a>()
+        
+                                            <p>Is this data set empty?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notNull">notNull</a>()
+        
+                                            <p>Is this data set has properties?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dump">dump</a>(bool $recursive = false)
+        
+                                            <p>Dump all data as array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allToArray">allToArray</a>(mixed $value)
+        
+                                            <p>allToArray</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_map">map</a>(callable $callback)
+        
+                                            <p>Mapping all elements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_walk">walk</a>(callable $callback, mixed $userdata = null)
+        
+                                            <p>Apply a user supplied function to every member of this object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ksort">ksort</a>(integer $flags = null)
+        
+                                            <p>Sort Dataset by key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_krsort">krsort</a>(integer $flags = null)
+        
+                                            <p>Sort DataSet by key in reverse order</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sort">sort</a>(integer $flags = null)
+        
+                                            <p>Sort data.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rsort">rsort</a>(integer $flags = null)
+        
+                                            <p>Sort Data in reverse order.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uksort">uksort</a>(callable $callable)
+        
+                                            <p>Sort DataSet by keys using a user-defined comparison function</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shuffle">shuffle</a>()
+        
+                                            <p>Shuffle this DataSet to random orders.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>()
+        
+                                            <p>Get first element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_last">last</a>()
+        
+                                            <p>Get last element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_push">push</a>(<a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>|mixed $data)
+        
+                                            <p>Push element to last.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pop">pop</a>()
+        
+                                            <p>Pop the last element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shift">shift</a>()
+        
+                                            <p>Shift the first element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unshift">unshift</a>(<a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>|mixed $data)
+        
+                                            <p>Unshift the first element.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Clone this class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeys">getKeys</a>()
+        
+                                            <p>Return all the keys of this DataSet.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L35">line 35</a></div>
+        <code>                    
+    <strong>__construct</strong>(mixed $data = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L51">line 51</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>bind</strong>(array $dataset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Bind data array into self.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$dataset</td>
+                <td>The data array or object.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L88">line 88</a></div>
+        <code>                    array
+    <strong>__get</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The magic get method is used to get a list of properties from the objects in the data set.</p>                    <p>Example: $array = $dataSet->foo;</p>
+
+<p>This will return a column of the values of the 'foo' property in all the objects
+(or values determined by custom property setters in the individual Data's).
+The result array will contain an entry for each object in the list (compared to __call which may not).
+The keys of the objects and the result array are maintained.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td>The name of the data property.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>An associative array of the values.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L111">line 111</a></div>
+        <code>                    boolean
+    <strong>__isset</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The magic isset method is used to check the state of an object property using the iterator.</p>                    <p>Example: $array = isset($objectList->foo);</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td>The name of the property.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if the property is set in any of the objects in the data set.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L138">line 138</a></div>
+        <code>                    void
+    <strong>__set</strong>(string $property, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The magic set method is used to set an object property using the iterator.</p>                    <p>Example: $objectList->foo = 'bar';</p>
+
+<p>This will set the 'foo' property to 'bar' in all of the objects
+(or a value determined by custom property setters in the Data).</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td>The name of the property.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to give the data property.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L159">line 159</a></div>
+        <code>                    void
+    <strong>__unset</strong>(string $property)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The magic unset method is used to unset an object property using the iterator.</p>                    <p>Example: unset($objectList->foo);</p>
+
+<p>This will unset all of the 'foo' properties in the list of Data\Object's.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$property</td>
+                <td>The name of the property.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L175">line 175</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Property is exist or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Property key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L187">line 187</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a value of property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Property key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value of this property.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L202">line 202</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>clear</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears the objects in the data set.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Returns itself to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L217">line 217</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set value to property</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Property key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Property value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L241">line 241</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Key to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L251">line 251</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the data store for iterate.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>The data to be iterator.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L261">line 261</a></div>
+        <code>                    string
+    <strong>serialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Serialize data.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Serialized data string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unserialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L273">line 273</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>unserialize</strong>(string $serialized)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unserialize the data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$serialized</td>
+                <td>THe serialized data string.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L285">line 285</a></div>
+        <code>                    int
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count data.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L295">line 295</a></div>
+        <code>                    mixed
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Serialize to json format.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNull">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L305">line 305</a></div>
+        <code>                    boolean
+    <strong>isNull</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this data set empty?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True if empty.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notNull">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L315">line 315</a></div>
+        <code>                    boolean
+    <strong>notNull</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is this data set has properties?</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True is exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L327">line 327</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>[]
+    <strong>dump</strong>(bool $recursive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dump all data as array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$recursive</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allToArray">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L346">line 346</a></div>
+        <code>        static            array
+    <strong>allToArray</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>allToArray</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_map">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L385">line 385</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>map</strong>(callable $callback)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Mapping all elements.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_walk">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L402">line 402</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>walk</strong>(callable $callback, mixed $userdata = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Apply a user supplied function to every member of this object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callback to handle every element.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$userdata</td>
+                <td>This will be passed as the third parameter to the callback.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ksort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L418">line 418</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>ksort</strong>(integer $flags = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort Dataset by key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$flags</td>
+                <td>You may modify the behavior of the sort using the optional parameter flags.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_krsort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L434">line 434</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>krsort</strong>(integer $flags = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort DataSet by key in reverse order</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$flags</td>
+                <td>You may modify the behavior of the sort using the optional parameter flags.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L450">line 450</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>sort</strong>(integer $flags = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort data.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$flags</td>
+                <td>You may modify the behavior of the sort using the optional parameter flags.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rsort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L466">line 466</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>rsort</strong>(integer $flags = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort Data in reverse order.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$flags</td>
+                <td>You may modify the behavior of the sort using the optional parameter flags.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uksort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L482">line 482</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>uksort</strong>(callable $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sort DataSet by keys using a user-defined comparison function</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td>The compare function used for the sort.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shuffle">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L496">line 496</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>shuffle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Shuffle this DataSet to random orders.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>Support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L508">line 508</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>first</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get first element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_last">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L518">line 518</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>last</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get last element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_push">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L530">line 530</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>push</strong>(<a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>|mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Push element to last.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>|mixed</td>
+                <td>$data</td>
+                <td>Data to push.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pop">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L542">line 542</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>pop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pop the last element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shift">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L554">line 554</a></div>
+        <code>                    <a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>
+    <strong>shift</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Shift the first element.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a></td>
+            <td>@since   3.0</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unshift">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L568">line 568</a></div>
+        <code>                    <a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a>
+    <strong>unshift</strong>(<a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>|mixed $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unshift the first element.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/Data/Data.html"><abbr title="Windwalker\Data\Data">Data</abbr></a>|mixed</td>
+                <td>$data</td>
+                <td>Data to push.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Data/DataSet.html"><abbr title="Windwalker\Data\DataSet">DataSet</abbr></a></td>
+            <td>@since   3.0</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L582">line 582</a></div>
+        <code>                    void
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clone this class.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeys">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Data/DataSet.php#L608">line 608</a></div>
+        <code>                    array
+    <strong>getKeys</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return all the keys of this DataSet.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

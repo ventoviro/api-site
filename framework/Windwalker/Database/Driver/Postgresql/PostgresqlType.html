@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Database\Driver\Postgresql\PostgresqlType | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Database_Driver_Postgresql_PostgresqlType" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../../Windwalker/Database.html">Database</a></li>
+                                        <li><a href="../../../../Windwalker/Database/Driver.html">Driver</a></li>
+                                        <li><a href="../../../../Windwalker/Database/Driver/Postgresql.html">Postgresql</a></li>
+    
+                <li>PostgresqlType</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PostgresqlType
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PostgresqlType</strong>        extends <a href="../../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Postgresql/PostgresqlType.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The PostgresqlType class.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>BOOLEAN</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>VARCHAR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BIT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>BIT_VARYING</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>INTEGER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SMALLINT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DECIMAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NUMERIC</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>FLOAT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>REAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DOUBLE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DATE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TIMESTAMP</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>INTERVAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CHARACTER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LARGE</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>OBJECT_BINARY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LARGE_OBJECT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LONGTEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>TINYINT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DATETIME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SERIAL</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_typeDefinitions">
+                    static                                                            array
+                </td>
+                <td>$typeDefinitions</td>
+                <td class="last">"Default Length", "Default Value", "PHP Type"</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInstance">getInstance</a>(string $driver)
+        
+                                            <p>getInstance</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Schema/DataType.html#method_getInstance"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLength">getLength</a>(string $type)
+        
+                                            <p>getLength</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Schema/DataType.html#method_getLength"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultValue">getDefaultValue</a>(string $type)
+        
+                                            <p>getDefaultValue</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Schema/DataType.html#method_getDefaultValue"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPhpType">getPhpType</a>(string $type)
+        
+                                            <p>getPhpType</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Schema/DataType.html#method_getPhpType"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getType">getType</a>(string $type)
+        
+                                            <p>getType</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../Windwalker/Database/Schema/DataType.html#method_getType"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_noLength">noLength</a>(string $type)
+        
+                                            <p>noLength</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">in <a href="../../../../Windwalker/Database/Schema/DataType.html#method_getInstance"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Schema/DataType.php#L116">line 116</a></div>
+        <code>        static            <a href="../../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a>
+    <strong>getInstance</strong>(string $driver)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getInstance</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Windwalker/Database/Schema/DataType.html"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLength">
+        <div class="location">in <a href="../../../../Windwalker/Database/Schema/DataType.html#method_getLength"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Schema/DataType.php#L137">line 137</a></div>
+        <code>        static            integer
+    <strong>getLength</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getLength</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultValue">
+        <div class="location">in <a href="../../../../Windwalker/Database/Schema/DataType.html#method_getDefaultValue"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Schema/DataType.php#L149">line 149</a></div>
+        <code>        static            string
+    <strong>getDefaultValue</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getDefaultValue</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPhpType">
+        <div class="location">in <a href="../../../../Windwalker/Database/Schema/DataType.html#method_getPhpType"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Schema/DataType.php#L161">line 161</a></div>
+        <code>        static            string
+    <strong>getPhpType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getPhpType</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getType">
+        <div class="location">in <a href="../../../../Windwalker/Database/Schema/DataType.html#method_getType"><abbr title="Windwalker\Database\Schema\DataType">DataType</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Schema/DataType.php#L198">line 198</a></div>
+        <code>        static            string
+    <strong>getType</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getType</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_noLength">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Database/Driver/Postgresql/PostgresqlType.php#L78">line 78</a></div>
+        <code>        static            boolean
+    <strong>noLength</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>noLength</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\DI\Container | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_DI_Container" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/DI.html">DI</a></li>
+    
+                <li>Container</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Container
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Container</strong>        implements
+        <a target="_blank" href="http://php.net/ArrayAccess">ArrayAccess</a>, <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>, <a target="_blank" href="http://php.net/Countable">Countable</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The DI Container.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>FORCE_NEW</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $parent = null, array $children = array())
+        
+                                            <p>Constructor for the DI Container</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alias">alias</a>(string $alias, string $key)
+        
+                                            <p>Create an alias for a given key for easy access.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(string $name, mixed $value, bool $shared = false, bool $protected = false)
+        
+                                            <p>bind</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindShared">bindShared</a>(string $name, mixed $value, bool $protected = false)
+        
+                                            <p>bindShared</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareObject">prepareObject</a>(string $class, callable $extend = null, bool $shared = false, bool $protected = false)
+        
+                                            <p>prepareObject</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareSharedObject">prepareSharedObject</a>(string $class, callable $extend = null, bool $protected = false)
+        
+                                            <p>prepareSharedObject</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createObject">createObject</a>(string $class, array $args = array(), bool $shared = false, bool $protected = false)
+        
+                                            <p>createObject</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createSharedObject">createSharedObject</a>(string $class, array $args = array(), bool $protected = false)
+        
+                                            <p>createSharedObject</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newInstance">newInstance</a>(string $class, array $args = array())
+        
+                                            <p>Create an object of class $key;</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(callable $callable, array $args = array())
+        
+                                            <p>Execute a callable with dependencies.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whenCreating">whenCreating</a>(string $class)
+        
+                                            <p>whenCreating</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createChild">createChild</a>(string $name = null)
+        
+                                            <p>Create a child Container with a new property scope that
+that has the ability to access the parent scope when resolving.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extend">extend</a>(string $key, <a target="_blank" href="http://php.net/Closure">Closure</a> $callable)
+        
+                                            <p>Extend a defined service Closure by wrapping the existing one with a new Closure.  This
+works very similar to a decorator pattern.  Note that this only works on service Closures
+that have been defined in the current Provider, not parent providers.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(string $key, mixed $value, boolean $shared = false, boolean $protected = false)
+        
+                                            <p>Method to set the key and callback to the dataStore array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_protect">protect</a>(string $key, callable $callback, bool $shared = false)
+        
+                                            <p>Convenience method for creating protected keys.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_share">share</a>(string $key, callable|mixed $callback, bool $protected = false)
+        
+                                            <p>Convenience method for creating shared keys.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $key, boolean $forceNew = false)
+        
+                                            <p>Method to retrieve the results of running the $callback for the specified $key;</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_remove">remove</a>(string $key)
+        
+                                            <p>Remove an item from container.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>(string $key)
+        
+                                            <p>Method to check if specified dataStore key exists.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNewInstance">getNewInstance</a>(string $key)
+        
+                                            <p>Method to force the container to return a new instance
+of the results of the callback for requested $key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fork">fork</a>(string $key, string $newKey, bool $forceNew = false)
+        
+                                            <p>Fork an instance to a new key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerServiceProvider">registerServiceProvider</a>(<a href="../../Windwalker/DI/ServiceProviderInterface.html"><abbr title="Windwalker\DI\ServiceProviderInterface">ServiceProviderInterface</abbr></a> $provider)
+        
+                                            <p>Register a service provider to the container.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParent">getParent</a>()
+        
+                                            <p>Method to get property Parent</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParent">setParent</a>(<a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $parent)
+        
+                                            <p>Method to set property parent</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addChild">addChild</a>(string $name, <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $container)
+        
+                                            <p>addChild</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChild">getChild</a>(string $name, boolean $forceNew = false)
+        
+                                            <p>getChild</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasChild">hasChild</a>(string $name)
+        
+                                            <p>hasChild</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeChild">removeChild</a>(string $name)
+        
+                                            <p>removeChild</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getChildren">getChildren</a>()
+        
+                                            <p>Method to get property Children</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setChildren">setChildren</a>(array $children)
+        
+                                            <p>Method to set property children</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Retrieve an external iterator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(mixed $offset)
+        
+                                            <p>Is a property exists or not.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(mixed $offset)
+        
+                                            <p>Get a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(mixed $offset, mixed $value)
+        
+                                            <p>Set a value to property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(mixed $offset)
+        
+                                            <p>Unset a property.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+        
+                                            <p>Count this object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L71">line 71</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $parent = null, array $children = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor for the DI Container</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+                <td>$parent</td>
+                <td>Parent for hierarchical containers.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$children</td>
+                <td>Children Containers.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alias">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L87">line 87</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>alias</strong>(string $alias, string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create an alias for a given key for easy access.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td>The alias name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key to alias</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>This object for chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L125">line 125</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>bind</strong>(string $name, mixed $value, bool $shared = false, bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>bind</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shared</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindShared">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L149">line 149</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>bindShared</strong>(string $name, mixed $value, bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>bindShared</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L166">line 166</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>prepareObject</strong>(string $class, callable $extend = null, bool $shared = false, bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>prepareObject</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$extend</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shared</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareSharedObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L194">line 194</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>prepareSharedObject</strong>(string $class, callable $extend = null, bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>prepareSharedObject</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$extend</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L210">line 210</a></div>
+        <code>                    object
+    <strong>createObject</strong>(string $class, array $args = array(), bool $shared = false, bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>createObject</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shared</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSharedObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L231">line 231</a></div>
+        <code>                    object
+    <strong>createSharedObject</strong>(string $class, array $args = array(), bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>createSharedObject</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newInstance">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L248">line 248</a></div>
+        <code>                    mixed
+    <strong>newInstance</strong>(string $class, array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create an object of class $key;</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td>The class name to build.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>The default args if no class hint provided.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Instance of class specified by $key with all dependencies injected.
+                Returns an object if the class exists and false otherwise</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/DI/Exception/DependencyResolutionException.html"><abbr title="Windwalker\DI\Exception\DependencyResolutionException">DependencyResolutionException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L388">line 388</a></div>
+        <code>                    mixed
+    <strong>execute</strong>(callable $callable, array $args = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a callable with dependencies.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$callable</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/DI/Exception/DependencyResolutionException.html"><abbr title="Windwalker\DI\Exception\DependencyResolutionException">DependencyResolutionException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whenCreating">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L434">line 434</a></div>
+        <code>                    <a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a>
+    <strong>whenCreating</strong>(string $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>whenCreating</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/ClassMeta.html"><abbr title="Windwalker\DI\ClassMeta">ClassMeta</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L454">line 454</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>createChild</strong>(string $name = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a child Container with a new property scope that
+that has the ability to access the parent scope when resolving.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The child name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>The new container object.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extend">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L476">line 476</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>extend</strong>(string $key, <a target="_blank" href="http://php.net/Closure">Closure</a> $callable)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Extend a defined service Closure by wrapping the existing one with a new Closure.  This
+works very similar to a decorator pattern.  Note that this only works on service Closures
+that have been defined in the current Provider, not parent providers.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The unique identifier for the Closure or property.</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$callable</td>
+                <td>A Closure to wrap the original service Closure.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L514">line 514</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>set</strong>(string $key, mixed $value, boolean $shared = false, boolean $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set the key and callback to the dataStore array.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of dataStore key to set.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Callable function to run or string to retrieve when requesting the specified $key.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$shared</td>
+                <td>True to create and store a shared instance.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$protected</td>
+                <td>True to protect this item from being overwritten. Useful for services.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>This object for chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/OutOfBoundsException">OutOfBoundsException</a></td>
+                <td>Thrown if the provided key is already set and is protected.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_protect">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L537">line 537</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>protect</strong>(string $key, callable $callback, bool $shared = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convenience method for creating protected keys.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of dataStore key to set.</td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td>Callable function to run when requesting the specified $key.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$shared</td>
+                <td>True to create and store a shared instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>This object for chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_share">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L553">line 553</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>share</strong>(string $key, callable|mixed $callback, bool $protected = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convenience method for creating shared keys.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of dataStore key to set.</td>
+            </tr>
+                    <tr>
+                <td>callable|mixed</td>
+                <td>$callback</td>
+                <td>Callable function to run when requesting the specified $key.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$protected</td>
+                <td>True to create and store a shared instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>This object for chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L569">line 569</a></div>
+        <code>                    mixed
+    <strong>get</strong>(string $key, boolean $forceNew = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to retrieve the results of running the $callback for the specified $key;</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of the dataStore key to get.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$forceNew</td>
+                <td>True to force creation and return of a new instance.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Results of running the $callback for the specified $key.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/UnexpectedValueException">UnexpectedValueException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_remove">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L590">line 590</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>remove</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove an item from container.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of the dataStore key to get.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>This object for chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L611">line 611</a></div>
+        <code>                    boolean
+    <strong>exists</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to check if specified dataStore key exists.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of the dataStore key to check.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>True for success</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNewInstance">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L651">line 651</a></div>
+        <code>                    mixed
+    <strong>getNewInstance</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to force the container to return a new instance
+of the results of the callback for requested $key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Name of the dataStore key to get.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Results of running the $callback for the specified $key.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fork">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L667">line 667</a></div>
+        <code>                    mixed
+    <strong>fork</strong>(string $key, string $newKey, bool $forceNew = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Fork an instance to a new key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Origin key.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$newKey</td>
+                <td>New key.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$forceNew</td>
+                <td>Force new.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Forked instance.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerServiceProvider">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L685">line 685</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>registerServiceProvider</strong>(<a href="../../Windwalker/DI/ServiceProviderInterface.html"><abbr title="Windwalker\DI\ServiceProviderInterface">ServiceProviderInterface</abbr></a> $provider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Register a service provider to the container.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/DI/ServiceProviderInterface.html"><abbr title="Windwalker\DI\ServiceProviderInterface">ServiceProviderInterface</abbr></a></td>
+                <td>$provider</td>
+                <td>The service provider to register.w</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>This object for chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L699">line 699</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>getParent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Parent</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>Parent container.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParent">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L713">line 713</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>setParent</strong>(<a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $parent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property parent</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+                <td>$parent</td>
+                <td>Parent container.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L730">line 730</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>addChild</strong>(string $name, <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addChild</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L749">line 749</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>getChild</strong>(string $name, boolean $forceNew = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getChild</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$forceNew</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L766">line 766</a></div>
+        <code>                    boolean
+    <strong>hasChild</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>hasChild</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeChild">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L780">line 780</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>removeChild</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>removeChild</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getChildren">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L797">line 797</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>[]
+    <strong>getChildren</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Children</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setChildren">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L811">line 811</a></div>
+        <code>                    <a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a>
+    <strong>setChildren</strong>(array $children)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property children</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$children</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/DI/Container.html"><abbr title="Windwalker\DI\Container">Container</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L825">line 825</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve an external iterator</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>An instance of an object implementing Iterator or Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L839">line 839</a></div>
+        <code>                    boolean
+    <strong>offsetExists</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is a property exists or not.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L853">line 853</a></div>
+        <code>                    mixed
+    <strong>offsetGet</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The value to return.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L868">line 868</a></div>
+        <code>                    void
+    <strong>offsetSet</strong>(mixed $offset, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a value to property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The value to set.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L882">line 882</a></div>
+        <code>                    void
+    <strong>offsetUnset</strong>(mixed $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unset a property.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$offset</td>
+                <td>Offset key to unset.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/DI/Container.php#L894">line 894</a></div>
+        <code>                    integer
+    <strong>count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Count this object.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

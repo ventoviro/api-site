@@ -1,0 +1,3503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Query\Sqlite\SqliteQuery | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Query_Sqlite_SqliteQuery" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Query.html">Query</a></li>
+                                        <li><a href="../../../Windwalker/Query/Sqlite.html">Sqlite</a></li>
+    
+                <li>SqliteQuery</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SqliteQuery
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SqliteQuery</strong>        extends <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Sqlite/SqliteQuery.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class SqliteQuery</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                                                                string
+                </td>
+                <td>$name</td>
+                <td class="last">The name of the database driver.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a target="_blank" href="http://php.net/PDO">PDO</a> $connection = null)
+        
+                                            <p>Class constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method___construct"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p>Magic function to convert the query to a string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method___toString"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toString">toString</a>()
+        
+                                            <p>Convert the query to a string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_toString"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $clause)
+        
+                                            <p>Get clause  value.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_get"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $name)
+        
+                                            <p>Magic function to get protected variable value</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method___get"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_call">call</a>(mixed $columns)
+        
+                                            <p>Add a single column, or array of columns to the CALL clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_call"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clear">clear</a>(string|array $clause = null)
+        
+                                            <p>Clear data from the query or a specific clause of the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_columns">columns</a>(mixed $columns)
+        
+                                            <p>Adds a column, or array of column names that would be used for an INSERT INTO statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_columns"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dateFormat">dateFormat</a>()
+        
+                                            <p>Returns a PHP date() function compliant date format for the database driver.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_dateFormat"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dump">dump</a>()
+        
+                                            <p>Creates a formatted dump of the query for debugging purposes.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_dump"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(string $table = null)
+        
+                                            <p>Add a table name to the DELETE clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_delete"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escape">escape</a>(string $text, boolean $extra = false)
+        
+                                            <p>Method to escape a string for usage in an SQLite statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_e">e</a>(string $text, boolean $extra = false)
+        
+                                            <p>Proxy of escape.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_e"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exec">exec</a>(mixed $columns)
+        
+                                            <p>Add a single column, or array of columns to the EXEC clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_exec"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_from">from</a>(mixed $tables, string $subQueryAlias = null)
+        
+                                            <p>Add a table to the FROM clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_from"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_expression">expression</a>(string $name)
+        
+                                            <p>expression</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_expression"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_expr">expr</a>()
+        
+                                            <p>Alias of expression()</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_expr"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_element">element</a>(string $name, mixed $elements, string $glue = &#039;,&#039;)
+        
+                                            <p>element</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_element"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ele">ele</a>(string $name, mixed $elements, string $glue = &#039;,&#039;)
+        
+                                            <p>ele</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_ele"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_group">group</a>(mixed $columns)
+        
+                                            <p>Add a grouping column to the GROUP clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_group"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_having">having</a>($conditions)
+        
+                                            <p>A conditions to the HAVING clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_having"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orHaving">orHaving</a>(mixed|callable $conditions)
+        
+                                            <p>Add a single condition, or an array of conditions to the HAVING clause and wrap with OR elements.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_orHaving"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_innerJoin">innerJoin</a>(array|string $table, array|string $condition = array())
+        
+                                            <p>Add an INNER JOIN clause to the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_innerJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>(mixed $table, boolean $incrementField = false)
+        
+                                            <p>Add a table name to the INSERT clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_insert"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_join">join</a>(string $type, string $table, string|array $conditions = array())
+        
+                                            <p>Add a JOIN clause to the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_join"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_leftJoin">leftJoin</a>(array|string $table, array|string $condition = array())
+        
+                                            <p>Add a LEFT JOIN clause to the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_leftJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nullDate">nullDate</a>(boolean $quoted = true)
+        
+                                            <p>Get the null or zero representation of a timestamp for the database driver.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_nullDate"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_order">order</a>(mixed $columns)
+        
+                                            <p>Add a ordering column to the ORDER clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_order"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_limit">limit</a>(integer $limit = null, integer $offset = null)
+        
+                                            <p>Sets the offset and limit for the result set, if the database driver supports it.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_limit"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processLimit">processLimit</a>(string $query, integer $limit, integer $offset = null)
+        
+                                            <p>Method to modify a query already in string format with the needed
+additions to make the query limited to a particular number of
+results, or start at a particular offset.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_processLimit"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_outerJoin">outerJoin</a>(array|string $table, array|string $condition = array())
+        
+                                            <p>Add an OUTER JOIN clause to the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_outerJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_quote">quote</a>(mixed $text, boolean $escape = true)
+        
+                                            <p>Method to quote and optionally escape a string to database requirements for insertion into the database.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_quote"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_q">q</a>(mixed $text, boolean $escape = true)
+        
+                                            <p>Proxy of quote().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_q"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_quoteName">quoteName</a>(mixed $name)
+        
+                                            <p>Wrap an SQL statement identifier name such as column, table or database names in quotes to prevent injection
+risks and reserved word conflicts.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_quoteName"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_qn">qn</a>(mixed $name)
+        
+                                            <p>Proxy of quoteName().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_qn"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rightJoin">rightJoin</a>(array|string $table, array|string $condition = array())
+        
+                                            <p>Add a RIGHT JOIN clause to the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_rightJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_select">select</a>(mixed $columns)
+        
+                                            <p>Add a single column, or array of columns to the SELECT clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_select"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>(mixed $conditions, string $glue = &#039;,&#039;)
+        
+                                            <p>Add a single condition string, or an array of strings to the SET clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_set"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setQuery">setQuery</a>(mixed $sql)
+        
+                                            <p>Allows a direct query to be provided to the database driver's setQuery() method, but still allow queries
+to have bounded variables.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_setQuery"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(string $table)
+        
+                                            <p>Add a table name to the UPDATE clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_update"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_values">values</a>(string $values)
+        
+                                            <p>Adds a tuple, or array of tuples that would be used as values for an INSERT INTO statement.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_values"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_where">where</a>($conditions)
+        
+                                            <p>Add a single condition, or an array of conditions to the WHERE clause of the query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_where"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhere">orWhere</a>(mixed|callable $conditions)
+        
+                                            <p>Add a single condition, or an array of conditions to the WHERE clause and wrap with OR elements.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_orWhere"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___clone">__clone</a>()
+        
+                                            <p>Method to provide deep copy support to nested objects and arrays when cloning.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method___clone"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_union">union</a>(mixed $query, boolean $distinct = false)
+        
+                                            <p>Add a query to UNION with the current query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_union"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unionDistinct">unionDistinct</a>(mixed $query)
+        
+                                            <p>Add a query to UNION DISTINCT with the current query. Simply a proxy to Union with the Distinct clause.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_unionDistinct"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unionAll">unionAll</a>(mixed $query)
+        
+                                            <p>Add a query to UNION ALL with the current query.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_unionAll"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_format">format</a>($format)
+        
+                                            <p>Find and replace sprintf-like tokens in a format string.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_format"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>getName</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_getName"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryExpression.html"><abbr title="Windwalker\Query\QueryExpression">QueryExpression</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExpression">getExpression</a>()
+        
+                                            <p>getExpression</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_getExpression"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExpression">setExpression</a>(<a href="../../../Windwalker/Query/QueryExpression.html"><abbr title="Windwalker\Query\QueryExpression">QueryExpression</abbr></a> $expression)
+        
+                                            <p>setExpression</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_setExpression"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/PDO">PDO</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnection">getConnection</a>()
+        
+                                            <p>Method to get property Connection</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_getConnection"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConnection">setConnection</a>(<a target="_blank" href="http://php.net/PDO">PDO</a> $connection)
+        
+                                            <p>Method to set property connection</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_setConnection"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query/PreparableInterface.html"><abbr title="Windwalker\Query\Query\PreparableInterface">PreparableInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(string|integer $key = null, mixed $value = null, integer $dataType = \PDO::PARAM_STR, integer $length, array $driverOptions = array())
+        
+                                            <p>Method to add a variable to an internal array that will be bound to a prepared SQL statement before query execution. Also
+removes a variable that has been bounded from the internal bounded array when the passed in value is null.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBounded">getBounded</a>(mixed $key = null)
+        
+                                            <p>Retrieves the bound parameters array when key is null and returns it by reference. If a key is provided then that item is
+returned.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDateFormat">getDateFormat</a>()
+        
+                                            <p>Method to get property DateFormat</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_getDateFormat"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDateFormat">setDateFormat</a>(string $dateFormat)
+        
+                                            <p>Method to set property dateFormat</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_setDateFormat"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNullDate">getNullDate</a>()
+        
+                                            <p>Method to get property NullDate</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_getNullDate"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNullDate">setNullDate</a>(string $nullDate)
+        
+                                            <p>Method to set property nullDate</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_setNullDate"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    float|int|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validValue">validValue</a>(string $value, bool $allowExpression = false)
+        
+                                            <p>getValidValue</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_validValue"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validDatetime">validDatetime</a>(string $string)
+        
+                                            <p>getValidDatetime</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_validDatetime"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/QueryGrammarInterface.html"><abbr title="Windwalker\Query\QueryGrammarInterface">QueryGrammarInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrammar">getGrammar</a>()
+        
+                                            <p>getBuilder</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method_getGrammar"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___sleep">__sleep</a>()
+        
+                                            <p>Unsetting PDO connection before going to sleep (this is needed if the query gets serialized)</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method___sleep"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___wakeup">__wakeup</a>()
+        
+                                            <p>Trying to re-retrieve the pdo connection after waking up</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Windwalker/Query/Query.html#method___wakeup"><abbr title="Windwalker\Query\Query">Query</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method___construct"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L264">line 264</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a target="_blank" href="http://php.net/PDO">PDO</a> $connection = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/PDO">PDO</a></td>
+                <td>$connection</td>
+                <td>The PDO connection object to help us escape string.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method___toString"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L276">line 276</a></div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic function to convert the query to a string.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The completed query.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_toString"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L288">line 288</a></div>
+        <code>                    string
+    <strong>toString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Convert the query to a string.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The completed query.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_get"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L433">line 433</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>|mixed
+    <strong>get</strong>(string $clause)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get clause  value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$clause</td>
+                <td>Get query clause.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method___get"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L447">line 447</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Magic function to get protected variable value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the variable.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_call">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_call"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L468">line 468</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>call</strong>(mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single column, or array of columns to the CALL clause of the query.</p>                    <p>Note that you must not mix insert, update, delete and select method calls when building a query.
+The call method can, however, be called multiple times in the same query.</p>
+
+<p>Usage:
+$query->call('a.<em>')->call('b.id');
+$query->call(array('a.</em>', 'b.id'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>A string or an array of field names.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clear">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Sqlite/SqliteQuery.php#L160">line 160</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+    <strong>clear</strong>(string|array $clause = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear data from the query or a specific clause of the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$clause</td>
+                <td>Optionally, the name of the clause to clear, or nothing to clear the whole query.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_columns">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_columns"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L622">line 622</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>columns</strong>(mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a column, or array of column names that would be used for an INSERT INTO statement.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>A column name, or array of column names.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dateFormat">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_dateFormat"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L647">line 647</a></div>
+        <code>                    string
+    <strong>dateFormat</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a PHP date() function compliant date format for the database driver.</p>                    <p>This method is provided for use where the query object is passed to a function for modification.
+If you have direct access to the database object, it is recommended you use the getDateFormat method directly.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The format string.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_dump"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L662">line 662</a></div>
+        <code>                    string
+    <strong>dump</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a formatted dump of the query for debugging purposes.</p>                    <p>Usage:
+echo $query->dump();</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_delete"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L681">line 681</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>delete</strong>(string $table = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a table name to the DELETE clause of the query.</p>                    <p>Note that you must not mix insert, update, delete and select method calls when building a query.</p>
+
+<p>Usage:
+$query->delete('#__a')->where('id = 1');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The name of the table to delete from.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escape">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Sqlite/SqliteQuery.php#L136">line 136</a></div>
+        <code>                    string
+    <strong>escape</strong>(string $text, boolean $extra = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to escape a string for usage in an SQLite statement.</p>                    <p>Note: Using query objects with bound variables is preferable to the below.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The string to be escaped.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$extra</td>
+                <td>Optional parameter to provide extra escaping.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The escaped string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_e">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_e"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L763">line 763</a></div>
+        <code>                    string
+    <strong>e</strong>(string $text, boolean $extra = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Proxy of escape.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td>The string to be escaped.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$extra</td>
+                <td>Optional parameter to provide extra escaping.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The escaped string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exec">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_exec"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L784">line 784</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>exec</strong>(mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single column, or array of columns to the EXEC clause of the query.</p>                    <p>Note that you must not mix insert, update, delete and select method calls when building a query.
+The exec method can, however, be called multiple times in the same query.</p>
+
+<p>Usage:
+$query->exec('a.<em>')->exec('b.id');
+$query->exec(array('a.</em>', 'b.id'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>A string or an array of field names.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_from">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_from"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L819">line 819</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>from</strong>(mixed $tables, string $subQueryAlias = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a table to the FROM clause of the query.</p>                    <p>Note that while an array of tables can be provided, it is recommended you use explicit joins.</p>
+
+<p>Usage:
+$query->select('*')->from('#__a');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$tables</td>
+                <td>A string or array of table names.
+                                 This can be a JDatabaseQuery object (or a child of it) when used
+                                 as a subquery in FROM clause along with a value for $subQueryAlias.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$subQueryAlias</td>
+                <td>Alias used when $tables is a JDatabaseQuery.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expression">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_expression"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L850">line 850</a></div>
+        <code>                    string
+    <strong>expression</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>expression</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expr">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_expr"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L864">line 864</a></div>
+        <code>                    mixed
+    <strong>expr</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Alias of expression()</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_element">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_element"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L878">line 878</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>
+    <strong>element</strong>(string $name, mixed $elements, string $glue = &#039;,&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>element</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the element.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$elements</td>
+                <td>String or array.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td>The glue for elements.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ele">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_ele"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L892">line 892</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a>
+    <strong>ele</strong>(string $name, mixed $elements, string $glue = &#039;,&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>ele</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the element.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$elements</td>
+                <td>String or array.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td>The glue for elements.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryElement.html"><abbr title="Windwalker\Query\QueryElement">QueryElement</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_group">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_group"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L909">line 909</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>group</strong>(mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a grouping column to the GROUP clause of the query.</p>                    <p>Usage:
+$query->group('id');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>A string or array of ordering columns.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_having">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_having"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L936">line 936</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>having</strong>($conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A conditions to the HAVING clause of the query.</p>                    <p>Usage:
+$query->group('id')->having('COUNT(id) > 5');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orHaving">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_orHaving"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L975">line 975</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>orHaving</strong>(mixed|callable $conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single condition, or an array of conditions to the HAVING clause and wrap with OR elements.</p>                    <p>Usage:
+$query->orHaving(array('a &lt; 5', 'b > 6'));
+$query->orHaving('a &lt; 5', 'b > 6');
+$query->orHaving(function ($query)
+{
+    $query->having('a &lt; 5')->having('b > 6');
+});</p>
+
+<p>Result:
+HAVING ... AND (a &lt; 5 OR b > 6)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed|callable</td>
+                <td>$conditions</td>
+                <td>A string, array of where conditions or callback to support logic.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_innerJoin">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_innerJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1018">line 1018</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>innerJoin</strong>(array|string $table, array|string $condition = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add an INNER JOIN clause to the query.</p>                    <p>Usage:
+$query->innerJoin('b ON b.id = a.id')->innerJoin('c ON c.id = b.id');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$table</td>
+                <td>The table name with alias.</td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$condition</td>
+                <td>The join condition.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_insert"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1042">line 1042</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>insert</strong>(mixed $table, boolean $incrementField = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a table name to the INSERT clause of the query.</p>                    <p>Note that you must not mix insert, update, delete and select method calls when building a query.</p>
+
+<p>Usage:
+$query->insert('#<strong>a')->set('id = 1');
+$query->insert('#</strong>a')->columns('id, title')->values('1,2')->values('3,4');
+$query->insert('#__a')->columns('id, title')->values(array('1,2', '3,4'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$table</td>
+                <td>The name of the table to insert data into.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$incrementField</td>
+                <td>The name of the field to auto increment.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_join">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_join"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1065">line 1065</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>join</strong>(string $type, string $table, string|array $conditions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a JOIN clause to the query.</p>                    <p>Usage:
+$query->join('INNER', 'table AS b', 'b.id = a.id');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>The type of join. This string is prepended to the JOIN keyword.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name with alias.</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$conditions</td>
+                <td>A string or array of conditions.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_leftJoin">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_leftJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1095">line 1095</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>leftJoin</strong>(array|string $table, array|string $condition = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a LEFT JOIN clause to the query.</p>                    <p>Usage:
+$query->leftJoin('b ON b.id = a.id')->leftJoin('c ON c.id = b.id');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$table</td>
+                <td>The table name with alias.</td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$condition</td>
+                <td>The join condition.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nullDate">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_nullDate"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1118">line 1118</a></div>
+        <code>                    string
+    <strong>nullDate</strong>(boolean $quoted = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the null or zero representation of a timestamp for the database driver.</p>                    <p>This method is provided for use where the query object is passed to a function for modification.
+If you have direct access to the database object, it is recommended you use the nullDate method directly.</p>
+
+<p>Usage:
+$query->where('modified_date &lt;> '.$query->nullDate());</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$quoted</td>
+                <td>Optionally wraps the null date in database quotes (true by default).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Null or zero representation of a timestamp.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_order">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_order"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1136">line 1136</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>order</strong>(mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a ordering column to the ORDER clause of the query.</p>                    <p>Usage:
+$query->order('foo')->order('bar');
+$query->order(array('foo','bar'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>A string or array of ordering columns.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_limit">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_limit"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1164">line 1164</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>limit</strong>(integer $limit = null, integer $offset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the offset and limit for the result set, if the database driver supports it.</p>                    <p>Usage:
+$query->setLimit(100, 0); (retrieve 100 rows, starting at first record)
+$query->setLimit(50, 50); (retrieve 50 rows, starting at 50th record)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>The limit for the result set</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td>The offset for the result set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processLimit">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_processLimit"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1184">line 1184</a></div>
+        <code>                    string
+    <strong>processLimit</strong>(string $query, integer $limit, integer $offset = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to modify a query already in string format with the needed
+additions to make the query limited to a particular number of
+results, or start at a particular offset.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query in string format</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>The limit for the result set</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td>The offset for the result set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_outerJoin">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_outerJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1212">line 1212</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>outerJoin</strong>(array|string $table, array|string $condition = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add an OUTER JOIN clause to the query.</p>                    <p>Usage:
+$query->outerJoin('b ON b.id = a.id')->outerJoin('c ON c.id = b.id');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$table</td>
+                <td>The table name with alias.</td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$condition</td>
+                <td>The join condition.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quote">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_quote"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1240">line 1240</a></div>
+        <code>                    string
+    <strong>quote</strong>(mixed $text, boolean $escape = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to quote and optionally escape a string to database requirements for insertion into the database.</p>                    <p>This method is provided for use where the query object is passed to a function for modification.
+If you have direct access to the database object, it is recommended you use the quote method directly.</p>
+
+<p>Note that 'q' is an alias for this method as it is in DatabaseDriver.</p>
+
+<p>Usage:
+$query->quote('fulltext');
+$query->q('fulltext');
+$query->q(array('option', 'fulltext'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$text</td>
+                <td>A string or an array of strings to quote.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$escape</td>
+                <td>True to escape the string, false to leave it unchanged.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The quoted input string.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>if the internal db property is not a valid object.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_q">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_q"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1272">line 1272</a></div>
+        <code>                    string
+    <strong>q</strong>(mixed $text, boolean $escape = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Proxy of quote().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$text</td>
+                <td>A string or an array of strings to quote.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$escape</td>
+                <td>True to escape the string, false to leave it unchanged.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quoteName">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_quoteName"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1298">line 1298</a></div>
+        <code>                    mixed
+    <strong>quoteName</strong>(mixed $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Wrap an SQL statement identifier name such as column, table or database names in quotes to prevent injection
+risks and reserved word conflicts.</p>                    <p>This method is provided for use where the query object is passed to a function for modification.
+If you have direct access to the database object, it is recommended you use the quoteName method directly.</p>
+
+<p>Note that 'qn' is an alias for this method as it is in DatabaseDriver.</p>
+
+<p>Usage:
+$query->quoteName('#<strong>a');
+$query->qn('#</strong>a');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$name</td>
+                <td>The identifier name to wrap in quotes, or an array of identifier names to wrap in quotes.
+                       Each type supports dot-notation name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The quote wrapped name, same type of $name.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>if the internal db property is not a valid object.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_qn">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_qn"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1340">line 1340</a></div>
+        <code>                    mixed
+    <strong>qn</strong>(mixed $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Proxy of quoteName().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$name</td>
+                <td>The identifier name to wrap in quotes, or an array of identifier names to wrap in quotes.
+                       Each type supports dot-notation name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The quote wrapped name, same type of $name.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rightJoin">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_rightJoin"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1392">line 1392</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>rightJoin</strong>(array|string $table, array|string $condition = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a RIGHT JOIN clause to the query.</p>                    <p>Usage:
+$query->rightJoin('b ON b.id = a.id')->rightJoin('c ON c.id = b.id');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$table</td>
+                <td>The table name with alias.</td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$condition</td>
+                <td>The join condition.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_select">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_select"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1415">line 1415</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>select</strong>(mixed $columns)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single column, or array of columns to the SELECT clause of the query.</p>                    <p>Note that you must not mix insert, update, delete and select method calls when building a query.
+The select method can, however, be called multiple times in the same query.</p>
+
+<p>Usage:
+$query->select('a.<em>')->select('b.id');
+$query->select(array('a.</em>', 'b.id'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$columns</td>
+                <td>A string or an array of field names.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_set"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1446">line 1446</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>set</strong>(mixed $conditions, string $glue = &#039;,&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single condition string, or an array of strings to the SET clause of the query.</p>                    <p>Usage:
+$query->set('a = 1')->set('b = 2');
+$query->set(array('a = 1', 'b = 2');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$conditions</td>
+                <td>A string or array of string conditions.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td>The glue by which to join the condition strings. Defaults to ,.
+                              Note that the glue is set on first use and cannot be changed.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setQuery">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_setQuery"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1474">line 1474</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>setQuery</strong>(mixed $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Allows a direct query to be provided to the database driver's setQuery() method, but still allow queries
+to have bounded variables.</p>                    <p>Usage:
+$query->setQuery('select * from #__users');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$sql</td>
+                <td>A SQL query string or DatabaseQuery object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_update"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1495">line 1495</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>update</strong>(string $table)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a table name to the UPDATE clause of the query.</p>                    <p>Note that you must not mix insert, update, delete and select method calls when building a query.</p>
+
+<p>Usage:
+$query->update('#__foo')->set(...);</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>A table to update.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_values">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_values"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1516">line 1516</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>values</strong>(string $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a tuple, or array of tuples that would be used as values for an INSERT INTO statement.</p>                    <p>Usage:
+$query->values('1,2,3')->values('4,5,6');
+$query->values(array('1,2,3', '4,5,6'));</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$values</td>
+                <td>A single tuple, or array of tuples.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_where">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_where"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1555">line 1555</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>where</strong>($conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single condition, or an array of conditions to the WHERE clause of the query.</p>                    <p>Usage:
+$query->where('a = 1')->where('b = 2');
+$query->where(array('a = 1', 'b = 2'));
+$query->where('%n = %q', 'a', 'b');</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$conditions</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhere">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_orWhere"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1594">line 1594</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a>
+    <strong>orWhere</strong>(mixed|callable $conditions)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a single condition, or an array of conditions to the WHERE clause and wrap with OR elements.</p>                    <p>Usage:
+$query->orWhere(array('a &lt; 5', 'b > 6'));
+$query->orWhere('a &lt; 5', 'b > 6');
+$query->orWhere(function ($query)
+{
+    $query->where('a &lt; 5')->where('b > 6');
+});</p>
+
+<p>Result:
+WHERE ... AND (a &lt; 5 OR b > 6)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed|callable</td>
+                <td>$conditions</td>
+                <td>A string, array of where conditions or callback to support logic.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryInterface.html"><abbr title="Windwalker\Query\QueryInterface">QueryInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___clone">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method___clone"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1631">line 1631</a></div>
+        <code>                    void
+    <strong>__clone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to provide deep copy support to nested objects and arrays when cloning.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_union">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_union"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1663">line 1663</a></div>
+        <code>                    mixed
+    <strong>union</strong>(mixed $query, boolean $distinct = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a query to UNION with the current query.</p>                    <p>Multiple unions each require separate statements and create an array of unions.</p>
+
+<p>Usage:
+$query->union('SELECT name FROM  #<strong>foo')
+$query->union('SELECT name FROM  #</strong>foo','distinct')
+$query->union(array('SELECT name FROM  #<strong>foo', 'SELECT name FROM  #</strong>bar'))</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$query</td>
+                <td>The Query object or string to union.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$distinct</td>
+                <td>True to only return distinct rows from the union.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The Query object on success or boolean false on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unionDistinct">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_unionDistinct"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1712">line 1712</a></div>
+        <code>                    mixed
+    <strong>unionDistinct</strong>(mixed $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a query to UNION DISTINCT with the current query. Simply a proxy to Union with the Distinct clause.</p>                    <p>Usage:
+$query->unionDistinct('SELECT name FROM  #__foo')</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$query</td>
+                <td>The Query object or string to union.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The Query object on success or boolean false on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unionAll">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_unionAll"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1736">line 1736</a></div>
+        <code>                    mixed
+    <strong>unionAll</strong>(mixed $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a query to UNION ALL with the current query.</p>                    <p>Multiple unions each require separate statements and create an array of unions.</p>
+
+<p>Usage:
+$query->unionAll('SELECT name FROM  #<strong>foo')
+$query->unionAll(array('SELECT name FROM  #</strong>foo','SELECT name FROM  #__bar'))</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$query</td>
+                <td>The Query object or string to union.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The Query object on success or boolean false on failure.</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>union</td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_format">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_format"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1806">line 1806</a></div>
+        <code>                    string
+    <strong>format</strong>($format)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find and replace sprintf-like tokens in a format string.</p>                    <p>Each token takes one of the following forms:
+    %%       - A literal percent character.
+    %[t]     - Where [t] is a type specifier.
+    %[n]$[x] - Where [n] is an argument specifier and [t] is a type specifier.</p>
+
+<p>Types:
+a - Numeric: Replacement text is coerced to a numeric type but not quoted or escaped.
+e - Escape: Replacement text is passed to $this->escape().
+E - Escape (extra): Replacement text is passed to $this->escape() with true as the second argument.
+n - Name Quote: Replacement text is passed to $this->quoteName().
+q - Quote: Replacement text is passed to $this->quote().
+Q - Quote (no escape): Replacement text is passed to $this->quote() with false as the second argument.
+r - Raw: Replacement text is used as-is. (Be careful)</p>
+
+<p>Date Types:
+- Replacement text automatically quoted (use uppercase for Name Quote).
+- Replacement text should be a string in date format or name of a date column.
+y/Y - Year
+m/M - Month
+d/D - Day
+h/H - Hour
+i/I - Minute
+s/S - Second</p>
+
+<p>Invariable Types:
+- Takes no argument.
+- Argument index not incremented.
+t - Replacement text is the result of $this->currentTimestamp().
+z - Replacement text is the result of $this->nullDate(false).
+Z - Replacement text is the result of $this->nullDate(true).</p>
+
+<p>Usage:
+$query->format('SELECT %1$n FROM %2$n WHERE %3$n = %4$a', 'foo', '#__foo', 'bar', 1);
+Returns: SELECT <code>foo</code> FROM <code>#__foo</code> WHERE <code>bar</code> = 1</p>
+
+<p>Notes:
+The argument specifier is optional but recommended for clarity.
+The argument index used for unspecified tokens is incremented only when used.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>Returns a string produced according to the formatting string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_getName"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1952">line 1952</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getName</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExpression">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_getExpression"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1962">line 1962</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryExpression.html"><abbr title="Windwalker\Query\QueryExpression">QueryExpression</abbr></a>
+    <strong>getExpression</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getExpression</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryExpression.html"><abbr title="Windwalker\Query\QueryExpression">QueryExpression</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExpression">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_setExpression"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1986">line 1986</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+    <strong>setExpression</strong>(<a href="../../../Windwalker/Query/QueryExpression.html"><abbr title="Windwalker\Query\QueryExpression">QueryExpression</abbr></a> $expression)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setExpression</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Query/QueryExpression.html"><abbr title="Windwalker\Query\QueryExpression">QueryExpression</abbr></a></td>
+                <td>$expression</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnection">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_getConnection"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L1998">line 1998</a></div>
+        <code>                    <a target="_blank" href="http://php.net/PDO">PDO</a>
+    <strong>getConnection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Connection</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/PDO">PDO</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConnection">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_setConnection"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2010">line 2010</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+    <strong>setConnection</strong>(<a target="_blank" href="http://php.net/PDO">PDO</a> $connection)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property connection</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/PDO">PDO</a></td>
+                <td>$connection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Sqlite/SqliteQuery.php#L63">line 63</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query/PreparableInterface.html"><abbr title="Windwalker\Query\Query\PreparableInterface">PreparableInterface</abbr></a>
+    <strong>bind</strong>(string|integer $key = null, mixed $value = null, integer $dataType = \PDO::PARAM_STR, integer $length, array $driverOptions = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to add a variable to an internal array that will be bound to a prepared SQL statement before query execution. Also
+removes a variable that has been bounded from the internal bounded array when the passed in value is null.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|integer</td>
+                <td>$key</td>
+                <td>The key that will be used in your SQL query to reference the value. Usually of
+                                         the form ':key', but can also be an integer.</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>&amp;$value         The value that will be bound. The value is passed by reference to support output
+                                         parameters such as those possible with stored procedures.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$dataType</td>
+                <td>Constant corresponding to a SQL datatype.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$length</td>
+                <td>The length of the variable. Usually required for OUTPUT parameters.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$driverOptions</td>
+                <td>Optional driver options to be used.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query/PreparableInterface.html"><abbr title="Windwalker\Query\Query\PreparableInterface">PreparableInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBounded">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Sqlite/SqliteQuery.php#L107">line 107</a></div>
+        <code>                    mixed
+    <strong>getBounded</strong>(mixed $key = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves the bound parameters array when key is null and returns it by reference. If a key is provided then that item is
+returned.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$key</td>
+                <td>The bounded variable key to retrieve.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDateFormat">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_getDateFormat"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2110">line 2110</a></div>
+        <code>                    string
+    <strong>getDateFormat</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property DateFormat</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDateFormat">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_setDateFormat"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2122">line 2122</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+    <strong>setDateFormat</strong>(string $dateFormat)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property dateFormat</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$dateFormat</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNullDate">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_getNullDate"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2134">line 2134</a></div>
+        <code>                    string
+    <strong>getNullDate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property NullDate</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNullDate">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_setNullDate"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2146">line 2146</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a>
+    <strong>setNullDate</strong>(string $nullDate)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property nullDate</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$nullDate</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query.html"><abbr title="Windwalker\Query\Query">Query</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validValue">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_validValue"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2161">line 2161</a></div>
+        <code>                    float|int|string
+    <strong>validValue</strong>(string $value, bool $allowExpression = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getValidValue</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$allowExpression</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>float|int|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validDatetime">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_validDatetime"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2191">line 2191</a></div>
+        <code>                    string
+    <strong>validDatetime</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getValidDatetime</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGrammar">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method_getGrammar"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2203">line 2203</a></div>
+        <code>                    <a href="../../../Windwalker/Query/QueryGrammarInterface.html"><abbr title="Windwalker\Query\QueryGrammarInterface">QueryGrammarInterface</abbr></a>
+    <strong>getGrammar</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getBuilder</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/QueryGrammarInterface.html"><abbr title="Windwalker\Query\QueryGrammarInterface">QueryGrammarInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___sleep">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method___sleep"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2211">line 2211</a></div>
+        <code>                    
+    <strong>__sleep</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unsetting PDO connection before going to sleep (this is needed if the query gets serialized)</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___wakeup">
+        <div class="location">in <a href="../../../Windwalker/Query/Query.html#method___wakeup"><abbr title="Windwalker\Query\Query">Query</abbr></a> at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query.php#L2219">line 2219</a></div>
+        <code>                    
+    <strong>__wakeup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Trying to re-retrieve the pdo connection after waking up</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

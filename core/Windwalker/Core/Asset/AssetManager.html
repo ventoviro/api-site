@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Core\Asset\AssetManager | Windwalker Core API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Core_Asset_AssetManager" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker Core API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Core.html">Core</a></li>
+                                        <li><a href="../../../Windwalker/Core/Asset.html">Asset</a></li>
+    
+                <li>AssetManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AssetManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AssetManager</strong>        implements
+        <abbr title="Windwalker\Event\DispatcherAwareInterface">DispatcherAwareInterface</abbr>        (<a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>The AssetManager class.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Windwalker\Event\DispatcherAwareTrait">DispatcherAwareTrait</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_path">
+                                                                                string
+                </td>
+                <td>$path</td>
+                <td class="last">Property path.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_root">
+                                                                                string
+                </td>
+                <td>$root</td>
+                <td class="last">Property root.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Windwalker/Core/Config/Config.html"><abbr title="Windwalker\Core\Config\Config">Config</abbr></a> $config, <abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        
+                                            <p>AssetManager constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addStyle">addStyle</a>(string $url, string $version = null, array $attribs = array())
+        
+                                            <p>addStyle</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addScript">addScript</a>(string $url, string $version = null, array $attribs = array())
+        
+                                            <p>addScript</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_internalStyle">internalStyle</a>(string $content)
+        
+                                            <p>internalStyle</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_internalScript">internalScript</a>(string $content)
+        
+                                            <p>internalStyle</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderStyles">renderStyles</a>(bool $withInternal = false)
+        
+                                            <p>renderStyles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderScripts">renderScripts</a>(bool $withInternal = false)
+        
+                                            <p>renderStyles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderInternalStyles">renderInternalStyles</a>()
+        
+                                            <p>renderInternalStyles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_renderInternalScripts">renderInternalScripts</a>()
+        
+                                            <p>renderInternalStyles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVersion">getVersion</a>()
+        
+                                            <p>getVersion</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVersion">setVersion</a>(string $version)
+        
+                                            <p>Method to set property version</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStyles">getStyles</a>()
+        
+                                            <p>Method to get property Styles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStyles">setStyles</a>(array $styles)
+        
+                                            <p>Method to set property styles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScripts">getScripts</a>()
+        
+                                            <p>Method to get property Scripts</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setScripts">setScripts</a>(array $scripts)
+        
+                                            <p>Method to set property scripts</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInternalStyles">getInternalStyles</a>()
+        
+                                            <p>Method to get property InternalStyles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInternalStyles">setInternalStyles</a>(array $internalStyles)
+        
+                                            <p>Method to set property internalStyles</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInternalScripts">getInternalScripts</a>()
+        
+                                            <p>Method to get property InternalScripts</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInternalScripts">setInternalScripts</a>(array $internalScripts)
+        
+                                            <p>Method to set property internalScripts</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alias">alias</a>(string $target, string $alias)
+        
+                                            <p>alias</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveAlias">resolveAlias</a>(string $uri)
+        
+                                            <p>resolveAlias</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIndents">setIndents</a>(string $indents)
+        
+                                            <p>Method to set property indents</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIndents">getIndents</a>()
+        
+                                            <p>Method to get property Indents</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_normalizeUri">normalizeUri</a>(string $uri, string $assetFile = null, string $assetMinFile = null)
+        
+                                            <p>normalizeUri</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addBase">addBase</a>(string $uri, string $path = &#039;path&#039;)
+        
+                                            <p>addBase</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetTemplate.html"><abbr title="Windwalker\Core\Asset\AssetTemplate">AssetTemplate</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTemplate">getTemplate</a>()
+        
+                                            <p>Method to get property Template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTemplate">setTemplate</a>(<a href="../../../Windwalker/Core/Asset/AssetTemplate.html"><abbr title="Windwalker\Core\Asset\AssetTemplate">AssetTemplate</abbr></a> $template)
+        
+                                            <p>Method to set property template</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>(string $name, array $args)
+        
+                                            <p>__call</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJSObject">getJSObject</a>(mixed $data, bool $quoteKey = false)
+        
+                                            <p>Internal method to get a JavaScript object notation string from an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_path">path</a>(string $uri = null)
+        
+                                            <p>Method to get property Path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_root">root</a>(string $uri = null)
+        
+                                            <p>Method to get property Root</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAssetFolder">getAssetFolder</a>()
+        
+                                            <p>Method to get property AssetFolder</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUriData">setUriData</a>(<abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri)
+        
+                                            <p>Method to set property uri</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $name)
+        
+                                            <p>__get</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L129">line 129</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Windwalker/Core/Config/Config.html"><abbr title="Windwalker\Core\Config\Config">Config</abbr></a> $config, <abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri, <abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr> $dispatcher)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>AssetManager constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Config/Config.html"><abbr title="Windwalker\Core\Config\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Uri\UriData">UriData</abbr></td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Windwalker\Event\DispatcherInterface">DispatcherInterface</abbr></td>
+                <td>$dispatcher</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addStyle">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L147">line 147</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>addStyle</strong>(string $url, string $version = null, array $attribs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addStyle</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addScript">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L174">line 174</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>addScript</strong>(string $url, string $version = null, array $attribs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addScript</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$attribs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_internalStyle">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L199">line 199</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>internalStyle</strong>(string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>internalStyle</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_internalScript">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L213">line 213</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>internalScript</strong>(string $content)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>internalStyle</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderStyles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L227">line 227</a></div>
+        <code>                    string
+    <strong>renderStyles</strong>(bool $withInternal = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderStyles</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$withInternal</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderScripts">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L269">line 269</a></div>
+        <code>                    string
+    <strong>renderScripts</strong>(bool $withInternal = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderStyles</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$withInternal</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderInternalStyles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L308">line 308</a></div>
+        <code>                    string
+    <strong>renderInternalStyles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderInternalStyles</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderInternalScripts">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L318">line 318</a></div>
+        <code>                    string
+    <strong>renderInternalScripts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>renderInternalStyles</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVersion">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L328">line 328</a></div>
+        <code>                    string
+    <strong>getVersion</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getVersion</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVersion">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L431">line 431</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setVersion</strong>(string $version)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property version</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$version</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStyles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L443">line 443</a></div>
+        <code>                    array
+    <strong>getStyles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Styles</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStyles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L455">line 455</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setStyles</strong>(array $styles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property styles</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$styles</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScripts">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L467">line 467</a></div>
+        <code>                    array
+    <strong>getScripts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Scripts</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScripts">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L479">line 479</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setScripts</strong>(array $scripts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property scripts</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$scripts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInternalStyles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L491">line 491</a></div>
+        <code>                    array
+    <strong>getInternalStyles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property InternalStyles</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInternalStyles">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L503">line 503</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setInternalStyles</strong>(array $internalStyles)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property internalStyles</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$internalStyles</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInternalScripts">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L515">line 515</a></div>
+        <code>                    array
+    <strong>getInternalScripts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property InternalScripts</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInternalScripts">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L527">line 527</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setInternalScripts</strong>(array $internalScripts)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property internalScripts</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$internalScripts</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alias">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L542">line 542</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>alias</strong>(string $target, string $alias)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>alias</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$target</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveAlias">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L558">line 558</a></div>
+        <code>                    string
+    <strong>resolveAlias</strong>(string $uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>resolveAlias</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIndents">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L577">line 577</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setIndents</strong>(string $indents)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property indents</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$indents</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndents">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L589">line 589</a></div>
+        <code>                    string
+    <strong>getIndents</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Indents</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_normalizeUri">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L665">line 665</a></div>
+        <code>                    array
+    <strong>normalizeUri</strong>(string $uri, string $assetFile = null, string $assetMinFile = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>normalizeUri</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$assetFile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$assetMinFile</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addBase">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L691">line 691</a></div>
+        <code>                    string
+    <strong>addBase</strong>(string $uri, string $path = &#039;path&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>addBase</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTemplate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L706">line 706</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetTemplate.html"><abbr title="Windwalker\Core\Asset\AssetTemplate">AssetTemplate</abbr></a>
+    <strong>getTemplate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Template</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetTemplate.html"><abbr title="Windwalker\Core\Asset\AssetTemplate">AssetTemplate</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTemplate">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L723">line 723</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setTemplate</strong>(<a href="../../../Windwalker/Core/Asset/AssetTemplate.html"><abbr title="Windwalker\Core\Asset\AssetTemplate">AssetTemplate</abbr></a> $template)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property template</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Windwalker/Core/Asset/AssetTemplate.html"><abbr title="Windwalker\Core\Asset\AssetTemplate">AssetTemplate</abbr></a></td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L738">line 738</a></div>
+        <code>                    mixed
+    <strong>__call</strong>(string $name, array $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__call</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJSObject">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L770">line 770</a></div>
+        <code>        static            string
+    <strong>getJSObject</strong>(mixed $data, bool $quoteKey = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Internal method to get a JavaScript object notation string from an array</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$data</td>
+                <td>The data to convert to JavaScript object notation</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$quoteKey</td>
+                <td>Quote json key or not.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>JavaScript object notation representation of the array</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_path">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L840">line 840</a></div>
+        <code>                    string
+    <strong>path</strong>(string $uri = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Path</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_root">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L857">line 857</a></div>
+        <code>                    string
+    <strong>root</strong>(string $uri = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Root</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAssetFolder">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L872">line 872</a></div>
+        <code>                    string
+    <strong>getAssetFolder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property AssetFolder</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUriData">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L884">line 884</a></div>
+        <code>                    <a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a>
+    <strong>setUriData</strong>(<abbr title="Windwalker\Uri\UriData">UriData</abbr> $uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property uri</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Windwalker\Uri\UriData">UriData</abbr></td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Core/Asset/AssetManager.html"><abbr title="Windwalker\Core\Asset\AssetManager">AssetManager</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker-core/blob/master/src/Core/Asset/AssetManager.php#L898">line 898</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>__get</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

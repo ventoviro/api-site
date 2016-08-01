@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Query\Query\LimitableInterface | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Query_Query_LimitableInterface" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                                                            <li><a href="../../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../../Windwalker/Query.html">Query</a></li>
+                                        <li><a href="../../../Windwalker/Query/Query.html">Query</a></li>
+    
+                <li>LimitableInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            LimitableInterface
+                
+        </h1>
+    </div>
+
+    <p>    interface
+    <strong>LimitableInterface</strong>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query/LimitableInterface.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Windwalker Query LimitableInterface.</p>            <p>Adds bind/unbind methods as well as a getBounded() method
+to retrieve the stored bounded variables on demand prior to
+query execution.</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processLimit">processLimit</a>(string $query, integer $limit, integer $offset)
+        
+                                            <p>Method to modify a query already in string format with the needed
+additions to make the query limited to a particular number of
+results, or start at a particular offset. This method is used
+automatically by the __toString() method if it detects that the
+query implements the LimitableInterface.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Windwalker/Query/Query/LimitableInterface.html"><abbr title="Windwalker\Query\Query\LimitableInterface">LimitableInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLimit">setLimit</a>(integer $limit, integer $offset)
+        
+                                            <p>Sets the offset and limit for the result set, if the database driver supports it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_processLimit">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query/LimitableInterface.php#L37">line 37</a></div>
+        <code>                    string
+    <strong>processLimit</strong>(string $query, integer $limit, integer $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to modify a query already in string format with the needed
+additions to make the query limited to a particular number of
+results, or start at a particular offset. This method is used
+automatically by the __toString() method if it detects that the
+query implements the LimitableInterface.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query in string format</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>The limit for the result set</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td>The offset for the result set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLimit">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Query/Query/LimitableInterface.php#L53">line 53</a></div>
+        <code>                    <a href="../../../Windwalker/Query/Query/LimitableInterface.html"><abbr title="Windwalker\Query\Query\LimitableInterface">LimitableInterface</abbr></a>
+    <strong>setLimit</strong>(integer $limit, integer $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the offset and limit for the result set, if the database driver supports it.</p>                    <p>Usage:
+$query->setLimit(100, 0); (retrieve 100 rows, starting at first record)
+$query->setLimit(50, 50); (retrieve 50 rows, starting at 50th record)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$limit</td>
+                <td>The limit for the result set</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$offset</td>
+                <td>The offset for the result set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Windwalker/Query/Query/LimitableInterface.html"><abbr title="Windwalker\Query\Query\LimitableInterface">LimitableInterface</abbr></a></td>
+            <td>Returns this object to allow chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

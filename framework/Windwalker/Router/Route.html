@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Windwalker\Router\Route | Windwalker API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Windwalker_Router_Route" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Windwalker API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Windwalker.html">Windwalker</a></li>
+                                        <li><a href="../../Windwalker/Router.html">Router</a></li>
+    
+                <li>Route</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Route
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Route</strong>        implements
+        <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>        (<a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class Route</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_requirements">
+                                                                                array
+                </td>
+                <td>$requirements</td>
+                <td class="last">Property requirements.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $name, string $pattern, array $variables = array(), array|string $allowMethods = array(), array $options = array())
+        
+                                            <p>Class init.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPattern">getPattern</a>()
+        
+                                            <p>getPattern</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPattern">setPattern</a>(string $pattern)
+        
+                                            <p>setPattern</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRegex">getRegex</a>()
+        
+                                            <p>getRegex</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRegex">setRegex</a>(string $regex)
+        
+                                            <p>setRegex</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllowMethods">getAllowMethods</a>()
+        
+                                            <p>getMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAllowMethods">setAllowMethods</a>(array|string $methods)
+        
+                                            <p>setMethod</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVariables">getVariables</a>()
+        
+                                            <p>getVariables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVariables">setVariables</a>(array $variables)
+        
+                                            <p>setVariables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+        
+                                            <p>getName</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setName">setName</a>(string $name)
+        
+                                            <p>setName</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+        
+                                            <p>Method to get property Options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+        
+                                            <p>Method to set property options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareOptions">prepareOptions</a>(array $options)
+        
+                                            <p>prepareOptions</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name, mixed $default = null)
+        
+                                            <p>Method to get property Options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
+        
+                                            <p>Method to set property options</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSslPort">getSslPort</a>()
+        
+                                            <p>Method to get property SslPort</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSslPort">setSslPort</a>(int $sslPort)
+        
+                                            <p>Method to set property sslPort</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPort">getPort</a>()
+        
+                                            <p>Method to get property Port</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPort">setPort</a>(int $port)
+        
+                                            <p>Method to set property port</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScheme">getScheme</a>()
+        
+                                            <p>Method to get property Scheme</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setScheme">setScheme</a>(string $scheme)
+        
+                                            <p>Method to set property scheme</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHost">getHost</a>()
+        
+                                            <p>Method to get property Host</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHost">setHost</a>(string $host)
+        
+                                            <p>Method to set property host</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequirements">getRequirements</a>()
+        
+                                            <p>Method to get property Requirements</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequirements">setRequirements</a>(array $requirements)
+        
+                                            <p>Method to set property requirements</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSSL">getSSL</a>()
+        
+                                            <p>Method to get property Ssl</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSSL">setSSL</a>(boolean $ssl)
+        
+                                            <p>Method to set property ssl</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtraValues">getExtraValues</a>()
+        
+                                            <p>Method to get property Extra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExtraValues">setExtraValues</a>(array $extra)
+        
+                                            <p>Method to set property extra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getExtra">getExtra</a>(string $name, mixed $default = null)
+        
+                                            <p>getExtra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setExtra">setExtra</a>(string $name, mixed $value)
+        
+                                            <p>setExtra</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIterator">getIterator</a>()
+        
+                                            <p>Retrieve an external iterator</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllData">getAllData</a>()
+        
+                                            <p>getAllData</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L118">line 118</a></div>
+        <code>                    
+    <strong>__construct</strong>(string $name, string $pattern, array $variables = array(), array|string $allowMethods = array(), array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Class init.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array|string</td>
+                <td>$allowMethods</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPattern">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L133">line 133</a></div>
+        <code>                    string
+    <strong>getPattern</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getPattern</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPattern">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L145">line 145</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setPattern</strong>(string $pattern)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setPattern</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRegex">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L157">line 157</a></div>
+        <code>                    string
+    <strong>getRegex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getRegex</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRegex">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L169">line 169</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setRegex</strong>(string $regex)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setRegex</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$regex</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllowMethods">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L181">line 181</a></div>
+        <code>                    string
+    <strong>getAllowMethods</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getMethod</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAllowMethods">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L193">line 193</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setAllowMethods</strong>(array|string $methods)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setMethod</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVariables">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L209">line 209</a></div>
+        <code>                    array
+    <strong>getVariables</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getVariables</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVariables">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L221">line 221</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setVariables</strong>(array $variables)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setVariables</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$variables</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L233">line 233</a></div>
+        <code>                    string
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getName</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setName">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L245">line 245</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setName</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setName</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L257">line 257</a></div>
+        <code>                    array
+    <strong>getOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Options</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L269">line 269</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareOptions">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L290">line 290</a></div>
+        <code>                    array
+    <strong>prepareOptions</strong>(array $options)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>prepareOptions</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L313">line 313</a></div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L331">line 331</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setOption</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property options</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSslPort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L343">line 343</a></div>
+        <code>                    int
+    <strong>getSslPort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property SslPort</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSslPort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L355">line 355</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setSslPort</strong>(int $sslPort)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property sslPort</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$sslPort</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L367">line 367</a></div>
+        <code>                    int
+    <strong>getPort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Port</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPort">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L379">line 379</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setPort</strong>(int $port)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property port</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$port</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScheme">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L391">line 391</a></div>
+        <code>                    string
+    <strong>getScheme</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Scheme</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setScheme">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L403">line 403</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setScheme</strong>(string $scheme)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property scheme</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$scheme</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHost">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L417">line 417</a></div>
+        <code>                    string
+    <strong>getHost</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Host</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHost">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L429">line 429</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setHost</strong>(string $host)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property host</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequirements">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L441">line 441</a></div>
+        <code>                    array
+    <strong>getRequirements</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Requirements</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequirements">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L453">line 453</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setRequirements</strong>(array $requirements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property requirements</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$requirements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSSL">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L465">line 465</a></div>
+        <code>                    boolean
+    <strong>getSSL</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Ssl</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSSL">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L477">line 477</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setSSL</strong>(boolean $ssl)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property ssl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$ssl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtraValues">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L489">line 489</a></div>
+        <code>                    array
+    <strong>getExtraValues</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to get property Extra</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExtraValues">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L501">line 501</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setExtraValues</strong>(array $extra)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Method to set property extra</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$extra</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td>Return self to support chaining.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExtra">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L516">line 516</a></div>
+        <code>                    mixed
+    <strong>getExtra</strong>(string $name, mixed $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getExtra</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setExtra">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L534">line 534</a></div>
+        <code>                    <a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a>
+    <strong>setExtra</strong>(string $name, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>setExtra</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Windwalker/Router/Route.html"><abbr title="Windwalker\Router\Route">Route</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L546">line 546</a></div>
+        <code>                    <a target="_blank" href="http://php.net/Traversable">Traversable</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieve an external iterator</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Traversable">Traversable</a></td>
+            <td>An instance of an object implementing Iterator or Traversable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllData">
+        <div class="location">at line         <a href="https://github.com/ventoviro/windwalker/blob/master/src/Router/Route.php#L556">line 556</a></div>
+        <code>                    array
+    <strong>getAllData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>getAllData</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
