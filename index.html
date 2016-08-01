@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windwalker API</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /*
+ * Specific styles of signin component
+ */
+        /*
+         * General styles
+         */
+        body, html {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+        }
+
+        .card-container.card {
+            max-width: 350px;
+            padding: 40px 40px;
+        }
+
+        /*
+         * Card component
+         */
+        .card {
+            background-color: #F7F7F7;
+            /* just in case there no content*/
+            padding: 20px 25px 30px;
+            margin: 0 auto 25px;
+            margin-top: 50px;
+            /* shadows and rounded borders */
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card card-container">
+        <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+        <a href="http://windwalker.io">
+            <img id="logo-img" class="img-responsive" src="//windwalker.io/media/images/logo/windwalker-logo.png" />
+        </a>
+        <h3 class="text-center" style="margin-top: 20px">
+            API Document
+        </h3>
+        <p style="margin-top: 40px">
+            <a class="btn btn-lg btn-primary btn-block" href="./framework">Framework API</a>
+        </p>
+        <p>
+            <a class="btn btn-lg btn-info btn-block" href="./core">Core API</a>
+        </p>
+    </div><!-- /card-container -->
+</div><!-- /container -->
+</body>
+</html>
