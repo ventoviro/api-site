@@ -1,6 +1,0 @@
-[submodule ".sami/windwalker/core"]
-	path = .sami/windwalker/core
-	url = git@github.com:ventoviro/windwalker-core.git
-[submodule ".sami/windwalker/framework"]
-	path = .sami/windwalker/framework
-	url = git@github.com:ventoviro/windwalker.git
